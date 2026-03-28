@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+
+site/node_modules/
+site/.next/
+site/dist/
+site/build/
+site/.vercel/
