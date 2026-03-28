@@ -234,27 +234,46 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 14px;
   flex-shrink: 0;
 }
 
-.brand-logo-panel {
+.brand-mark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 156px;
-  height: 52px;
-  padding: 6px 12px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 14px 30px rgba(15, 23, 32, 0.14);
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08)),
+    linear-gradient(135deg, rgba(51, 204, 197, 0.9), rgba(20, 146, 154, 0.9));
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36);
 }
 
-.brand-logo-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: #fff;
+}
+
+.brand-copy strong {
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.brand-copy small {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .main-nav .nav {
@@ -366,10 +385,38 @@ ul {
   padding-right: 22px;
 }
 
+.hero-title-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px;
+  gap: 22px;
+  align-items: start;
+}
+
 .hero-copy h1 {
   font-size: clamp(2.7rem, 6vw, 5.4rem);
   line-height: 0.94;
   max-width: 12ch;
+}
+
+.hero-copy-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 118px;
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 26px;
+  background: rgba(15, 23, 32, 0.96);
+  box-shadow: 0 24px 46px rgba(15, 23, 32, 0.18);
+  overflow: hidden;
+}
+
+.hero-copy-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.55);
+  transform-origin: center;
 }
 
 .hero-intro {
@@ -424,31 +471,22 @@ ul {
 
 .hero-visual {
   position: relative;
-  display: grid;
-  grid-template-columns: 196px minmax(0, 1fr);
-  grid-template-rows: auto auto;
-  gap: 18px;
-  align-items: end;
-  min-height: 0;
-  padding-top: 20px;
+  min-height: 642px;
+  padding-top: 8px;
 }
 
 .hero-screen,
 .hero-phone-card,
-.hero-brand-sticker,
 .floating-pill {
   position: absolute;
 }
 
 .hero-screen-main {
-  position: relative;
-  top: auto;
-  right: auto;
-  grid-column: 2;
-  grid-row: 1;
+  top: 0;
+  right: 0;
   width: 100%;
   max-width: 520px;
-  justify-self: end;
+  z-index: 1;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.52);
   border-radius: var(--radius-xl);
@@ -491,11 +529,8 @@ ul {
 }
 
 .hero-phone-card {
-  position: relative;
-  left: auto;
-  bottom: auto;
-  grid-column: 1;
-  grid-row: 2;
+  left: 32px;
+  bottom: 28px;
   width: 100%;
   max-width: 188px;
   padding: 14px;
@@ -503,6 +538,7 @@ ul {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(23, 32, 43, 0.08);
   box-shadow: var(--shadow);
+  z-index: 2;
 }
 
 .hero-phone-frame {
@@ -525,36 +561,6 @@ ul {
   font-size: 0.92rem;
   font-weight: 700;
   text-align: center;
-}
-
-.hero-brand-sticker {
-  display: block;
-  top: 4px;
-  left: 0;
-  width: 274px;
-  padding: 16px 18px 14px;
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at top right, rgba(51, 204, 197, 0.12), transparent 34%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 244, 236, 0.94));
-  border: 1px solid rgba(20, 146, 154, 0.12);
-  box-shadow: 0 22px 44px rgba(15, 23, 32, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.hero-brand-sticker img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.hero-brand-sticker span {
-  display: block;
-  margin-top: 12px;
-  color: var(--ink-soft);
-  font-size: 0.84rem;
-  font-weight: 600;
-  line-height: 1.5;
 }
 
 .floating-pill {
@@ -2057,11 +2063,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .brand-logo-panel {
-    width: 144px;
-    height: 50px;
-  }
-
   .main-nav {
     padding-inline: 18px;
   }
@@ -2074,6 +2075,10 @@ footer {
     padding-inline: 10px;
   }
 
+  .hero-title-wrap {
+    grid-template-columns: minmax(0, 1fr) 150px;
+  }
+
   .hero-copy h1 {
     max-width: 13ch;
   }
@@ -2082,8 +2087,10 @@ footer {
     width: 100%;
   }
 
-  .hero-brand-sticker {
-    left: 18px;
+  .hero-phone-card {
+    left: 8px;
+    bottom: 16px;
+    max-width: 174px;
   }
 
   .floating-pill-top {
@@ -2109,13 +2116,6 @@ footer {
     min-height: 76px;
     padding-inline: 16px;
     border-radius: 28px;
-  }
-
-  .brand-logo-panel {
-    width: 136px;
-    height: 46px;
-    padding: 5px 10px;
-    border-radius: 16px;
   }
 
   .menu-trigger {
@@ -2167,17 +2167,24 @@ footer {
     padding-right: 0;
   }
 
+  .hero-title-wrap {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .hero-copy h1 {
     max-width: 100%;
   }
 
-  .hero-visual {
-    margin-top: 42px;
-    min-height: 690px;
+  .hero-copy-logo {
+    width: min(100%, 220px);
+    min-height: 0;
+    margin-top: 0;
   }
 
-  .hero-brand-sticker {
-    left: 8px;
+  .hero-visual {
+    margin-top: 42px;
+    min-height: 620px;
   }
 
   .menu-preview-shell,
@@ -2260,11 +2267,11 @@ footer {
     gap: 14px;
     min-height: 0;
     margin-top: 34px;
+    padding-top: 0;
   }
 
   .hero-screen,
   .hero-phone-card,
-  .hero-brand-sticker,
   .floating-pill {
     position: relative;
     inset: auto;
@@ -2278,6 +2285,7 @@ footer {
     width: 168px;
     padding: 10px;
     align-self: flex-start;
+    transform: none;
   }
 
   .social-preview-card {
@@ -2373,11 +2381,6 @@ footer {
     padding: 20px 18px;
   }
 
-  .hero-brand-sticker {
-    width: 210px;
-    margin-bottom: 0;
-  }
-
   .floating-pill {
     min-height: 40px;
     padding-inline: 14px;
@@ -2444,11 +2447,19 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .brand-logo-panel {
-    width: 124px;
+  .brand-copy strong {
+    font-size: 0.98rem;
+  }
+
+  .brand-copy small {
+    font-size: 0.68rem;
+  }
+
+  .brand-mark {
+    width: 42px;
     height: 42px;
-    padding: 4px 8px;
     border-radius: 14px;
+    font-size: 1.15rem;
   }
 
   .hero-copy h1 {
@@ -2465,10 +2476,6 @@ footer {
 
   .hero-phone-frame img {
     height: 205px;
-  }
-
-  .hero-brand-sticker {
-    border-radius: 20px;
   }
 
   .examples-note {
