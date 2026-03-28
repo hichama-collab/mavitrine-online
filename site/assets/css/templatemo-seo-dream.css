@@ -387,8 +387,8 @@ ul {
 
 .hero-title-wrap {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px;
-  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) minmax(144px, 168px);
+  gap: 16px;
   align-items: start;
 }
 
@@ -399,24 +399,56 @@ ul {
 }
 
 .hero-copy-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 118px;
+  gap: 12px;
+  min-height: 0;
   margin-top: 12px;
   padding: 12px 14px;
-  border-radius: 26px;
-  background: rgba(15, 23, 32, 0.96);
-  box-shadow: 0 24px 46px rgba(15, 23, 32, 0.18);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(23, 32, 43, 0.08);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
 }
 
-.hero-copy-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transform: scale(1.55);
-  transform-origin: center;
+.hero-copy-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.1)),
+    linear-gradient(135deg, rgba(51, 204, 197, 0.94), rgba(20, 146, 154, 0.92));
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 1.28rem;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+}
+
+.hero-copy-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.hero-copy-brand strong {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.hero-copy-brand small {
+  margin-top: 6px;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .hero-intro {
@@ -471,21 +503,25 @@ ul {
 
 .hero-visual {
   position: relative;
-  min-height: 642px;
-  padding-top: 8px;
+  display: grid;
+  grid-template-columns: minmax(0, 196px) minmax(0, 1fr);
+  align-items: end;
+  gap: 24px;
+  min-height: 0;
+  padding-top: 36px;
 }
 
 .hero-screen,
 .hero-phone-card,
 .floating-pill {
-  position: absolute;
+  position: relative;
 }
 
 .hero-screen-main {
-  top: 0;
-  right: 0;
+  grid-column: 2;
   width: 100%;
-  max-width: 520px;
+  max-width: 470px;
+  justify-self: end;
   z-index: 1;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.52);
@@ -529,10 +565,11 @@ ul {
 }
 
 .hero-phone-card {
-  left: 32px;
-  bottom: 28px;
+  grid-column: 1;
+  align-self: end;
   width: 100%;
   max-width: 188px;
+  margin: 0 -8px 18px auto;
   padding: 14px;
   border-radius: 32px;
   background: rgba(255, 255, 255, 0.88);
@@ -2076,21 +2113,20 @@ footer {
   }
 
   .hero-title-wrap {
-    grid-template-columns: minmax(0, 1fr) 150px;
+    grid-template-columns: minmax(0, 1fr) 160px;
   }
 
   .hero-copy h1 {
     max-width: 13ch;
   }
 
-  .hero-screen-main {
-    width: 100%;
+  .hero-visual {
+    grid-template-columns: minmax(0, 170px) minmax(0, 1fr);
   }
 
   .hero-phone-card {
-    left: 8px;
-    bottom: 16px;
     max-width: 174px;
+    margin-bottom: 14px;
   }
 
   .floating-pill-top {
@@ -2183,8 +2219,9 @@ footer {
   }
 
   .hero-visual {
+    grid-template-columns: minmax(0, 164px) minmax(0, 1fr);
     margin-top: 42px;
-    min-height: 620px;
+    min-height: 0;
   }
 
   .menu-preview-shell,
