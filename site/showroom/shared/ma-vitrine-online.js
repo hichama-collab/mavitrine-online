@@ -546,6 +546,387 @@
         { selector: ".col-xxl-9.py-5.text-center h1", mode: "html", value: "Un rendu premium<br>qui se montre facilement" },
         { selector: ".col-xxl-9.py-5.text-center .btn", mode: "text", value: "Parler du projet" }
       ]
+    },
+    "cabinet-conseil-impact": {
+      model: "Model 18",
+      style: "Conseil Impact",
+      showcaseTitle: "Une direction statutaire pour cabinet de conseil, expertise B2B ou activite de service a forte valeur.",
+      showcaseText: "Le rendu rassure vite, pose une posture plus premium et aide a presenter des services, des preuves et une prise de contact tres lisible.",
+      positioning: "Hero tres net, arguments visibles, bons reperes de confiance et sections faciles a transformer en offre sur mesure.",
+      modulesText: "Hero, promesse, preuves de confiance, niveaux d'accompagnement, cas d'usage, avis et call-to-action final.",
+      useCase: "Ideal pour cabinet de conseil, audit, recrutement executif, immobilier B2B, formation premium ou activite qui doit faire plus credible rapidement.",
+      replace: {
+        "LaslesVPN": BRAND.brand,
+        "Users": "Missions",
+        "Locations": "Secteurs",
+        "Server": "Pages",
+        "Powerfull online protection.": "Promesse visible des l'arrivee.",
+        "Internet without borders.": "Expertise et offre comprises en quelques secondes.",
+        "Supercharged VPN": "Arguments et preuves de confiance bien structures.",
+        "No specific time limits.": "Contact simple, net et adapte au mobile.",
+        "We Provide Many Features You Can Use": "Un site conseil qui structure vraiment la prise de contact",
+        "You can explore the features that we provide with fun and have their own functions each feature.": "Le visiteur comprend rapidement ce que vous faites, pour qui, et comment vous contacter.",
+        "Choose Your Plan": "Trois profondeurs de site pour cadrer le besoin",
+        "Let's choose the package that is best for you and explore it happily and cheerfully.": "Chaque niveau montre une facon differente d'organiser le message, les pages et la conversion selon le niveau de gamme vise.",
+        "Free Plan": "Landing Essentielle",
+        "Standard Plan": "Vitrine Signature",
+        "Premium Plan": "Showcase Premium",
+        "Unlimited Bandwitch": "Hero et proposition de valeur",
+        "Encrypted Connection": "Preuves de confiance",
+        "No Traffic Logs": "Blocs expertise",
+        "Works on All Devices": "Version mobile",
+        "Connect Anyware ": "Pages services ",
+        "Get New Features ": "Ajouts evolutifs ",
+        "Huge Global Network of Fast VPN ": "Une structure qui tient aussi sur plusieurs pages",
+        "See LaslesVPN everywhere to make it easier for you when you move locations.": "Cette direction peut accueillir une home, des pages services, des cas clients et un contact tres bien structure.",
+        "Trusted by Thousands of Happy Customer ": "Un rendu qui renforce la perception de niveau",
+        "These are the stories of our customers who have joined us with great pleasure when using this crazy feature.": "Le prospect comprend tout de suite qu'il a affaire a une activite serieuse, claire et bien positionnee.",
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best": "Le style donne tout de suite une impression plus premium, plus claire et plus credible a l'activite.",
+        "Product": "Sections",
+        "Engage": "Navigation",
+        "Earn Money": "Actions",
+        "Download": "Voir les modules",
+        "Countries ": "Contact ",
+        "Blog ": "Ressources ",
+        "LaslesVPN ? ": "Le brief ",
+        "Tutorials ": "Process ",
+        "About Us ": "Positionnement ",
+        "Privacy Policy ": "Mentions ",
+        "Terms of Service ": "Contact ",
+        "Affiliate ": "Demander le brief ",
+        "Become Partner ": "Parler du projet ",
+        "About": "Cabinet",
+        "Feature": "Modules",
+        "Pricing": "Offres",
+        "Testimonial": "Avis",
+        "Sign In": "Voir le brief",
+        "Sign Up": "Parler du projet",
+        "Get Started": "Voir le brief",
+        "iezh Robert": "Camille Rahal",
+        "Warsaw": "Paris",
+        "Poland": "France",
+        "ThemeWagon": BRAND.brand
+      },
+      hide: ["img[src*='amazon.png']", "img[src*='netflix.png']", "img[src*='reddit.png']", "img[src*='discord.png']", "img[src*='spotify.png']"],
+      patches: [
+        { selector: "h1.text-3xl", mode: "html", value: "Un site conseil qui donne<br>une posture plus credible" },
+        { selector: "p.text-black-500.mt-4.mb-6", mode: "text", value: "Une direction ideale pour cabinet de conseil, activite B2B ou expertise qui doit inspirer confiance avant le premier echange." },
+        { selector: "#pricing p.text-2xl.text-black-600.text-center.mb-4", mode: "text", values: ["Sur devis", "Sur devis", "Sur devis"] },
+        { selector: "div.bg-white-300 ul li", mode: "text", values: ["Voir les modules", "Offres", "Secteurs", "Pages cles", "Contact", "Ressources", "Le brief", "FAQ", "Process", "Positionnement", "Mentions", "Contact", "Demander le brief", "Parler du projet"] },
+        { selector: "h5.text-black-600.text-xl.sm\\:text-2xl.lg\\:text-3xl.leading-relaxed.font-medium", mode: "html", value: "Adapter ce style<br>au bon niveau de gamme" },
+        { selector: "div.flex.flex-col.text-left.w-10\\/12.sm\\:w-7\\/12.lg\\:w-5\\/12.mb-6.sm\\:mb-0 p", mode: "text", value: "Nous remplacons ensuite le contenu de demo par votre vrai positionnement, vos preuves et vos appels a l'action." },
+        { selector: "div.row-span-2.sm\\:col-span-4 p.mb-4", mode: "html", value: "<strong class=\"font-medium\">Ma Vitrine Online</strong> propose ici une direction statutaire pour valoriser une activite de conseil, ses offres et sa prise de contact." },
+        { selector: "div.row-span-2.sm\\:col-span-4 p.text-gray-400:last-of-type", mode: "text", value: "Adaptation showroom 2026 par Ma Vitrine Online." }
+      ]
+    },
+    "studio-media-impact": {
+      model: "Model 19",
+      style: "Studio Media",
+      showcaseTitle: "Une base image-first pour studio video, podcast, contenu social, immobilier premium ou activite portee par le visuel.",
+      showcaseText: "Le template cree tout de suite un effet de vitrine vivante, avec de l'impact, des modules faciles a montrer et une vraie place pour les formats.",
+      positioning: "Grand hero, univers visuel fort, blocs portfolio, formats editoriaux et footer oriente contact.",
+      modulesText: "Hero, categories de formats, reels/video, selections editoriales, bloc contact, reseaux et call-to-action final.",
+      useCase: "Ideal pour studio photo-video, podcast marque, immobilier premium, agence contenu, beauty brand ou activite qui vend par l'image.",
+      replace: {
+        "Home": "Accueil",
+        "Audio Song": "Formats",
+        "Video song": "Portfolio",
+        "Videos Songs": "Realisations",
+        "Upcomeing": "Options editoriales",
+        "See More": "Voir les modules",
+        "Play Now": "Voir le module",
+        "Follow Us": "Rester visible",
+        "Subscribe": "Voir le brief",
+        "Enter Your Email": "Votre email",
+        "TIC Transport": "Video",
+        "Packaging": "Photos"
+      },
+      hide: [".search_icon"],
+      patches: [
+        { selector: ".nav-link", mode: "text", values: ["Accueil", "Formats", "Portfolio"] },
+        { selector: ".banner_taital", mode: "html", values: [
+          "Un site image-first<br>pour studio media",
+          "Un rendu qui valorise<br>les formats visuels",
+          "Une direction faite pour<br>etre montree facilement"
+        ]},
+        { selector: ".play_bt a", mode: "text", value: "Voir le brief" },
+        { selector: ".audio_taital", mode: "text", values: ["Formats mis en avant", "Realisations visuelles", "Options editoriales"] },
+        { selector: ".audio_text", mode: "text", values: [
+          "Cette section montre comment presenter des formats, des prestations et des exemples de contenus de facon lisible et premium.",
+          "Le template fonctionne bien pour valoriser des realisations, des campagnes, des tournages ou des capsules a forte dimension visuelle."
+        ]},
+        { selector: ".many_text", mode: "text", values: [
+          "Podcast de marque",
+          "Interview dirigeant",
+          "Capsule reseaux sociaux",
+          "Reportage terrain",
+          "Serie photo premium",
+          "Film manifeste",
+          "Video recrutement",
+          "Story produit",
+          "Format immobilier",
+          "Video institutionnelle",
+          "Portrait expert",
+          "Making-of equipe",
+          "Avant / apres",
+          "Script courte duree",
+          "Mise en scene produit",
+          "Shooting hero",
+          "Campagne visuelle",
+          "Pack social ads",
+          "Serie reels",
+          "Bibliotheque contenus"
+        ]},
+        { selector: ".videos_text", mode: "html", values: [
+          "Page hero et<br>positionnement<br>visuel",
+          "Portfolio marque<br>et realisations<br>signature",
+          "Formats reels<br>et contenus<br>sociaux",
+          "Bloc photo / video<br>pour mettre en avant<br>les references",
+          "Direction editoriale<br>pour studio ou<br>agence contenu",
+          "Mise en avant<br>des cas clients<br>phares",
+          "Preuves sociales<br>et retours clients<br>visibles",
+          "Call-to-action<br>bien place pour<br>declencher le contact",
+          "Landing campagne<br>pour lancement ou<br>offre premium",
+          "Page expertise<br>pour video, photo<br>ou podcast",
+          "Selection de formats<br>selon le besoin<br>du client",
+          "Version mobile<br>pour montrer le site<br>partout",
+          "Bloc references<br>et univers de marque<br>immediat",
+          "Page image<br>pour activite haut<br>de gamme",
+          "Rythme visuel<br>concu pour Instagram<br>et showroom",
+          "Structure modulaire<br>facile a adapter<br>au metier"
+        ]},
+        { selector: ".playnow_bt a", mode: "text", value: "Voir le module" },
+        { selector: ".follow_text", mode: "text", value: "Une image coherente entre site et reseaux" },
+        { selector: ".mail_text", mode: "attr", attr: "placeholder", value: "Votre email" },
+        { selector: ".padding_15", mode: "text", values: [BRAND.phoneDisplay, BRAND.email] }
+      ]
+    },
+    "gestion-patrimoine-premium": {
+      model: "Model 20",
+      style: "Patrimoine Premium",
+      showcaseTitle: "Une direction patrimoniale haut de gamme pour gestion de patrimoine, family office, conseil financier ou cabinet qui doit faire tres serieux.",
+      showcaseText: "Le rendu est tres statutaire, tres rassurant et fonctionne bien pour presenter une expertise, des offres, des FAQ et un contact sans friction.",
+      positioning: "Hero frontal, sections d'arguments, offres bien cadrees, FAQ, avis et footer corporate propre.",
+      modulesText: "Hero, presentation, points forts, process, avis, offres, FAQ et call-to-action final.",
+      useCase: "Ideal pour gestion de patrimoine, family office, cabinet financier, expert-comptable premium ou conseil independant a forte confiance.",
+      replace: {
+        "PMS Investment Services": BRAND.brand,
+        "PMS": BRAND.brand,
+        "About": "Cabinet",
+        "Services": "Services",
+        "Blog": "Ressources",
+        "Testimonials": "Avis",
+        "Pricing": "Offres",
+        "Contact": "Contact",
+        "Schedule a Consultation": "Voir le brief",
+        "Learn More": "Voir les modules",
+        "Who We Are": "Une presence patrimoniale qui installe le niveau",
+        "At PMS Investment Services, we understand that your wealth deserves a careful and strategic approach. With over two decades of experience in portfolio management, we've built our reputation on delivering exceptional results for high-net-worth individuals and institutional clients.": "Ce style convient tres bien a une activite patrimoniale qui doit inspirer confiance des la premiere lecture, avec un discours pose, structure et facile a montrer.",
+        "Our team of seasoned investment professionals combines deep market knowledge with cutting-edge analytical tools to create personalized investment strategies that align with your financial goals and risk tolerance.": "La hierarchie des blocs permet de presenter une expertise, des offres, des modalites de contact et des informations utiles avec une image tres serieuse.",
+        "Years Experience": "Jours de cadrage",
+        "Assets Under Management": "Pages clefs",
+        "Satisfied Clients": "Blocs adaptables",
+        "Why Choose Our PMS?": "Pourquoi cette direction fonctionne",
+        "We offer more than just investment management – we provide a comprehensive wealth management experience.": "Le visiteur comprend vite le niveau de gamme, les services proposes et la facon de prendre contact.",
+        "Risk Management": "Posture statutaire",
+        "Advanced risk assessment and mitigation strategies to protect your wealth while maximizing growth potential.": "Le ton, la typo et l'organisation donnent une impression de maitrise et de niveau des les premieres secondes.",
+        "Performance Excellence": "Structure lisible",
+        "Consistent outperformance through disciplined investment processes and market expertise.": "La promesse, les offres et les points de confiance restent tres faciles a parcourir sur mobile comme sur desktop.",
+        "Personalized Service": "Contact fluide",
+        "Dedicated relationship managers providing personalized attention and regular portfolio reviews.": "Le parcours de prise de contact est direct, rassurant et facile a adapter a votre facon de travailler.",
+        "Our Investment Philosophy": "Ce que le visiteur regarde en premier",
+        "We believe in transparency, integrity, and dedication to your financial success.": "Dans ce type de secteur, le site doit inspirer la confiance, montrer l'expertise et clarifier le cadre en quelques secondes.",
+        "Research-Driven Approach": "Expertise visible",
+        "Comprehensive fundamental and technical analysis guides every investment decision.": "Un bloc tres utile pour mettre en avant la specialite, la methode et le niveau d'accompagnement.",
+        "Long-term Value Creation": "Offre bien cadree",
+        "Focus on sustainable growth and wealth preservation over market cycles.": "L'utilisateur comprend rapidement les niveaux d'accompagnement, les services et les points forts.",
+        "Diversification Strategy": "Pages et blocs utiles",
+        "Balanced portfolios across asset classes, sectors, and geographies.": "Le template peut accueillir une home, une page services, une FAQ et un contact sans perdre en lisibilite.",
+        "Transparent Communication": "Prise de contact rassurante",
+        "Regular reporting and open dialogue about portfolio performance and strategy.": "Le call-to-action reste visible sans casser l'image premium de l'ensemble.",
+        "How It Works": "Comment nous adaptons ce style",
+        "Our streamlined process ensures a smooth onboarding and ongoing management experience.": "Le showroom sert de base. Nous retravaillons ensuite les contenus, les preuves et les pages pour coller a l'activite.",
+        "Initial Consultation": "Choix du style",
+        "Understand your financial goals, risk tolerance, and investment preferences.": "On valide la bonne direction visuelle selon le niveau de gamme, la cible et le ton a tenir.",
+        "Strategy Development": "Adaptation du contenu",
+        "Create a customized investment strategy tailored to your specific needs.": "On remplace la demo par vos services, vos informations utiles, vos arguments et vos reperes de contact.",
+        "Portfolio Implementation": "Mise en ligne",
+        "Execute the investment strategy with careful attention to timing and allocation.": "Le site final est livre dans une version presentable, mobile et credible.",
+        "Ongoing Management": "Suivi et evolutions",
+        "Regular monitoring, rebalancing, and reporting to ensure optimal performance.": "Le modele peut ensuite evoluer avec de nouveaux blocs, ajustements ou pages supplementaires.",
+        "Client Success Stories": "La perception cote client",
+        "Hear from our satisfied clients about their investment journey with us.": "Les temoignages montrent ici comment rassurer vite avec quelques preuves sociales bien placees.",
+        "\"Working with PMS has transformed my investment strategy. Their expertise is unparalleled, and the returns have exceeded my expectations consistently.\"": "\"Le rendu fait tout de suite plus haut de gamme et plus solide. On sent une vraie structure et un meilleur niveau de presentation.\"",
+        "\"The personalized attention and transparent communication make all the difference. I feel confident about my financial future.\"": "\"Le prospect comprend mieux l'offre, les points forts et la facon de prendre contact. C'est net et rassurant.\"",
+        "\"Their risk management approach protected my portfolio during market volatility while still delivering strong returns.\"": "\"La base est ideale pour afficher une expertise patrimoniale avec une image serieuse, moderne et facile a montrer.\"",
+        "Rajesh Kumar": "Camille Durand",
+        "Priya Sharma": "Nora Benali",
+        "Amit Patel": "Julien Morel",
+        "Business Owner": "Dirigeant",
+        "Senior Executive": "Associee",
+        "Entrepreneur": "Profession liberale",
+        "Plans & Fees Overview": "Exemples de cadrage",
+        "Transparent pricing structure designed to align our success with yours.": "Ces trois blocs montrent comment le meme style peut servir une landing concise, une vitrine complete ou une version plus premium.",
+        "Essential": "Landing Essentielle",
+        "For growing portfolios": "Pour une presentation concise",
+        "2.5%": "Sur devis",
+        "Annual management fee": "Cadrage selon le besoin",
+        "Minimum investment: ₹25 Lakhs": "Hero et proposition de valeur",
+        "Quarterly portfolio reviews": "Page presentation",
+        "Online portfolio access": "Blocs services",
+        "Email support": "Contact visible",
+        "Premium": "Vitrine Signature",
+        "For serious investors": "Pour un site plus complet",
+        "2.0%": "Sur devis",
+        "Minimum investment: ₹50 Lakhs": "Hero et preuves de confiance",
+        "Monthly portfolio reviews": "Pages services",
+        "Dedicated relationship manager": "Sections expertise",
+        "Priority phone support": "Version mobile",
+        "Tax optimization strategies": "Mise a jour possible",
+        "Elite": "Showcase Premium",
+        "For high net worth individuals": "Pour un rendu plus statutaire",
+        "1.5%": "Sur devis",
+        "Minimum investment: ₹1 Crore": "Showcase premium complet",
+        "Weekly portfolio monitoring": "Pages et rubriques avancees",
+        "Senior portfolio manager": "Parcours de contact",
+        "24/7 concierge support": "Ressources et FAQ",
+        "Estate planning assistance": "Multilingue si besoin",
+        "Alternative investments access": "Base evolutive",
+        "Get Started": "Voir le brief",
+        "Most Popular": "Le plus polyvalent",
+        "Frequently Asked Questions": "Questions frequentes",
+        "Get answers to common questions about our portfolio management services.": "La FAQ montre ici comment clarifier vite les points qui freinent la prise de contact.",
+        "What is the minimum investment amount?": "Que peut-on personnaliser ?",
+        "Our minimum investment varies by plan: ₹25 Lakhs for Essential, ₹50 Lakhs for Premium, and ₹1 Crore for Elite. This ensures we can provide the level of personalized service and diversification that our clients deserve.": "Le style sert de base visuelle. Nous adaptons ensuite les textes, les offres, les pages et les informations utiles selon votre activite.",
+        "How often will I receive portfolio updates?": "Le site est-il adapte au mobile ?",
+        "Update frequency depends on your plan: Quarterly for Essential, Monthly for Premium, and Weekly monitoring for Elite clients. All clients have 24/7 online access to their portfolio performance and can request updates anytime.": "Oui. Le rendu showroom est pense pour etre montre facilement sur telephone, tablette et ordinateur.",
+        "What types of investments do you focus on?": "Peut-on ajouter des pages ensuite ?",
+        "We invest across a diversified range of asset classes including equities, fixed income, commodities, and alternative investments. Our approach is tailored to each client's risk profile and investment objectives.": "Oui. La structure permet d'ajouter de nouvelles pages, services, rubriques ou contenus selon l'evolution du besoin.",
+        "How do you ensure the security of my investments?": "Peut-on relier contact et reseaux ?",
+        "We are registered with SEBI and follow all regulatory guidelines. Your investments are held in your name with qualified custodians, and we maintain comprehensive insurance coverage. We also employ advanced cybersecurity measures to protect your data.": "Oui. Les formulaires, moyens de contact, WhatsApp ou reseaux peuvent etre relies dans une version projet.",
+        "Can I withdraw my investments anytime?": "Ce style peut-il convenir a un autre metier ?",
+        "Yes, you can request withdrawals at any time. Most withdrawals are processed within 3-5 business days, though some alternative investments may have longer redemption periods. We'll always communicate any restrictions upfront.": "Oui. Meme si cette direction est ideale pour le patrimoine ou l'expertise financiere, elle peut aussi servir a d'autres activites a forte valeur qui veulent paraitre plus statutaires.",
+        "Ready to Start Your Investment Journey?": "Un modele pret a adapter a votre cabinet",
+        "Take the first step towards securing your financial future with our expert portfolio management services.": "Nous reprenons ensuite le contenu pour en faire une vitrine plus claire, plus premium et plus credible pour votre activite.",
+        "Empowering your financial future with expertise, transparency, and unwavering trust.": "Direction showroom pour activite patrimoniale, expertise statutaire ou cabinet premium.",
+        "SEBI Registered Investment Advisor": "Showroom Ma Vitrine Online",
+        "Registration No: INA000012345": "Adaptation multi-activite sur demande",
+        "Portfolio Management": "Page hero et promesse",
+        "Wealth Planning": "Services et specialites",
+        "Risk Assessment": "FAQ et ressources",
+        "Tax Optimization": "Contact et conversion",
+        "Company": "Cabinet",
+        "About Us": "A propos",
+        "Our Team": "Equipe",
+        "Careers": "Process",
+        "Contact Info": "Contact",
+        "info@pmsinvestment.com": BRAND.email,
+        "+91 98765 43210": BRAND.phoneDisplay,
+        "Mumbai, Maharashtra": BRAND.address,
+        "Download Brochure": "Voir les modules",
+        "© 2024 PMS Investment Services. All rights reserved by ": "Adaptation showroom 2026 par ",
+        "CodesCandy": BRAND.brand,
+        "ThemeWagon": BRAND.brand,
+        "Login": "Parler du projet"
+      },
+      patches: [
+        { selector: "h1.text-5xl", mode: "html", value: "Une vitrine patrimoniale<br><span class=\"text-cyan-600\">qui inspire confiance</span>" },
+        { selector: "#about .text-3xl.font-serif.font-black.text-cyan-600", mode: "text", values: ["1", "5", "12"] },
+        { selector: "section.py-20.bg-cyan-600 button.bg-transparent", mode: "text", value: "Voir les modules" },
+        { selector: "footer ul.space-y-2.text-gray-400.font-sans li a", mode: "text", values: ["Page hero et promesse", "Services et specialites", "FAQ et ressources", "Contact et conversion", "A propos", "Equipe", "Process", "Contact"] },
+        { selector: "footer .space-y-2.text-gray-400.font-sans p", mode: "text", values: [BRAND.email, BRAND.phoneDisplay, BRAND.address] },
+        { selector: "footer .border-t.border-gray-800.mt-12.pt-8.text-center p", mode: "text", value: "Adaptation showroom 2026 par Ma Vitrine Online." }
+      ]
+    },
+    "formation-executive-premium": {
+      model: "Model 21",
+      style: "Executive Premium",
+      showcaseTitle: "Une vitrine premium pour formation executive, organisme haut de gamme, coaching expert ou offre d'accompagnement a forte valeur.",
+      showcaseText: "Le style installe une vraie presence premium avec hero fort, programme bien structure, visages incarnes et boutons qui guident vers le contact.",
+      positioning: "Hero editorial, sections programme/intervenants, rythmes visuels forts, modules de preuve et footer corporate.",
+      modulesText: "Hero, programme, intervenants, formats, FAQ, CTA final et reseaux / newsletter a recontextualiser.",
+      useCase: "Ideal pour formation executive, coaching premium, conseil en leadership, organisme expert ou offre d'accompagnement qui doit paraitre tres serieuse.",
+      replace: {
+        "Starts on 16 June 2024": "Direction executive",
+        "User Experience Conference": "Une vitrine premium pour formation executive",
+        "We offer you a new generation of task and project management system. Plan, manage and track.": "Une base ideale pour organisme premium, coach expert ou cabinet qui doit vendre un programme, une expertise et un cadre rassurant.",
+        "Buy access pass": "Voir le brief",
+        "Add to calendar": "Voir les modules",
+        "John Karter": "Session pilote",
+        "4.8 rating": "Format premium",
+        "Mariya John": "Programme signature",
+        "4.9 rating": "Contact rapide",
+        "Best Online and Offline Conferences": "Un site pense pour programme, expertise et prise de contact",
+        "Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet. recently with desktop publishing software like Aldus PageMaker": "Cette section montre comment structurer un programme, un positionnement, des intervenants et des appels a l'action avec un rendu tres premium.",
+        "Upcoming conferences": "Voir le process",
+        "The Biggest Digital Event in 2024": "Une structure qui tient sur mobile, desktop et pages dediees",
+        "Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet. recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.": "Le template est tres utile pour vendre une offre executive, des sessions, des formats d'accompagnement et un niveau de marque plus haut de gamme.",
+        "Ticket Prices": "Formats d'accompagnement",
+        "$100": "Showroom",
+        "Early birds": "Landing",
+        "Until May 20, 2022": "Cadrage initial",
+        "$150": "Showroom",
+        "Late birds": "Vitrine",
+        "After May 20, 2022": "Direction complete",
+        "Book ticket": "Demander le brief",
+        "Upcoming Conference": "Formats et modules",
+        "The Conference Construct Millennial": "Page programme et promesse",
+        "Local Business Global Event": "Bloc expertise et intervenants",
+        "Frontiers Conference Perspectives": "Page contenu et sessions",
+        "A Focus Conference Initiatives": "Bloc format premium",
+        "Science and Beyond": "Parcours et specialites",
+        "Global Event": "Bloc contact et conversion",
+        "Cultural Exchange in the Digital Age": "Page ressources et cas d'usage",
+        "Education for Tomorrow": "FAQ et informations utiles",
+        "Speech by": "Anime par",
+        "Reena John & Lorance": "Direction et accompagnement",
+        "Martin Luthar": "Expert principal",
+        "World Class Speakers": "Visages et profils",
+        "Designation": "Intervenant principal",
+        "What Our Attendees Say": "Ce que le site doit transmettre",
+        "My busy schedule leaves little, if any, time for blogging and social media. The Lorem Ipsum Company has been a huge part of helping me grow my business through.": "Le rendu inspire une expertise plus credible, un cadre plus premium et une offre plus facile a comprendre des les premieres secondes.",
+        "Jordhan Daniyel": "Nora Benali",
+        "Previous Year Highlights": "Reperes qui renforcent la credibilite",
+        "Many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form injected humour, or randomised words": "Cette zone peut servir a mettre en avant des chiffres clefs, des formats proposes ou des preuves de confiance faciles a lire.",
+        "10k+": "1 jour",
+        "Ticket confirmed": "Cadrage",
+        "16": "3",
+        "Partners": "Formats",
+        "150k+": "100%",
+        "Participants": "Mobile",
+        "Coffee Break": "Pause",
+        "Lunch Time": "Point bilan",
+        "10:00 - 10:30": "Module intermediaire",
+        "12:30 - 13:30": "Temps de respiration",
+        "Book Ticket": "Voir le module",
+        "Become a Part of the Digital Evolution!": "Un rendu premium qui se montre facilement",
+        "Homepage": "Accueil",
+        "Schedules": "Programme",
+        "Speakers": "Intervenants",
+        "Blog": "Ressources",
+        "Contact": "Contact",
+        "Documentation": "Support",
+        "Sign In": "Voir le brief",
+        "Sign Up": "Parler du projet",
+        "Home": "Accueil",
+        "Schedule": "Programme",
+        "About": "Cabinet",
+        "Sponsors": "Contact",
+        "© All rights reserved. Made by ": "Adaptation showroom 2026 par ",
+        "NextJs Templates": BRAND.brand,
+        "Distributed by ": "Showroom ",
+        "ThemeWagon": BRAND.brand,
+        "Subscribe Newsletter": "Recevoir le brief",
+        "Email address*": "Votre email"
+      },
+      hide: ["footer .flex.items-center.gap-5", "div.fixed.top-6.end-1\\/2.translate-x-1\\/2.z-50", ".dp_backto_top"],
+      patches: [
+        { selector: "header ul.hidden.lg\\:flex li a", mode: "text", values: ["Accueil", "Programme", "Intervenants", "Ressources", "Contact", "Support"] },
+        { selector: "footer ul li a", mode: "text", values: ["Accueil", "Intervenants", "Programme", "Cabinet", "Contact"] },
+        { selector: "form.newsletter-form button span", mode: "text", value: "Voir le brief" },
+        { selector: "form.newsletter-form input", mode: "attr", attr: "placeholder", value: "Votre email" },
+        { selector: "footer .col-span-5 p", mode: "text", values: ["Adaptation showroom 2026 par Ma Vitrine Online.", "Direction executive adaptee par Ma Vitrine Online."] }
+      ]
     }
   };
 
@@ -833,22 +1214,23 @@
 
   function classifyLink(anchor) {
     var text = (anchor.textContent || "").toLowerCase().trim();
-    if (/catalogue|retour/.test(text)) {
+    if (/catalogue|retour|back/.test(text)) {
       return "../index.html";
     }
-    if (/contact|book|reservation|order|demo|call|commande|reserver|privat|table/.test(text)) {
+    if (/contact|book|reservation|order|demo|call|commande|reserver|privat|table|consult|rendez|brief|parler|sign up|signup|subscribe/.test(text)) {
       return "#mvo-contact";
     }
-    if (/about|story|welcome|learn|read more|concept|apropos|a propos/.test(text)) {
+    if (/about|story|welcome|learn|read more|concept|apropos|a propos|home|homepage|cabinet/.test(text)) {
       return "#mvo-summary";
     }
-    if (/menu|service|feature|chef|gallery|news|recipe|event|module|carte|galerie|equipe|offer|dishes/.test(text)) {
+    if (/menu|service|feature|chef|gallery|news|recipe|event|module|carte|galerie|equipe|offer|dishes|pricing|plan|testimonial|testimoni|blog|speaker|schedule|agenda|programme|program|documentation|resource|ressource|faq|portfolio|video|audio|format|intervenant|offre|avis/.test(text)) {
       return "#mvo-modules";
     }
     return "#mvo-summary";
   }
 
   function rewriteLocalLinks() {
+    var slug = inferSlug();
     qa("a[href]").forEach(function (anchor) {
       var href = (anchor.getAttribute("href") || "").trim();
       if (anchor.matches(".carousel-control, .carousel-control-prev, .carousel-control-next, [data-slide], [data-bs-slide], [data-toggle], [data-bs-toggle]")) {
@@ -858,9 +1240,15 @@
         return;
       }
       if (/^https?:/i.test(href)) {
-        if (/youtube\.com|youtu\.be/.test(href)) {
-          anchor.setAttribute("href", "../index.html");
-        }
+        anchor.setAttribute("href", classifyLink(anchor));
+        return;
+      }
+      if (/^\/(?:showroom|template)\/[^/]+(?:\/.*)?$/i.test(href)) {
+        anchor.setAttribute("href", classifyLink(anchor));
+        return;
+      }
+      if (slug && (href === "/showroom/" + slug || href === "/showroom/" + slug + "/")) {
+        anchor.setAttribute("href", classifyLink(anchor));
         return;
       }
       if (href === "#0" || href === "#" || href === "" || href.indexOf(".html") !== -1) {
@@ -958,15 +1346,7 @@
     document.documentElement.setAttribute("data-mvo-model", preset.model);
   }
 
-  function start() {
-    ensureStylesheet();
-
-    var slug = inferSlug();
-    var preset = PRESETS[slug];
-    if (!preset || !document.body) {
-      return;
-    }
-
+  function applyPreset(preset) {
     document.body.classList.add("mvo-preview-ready");
     document.body.setAttribute("data-mvo-model", preset.model);
 
@@ -982,6 +1362,24 @@
     neutralizeForms();
     injectShowcase(preset);
     injectRibbon(preset);
+  }
+
+  function start() {
+    ensureStylesheet();
+
+    var slug = inferSlug();
+    var preset = PRESETS[slug];
+    if (!preset || !document.body) {
+      return;
+    }
+
+    applyPreset(preset);
+    window.setTimeout(function () {
+      applyPreset(preset);
+    }, 300);
+    window.setTimeout(function () {
+      applyPreset(preset);
+    }, 1200);
   }
 
   if (document.readyState === "loading") {
