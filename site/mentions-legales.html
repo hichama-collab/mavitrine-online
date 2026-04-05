@@ -123,69 +123,50 @@
       </div>
     </main>
     
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-shell">
+        <div class="footer-grid">
           <div class="footer-brand">
-            <a href="index.html" class="footer-logo-link" aria-label="Retour à l'accueil">
-              <img
-                class="footer-logo-image"
-                src="assets/branding/logo-light-transparent.png"
-                alt="Logo Ma Vitrine Online"
-              >
-            </a>
-            <a href="index.html" class="footer-site-name">Ma Vitrine Online</a>
-            <div class="footer-copy">
-              <span>© <span id="current-year"></span> Ma Vitrine Online</span>
-            </div>
+            <img src="assets/images/logo-mavitrine-online-footer.png" alt="Ma Vitrine Online">
+            <p>Sites vitrines premium pour activites locales et services</p>
           </div>
-
-          <div class="footer-column">
-            <span class="footer-title">Plan du site</span>
-            <div class="footer-links footer-links-column">
+          <div>
+            <h3>Navigation</h3>
+            <div class="footer-links">
               <a href="index.html#top">Accueil</a>
-              <a href="index.html#avantages">Avantages</a>
+              <a href="index.html#styles">Styles</a>
+              <a href="showroom/?lang=fr">Showroom</a>
               <a href="index.html#offres">Offres</a>
-              <a href="index.html#exemples">Exemples</a>
-              <a href="./showroom/">Showroom</a>
               <a href="index.html#contact">Contact</a>
             </div>
           </div>
-
-          <div class="footer-column">
-            <span class="footer-title">Contact</span>
-            <div class="footer-links footer-links-column">
-              <a href="index.html#contact">Contact</a>
-              <a href="mailto:hichamaifout@gmail.com">hichamaifout@gmail.com</a>
-              <a href="mentions-legales.html">Mentions légales</a>
-            </div>
-            <div class="footer-social-buttons footer-social-icons">
-              <a
-                class="social-button social-icon-button"
-                href="https://www.instagram.com/hichamaifout/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Instagram"
-                title="Instagram"
-              >
-                <i class="fa fa-instagram"></i>
-              </a>
-              <a
-                class="social-button social-icon-button"
-                href="https://www.facebook.com/hicham.aifout"
-                target="_blank"
-                rel="noopener"
-                aria-label="Facebook"
-                title="Facebook"
-              >
-                <i class="fa fa-facebook"></i>
-              </a>
+          <div>
+            <h3>Contact</h3>
+            <div class="footer-links">
+              <a href="mailto:contact@mavitrineonline.fr">contact@mavitrineonline.fr</a>
+              <a href="tel:+33611097655">06 11 09 76 55</a>
+              <a href="tel:+33758661650">07 58 66 16 50</a>
+              <a href="https://wa.me/33611097655" target="_blank" rel="noreferrer">WhatsApp</a>
             </div>
           </div>
+          <div>
+            <h3>Legal</h3>
+            <div class="footer-links">
+              <a href="mentions-legales.html">Mentions legales</a>
+              <a href="https://www.instagram.com/hichamaifout/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.facebook.com/hicham.aifout" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="mentions-legales.html">Mentions legales</a>
+          <p>&copy; <span id="current-year"></span> Ma Vitrine Online</p>
         </div>
       </div>
     </footer>
 
-    <script src="assets/js/custom.js"></script>
+    <script>
+      document.getElementById("current-year").textContent = String(new Date().getFullYear());
+    </script>
   </body>
 </html>

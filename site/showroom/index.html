@@ -354,6 +354,60 @@
         color: #fff;
       }
 
+      .footer {
+        padding: 64px 0 28px;
+        background: rgba(5, 8, 15, 0.82);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .footer-wrap {
+        width: min(1320px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr 1fr;
+        gap: 24px;
+      }
+
+      .footer-brand img {
+        width: 190px;
+        margin-bottom: 18px;
+      }
+
+      .footer-brand p,
+      .footer h3,
+      .footer a,
+      .footer-bottom p {
+        color: rgba(255, 255, 255, 0.84);
+      }
+
+      .footer h3 {
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 10px;
+      }
+
+      .footer-links a:hover,
+      .footer-bottom a:hover {
+        color: #fff;
+      }
+
+      .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 20px 8px 0;
+        margin-top: 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
       @media (max-width: 1100px) {
         .header {
           flex-direction: column;
@@ -364,6 +418,10 @@
         .header-actions,
         .nav {
           justify-content: center;
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
 
@@ -407,6 +465,15 @@
 
         .nav-arrow.prev { left: 0; }
         .nav-arrow.next { right: 0; }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
     </style>
   </head>
@@ -435,6 +502,38 @@
       </section>
       <div id="sections-root"></div>
     </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../assets/images/logo-mavitrine-online-footer.png" alt="Ma Vitrine Online">
+            <p id="footer-note"></p>
+          </div>
+          <div>
+            <h3 id="footer-nav-title"></h3>
+            <div class="footer-links" id="footer-nav-links"></div>
+          </div>
+          <div>
+            <h3 id="footer-contact-title"></h3>
+            <div class="footer-links">
+              <a href="mailto:contact@mavitrineonline.fr">contact@mavitrineonline.fr</a>
+              <a href="tel:+33611097655">06 11 09 76 55</a>
+              <a href="tel:+33758661650">07 58 66 16 50</a>
+              <a href="https://wa.me/33611097655" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div>
+            <h3 id="footer-social-title"></h3>
+            <div class="footer-links" id="footer-social-links"></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="../mentions-legales.html" id="footer-legal-link">Mentions legales</a>
+          <p>&copy; <span id="current-year"></span> Ma Vitrine Online</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./shared/showroom-content.js"></script>
     <script>
@@ -483,6 +582,27 @@
           document.getElementById("hero-text").textContent = labels.intro;
           document.getElementById("home-link").textContent = labels.backHome;
           document.getElementById("home-link").setAttribute("href", homeHref());
+          document.getElementById("footer-note").textContent =
+            currentLang === "fr"
+              ? "Sites vitrines premium pour activites locales et services"
+              : "Premium websites for local businesses and service activities";
+          document.getElementById("footer-nav-title").textContent = currentLang === "fr" ? "Navigation" : "Navigation";
+          document.getElementById("footer-contact-title").textContent = "Contact";
+          document.getElementById("footer-social-title").textContent = currentLang === "fr" ? "Rythme digital" : "Digital touchpoints";
+          document.getElementById("footer-legal-link").textContent = currentLang === "fr" ? "Mentions legales" : "Legal notice";
+          document.getElementById("current-year").textContent = String(new Date().getFullYear());
+          document.getElementById("footer-nav-links").innerHTML = [
+            '<a href="' + homeHref() + '#top">' + (currentLang === "fr" ? "Accueil" : "Home") + "</a>",
+            '<a href="' + homeHref() + '#styles">' + (currentLang === "fr" ? "Styles" : "Styles") + "</a>",
+            '<a href="./?lang=' + currentLang + '">Showroom</a>',
+            '<a href="' + homeHref() + '#offres">' + (currentLang === "fr" ? "Offres" : "Pricing") + "</a>",
+            '<a href="' + homeHref() + '#contact">Contact</a>'
+          ].join("");
+          document.getElementById("footer-social-links").innerHTML = [
+            '<a href="#' + content.categories[0].anchor + '">Instagram</a>',
+            '<a href="#' + content.categories[1].anchor + '">Facebook</a>',
+            '<a href="./?lang=' + currentLang + '">Showroom</a>'
+          ].join("");
         }
 
         function buildSections() {
