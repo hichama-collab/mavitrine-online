@@ -209,7 +209,7 @@ window.MVO_SITE_CONTENT = {
         desktopImage: "assets/images/examples/niagara/niagara-pc.png",
         mobileImage: "assets/images/examples/niagara/niagara-mobile.png",
         sitePath: "niagara-cafe/fr/index.html",
-        adminHref: "#admin",
+        adminHref: "https://www.niagara-cafe.fr/administration/",
         ctaPrimary: "Visualiser le site Niagara",
         ctaSecondary: "Visualiser son espace d'administration"
       },
@@ -276,9 +276,9 @@ window.MVO_SITE_CONTENT = {
         text: "Une base claire pour savoir comment démarrer, ce qui est inclus et quelle formule correspond le mieux à votre besoin.",
         cards: [
           {
-            title: "Site vitrine",
+            title: "Création de site",
             price: "À partir de 900€",
-            text: "Pour lancer une présence claire, crédible et déjà bien structurée.",
+            text: "Pour lancer un site vitrine clair, crédible et proprement structuré dès le départ.",
             points: [
               "Direction visuelle adaptée à votre activité",
               "Structure mobile soignée",
@@ -288,28 +288,28 @@ window.MVO_SITE_CONTENT = {
             cta: "Obtenir mon site"
           },
           {
-            title: "Site + administration",
-            price: "Sur devis",
-            text: "Pour gérer ensuite votre carte, vos contenus ou vos informations clés plus facilement.",
+            title: "Gestion du site & hébergement",
+            price: "95€ / mois",
+            text: "Pour garder le site en ligne, suivi et cohérent dans le temps sans friction.",
             points: [
-              "Espace d’administration selon le besoin",
-              "Mise à jour plus simple des contenus",
-              "Base pensée pour votre organisation",
-              "Accompagnement à la prise en main"
+              "Gestion courante du site",
+              "Hébergement inclus",
+              "Corrections et ajustements légers",
+              "Suivi mensuel plus serein"
             ],
-            cta: "Parler administration"
+            cta: "Ajouter la gestion"
           },
           {
-            title: "Suivi mensuel",
-            price: "95€ / mois",
-            text: "Pour garder un site vivant, cohérent et régulièrement ajusté.",
+            title: "Gestion des réseaux sociaux",
+            price: "100€ / mois",
+            text: "Pour garder Facebook et Instagram actifs, cohérents et alignés avec votre image.",
             points: [
-              "Corrections et ajustements",
-              "Mises à jour de contenus",
-              "Suivi plus serein",
-              "Cohérence générale du site"
+              "Gestion de Facebook",
+              "Gestion d'Instagram",
+              "Présence plus régulière",
+              "Image plus cohérente en ligne"
             ],
-            cta: "Ajouter le suivi"
+            cta: "Ajouter les réseaux"
           },
           {
             title: "Demande personnalisée",
@@ -448,7 +448,7 @@ window.MVO_SITE_CONTENT = {
         desktopImage: "assets/images/examples/niagara/niagara-pc.png",
         mobileImage: "assets/images/examples/niagara/niagara-mobile.png",
         sitePath: "niagara-cafe/en/index.html",
-        adminHref: "#admin",
+        adminHref: "https://www.niagara-cafe.fr/administration/",
         ctaPrimary: "View Niagara website",
         ctaSecondary: "View its admin area"
       },
@@ -515,9 +515,9 @@ window.MVO_SITE_CONTENT = {
         text: "A clear starting point to understand what is included and which package fits your needs best.",
         cards: [
           {
-            title: "Website",
+            title: "Website creation",
             price: "Starting from €900",
-            text: "To launch a clear, credible and already well-structured online presence.",
+            text: "To launch a clear, credible brochure website with a solid structure from day one.",
             points: [
               "Visual direction adapted to your business",
               "Polished mobile structure",
@@ -527,28 +527,28 @@ window.MVO_SITE_CONTENT = {
             cta: "Get my website"
           },
           {
-            title: "Website + admin",
-            price: "Custom quote",
-            text: "For teams who want to manage menus, content or key information more easily afterwards.",
+            title: "Website management & hosting",
+            price: "€95 / month",
+            text: "To keep the website online, maintained and coherent over time without added friction.",
             points: [
-              "Admin area when relevant",
-              "Simpler content updates",
-              "Structure aligned with your workflow",
-              "Guidance for handoff"
+              "Ongoing website management",
+              "Hosting included",
+              "Light fixes and adjustments",
+              "Smoother monthly follow-up"
             ],
-            cta: "Discuss admin"
+            cta: "Add management"
           },
           {
-            title: "Monthly follow-up",
-            price: "€95 / month",
-            text: "To keep the website alive, coherent and updated over time.",
+            title: "Social media management",
+            price: "€100 / month",
+            text: "To keep Facebook and Instagram active, aligned and visually coherent with your business.",
             points: [
-              "Corrections and refinements",
-              "Content updates",
-              "Smoother follow-up",
-              "Overall site consistency"
+              "Facebook management",
+              "Instagram management",
+              "More regular presence",
+              "Stronger online consistency"
             ],
-            cta: "Add follow-up"
+            cta: "Add social media"
           },
           {
             title: "Custom request",
