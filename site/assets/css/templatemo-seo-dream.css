@@ -241,12 +241,13 @@ section[id] {
 }
 
 .brand-logo-main {
-  height: 74px;
+  height: 68px;
+  max-width: min(100%, 280px);
 }
 
 .brand-logo-footer,
 .brand-logo-legal {
-  height: 66px;
+  height: 58px;
 }
 
 .brand-logo-footer {
@@ -474,14 +475,14 @@ section[id] {
 
 .hero-visual {
   position: relative;
-  min-height: 620px;
+  min-height: auto;
 }
 
 .hero-visual-main {
   position: relative;
   display: grid;
-  gap: 18px;
-  padding: 26px;
+  gap: 0;
+  padding: 22px;
   border-radius: 38px;
   background:
     linear-gradient(150deg, rgba(12, 23, 34, 0.94), rgba(19, 37, 50, 0.9)),
@@ -595,7 +596,7 @@ section[id] {
 }
 
 .styles-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .social-grid {
@@ -1270,6 +1271,10 @@ section[id] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .styles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .example-stats {
     grid-template-columns: 1fr;
   }
@@ -1332,12 +1337,13 @@ section[id] {
   }
 
   .brand-logo-main {
-    height: 58px;
+    height: 56px;
+    max-width: min(100%, 230px);
   }
 
   .brand-logo-footer,
   .brand-logo-legal {
-    height: 54px;
+    height: 50px;
   }
 
   .header-actions {

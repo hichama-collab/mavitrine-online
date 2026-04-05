@@ -178,14 +178,6 @@
       .join("");
   }
 
-  function renderProblem(page) {
-    document.getElementById("problem-grid").innerHTML = page.problem.cards
-      .map(function (card) {
-        return '<article class="problem-card"><h2>' + card[0] + "</h2><p>" + card[1] + "</p></article>";
-      })
-      .join("");
-  }
-
   function renderHeading(targetId, section) {
     document.getElementById(targetId).innerHTML =
       '<span class="section-kicker">' + section.kicker + "</span>" +
@@ -236,7 +228,6 @@
           "</div>" +
           '<div class="style-actions">' +
           '<a class="button button-primary" href="' + buildShowroomUrl(style.demo) + '">' + section.demo + "</a>" +
-          '<a class="button button-secondary" href="' + buildShowroomUrl(style.brief) + '">' + section.brief + "</a>" +
           '<a class="button button-secondary" href="#contact">' + section.choose + "</a>" +
           "</div>" +
           "</div>" +
@@ -282,8 +273,8 @@
       }).join("") +
       "</div>" +
       '<div class="style-actions">' +
-      '<a class="button button-primary" href="' + buildShowroomUrl("index.html") + '">' + section.ctaPrimary + "</a>" +
-      '<a class="button button-secondary" href="#contact">' + section.ctaSecondary + "</a>" +
+      '<a class="button button-primary" href="' + buildShowroomUrl(section.sitePath || "index.html") + '">' + section.ctaPrimary + "</a>" +
+      '<a class="button button-secondary" href="' + (section.adminHref || "#admin") + '">' + section.ctaSecondary + "</a>" +
       "</div>" +
       "</div>" +
       "</article>";
@@ -516,7 +507,6 @@
     setMeta(currentLang);
     renderNav(page);
     renderHero(page);
-    renderProblem(page);
     renderSectors(page);
     renderBenefits(page);
     renderStyles(page);

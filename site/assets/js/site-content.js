@@ -24,106 +24,100 @@ window.MVO_SITE_CONTENT = {
   },
   styles: [
     {
-      id: "cabinets-conseil",
-      label: { fr: "Cabinet & conseil", en: "Professional services" },
-      name: { fr: "Cabinets & conseil", en: "Legal & consulting" },
+      id: "food",
+      label: { fr: "Food", en: "Food" },
+      name: { fr: "Premium Landing", en: "Premium Landing" },
       description: {
-        fr: "Une direction claire et statutaire pour cabinet, conseil, expertise et activité fondée sur la confiance.",
-        en: "A clear, structured direction for legal firms, consulting and trust-based expertise."
+        fr: "Une base solide pour restaurant, groupe, concept structuré ou adresse qui doit tout de suite paraître sérieuse, claire et bien installée.",
+        en: "A strong base for restaurants, groups and structured concepts that need to feel clear, credible and established from the first screen."
       },
       tags: {
-        fr: ["Conseil", "Confiance", "Expertise"],
-        en: ["Consulting", "Trust", "Expertise"]
+        fr: ["Restaurant", "Landing", "Conversion"],
+        en: ["Restaurant", "Landing", "Conversion"]
       },
-      desktop: "showroom/strategic-consulting/images/about-image-01.jpg",
-      mobile: "showroom/cabinet-conseil-impact/assets/Illustration2.png",
-      demo: "strategic-consulting/index.html",
-      brief: "strategic-consulting/index.html#mvo-summary"
+      desktop: "showroom/restaurant-1.0.0/assets/img/dishes-hero.png",
+      mobile: "showroom/restaurant-1.0.0/assets/img/restaurant-about-us.png",
+      demo: "restaurant-1.0.0/index.html"
     },
     {
       id: "sante-dentaire",
       label: { fr: "Santé & dentaire", en: "Health & dental" },
-      name: { fr: "Santé & dentaire", en: "Health & dental" },
+      name: { fr: "Cabinet Dentaire Lumineux", en: "Cabinet Dentaire Lumineux" },
       description: {
-        fr: "Une base rassurante et lisible pour clinique, centre de santé, dentaire ou pratique médicale.",
-        en: "A reassuring, highly readable base for clinics, healthcare and dental practices."
+        fr: "Une direction lumineuse et rassurante pour cabinet dentaire, activité de santé ou structure d'accueil qui doit inspirer confiance sans froideur.",
+        en: "A bright and reassuring direction for dental practices, healthcare services and welcoming professional environments."
       },
       tags: {
-        fr: ["Clinique", "Medical", "Lisible"],
-        en: ["Clinic", "Medical", "Clear"]
+        fr: ["Dentaire", "Confiance", "Clarté"],
+        en: ["Dental", "Trust", "Clarity"]
       },
-      desktop: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp",
-      mobile: "showroom/centre-medical-confiance/img/hero.jpg",
-      demo: "cabinet-sante-premium/index.html",
-      brief: "cabinet-sante-premium/index.html#mvo-summary"
+      desktop: "showroom/cabinet-dentaire-lumineux/images/bg_1.jpg",
+      mobile: "showroom/cabinet-dentaire-lumineux/images/about.jpg",
+      demo: "cabinet-dentaire-lumineux/index.html"
     },
     {
       id: "beaute-bien-etre",
       label: { fr: "Beauté & bien-être", en: "Beauty & wellness" },
-      name: { fr: "Beauté & bien-être", en: "Beauty & wellness" },
+      name: { fr: "Esthetique Signature", en: "Esthetique Signature" },
       description: {
-        fr: "Un rendu plus image, plus doux et plus premium pour institut, skincare, esthétique ou bien-être.",
-        en: "A softer, more premium visual direction for beauty studios, skincare and wellness businesses."
+        fr: "Une ambiance douce et premium pour institut, skincare, esthétique ou bien-être, avec une image plus désirable et un contact mieux valorisé.",
+        en: "A soft premium atmosphere for beauty, skincare and wellness businesses, with a more desirable image and stronger contact flow."
       },
       tags: {
-        fr: ["Skin care", "Premium", "Image"],
-        en: ["Skincare", "Premium", "Image"]
+        fr: ["Esthétique", "Premium", "Image"],
+        en: ["Beauty", "Premium", "Image"]
       },
-      desktop: "showroom/beaute-signature/images/templatemo-futuristic-girl.jpg",
+      desktop: "showroom/esthetique-signature/img/hero.jpg",
       mobile: "showroom/esthetique-signature/img/hero.jpg",
-      demo: "beaute-signature/index.html",
-      brief: "beaute-signature/index.html#mvo-summary"
+      demo: "esthetique-signature/index.html"
     },
     {
-      id: "commerce-proximite",
-      label: { fr: "Commerce & proximité", en: "Retail & local" },
-      name: { fr: "Commerce & proximité", en: "Retail & local" },
+      id: "retail",
+      label: { fr: "Retail", en: "Retail" },
+      name: { fr: "Pixie Ecommerce", en: "Pixie Ecommerce" },
       description: {
-        fr: "Une structure directe pour boutique, commerce local, concept store ou activité de proximité.",
-        en: "A direct structure for boutiques, local shops, concept stores and nearby service businesses."
+        fr: "Une vitrine e-commerce claire pour boutique, concept store, click and collect ou commerce qui veut montrer ses produits proprement.",
+        en: "A clear e-commerce storefront for boutiques, concept stores, click-and-collect and product-led local businesses."
       },
       tags: {
-        fr: ["Local", "Conversion", "Rapide"],
-        en: ["Local", "Conversion", "Fast"]
+        fr: ["Boutique", "Catalogue", "Local"],
+        en: ["Retail", "Catalog", "Local"]
       },
-      desktop: "showroom/boutique-moderne/assets/img/banner_img_01.jpg",
+      desktop: "showroom/pixie-ecommerce/assets/images/banner-bg.jpg",
       mobile: "showroom/pixie-ecommerce/assets/images/about-us.jpg",
-      demo: "boutique-moderne/index.html",
-      brief: "boutique-moderne/index.html#mvo-summary"
+      demo: "pixie-ecommerce/index.html"
     },
     {
-      id: "studio-business",
-      label: { fr: "Studio, business & formation", en: "Studio, business & training" },
-      name: { fr: "Studio, business & formation", en: "Studio, business & training" },
+      id: "business",
+      label: { fr: "Business", en: "Business" },
+      name: { fr: "Gestion Patrimoine Premium", en: "Gestion Patrimoine Premium" },
       description: {
-        fr: "Une base expressive pour studio, portfolio, formation premium, activité indépendante ou univers de marque.",
-        en: "An expressive base for studios, portfolios, premium training and independent businesses."
+        fr: "Un univers plus statutaire pour patrimoine, finance, conseil haut de gamme ou activité qui vend d'abord de la confiance et du niveau perçu.",
+        en: "A more elevated universe for wealth management, finance, advisory and trust-first premium businesses."
       },
       tags: {
-        fr: ["Studio", "Portfolio", "Formation"],
-        en: ["Studio", "Portfolio", "Training"]
+        fr: ["Patrimoine", "Conseil", "Premium"],
+        en: ["Wealth", "Advisory", "Premium"]
       },
-      desktop: "showroom/experience-visuelle/img/infinite-loop-01.jpg",
-      mobile: "showroom/formation-executive-premium/images/hero/hero.png",
-      demo: "experience-visuelle/index.html",
-      brief: "experience-visuelle/index.html#mvo-summary"
+      desktop: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg",
+      mobile: "showroom/gestion-patrimoine-premium/images/pms-img-2.jpg",
+      demo: "gestion-patrimoine-premium/index.html"
     },
     {
-      id: "food-hospitality",
-      label: { fr: "Food & hospitality", en: "Food & hospitality" },
-      name: { fr: "Food & hospitality", en: "Food & hospitality" },
+      id: "events",
+      label: { fr: "Events", en: "Events" },
+      name: { fr: "Club Evenements", en: "Club Evenements" },
       description: {
-        fr: "Des directions vivantes et gourmandes pour restaurant, brunch, café, bar ou lieu hospitality.",
-        en: "Lively, image-led directions for restaurants, brunch concepts, cafes, bars and hospitality venues."
+        fr: "Une base plus rythmée pour club, lieu, programmation, soirées ou événementiel avec agenda, ambiance et billets à mettre en avant.",
+        en: "A more energetic base for clubs, venues, recurring events and programming-led businesses."
       },
       tags: {
-        fr: ["Restaurant", "Cafe", "Mobile"],
-        en: ["Restaurant", "Cafe", "Mobile"]
+        fr: ["Événements", "Programmation", "Billetterie"],
+        en: ["Events", "Programming", "Tickets"]
       },
-      desktop: "showroom/yummy-red-1.0.0/assets/img/hero-img.png",
-      mobile: "showroom/wave-cafe/img/special-01.jpg",
-      demo: "yummy-red-1.0.0/index.html",
-      brief: "yummy-red-1.0.0/index.html#mvo-summary"
+      desktop: "showroom/club-evenements/assets/images/show-events-01.jpg",
+      mobile: "showroom/club-evenements/assets/images/event-page-01.jpg",
+      demo: "club-evenements/index.html"
     }
   ],
   languages: {
@@ -141,21 +135,21 @@ window.MVO_SITE_CONTENT = {
       ],
       hero: {
         eyebrow: "Sites vitrines pour activités exigeantes",
-        title: "Un site qui donne confiance et génère des clients dès la première visite",
-        text: "Vous avez une activité. Nous la transformons en un site clair, professionnel et crédible, pensé pour rassurer vite et déclencher le contact.",
+        title: "Une vitrine claire pour mieux présenter votre activité et déclencher le contact",
+        text: "Nous vous accompagnons pour choisir la bonne direction visuelle, structurer votre contenu intelligemment et mettre en ligne un site qui inspire confiance dès les premiers instants.",
         ctaPrimary: "Obtenir mon site",
         ctaSecondary: "Voir un exemple pour mon activité",
         points: [
-          "Livraison rapide",
-          "Site optimisé mobile",
-          "Adapté à votre activité",
-          "Facile à mettre à jour"
+          "Direction visuelle adaptée",
+          "Architecture pensée pour évoluer",
+          "Rendu propre sur mobile",
+          "Mise en ligne rapide"
         ],
         heroCards: [
-          { title: "Conseil", copy: "Cabinet et expertise", image: "assets/images/prompt/legal-premium.avif" },
-          { title: "Santé", copy: "Médical et dentaire", image: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp" },
-          { title: "Beauté", copy: "Image premium", image: "assets/images/prompt/beauty-premium.avif" },
-          { title: "Local", copy: "Commerce et services", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
+          { title: "Food", copy: "Restaurants et concepts food", image: "showroom/restaurant-1.0.0/assets/img/dishes-hero.png" },
+          { title: "Santé", copy: "Cabinets et activités de confiance", image: "showroom/cabinet-dentaire-lumineux/images/bg_1.jpg" },
+          { title: "Beauté", copy: "Image premium et désirable", image: "showroom/esthetique-signature/img/hero.jpg" },
+          { title: "Business", copy: "Conseil, patrimoine, expertise", image: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg" }
         ]
       },
       problem: {
@@ -175,92 +169,93 @@ window.MVO_SITE_CONTENT = {
         ]
       },
       sectors: {
-        kicker: "Pour qui ?",
-        title: "Un site vitrine adapté à plusieurs métiers",
-        text: "Vous ne choisissez pas juste un style. Vous choisissez une base que nous transformons en un site vendeur pour votre activité.",
+        kicker: "Accompagnement",
+        title: "Des directions pensées pour des activités très différentes",
+        text: "Chaque univers peut être retravaillé pour votre métier, votre niveau de gamme, vos objectifs et la façon dont vous voulez être perçu.",
         cards: [
-          ["Cabinets & conseil", "Une image claire, statutaire et rassurante."],
-          ["Santé & dentaire", "Des structures lisibles qui inspirent confiance rapidement."],
-          ["Beauté & esthétique", "Une présence plus premium, plus image, plus désirable."],
-          ["Commerce & proximité", "Une vitrine simple, efficace et agréable à consulter."],
-          ["Food & hospitality", "Un rendu vivant, lisible et fluide sur mobile."],
-          ["Immobilier & services premium", "Une présence plus visuelle, plus haut de gamme et plus crédible."]
+          ["Food", "Présenter une carte, une ambiance et des CTA qui donnent envie d’agir."],
+          ["Santé & dentaire", "Rassurer vite avec une image claire, propre et professionnelle."],
+          ["Beauté & bien-être", "Montrer un univers plus premium, plus désirable et mieux cadré."],
+          ["Retail", "Mettre en avant produits, collections et informations utiles sans friction."],
+          ["Business", "Structurer une offre sérieuse, crédible et orientée prise de contact."],
+          ["Événements", "Valoriser programmation, ambiance, billetterie ou privatisation."]
         ],
-        cta: "Voir les styles adaptés"
+        cta: "Découvrir les directions"
       },
       benefits: {
         kicker: "Pourquoi ça fonctionne",
-        title: "Pensé pour ce que vos visiteurs regardent vraiment",
-        text: "Vos visiteurs veulent comprendre rapidement votre activité, voir vos points forts et savoir comment vous contacter.",
+        title: "Pensé pour ce que vos visiteurs veulent comprendre en quelques secondes",
+        text: "Le bon site ne répète pas des promesses vagues. Il montre vite ce que vous faites, pourquoi cela inspire confiance et comment passer à l’action.",
         items: [
-          ["Une lecture fluide sur téléphone", "Le site reste net, rassurant et très lisible sur mobile."],
-          ["Les informations utiles visibles tout de suite", "Prestations, horaires, contact et preuves de confiance restent accessibles dès le premier écran."],
-          ["Un contenu facile à faire évoluer", "La base reste propre pour faire vivre pages, services, langues ou informations utiles."],
-          ["Une image alignée avec votre métier", "Le ton, les visuels et la structure suivent votre niveau de gamme et votre secteur."]
+          ["Message plus clair", "Vos visiteurs comprennent plus vite votre activité, votre positionnement et la valeur de votre offre."],
+          ["Contact plus simple", "Téléphone, WhatsApp, réservation ou demande de devis restent visibles au bon moment."],
+          ["Structure plus crédible", "Le site donne une impression plus sérieuse, plus soignée et mieux maîtrisée."],
+          ["Base plus évolutive", "Pages, contenus, langues ou sections métier peuvent grandir avec votre activité."]
         ]
       },
       stylesSection: {
         kicker: "Styles / modèles",
-        title: "Des styles adaptés à plusieurs activités",
-        text: "Chaque carte correspond à une grande catégorie d’activité. Vous ouvrez la direction la plus proche, puis nous l’adaptons à votre métier.",
+        title: "Des directions visuelles prêtes à être retravaillées pour votre activité",
+        text: "Voici plusieurs bases concrètes pour démarrer vite avec une vraie direction. Nous reprenons ensuite le modèle le plus pertinent pour le transformer en vitrine cohérente avec votre business.",
         sectionCta: "Voir le showroom complet",
-        brief: "Voir le brief",
-        demo: "Ouvrir la démo",
+        demo: "Voir le modèle",
         choose: "Choisir ce style"
       },
       showroom: {
         kicker: "Showroom",
         title: "Explorez nos modèles par secteur",
-        text: "Comparez plusieurs styles, ouvrez les démos et choisissez une direction visuelle à adapter à votre activité, vos contenus et votre positionnement.",
+        text: "Le showroom permet de comparer plusieurs directions, d’ouvrir les démos et d’identifier plus vite le style qui servira le mieux votre activité.",
         note: "Simple à consulter sur téléphone comme sur ordinateur.",
         cta: "Ouvrir le showroom"
       },
       example: {
-        kicker: "Exemple concret",
-        title: "Un exemple de site restaurant pensé pour rassurer vite et faire agir",
-        text: "Voici un exemple de direction réalisée pour une adresse food: page d'accueil claire, accès rapide à la carte, à la réservation, à la privatisation et à la prise de contact.",
+        kicker: "Dernière vitrine restaurant",
+        title: "Niagara Café: une vitrine plus complète, plus lisible et plus vendeuse",
+        text: "Sur ce projet restaurant, l’idée était de réunir dans un même parcours l’ambiance du lieu, l’accès à la carte, les informations utiles, les CTA d’action et une logique d’administration simple à faire vivre.",
         label: "Niagara Café",
-        lead: "Un front plus vendeur et plus lisible, avec une direction visuelle maîtrisée de bout en bout.",
+        lead: "Une présentation pensée pour mieux montrer le lieu, mieux guider le visiteur et mieux faire ressortir les actions importantes.",
         points: [
-          "SEO local propre avec title, meta description, canonical, hreflang et balises sociales",
-          "CTA visibles dès le hero: réserver, appeler, privatiser",
-          "Carte, galerie, contact et pages locales pensées pour le référencement"
+          "Parcours complet avec hero, carte, privatisation, galerie, contact et navigation claire",
+          "CTA visibles sans alourdir la page: réserver, appeler, demander une privatisation",
+          "Base pensée pour faire évoluer la carte et les contenus sans casser le rendu"
         ],
         stats: [
-          ["Front visible", "Accueil, carte, galerie, contact, version FR / EN"],
-          ["Objectif", "Rassurer vite, faciliter l'action et clarifier l'offre"],
-          ["Format", "Site vitrine premium avec parcours restaurant complet"]
+          ["Contenu visible", "Accueil, carte, ambiance, privatisation, contact et version mobile"],
+          ["Objectif", "Donner envie de découvrir le lieu et faciliter le passage à l’action"],
+          ["Gestion", "Administration prévue pour mettre à jour contenus et éléments clés"]
         ],
-        ctaPrimary: "Voir le showroom",
-        ctaSecondary: "Demander ce niveau de site"
+        sitePath: "restaurant-1.0.0/index.html",
+        adminHref: "#admin",
+        ctaPrimary: "Visualiser le site",
+        ctaSecondary: "Visualiser son espace d'administration"
       },
       content: {
         kicker: "Gestion du contenu",
-        title: "Vos contenus restent simples à mettre à jour",
-        text: "Pages, prestations, informations utiles, horaires, coordonnées ou langue supplémentaire : la base reste propre, lisible et facile à faire évoluer.",
+        title: "Une architecture prévue pour rester propre quand votre activité évolue",
+        text: "Nous ne pensons pas seulement la page d’accueil. Nous cadrons aussi une base capable d’accueillir vos contenus, vos mises à jour et vos évolutions sans repartir de zéro.",
         points: [
-          "Ajout ou modification rapide",
-          "Lecture claire côté visiteur",
-          "Version FR / EN prête si besoin",
-          "Structure évolutive"
+          "Ajout de sections ou pages sans déséquilibrer le site",
+          "Contenus structurés pour rester lisibles",
+          "Version FR / EN si besoin",
+          "Évolution plus simple dans le temps"
         ],
-        panelTitle: "Une base propre côté gestion",
-        panelItems: ["Prestations", "Services", "Pages", "Contact", "Langues", "Horaires", "Rendez-vous", "FAQ"],
-        resultTitle: "Un rendu clair côté visiteur",
+        panelTitle: "Une base de gestion pensée pour durer",
+        panelItems: ["Prestations", "Services", "Pages", "Contact", "Langues", "Horaires", "Menus", "FAQ"],
+        resultTitle: "Un rendu net côté visiteur",
         resultRows: [
-          ["Services", "Blocs clairs et rassurants"],
-          ["Pages", "Informations visibles immédiatement"],
-          ["Langues", "FR par défaut, EN prête si besoin"],
-          ["Contact", "WhatsApp, téléphone, email et CTA rapides"]
+          ["Structure", "Sections claires et plus faciles à parcourir"],
+          ["Informations", "Les éléments utiles ressortent sans surcharge"],
+          ["Langues", "FR par défaut, EN prête quand nécessaire"],
+          ["Contact", "Téléphone, WhatsApp, email et CTA accessibles"]
         ]
       },
       admin: {
         kicker: "Gestion / admin",
-        title: "Une partie administration pensée pour faire vivre le site sans friction",
-        text: "Au-delà du design, le vrai niveau pro se voit aussi côté gestion. Nous pouvons prévoir une interface simple pour modifier une carte, des formules, des prix, des contenus FR / EN ou des sections métier sans tout casser.",
+        title: "Un espace d’administration peut être prévu pour garder la main sur l’essentiel",
+        text: "Quand le projet le demande, nous pouvons intégrer une interface claire pour mettre à jour une carte, des prix, des offres, des blocs métier ou des contenus FR / EN sans dépendre d’un chantier technique à chaque changement.",
         cardTitle: "Exemple de gestion de carte",
         badge: "Interface éditoriale",
-        toolbar: ["Enregistrer directement", "Télécharger menu.json", "Auto-enregistrer"],
+        toolbar: ["Enregistrer", "Exporter les données", "Auto-sauvegarde"],
         fields: [
           ["Titre FR", "Entrées"],
           ["Titre EN", "Starters"],
@@ -269,7 +264,7 @@ window.MVO_SITE_CONTENT = {
           ["Description EN", "Creamy burrata, heirloom tomatoes, homemade pesto"],
           ["Statut", "Prêt à publier"]
         ],
-        footer: "Idéal pour restaurants, cartes, catalogues, prestations ou contenus à faire évoluer régulièrement."
+        footer: "Utile pour restaurants, catalogues, offres, prestations ou toute activité qui doit ajuster ses contenus régulièrement."
       },
       social: {
         kicker: "Réseaux sociaux",
@@ -291,92 +286,80 @@ window.MVO_SITE_CONTENT = {
       },
       process: {
         kicker: "Process",
-        title: "Un process simple, rapide et sans friction",
-        text: "Vous avancez rapidement, sans tunnel compliqué ni allers-retours inutiles.",
+        title: "On vous accompagne pour choisir le bon style, structurer la vitrine et lancer vite",
+        text: "Le travail se fait avec méthode: on cadre la bonne direction, on construit une architecture intelligente, puis on réalise une mise en ligne rapide et soignée.",
         steps: [
-          ["Choix du style", "Vous choisissez un style adapté à votre activité."],
-          ["Adaptation à votre activité", "Services, informations utiles, visuels, coordonnées et pages clés."],
-          ["Mise en ligne rapide", "Un site fluide, mobile et prêt à être montré."]
+          ["Choix de la direction", "Nous vous aidons à retenir le style et l’univers les plus cohérents avec votre activité."],
+          ["Architecture de la vitrine", "Nous organisons vos contenus, vos pages et vos priorités dans une structure claire et évolutive."],
+          ["Réalisation et lancement", "Le site est produit rapidement, proprement, puis prêt à être montré et enrichi."]
         ]
       },
       pricing: {
         kicker: "Offres",
-        title: "Des offres simples et transparentes",
-        text: "Vous savez ce qui est inclus, ce qui est optionnel et comment avancer rapidement selon votre besoin.",
+        title: "Nos formules les plus demandées",
+        text: "Une base claire pour savoir comment démarrer, ce qui est inclus et quelle formule correspond le mieux à votre besoin.",
         cards: [
           {
             title: "Site vitrine",
             price: "À partir de 900€",
-            text: "Un site qui donne confiance et attire des clients.",
+            text: "Pour lancer une présence claire, crédible et déjà bien structurée.",
             points: [
               "Direction visuelle adaptée à votre activité",
-              "Version mobile soignée",
-              "Contenus essentiels mis en avant",
-              "Base propre et évolutive"
+              "Structure mobile soignée",
+              "Pages et contenus essentiels cadrés",
+              "Base propre pour évoluer ensuite"
             ],
             cta: "Obtenir mon site"
           },
           {
-            title: "Gestion",
+            title: "Suivi mensuel",
             price: "95€ / mois",
-            text: "Un site suivi, cohérent et mis à jour dans le temps.",
+            text: "Pour garder un site vivant, cohérent et régulièrement ajusté.",
             points: [
-              "Mises à jour simples",
               "Corrections et ajustements",
-              "Suivi tranquille",
-              "Cohérence générale"
+              "Mises à jour de contenus",
+              "Suivi plus serein",
+              "Cohérence générale du site"
             ],
-            cta: "Demander la gestion"
+            cta: "Ajouter le suivi"
           },
           {
-            title: "Réseaux sociaux",
-            price: "100€ / mois",
-            text: "Une présence régulière et cohérente pour prolonger l’image du site.",
-            points: [
-              "Actualités et nouveautés",
-              "Image cohérente",
-              "Publications simples",
-              "Contact facilité"
-            ],
-            cta: "Ajouter les réseaux"
-          },
-          {
-            title: "Sur mesure",
+            title: "Pack visibilité",
             price: "Sur devis",
-            text: "Si le projet demande une structure, des pages ou un cadrage plus spécifique, nous montons un package adapté.",
+            text: "Pour aller plus loin avec administration, réseaux ou besoins métier spécifiques.",
             points: [
-              "Cadrage selon le besoin",
-              "Périmètre personnalisé",
-              "Fonctionnalités ou pages spécifiques",
-              "Accompagnement plus poussé"
+              "Espace d’administration si besoin",
+              "Réseaux sociaux et cohérence d’image",
+              "Pages ou modules complémentaires",
+              "Cadrage selon vos priorités"
             ],
             cta: "Parler du besoin"
           }
         ]
       },
       proof: {
-        kicker: "Crédibilité",
-        title: "Un parcours plus vendeur, du premier écran jusqu’au contact",
-        text: "Le site ne doit pas seulement être beau. Il doit clarifier l’offre, rassurer vite et faciliter l’action sur mobile comme sur desktop.",
+        kicker: "Évolution",
+        title: "Le site marque le début du parcours, puis on le fait évoluer avec vous",
+        text: "L’objectif n’est pas seulement de mettre une vitrine en ligne. C’est de poser une base solide pour mieux présenter votre activité aujourd’hui et l’améliorer dans le temps.",
         cards: [
           [
-            "Avant / après",
-            "Avant: message flou et positionnement ambigu. Après: promesse claire, activité comprise, CTA direct."
+            "Premier niveau de confiance",
+            "Le site pose un cadre plus propre pour présenter votre activité, votre niveau de service et vos points forts."
           ],
           [
-            "Résultat visible",
-            "Le visiteur comprend vite ce que vous faites, pourquoi vous êtes crédible et comment vous contacter."
+            "Améliorations continues",
+            "Nous pouvons ensuite faire évoluer pages, contenus, administration, langues ou parcours selon les retours du terrain."
           ],
           [
-            "Bloc crédibilité",
-            "Livraison rapide, mobile-first, adapté à votre activité et facile à mettre à jour."
+            "Présence plus solide",
+            "Vous avancez avec une base sérieuse pour mieux vendre, mieux rassurer et mieux faire vivre votre activité en ligne."
           ]
         ]
       },
       contact: {
         kicker: "Contact",
         title: "Parlons de votre projet",
-        text: "Envoyez l’essentiel. Nous le transformons en un site clair, crédible et prêt à être montré.",
+        text: "Envoyez l’essentiel. Nous vous aidons à transformer cela en une vitrine claire, crédible et bien plus agréable à présenter.",
         actionsTitle: "Pour démarrer rapidement",
         actions: [
           "Nom de l’activité",
@@ -388,7 +371,7 @@ window.MVO_SITE_CONTENT = {
         primaryCta: "Demander un site",
         whatsapp: "WhatsApp",
         email: "Email",
-        footerNote: "Sites vitrines premium pour activités locales et services"
+        footerNote: "Sites vitrines conçus pour mieux présenter votre activité et générer des contacts"
       },
       footer: {
         navTitle: "Navigation",
@@ -412,21 +395,21 @@ window.MVO_SITE_CONTENT = {
       ],
       hero: {
         eyebrow: "Websites for demanding businesses",
-        title: "A website that builds trust and converts visitors into clients from the first visit",
-        text: "You run a business. We turn it into a clear, professional and credible website designed to reassure quickly and generate contact.",
+        title: "A clear storefront to present your business better and generate contact",
+        text: "We help you choose the right visual direction, structure your content intelligently and launch a website that feels trustworthy from the first seconds.",
         ctaPrimary: "Get my website",
         ctaSecondary: "See an example for my business",
         points: [
-          "Fast delivery",
-          "Mobile-first",
-          "Adapted to your business",
-          "Easy to update"
+          "Adapted visual direction",
+          "Scalable structure",
+          "Strong mobile experience",
+          "Fast launch"
         ],
         heroCards: [
-          { title: "Professional", copy: "Consulting and services", image: "assets/images/prompt/legal-premium.avif" },
-          { title: "Health", copy: "Medical and dental", image: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp" },
-          { title: "Beauty", copy: "Premium image", image: "assets/images/prompt/beauty-premium.avif" },
-          { title: "Local", copy: "Retail and services", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
+          { title: "Food", copy: "Restaurants and food concepts", image: "showroom/restaurant-1.0.0/assets/img/dishes-hero.png" },
+          { title: "Health", copy: "Practices and trust-based services", image: "showroom/cabinet-dentaire-lumineux/images/bg_1.jpg" },
+          { title: "Beauty", copy: "Premium and desirable image", image: "showroom/esthetique-signature/img/hero.jpg" },
+          { title: "Business", copy: "Advisory, finance, expertise", image: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg" }
         ]
       },
       problem: {
@@ -437,92 +420,93 @@ window.MVO_SITE_CONTENT = {
         ]
       },
       sectors: {
-        kicker: "Who is it for?",
-        title: "A brochure website adapted to multiple business types",
-        text: "You are not only choosing a style. You are choosing a base that we turn into a sales-ready website for your business.",
+        kicker: "Support",
+        title: "Visual directions built for very different business types",
+        text: "Each direction can be reworked to match your trade, your level of positioning, your goals and the way you want to be perceived.",
         cards: [
-          ["Legal & consulting", "Clear, professional and trust-building."],
-          ["Health & dental", "Clean structures that inspire instant confidence."],
-          ["Beauty & aesthetics", "Premium, image-focused and desirable."],
-          ["Retail & local shops", "Simple, effective and easy to browse."],
-          ["Food & hospitality", "Lively, mobile-friendly and clear."],
-          ["Real estate & premium services", "A more upscale and visual presence."]
+          ["Food", "Present menus, atmosphere and action points in a more persuasive way."],
+          ["Health & dental", "Build trust quickly with a clear and professional image."],
+          ["Beauty & wellness", "Create a more premium, desirable and polished presence."],
+          ["Retail", "Highlight products, collections and useful information without friction."],
+          ["Business", "Structure a serious offer designed to generate contact."],
+          ["Events", "Promote programming, venue mood, ticketing or private bookings."]
         ],
-        cta: "View matching styles"
+        cta: "Discover the directions"
       },
       benefits: {
         kicker: "Why it works",
-        title: "Built around what visitors actually look for",
-        text: "Visitors want to understand your activity quickly, see what matters and know how to contact you.",
+        title: "Built around what visitors need to understand within seconds",
+        text: "The right website does not repeat vague claims. It shows what you do, why it feels credible and how to take action quickly.",
         items: [
-          ["Smooth on mobile", "The structure stays refined, readable and reassuring on smaller screens."],
-          ["Key information visible instantly", "Services, opening hours, contact details and trust markers remain obvious from the first screen."],
-          ["Easy-to-update content", "The base remains clean enough to evolve with pages, services and languages."],
-          ["Visual direction aligned with your business", "Tone, imagery and layout follow your industry and positioning."]
+          ["Clearer message", "Visitors understand your business, positioning and offer faster."],
+          ["Simpler contact path", "Phone, WhatsApp, booking or quote requests stay visible when they matter."],
+          ["Stronger credibility", "The whole structure feels more serious, more polished and more intentional."],
+          ["Scalable base", "Pages, content, languages and business sections can grow over time."]
         ]
       },
       stylesSection: {
         kicker: "Styles",
-        title: "Styles for multiple business types",
-        text: "Each card represents a main business category. You open the closest direction first, then we adapt it to your business.",
+        title: "Visual directions ready to be reworked for your business",
+        text: "These are concrete starting points to move faster with a real design direction. We then adapt the most relevant one to your business.",
         sectionCta: "Open full showroom",
-        brief: "View brief",
-        demo: "Open demo",
+        demo: "View model",
         choose: "Choose this style"
       },
       showroom: {
         kicker: "Showroom",
         title: "Explore templates by business category",
-        text: "Compare different styles, open demos and choose a visual direction adapted to your business, your content and your positioning.",
+        text: "The showroom helps you compare directions, open demos and identify the style that best supports your business.",
         note: "Easy to browse on phone or desktop.",
         cta: "Open showroom"
       },
       example: {
-        kicker: "Concrete example",
-        title: "A restaurant website example designed to reassure quickly and drive action",
-        text: "Here is one direction built for a food business: clear homepage, quick access to the menu, booking, private events and contact.",
+        kicker: "Latest restaurant storefront",
+        title: "Niagara Cafe: a more complete, readable and persuasive restaurant website",
+        text: "For this restaurant project, the goal was to bring atmosphere, menu access, useful information, action points and simple admin logic into one coherent journey.",
         label: "Niagara Café",
-        lead: "A more persuasive front-end, with structure, clarity and stronger action points.",
+        lead: "A presentation designed to show the venue better, guide visitors more clearly and highlight the right actions.",
         points: [
-          "Clean local SEO with title, meta description, canonical, hreflang and social tags",
-          "Visible CTAs from the hero: book, call, private events",
-          "Menu, gallery, contact and local pages designed for discoverability"
+          "Full journey with hero, menu, private events, gallery, contact and clear navigation",
+          "Visible CTAs without clutter: book, call, request private events",
+          "A base designed to evolve menu content and business sections cleanly"
         ],
         stats: [
-          ["Visible front-end", "Homepage, menu, gallery, contact, FR / EN version"],
-          ["Goal", "Build trust fast, drive action and clarify the offer"],
-          ["Format", "Premium brochure website with a full restaurant flow"]
+          ["Visible content", "Homepage, menu, atmosphere, private events, contact and mobile version"],
+          ["Goal", "Create desire and make action easier"],
+          ["Management", "Admin layer planned for key content updates"]
         ],
-        ctaPrimary: "Open showroom",
-        ctaSecondary: "Request this level of website"
+        sitePath: "restaurant-1.0.0/index.html",
+        adminHref: "#admin",
+        ctaPrimary: "View the website",
+        ctaSecondary: "View its admin area"
       },
       content: {
         kicker: "Content management",
-        title: "Your content stays easy to update",
-        text: "Services, pages, practical information, opening hours, contact details or additional languages: everything stays clean and easy to update.",
+        title: "A structure designed to stay clean as your business grows",
+        text: "We do not only design the homepage. We also define a base that can support your content, your updates and future changes without starting over.",
         points: [
-          "Quick edits",
-          "Clear reading for visitors",
-          "FR / EN ready",
-          "Scalable structure"
+          "New pages or sections without breaking the balance",
+          "Content structured to stay readable",
+          "FR / EN ready if needed",
+          "Simpler evolution over time"
         ],
-        panelTitle: "A clean editing base",
-        panelItems: ["Services", "Pages", "Contact", "Languages", "Opening hours", "Bookings", "FAQ", "Testimonials"],
-        resultTitle: "A clear client-facing result",
+        panelTitle: "A management base built to last",
+        panelItems: ["Services", "Pages", "Contact", "Languages", "Opening hours", "Menus", "FAQ", "Offers"],
+        resultTitle: "A clean visitor-facing result",
         resultRows: [
-          ["Services", "Clear and trust-building sections"],
-          ["Pages", "Key information visible instantly"],
+          ["Structure", "Clear sections that are easier to browse"],
+          ["Information", "Useful details stand out without overload"],
           ["Languages", "FR by default, EN ready when needed"],
-          ["Contact", "WhatsApp, phone, email and quick CTA"]
+          ["Contact", "Phone, WhatsApp, email and visible CTAs"]
         ]
       },
       admin: {
         kicker: "Admin / editing",
-        title: "An administration layer designed to keep the site alive without friction",
-        text: "Beyond design, real professionalism also shows on the editing side. We can plan a simple interface to manage a menu, offers, prices, FR / EN content or business sections without breaking the website.",
+        title: "An admin layer can be planned so you keep control over what matters",
+        text: "When the project needs it, we can integrate a clear editing interface to update a menu, prices, offers, FR / EN content or business sections without turning every change into a technical task.",
         cardTitle: "Menu management example",
         badge: "Editorial interface",
-        toolbar: ["Save directly", "Download menu.json", "Autosave"],
+        toolbar: ["Save", "Export data", "Autosave"],
         fields: [
           ["FR title", "Starters"],
           ["EN title", "Starters"],
@@ -531,7 +515,7 @@ window.MVO_SITE_CONTENT = {
           ["EN description", "Creamy burrata, heirloom tomatoes, homemade pesto"],
           ["Status", "Ready to publish"]
         ],
-        footer: "Ideal for restaurants, menus, catalogues, services or any content that needs regular updates."
+        footer: "Useful for restaurants, catalogues, offers, services or any business that needs regular content updates."
       },
       social: {
         kicker: "Social presence",
@@ -553,83 +537,71 @@ window.MVO_SITE_CONTENT = {
       },
       process: {
         kicker: "Process",
-        title: "A simple, fast and frictionless process",
-        text: "You move quickly without a complicated funnel or unnecessary back and forth.",
+        title: "We help you choose the right style, define the structure and launch quickly",
+        text: "The work follows a clear method: choose the right direction, define a smart architecture, then produce a fast and polished launch.",
         steps: [
-          ["Choose the style", "You choose a style adapted to your business."],
-          ["Adapt it to your business", "Services, useful information, visuals, contact details and key pages."],
-          ["Fast launch", "A smooth, mobile-first website ready to be shown."]
+          ["Choose the direction", "We help you select the style and visual universe that fit your business best."],
+          ["Build the structure", "We organize your content, pages and priorities into a clear scalable storefront."],
+          ["Produce and launch", "The website is delivered quickly, cleanly and ready to be shown."]
         ]
       },
       pricing: {
         kicker: "Pricing",
-        title: "Simple and transparent pricing",
-        text: "You know what is included, what is optional and how to move forward quickly.",
+        title: "Most requested packages",
+        text: "A clear starting point to understand what is included and which package fits your needs best.",
         cards: [
           {
             title: "Website",
             price: "Starting from €900",
-            text: "A website that builds trust and attracts clients.",
+            text: "To launch a clear, credible and already well-structured online presence.",
             points: [
               "Visual direction adapted to your business",
-              "Polished mobile version",
-              "Essential content highlighted",
-              "Clean and scalable base"
+              "Polished mobile structure",
+              "Essential pages and content framed properly",
+              "Clean base to evolve later"
             ],
             cta: "Get my website"
           },
           {
-            title: "Management",
+            title: "Monthly follow-up",
             price: "€95 / month",
-            text: "An updated, consistent website over time.",
+            text: "To keep the website alive, coherent and updated over time.",
             points: [
-              "Simple updates",
               "Corrections and refinements",
-              "Peaceful follow-up",
-              "Overall consistency"
+              "Content updates",
+              "Smoother follow-up",
+              "Overall site consistency"
             ],
-            cta: "Request management"
+            cta: "Add follow-up"
           },
           {
-            title: "Social presence",
-            price: "€100 / month",
-            text: "A consistent social presence to extend the image of your website.",
-            points: [
-              "News and updates",
-              "Consistent image",
-              "Simple posting rhythm",
-              "Easier contact"
-            ],
-            cta: "Add social presence"
-          },
-          {
-            title: "Custom package",
+            title: "Visibility package",
             price: "Custom quote",
-            text: "If your project needs a more specific structure, scope or setup, we create a tailored package.",
+            text: "To go further with admin, social presence or business-specific needs.",
             points: [
-              "Scope matched to your needs",
-              "Tailored project structure",
-              "Specific pages or features",
-              "More hands-on support"
+              "Admin layer when needed",
+              "Social presence and brand consistency",
+              "Extra pages or business modules",
+              "Scope aligned with your priorities"
             ],
             cta: "Discuss your needs"
           }
         ]
       },
       proof: {
-        kicker: "Credibility",
-        title: "A more persuasive flow from first screen to contact",
-        text: "The structure now speaks more directly to the client: problem, solution, result and direct call to action.",
+        kicker: "Evolution",
+        title: "The website is the start of the journey, then we can improve it with you",
+        text: "The goal is not only to put a storefront online. It is to create a strong base that presents your business better today and can evolve over time.",
         cards: [
-          ["Before / after", "Before: vague message and unclear offer. After: clear promise, clear business fit and direct CTA."],
-          ["Visible result", "Visitors quickly understand what you do, why they can trust you and how to contact you."],
-          ["Credibility block", "Fast delivery, mobile-first structure, adapted to your business and easy to update."]
+          ["First layer of trust", "The website creates a cleaner frame for your activity, service level and strengths."],
+          ["Continuous improvements", "We can then improve pages, content, admin, languages or flows based on real-world feedback."],
+          ["Stronger presence", "You move forward with a serious base to present, sell and run your business online more effectively."]
         ]
       },
       contact: {
         kicker: "Contact",
         title: "Let's discuss your project",
-        text: "Send the essentials. We turn them into a clear, credible website ready to be shown.",
+        text: "Send the essentials. We help turn them into a clearer, more credible storefront for your business.",
         actionsTitle: "To get started, you can send",
         actions: [
           "Business name",
@@ -641,7 +613,7 @@ window.MVO_SITE_CONTENT = {
         primaryCta: "Request a website",
         whatsapp: "WhatsApp",
         email: "Email",
-        footerNote: "Premium websites for local businesses and service activities"
+        footerNote: "Websites designed to present your business clearly and generate contact"
       },
       footer: {
         navTitle: "Navigation",
