@@ -229,55 +229,28 @@ section[id] {
 
 .brand-logo {
   display: block;
-  width: 176px;
+  width: auto;
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  object-position: left center;
 }
 
-.brand-lockup {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
+.brand-logo-main {
+  height: 74px;
 }
 
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 52px;
-  min-height: 52px;
-  padding: 0 14px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #f5a524, #ef6c1b);
-  color: #0d1720;
-  font-size: 0.92rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  box-shadow: 0 14px 28px rgba(239, 108, 27, 0.24);
+.brand-logo-footer,
+.brand-logo-legal {
+  height: 66px;
 }
 
-.brand-name {
-  color: #ffffff;
-  font-family: "Fraunces", serif;
-  font-size: clamp(1.05rem, 1.4vw, 1.32rem);
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 1.1;
+.brand-logo-footer {
+  max-width: min(100%, 260px);
 }
 
-.brand-lockup.is-footer .brand-mark,
-.brand-lockup.is-legal .brand-mark {
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 16px;
-  font-size: 0.84rem;
-}
-
-.brand-lockup.is-footer .brand-name,
-.brand-lockup.is-legal .brand-name {
-  font-size: clamp(1rem, 1.3vw, 1.2rem);
+.brand-logo-legal {
+  max-width: min(100%, 300px);
 }
 
 .nav {
@@ -967,7 +940,7 @@ section[id] {
   margin-bottom: 18px;
 }
 
-.footer-brand .brand-lockup {
+.footer-brand .brand-logo {
   max-width: 100%;
 }
 
@@ -1075,20 +1048,13 @@ section[id] {
     min-height: 74px;
   }
 
-  .brand-lockup {
-    gap: 10px;
+  .brand-logo-main {
+    height: 58px;
   }
 
-  .brand-mark {
-    min-width: 44px;
-    min-height: 44px;
-    padding: 0 12px;
-    border-radius: 14px;
-    font-size: 0.78rem;
-  }
-
-  .brand-name {
-    font-size: 1rem;
+  .brand-logo-footer,
+  .brand-logo-legal {
+    height: 54px;
   }
 
   .header-actions {
