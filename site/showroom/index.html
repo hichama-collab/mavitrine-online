@@ -3,33 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ma Vitrine Online | Showroom par categories</title>
-    <meta
-      name="description"
-      content="Showroom Ma Vitrine Online avec tous les modeles ranges dans 6 categories claires pour choisir une base adaptable a chaque activite."
-    >
+    <title>Ma Vitrine Online | Showroom</title>
+    <meta name="description" content="Showroom Ma Vitrine Online avec 6 categories claires et un grand coverflow pour presenter les modeles.">
     <link rel="icon" href="./shared/logo-ma-vitrine-online.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
       :root {
-        --ink: #17242d;
-        --ink-soft: rgba(23, 36, 45, 0.72);
-        --line: rgba(23, 36, 45, 0.12);
-        --panel: rgba(255, 255, 255, 0.86);
-        --panel-deep: #142331;
-        --accent: #3dd2ca;
-        --accent-deep: #18939c;
-        --sand: #f3ede3;
-        --shadow: 0 30px 80px rgba(11, 19, 27, 0.14);
+        --bg-1: #0c0d14;
+        --bg-2: #151725;
+        --ink: rgba(255, 255, 255, 0.94);
+        --ink-soft: rgba(255, 255, 255, 0.72);
+        --line: rgba(255, 255, 255, 0.12);
+        --accent: #79d7ff;
+        --accent-soft: #41d8cf;
       }
 
       * { box-sizing: border-box; }
-
       html { scroll-behavior: smooth; }
 
       body {
@@ -37,40 +28,30 @@
         font-family: "Manrope", sans-serif;
         color: var(--ink);
         background:
-          radial-gradient(circle at top left, rgba(61, 210, 202, 0.18), transparent 26%),
-          radial-gradient(circle at 85% 15%, rgba(255, 219, 184, 0.24), transparent 20%),
-          linear-gradient(180deg, #fbfdfc 0%, #f5f2ed 52%, #eef2f1 100%);
+          radial-gradient(circle at center, #1f2140 0%, var(--bg-2) 35%, var(--bg-1) 100%);
         overflow-x: hidden;
       }
 
       a { color: inherit; text-decoration: none; }
+      button { font: inherit; }
       img { display: block; max-width: 100%; }
-      h1, h2, h3, h4 { margin: 0; font-family: "Fraunces", serif; letter-spacing: -0.02em; }
+      h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; letter-spacing: -0.02em; }
       p { margin: 0; color: var(--ink-soft); line-height: 1.7; }
 
-      .shell {
-        width: min(1320px, calc(100% - 32px));
-        margin: 0 auto;
-      }
-
-      .topbar {
-        position: sticky;
+      .header {
+        position: fixed;
         top: 0;
-        z-index: 40;
-        padding: 18px 0;
-        backdrop-filter: blur(16px);
-      }
-
-      .topbar-card {
+        left: 0;
+        right: 0;
+        z-index: 20;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 18px;
-        padding: 14px 18px;
-        border: 1px solid rgba(255, 255, 255, 0.34);
-        border-radius: 999px;
-        background: rgba(20, 35, 49, 0.86);
-        box-shadow: 0 20px 40px rgba(10, 18, 28, 0.18);
+        gap: 20px;
+        padding: 16px 24px;
+        background: rgba(10, 12, 20, 0.76);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .brand {
@@ -81,396 +62,279 @@
       }
 
       .brand img {
-        width: 42px;
-        height: 42px;
+        width: 166px;
+        height: auto;
+        object-fit: contain;
       }
 
-      .brand-copy {
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        color: #fff;
-      }
-
-      .brand-copy strong {
-        font-size: 0.96rem;
-        line-height: 1;
-      }
-
-      .brand-copy span {
-        margin-top: 3px;
-        color: rgba(255, 255, 255, 0.68);
-        font-size: 0.72rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-      }
-
-      .topnav {
+      .nav {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: center;
       }
 
-      .topnav a {
+      .nav a {
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 0.92rem;
+        font-weight: 700;
+        padding: 8px 0;
+      }
+
+      .nav a:hover { color: #fff; }
+
+      .header-actions {
         display: inline-flex;
         align-items: center;
-        min-height: 40px;
-        padding: 0 14px;
-        border-radius: 999px;
-        color: rgba(255, 255, 255, 0.78);
-        font-size: 0.88rem;
-        font-weight: 800;
+        gap: 12px;
       }
 
-      .topnav a:hover {
+      .lang-switch {
+        display: inline-flex;
+        gap: 4px;
+        padding: 4px;
+        border-radius: 999px;
         background: rgba(255, 255, 255, 0.08);
+      }
+
+      .lang-switch button {
+        min-width: 42px;
+        min-height: 38px;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.72);
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      .lang-switch button.is-active {
+        background: #fff;
+        color: #11131c;
+      }
+
+      .home-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
         color: #fff;
+        font-weight: 700;
       }
 
       .hero {
-        padding: 18px 0 34px;
+        min-height: 100vh;
+        padding: 132px 0 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .hero-card,
-      .intro-card,
-      .category-card,
-      .detail-card {
-        border: 1px solid var(--line);
-        border-radius: 32px;
-        background: var(--panel);
-        box-shadow: var(--shadow);
+      .hero-inner {
+        width: min(1600px, calc(100% - 32px));
+        text-align: center;
       }
 
-      .hero-card {
-        position: relative;
-        overflow: hidden;
-        padding: 36px;
-        background:
-          radial-gradient(circle at 100% 0%, rgba(61, 210, 202, 0.12), transparent 22%),
-          radial-gradient(circle at 0% 100%, rgba(248, 211, 171, 0.24), transparent 28%),
-          rgba(255, 255, 255, 0.82);
-      }
-
-      .hero-kicker {
+      .eyebrow {
         display: inline-flex;
         align-items: center;
         min-height: 38px;
         padding: 0 14px;
         border-radius: 999px;
-        background: rgba(61, 210, 202, 0.12);
-        color: var(--accent-deep);
-        font-size: 0.76rem;
-        font-weight: 800;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.76);
+        text-transform: uppercase;
         letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      .hero-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-        gap: 28px;
-        margin-top: 24px;
-      }
-
-      .hero-copy h1 {
-        font-size: clamp(2.7rem, 5.2vw, 5.4rem);
-        line-height: 0.93;
-        margin-bottom: 16px;
-      }
-
-      .hero-copy p {
-        max-width: 68ch;
-        font-size: 1.03rem;
-      }
-
-      .hero-stats {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 14px;
-        margin-top: 26px;
-      }
-
-      .hero-stats article {
-        padding: 18px;
-        border-radius: 24px;
-        background: rgba(255, 255, 255, 0.9);
-        border: 1px solid var(--line);
-      }
-
-      .hero-stats strong {
-        display: block;
-        margin-bottom: 7px;
-        font-size: 1rem;
-      }
-
-      .hero-side {
-        display: grid;
-        gap: 14px;
-      }
-
-      .intro-card {
-        padding: 22px 22px 20px;
-      }
-
-      .intro-card strong {
-        display: inline-flex;
-        align-items: center;
-        min-height: 34px;
-        padding: 0 12px;
-        border-radius: 999px;
-        background: var(--panel-deep);
-        color: #fff;
-        font-size: 0.8rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .intro-card p {
-        margin-top: 14px;
-      }
-
-      .category-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .category-links a {
-        display: inline-flex;
-        align-items: center;
-        min-height: 42px;
-        padding: 0 14px;
-        border-radius: 999px;
-        background: #fff;
-        border: 1px solid var(--line);
+        font-size: 0.75rem;
         font-weight: 800;
-        font-size: 0.92rem;
       }
 
-      .category-links a:hover {
-        border-color: rgba(24, 147, 156, 0.28);
-        color: var(--accent-deep);
+      .hero h1 {
+        margin: 22px auto 16px;
+        max-width: 16ch;
+        font-size: clamp(3rem, 7vw, 5.8rem);
+        line-height: 0.94;
       }
 
-      .showroom {
-        display: grid;
-        gap: 32px;
-        padding-bottom: 48px;
+      .hero p {
+        max-width: 66ch;
+        margin: 0 auto;
+        font-size: 1.04rem;
       }
 
-      .category-card {
-        padding: 28px;
+      .category-section {
+        min-height: 100vh;
+        padding: 112px 0 54px;
+        display: flex;
+        align-items: center;
       }
 
-      .category-head {
-        display: grid;
-        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
-        gap: 18px;
-        align-items: end;
+      .section-inner {
+        width: min(1800px, calc(100% - 28px));
+        margin: 0 auto;
       }
 
-      .category-head h2 {
-        font-size: clamp(2rem, 3vw, 3rem);
+      .section-copy {
+        text-align: center;
+        margin-bottom: 34px;
+      }
+
+      .section-copy h2 {
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
         margin-bottom: 10px;
       }
 
-      .category-subtypes {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 14px;
-      }
-
-      .category-subtypes span,
-      .detail-tags span {
-        display: inline-flex;
-        align-items: center;
-        min-height: 34px;
-        padding: 0 12px;
-        border-radius: 999px;
-        background: rgba(23, 36, 45, 0.06);
-        font-size: 0.84rem;
-        font-weight: 700;
-      }
-
-      .category-focus {
-        padding: 18px 20px;
-        border-radius: 24px;
-        background: rgba(20, 35, 49, 0.95);
-        color: rgba(255, 255, 255, 0.82);
-      }
-
-      .category-focus strong {
-        display: block;
-        color: #fff;
-        margin-bottom: 8px;
-        font-size: 0.95rem;
-      }
-
-      .category-stage {
-        display: grid;
-        grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-        gap: 20px;
-        margin-top: 24px;
-        align-items: center;
+      .section-copy p {
+        max-width: 60ch;
+        margin: 0 auto;
       }
 
       .coverflow-shell {
         position: relative;
-        min-height: 470px;
-        padding: 24px 86px 34px;
-        border-radius: 30px;
-        background:
-          radial-gradient(circle at top right, rgba(61, 210, 202, 0.14), transparent 22%),
-          linear-gradient(180deg, #162534 0%, #101c28 100%);
-        overflow: hidden;
+        min-height: 690px;
       }
 
-      .coverflow-track {
+      .coverflow-stage {
         position: relative;
-        height: 390px;
-        perspective: 1600px;
+        width: 100%;
+        height: 690px;
+        perspective: 1800px;
         transform-style: preserve-3d;
       }
 
       .coverflow-item {
         position: absolute;
-        top: 26px;
+        top: 110px;
         left: 50%;
-        width: min(320px, calc(100vw - 160px));
-        cursor: pointer;
+        width: min(430px, calc(100vw - 140px));
+        padding: 0;
+        border: 0;
+        background: transparent;
         transform-style: preserve-3d;
-        transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 320ms ease;
+        cursor: pointer;
+        transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 240ms ease;
       }
 
-      .coverflow-item article {
+      .coverflow-card {
         overflow: hidden;
-        border-radius: 28px;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.34);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 24px 56px rgba(0, 0, 0, 0.36);
       }
 
-      .coverflow-item img {
+      .coverflow-card img {
         width: 100%;
-        aspect-ratio: 4 / 5;
+        aspect-ratio: 5 / 6;
         object-fit: cover;
       }
 
-      .coverflow-item .caption {
-        padding: 16px 16px 18px;
+      .coverflow-meta {
+        padding: 14px 14px 16px;
+        text-align: left;
       }
 
-      .coverflow-item .caption strong,
-      .coverflow-item .caption span {
+      .coverflow-meta strong {
         display: block;
-      }
-
-      .coverflow-item .caption strong {
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
       }
 
-      .coverflow-item .caption span {
+      .coverflow-meta span {
+        display: block;
         margin-top: 6px;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.66);
         font-size: 0.9rem;
       }
 
-      .coverflow-item.is-active article {
-        box-shadow: 0 36px 90px rgba(0, 0, 0, 0.46);
+      .coverflow-reflection {
+        width: 100%;
+        height: 220px;
+        margin-top: 12px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(0,0,0,0));
+        transform: scaleY(-1);
+        opacity: 0.2;
+        filter: blur(2px);
       }
 
-      .coverflow-nav {
+      .coverflow-item.is-active .coverflow-card {
+        box-shadow: 0 34px 80px rgba(0, 0, 0, 0.5);
+      }
+
+      .nav-arrow {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        z-index: 2;
-        width: 52px;
-        height: 52px;
-        border: 0;
+        z-index: 3;
+        width: 62px;
+        height: 62px;
+        margin-top: -18px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.16);
+        border: 2px solid rgba(185, 212, 255, 0.9);
+        background: rgba(255, 255, 255, 0.08);
         color: #fff;
-        font-size: 1.65rem;
+        font-size: 2.1rem;
         cursor: pointer;
-        backdrop-filter: blur(10px);
       }
 
-      .coverflow-nav.prev { left: 20px; }
-      .coverflow-nav.next { right: 20px; }
+      .nav-arrow.prev { left: 18px; }
+      .nav-arrow.next { right: 18px; }
 
-      .coverflow-dots {
+      .dots {
         position: absolute;
         left: 50%;
         bottom: 18px;
         transform: translateX(-50%);
         display: flex;
-        gap: 8px;
+        gap: 10px;
+        z-index: 3;
       }
 
-      .coverflow-dots button {
-        width: 11px;
-        height: 11px;
+      .dots button {
+        width: 12px;
+        height: 12px;
         border: 0;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.34);
+        background: rgba(255, 255, 255, 0.28);
         cursor: pointer;
       }
 
-      .coverflow-dots button.is-active {
-        background: var(--accent);
+      .dots button.is-active {
+        background: rgba(255, 255, 255, 0.92);
       }
 
-      .detail-card {
-        padding: 26px;
-        min-height: 470px;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
+      .active-panel {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(760px, calc(100% - 60px));
+        text-align: center;
+        z-index: 3;
       }
 
-      .detail-overline {
+      .active-panel h3 {
+        font-size: clamp(2rem, 3vw, 3.3rem);
+        margin-bottom: 8px;
+      }
+
+      .active-panel p {
+        margin: 0 auto;
+        max-width: 60ch;
+      }
+
+      .active-actions {
         display: inline-flex;
-        align-items: center;
-        min-height: 38px;
-        padding: 0 14px;
-        border-radius: 999px;
-        background: rgba(61, 210, 202, 0.12);
-        color: var(--accent-deep);
-        font-size: 0.78rem;
-        font-weight: 800;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      .detail-card h3 {
-        font-size: clamp(1.8rem, 2.6vw, 2.6rem);
-        line-height: 1;
-      }
-
-      .detail-style {
-        font-size: 1rem;
-        font-weight: 800;
-        color: var(--ink);
-      }
-
-      .detail-tags {
-        display: flex;
         flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .detail-actions {
-        display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
-        margin-top: auto;
+        margin-top: 18px;
       }
 
-      .btn {
+      .active-actions a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -480,343 +344,292 @@
         font-weight: 800;
       }
 
-      .btn-primary {
-        background: linear-gradient(135deg, var(--accent), #82e4dc);
+      .active-actions .primary {
+        background: linear-gradient(135deg, var(--accent-soft), var(--accent));
+        color: #041019;
       }
 
-      .btn-secondary {
-        background: #fff;
+      .active-actions .secondary {
         border: 1px solid var(--line);
-      }
-
-      .count-badge {
-        display: inline-flex;
-        align-items: center;
-        min-height: 38px;
-        padding: 0 14px;
-        border-radius: 999px;
-        background: rgba(23, 36, 45, 0.06);
-        font-weight: 800;
-      }
-
-      .footer-note {
-        padding: 0 0 50px;
-      }
-
-      .footer-note .intro-card {
-        background: rgba(20, 35, 49, 0.96);
-      }
-
-      .footer-note .intro-card strong,
-      .footer-note .intro-card p {
         color: #fff;
       }
 
-      .footer-note .intro-card p {
-        color: rgba(255, 255, 255, 0.76);
-      }
-
-      @media (max-width: 1160px) {
-        .hero-grid,
-        .category-head,
-        .category-stage {
-          grid-template-columns: 1fr;
+      @media (max-width: 1100px) {
+        .header {
+          flex-direction: column;
+          align-items: stretch;
         }
 
-        .hero-stats {
-          grid-template-columns: 1fr;
+        .brand,
+        .header-actions,
+        .nav {
+          justify-content: center;
         }
       }
 
       @media (max-width: 760px) {
-        .shell {
-          width: min(100% - 20px, 1320px);
+        .header {
+          padding: 12px 14px;
         }
 
-        .topbar-card,
-        .hero-card,
-        .intro-card,
-        .category-card,
-        .detail-card {
-          border-radius: 24px;
+        .brand img {
+          width: 138px;
         }
 
-        .topbar-card {
-          border-radius: 26px;
-          align-items: flex-start;
-          flex-direction: column;
+        .nav {
+          gap: 12px 16px;
         }
 
-        .coverflow-shell {
-          min-height: 440px;
-          padding: 22px 56px 32px;
+        .nav a {
+          font-size: 0.84rem;
         }
 
-        .coverflow-track {
-          height: 360px;
+        .hero {
+          padding-top: 168px;
+        }
+
+        .coverflow-shell,
+        .coverflow-stage {
+          min-height: 620px;
+          height: 620px;
         }
 
         .coverflow-item {
-          width: min(260px, calc(100vw - 120px));
+          top: 160px;
+          width: min(290px, calc(100vw - 96px));
         }
 
-        .detail-card {
-          min-height: auto;
+        .nav-arrow {
+          width: 52px;
+          height: 52px;
+          font-size: 1.8rem;
         }
 
-        .category-links,
-        .detail-actions,
-        .topnav {
-          justify-content: flex-start;
-        }
+        .nav-arrow.prev { left: 0; }
+        .nav-arrow.next { right: 0; }
       }
     </style>
   </head>
   <body>
-    <header class="topbar">
-      <div class="shell">
-        <div class="topbar-card">
-          <a class="brand" href="../index.html">
-            <img src="./shared/logo-ma-vitrine-online.svg" alt="Ma Vitrine Online">
-            <span class="brand-copy">
-              <strong>Ma Vitrine Online</strong>
-              <span>Showroom categories</span>
-            </span>
-          </a>
-          <nav class="topnav" id="topnav"></nav>
+    <header class="header">
+      <a class="brand" href="../index.html">
+        <img src="../assets/images/logo-mavitrine-online-footer.png" alt="Ma Vitrine Online">
+      </a>
+      <nav class="nav" id="main-nav"></nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="en">EN</button>
         </div>
+        <a class="home-link" id="home-link" href="../index.html">Retour accueil</a>
       </div>
     </header>
 
-    <main class="shell">
+    <main>
       <section class="hero">
-        <div class="hero-card">
-          <span class="hero-kicker">Showroom complet</span>
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <h1 id="intro-title"></h1>
-              <p id="intro-lead"></p>
-              <div class="hero-stats">
-                <article>
-                  <strong id="stat-categories"></strong>
-                  <p>6 categories fixes pour cadrer le choix sans perdre le visiteur.</p>
-                </article>
-                <article>
-                  <strong id="stat-models"></strong>
-                  <p>Tous les modeles disponibles sont affiches, sans filtre cache ni sous-ensemble.</p>
-                </article>
-                <article>
-                  <strong>Base adaptable</strong>
-                  <p>Chaque direction visuelle peut etre retravaillee pour ton activite, tes contenus et tes CTA.</p>
-                </article>
-              </div>
-            </div>
-            <div class="hero-side">
-              <article class="intro-card">
-                <strong id="intro-fr-title"></strong>
-                <p id="intro-fr-text"></p>
-              </article>
-              <article class="intro-card">
-                <strong id="intro-en-title"></strong>
-                <p id="intro-en-text"></p>
-              </article>
-              <article class="intro-card">
-                <strong>Acces direct</strong>
-                <div class="category-links" id="hero-category-links"></div>
-              </article>
-            </div>
-          </div>
+        <div class="hero-inner">
+          <span class="eyebrow">Ma Vitrine Online</span>
+          <h1 id="hero-title"></h1>
+          <p id="hero-text"></p>
         </div>
       </section>
-
-      <section class="showroom" id="showroom-root"></section>
-
-      <section class="footer-note">
-        <article class="intro-card">
-          <strong>Note showroom</strong>
-          <p>
-            Le showroom sert uniquement a choisir une direction. Une fois le style retenu, on remplace les textes,
-            les visuels, les noms, l'adresse, le telephone, les CTA et les sections pour construire la vraie version Ma Vitrine Online.
-          </p>
-        </article>
-      </section>
+      <div id="sections-root"></div>
     </main>
 
     <script src="./shared/showroom-content.js"></script>
     <script>
       (function () {
         var content = window.MVO_SHOWROOM_CONTENT;
-        if (!content) {
-          return;
+        var langButtons = Array.prototype.slice.call(document.querySelectorAll(".lang-switch button"));
+        var currentLang = getInitialLang();
+
+        function getInitialLang() {
+          var queryLang = new URLSearchParams(window.location.search).get("lang");
+          if (queryLang === "en" || queryLang === "fr") {
+            window.localStorage.setItem("mvo-lang", queryLang);
+            return queryLang;
+          }
+          var stored = window.localStorage.getItem("mvo-lang");
+          return stored === "en" ? "en" : "fr";
         }
 
-        var intro = content.intro;
-        var categories = content.categories;
-        var models = content.models;
-        var showroomRoot = document.getElementById("showroom-root");
+        function langText(fr, en) {
+          return currentLang === "fr" ? fr : en;
+        }
+
+        function homeHref() {
+          return "../index.html?lang=" + currentLang;
+        }
 
         function byCategory(categoryId) {
-          return models.filter(function (model) {
+          return content.models.filter(function (model) {
             return model.category === categoryId;
           });
         }
 
-        function createAnchorLink(category) {
-          return '<a href="#' + category.anchor + '">' + category.title.replace(/^[0-9]+\\.\\s*/, "") + "</a>";
+        function buildNav() {
+          document.getElementById("main-nav").innerHTML = content.categories
+            .map(function (category) {
+              return '<a href="#' + category.anchor + '">' + category.menu + "</a>";
+            })
+            .join("");
         }
 
-        function renderIntro() {
-          document.getElementById("intro-title").textContent = intro.title;
-          document.getElementById("intro-lead").textContent = intro.lead;
-          document.getElementById("intro-fr-title").textContent = intro.frTitle;
-          document.getElementById("intro-fr-text").textContent = intro.frText;
-          document.getElementById("intro-en-title").textContent = intro.enTitle;
-          document.getElementById("intro-en-text").textContent = intro.enText;
-          document.getElementById("stat-categories").textContent = String(categories.length).padStart(2, "0") + " categories";
-          document.getElementById("stat-models").textContent = String(models.length).padStart(2, "0") + " modeles";
-          document.getElementById("hero-category-links").innerHTML = categories.map(createAnchorLink).join("");
-          document.getElementById("topnav").innerHTML = categories.map(createAnchorLink).join("");
+        function buildHero() {
+          var labels = content.labels[currentLang];
+          document.documentElement.setAttribute("lang", currentLang);
+          document.title = labels.title;
+          document.getElementById("hero-title").textContent = labels.title;
+          document.getElementById("hero-text").textContent = labels.intro;
+          document.getElementById("home-link").textContent = labels.backHome;
+          document.getElementById("home-link").setAttribute("href", homeHref());
         }
 
-        function modelMarkup(model) {
-          return (
-            '<button class="coverflow-item" type="button" data-slug="' + model.slug + '">' +
-              "<article>" +
-                '<img src="./' + model.preview + '" alt="' + model.name + '">' +
-                '<div class="caption"><strong>' + model.name + "</strong><span>" + model.style + "</span></div>" +
-              "</article>" +
-            "</button>"
-          );
-        }
-
-        function sectionMarkup(category) {
-          var categoryModels = byCategory(category.id);
-          return (
-            '<section class="category-card" id="' + category.anchor + '" data-category="' + category.id + '">' +
-              '<div class="category-head">' +
-                "<div>" +
-                  "<h2>" + category.title + "</h2>" +
-                  "<p>" + category.focus + "</p>" +
-                  '<div class="category-subtypes">' +
-                    category.items.map(function (item) { return "<span>" + item + "</span>"; }).join("") +
+        function buildSections() {
+          var root = document.getElementById("sections-root");
+          root.innerHTML = content.categories
+            .map(function (category) {
+              var models = byCategory(category.id);
+              return (
+                '<section class="category-section" id="' + category.anchor + '" data-category="' + category.id + '">' +
+                  '<div class="section-inner">' +
+                    '<div class="section-copy">' +
+                      '<h2>' + langText(category.titleFr, category.titleEn) + "</h2>" +
+                      '<p>' + langText(category.textFr, category.textEn) + "</p>" +
+                    "</div>" +
+                    '<div class="coverflow-shell">' +
+                      '<div class="active-panel">' +
+                        '<h3 class="active-title"></h3>' +
+                        '<p class="active-text"></p>' +
+                        '<div class="active-actions">' +
+                          '<a class="primary active-demo" href="#"></a>' +
+                          '<a class="secondary active-brief" href="#"></a>' +
+                        "</div>" +
+                      "</div>" +
+                      '<button class="nav-arrow prev" type="button" aria-label="Previous">&#8249;</button>' +
+                      '<div class="coverflow-stage">' +
+                        models.map(function (model) {
+                          return (
+                            '<button class="coverflow-item" type="button" data-slug="' + model.slug + '">' +
+                              '<div class="coverflow-card">' +
+                                '<img src="./' + model.preview + '" alt="' + model.name + '">' +
+                                '<div class="coverflow-meta"><strong>' + model.name + "</strong><span>" + model.style + "</span></div>" +
+                              "</div>" +
+                              '<div class="coverflow-reflection"></div>' +
+                            "</button>"
+                          );
+                        }).join("") +
+                      "</div>" +
+                      '<button class="nav-arrow next" type="button" aria-label="Next">&#8250;</button>' +
+                      '<div class="dots"></div>' +
+                    "</div>" +
                   "</div>" +
-                "</div>" +
-                '<aside class="category-focus">' +
-                  "<strong>Focus conversion</strong>" +
-                  "<p>" + category.focus + ". Tous les modeles de cette famille sont visibles ci-dessous, sans filtre a ouvrir.</p>" +
-                "</aside>" +
-              "</div>" +
-              '<div class="category-stage">' +
-                '<div class="coverflow-shell">' +
-                  '<button class="coverflow-nav prev" type="button" aria-label="Precedent">&#8249;</button>' +
-                  '<div class="coverflow-track">' + categoryModels.map(modelMarkup).join("") + "</div>" +
-                  '<button class="coverflow-nav next" type="button" aria-label="Suivant">&#8250;</button>' +
-                  '<div class="coverflow-dots"></div>' +
-                "</div>" +
-                '<aside class="detail-card">' +
-                  '<span class="detail-overline">Categorie active</span>' +
-                  '<span class="count-badge">' + categoryModels.length + " modeles affiches</span>" +
-                  '<h3 class="detail-title"></h3>' +
-                  '<p class="detail-style"></p>' +
-                  '<p class="detail-blurb"></p>' +
-                  '<div class="detail-tags">' +
-                    category.items.slice(0, 3).map(function (item) { return "<span>" + item + "</span>"; }).join("") +
-                  "</div>" +
-                  '<div class="detail-actions">' +
-                    '<a class="btn btn-primary detail-demo" href="#">Ouvrir la demo</a>' +
-                    '<a class="btn btn-secondary detail-brief" href="#">Voir le brief</a>' +
-                  "</div>" +
-                "</aside>" +
-              "</div>" +
-            "</section>"
-          );
+                "</section>"
+              );
+            })
+            .join("");
         }
 
-        function renderSections() {
-          showroomRoot.innerHTML = categories.map(sectionMarkup).join("");
-        }
-
-        function updateFlow(section, index) {
-          var items = Array.prototype.slice.call(section.querySelectorAll(".coverflow-item"));
-          var dots = Array.prototype.slice.call(section.querySelectorAll(".coverflow-dots button"));
+        function updateSection(section, index) {
           var categoryId = section.getAttribute("data-category");
-          var categoryModels = byCategory(categoryId);
+          var models = byCategory(categoryId);
+          var items = Array.prototype.slice.call(section.querySelectorAll(".coverflow-item"));
+          var dots = Array.prototype.slice.call(section.querySelectorAll(".dots button"));
+          var labels = content.labels[currentLang];
           var total = items.length;
-          var activeIndex = ((index % total) + total) % total;
-          section.setAttribute("data-active-index", String(activeIndex));
+          var active = ((index % total) + total) % total;
+          section.setAttribute("data-active-index", String(active));
 
           items.forEach(function (item, itemIndex) {
-            var offset = itemIndex - activeIndex;
-            if (offset > total / 2) {
-              offset = offset - total;
-            } else if (offset < -total / 2) {
-              offset = offset + total;
-            }
+            var offset = itemIndex - active;
+            if (offset > total / 2) offset -= total;
+            if (offset < -total / 2) offset += total;
 
-            var absOffset = Math.abs(offset);
-            var sign = offset === 0 ? 0 : offset / absOffset;
-            var translateX = offset * 182;
-            var translateZ = -absOffset * 150;
-            var rotateY = -sign * Math.min(absOffset * 44, 44);
-            var scale = 1 - absOffset * 0.08;
-            var opacity = absOffset > 3 ? 0 : 1 - absOffset * 0.18;
+            var abs = Math.abs(offset);
+            var sign = offset === 0 ? 0 : offset / abs;
+            var translateX = offset * 220;
+            var translateZ = -abs * 220;
+            var rotateY = -sign * Math.min(abs * 48, 58);
+            var scale = 1 - abs * 0.12;
+            var opacity = abs > 3 ? 0 : 1 - abs * 0.18;
 
             item.style.transform =
               "translateX(calc(-50% + " + translateX + "px)) translateZ(" + translateZ + "px) rotateY(" + rotateY + "deg) scale(" + scale + ")";
             item.style.opacity = String(opacity);
-            item.style.zIndex = String(100 - absOffset);
-            item.classList.toggle("is-active", itemIndex === activeIndex);
+            item.style.zIndex = String(100 - abs);
+            item.classList.toggle("is-active", itemIndex === active);
           });
 
           dots.forEach(function (dot, dotIndex) {
-            dot.classList.toggle("is-active", dotIndex === activeIndex);
+            dot.classList.toggle("is-active", dotIndex === active);
           });
 
-          var activeModel = categoryModels[activeIndex];
-          section.querySelector(".detail-title").textContent = activeModel.name;
-          section.querySelector(".detail-style").textContent = activeModel.style;
-          section.querySelector(".detail-blurb").textContent = activeModel.blurb;
-          section.querySelector(".detail-demo").setAttribute("href", "./" + activeModel.slug + "/index.html");
-          section.querySelector(".detail-brief").setAttribute("href", "./" + activeModel.slug + "/index.html#mvo-summary");
+          var model = models[active];
+          section.querySelector(".active-title").textContent = model.name;
+          section.querySelector(".active-text").textContent = currentLang === "fr" ? model.blurbFr : model.blurbEn;
+          section.querySelector(".active-demo").textContent = labels.openDemo;
+          section.querySelector(".active-demo").setAttribute("href", "./" + model.slug + "/index.html");
+          section.querySelector(".active-brief").textContent = labels.viewBrief;
+          section.querySelector(".active-brief").setAttribute("href", "./" + model.slug + "/index.html#mvo-summary");
         }
 
-        function initFlows() {
-          Array.prototype.slice.call(document.querySelectorAll(".category-card")).forEach(function (section) {
+        function initSections() {
+          Array.prototype.slice.call(document.querySelectorAll(".category-section")).forEach(function (section) {
             var items = Array.prototype.slice.call(section.querySelectorAll(".coverflow-item"));
-            var dotsWrap = section.querySelector(".coverflow-dots");
-            dotsWrap.innerHTML = items
-              .map(function (_, index) {
-                return '<button type="button" aria-label="Aller au modele ' + (index + 1) + '"></button>';
-              })
-              .join("");
+            var dotsWrap = section.querySelector(".dots");
+
+            dotsWrap.innerHTML = items.map(function (_, index) {
+              return '<button type="button" aria-label="Go to item ' + (index + 1) + '"></button>';
+            }).join("");
 
             Array.prototype.slice.call(dotsWrap.querySelectorAll("button")).forEach(function (dot, index) {
               dot.addEventListener("click", function () {
-                updateFlow(section, index);
+                updateSection(section, index);
               });
             });
 
             items.forEach(function (item, index) {
               item.addEventListener("click", function () {
-                updateFlow(section, index);
+                updateSection(section, index);
               });
             });
 
-            section.querySelector(".coverflow-nav.prev").addEventListener("click", function () {
-              updateFlow(section, Number(section.getAttribute("data-active-index") || "0") - 1);
+            section.querySelector(".prev").addEventListener("click", function () {
+              updateSection(section, Number(section.getAttribute("data-active-index") || "0") - 1);
             });
 
-            section.querySelector(".coverflow-nav.next").addEventListener("click", function () {
-              updateFlow(section, Number(section.getAttribute("data-active-index") || "0") + 1);
+            section.querySelector(".next").addEventListener("click", function () {
+              updateSection(section, Number(section.getAttribute("data-active-index") || "0") + 1);
             });
 
-            updateFlow(section, 0);
+            updateSection(section, 0);
           });
         }
 
-        renderIntro();
-        renderSections();
-        initFlows();
+        function syncLangButtons() {
+          langButtons.forEach(function (button) {
+            var isActive = button.getAttribute("data-lang") === currentLang;
+            button.classList.toggle("is-active", isActive);
+            button.addEventListener("click", function () {
+              var next = button.getAttribute("data-lang");
+              if (!next || next === currentLang) return;
+              currentLang = next;
+              window.localStorage.setItem("mvo-lang", currentLang);
+              history.replaceState(null, "", window.location.pathname + "?lang=" + currentLang);
+              render();
+            });
+          });
+        }
+
+        function render() {
+          buildNav();
+          buildHero();
+          buildSections();
+          syncLangButtons();
+          initSections();
+        }
+
+        render();
       })();
     </script>
   </body>

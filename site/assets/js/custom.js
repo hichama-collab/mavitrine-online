@@ -16,6 +16,11 @@
   }
 
   function getInitialLang() {
+    var queryLang = new URLSearchParams(window.location.search).get("lang");
+    if (queryLang === "en" || queryLang === "fr") {
+      window.localStorage.setItem("mvo-lang", queryLang);
+      return queryLang;
+    }
     var stored = window.localStorage.getItem("mvo-lang");
     return stored === "en" ? "en" : "fr";
   }
@@ -42,7 +47,7 @@
     var base = getShowroomBase();
     var normalizedBase = base.charAt(base.length - 1) === "/" ? base : base + "/";
     var normalizedPath = String(path || "index.html").replace(/^\/+/, "");
-    return normalizedBase + normalizedPath;
+    return normalizedBase + normalizedPath + "?lang=" + currentLang;
   }
 
   function syncHeaderState() {
@@ -113,7 +118,6 @@
       .join("");
 
     nav.innerHTML = html;
-    document.getElementById("header-cta").textContent = page.navCta;
   }
 
   function renderHero(page) {

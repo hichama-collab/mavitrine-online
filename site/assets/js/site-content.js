@@ -136,7 +136,6 @@ window.MVO_SITE_CONTENT = {
         { href: "#offres", label: "Offres" },
         { href: "#contact", label: "Contact" }
       ],
-      navCta: "Demander un site",
       hero: {
         eyebrow: "Sites vitrines pour activites exigeantes",
         title: "Un site credible des la premiere visite.",
@@ -150,10 +149,10 @@ window.MVO_SITE_CONTENT = {
           "Image adaptee a votre activite"
         ],
         heroCards: [
-          { title: "Legal", copy: "Cabinet statutaire", image: "assets/images/prompt/legal-premium.avif" },
-          { title: "Health", copy: "Sante et dentaire", image: "assets/images/prompt/dental-reference.gif" },
-          { title: "Beauty", copy: "Image premium", image: "assets/images/prompt/beauty-premium.avif" },
-          { title: "Retail", copy: "Commerce lisible", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
+          { title: "Conseil", copy: "Cabinet et expertise", image: "assets/images/prompt/legal-premium.avif" },
+          { title: "Sante", copy: "Medical et dentaire", image: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp" },
+          { title: "Beaute", copy: "Image premium", image: "assets/images/prompt/beauty-premium.avif" },
+          { title: "Local", copy: "Commerce et services", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
         ]
       },
       sectors: {
@@ -183,8 +182,8 @@ window.MVO_SITE_CONTENT = {
       },
       stylesSection: {
         kicker: "Styles / modeles",
-        title: "Six directions fortes pour se projeter rapidement",
-        text: "Chaque style visible ici est relie au showroom complet. Vous ouvrez la demo, vous comparez les directions, puis nous adaptons celle qui vous correspond.",
+        title: "Des styles adaptes a plusieurs activites",
+        text: "Chaque style visible ici renvoie vers le showroom complet. Vous comparez les directions puis nous adaptons celle qui vous correspond.",
         sectionCta: "Voir le showroom complet",
         brief: "Voir le brief",
         demo: "Ouvrir la demo",
@@ -240,7 +239,7 @@ window.MVO_SITE_CONTENT = {
       },
       pricing: {
         kicker: "Offres",
-        title: "Trois blocs clairs pour cadrer le projet",
+        title: "Nos offres",
         cards: [
           {
             title: "Site vitrine",
@@ -316,7 +315,6 @@ window.MVO_SITE_CONTENT = {
         { href: "#offres", label: "Pricing" },
         { href: "#contact", label: "Contact" }
       ],
-      navCta: "Request a website",
       hero: {
         eyebrow: "Websites for demanding businesses",
         title: "A credible website from the very first visit.",
@@ -330,10 +328,10 @@ window.MVO_SITE_CONTENT = {
           "Aligned with your business image"
         ],
         heroCards: [
-          { title: "Legal", copy: "Structured and premium", image: "assets/images/prompt/legal-premium.avif" },
-          { title: "Health", copy: "Clear and reassuring", image: "assets/images/prompt/dental-reference.gif" },
-          { title: "Beauty", copy: "Image-led premium", image: "assets/images/prompt/beauty-premium.avif" },
-          { title: "Retail", copy: "Readable and direct", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
+          { title: "Professional", copy: "Consulting and services", image: "assets/images/prompt/legal-premium.avif" },
+          { title: "Health", copy: "Medical and dental", image: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp" },
+          { title: "Beauty", copy: "Premium image", image: "assets/images/prompt/beauty-premium.avif" },
+          { title: "Local", copy: "Retail and services", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
         ]
       },
       sectors: {
@@ -363,8 +361,8 @@ window.MVO_SITE_CONTENT = {
       },
       stylesSection: {
         kicker: "Styles",
-        title: "Six strong directions to project your future website quickly",
-        text: "Each style is connected to the full showroom. You open the demo, compare the directions, then we adapt the right one to your business.",
+        title: "Styles for multiple business types",
+        text: "Each style is connected to the full showroom. You compare the directions, then we adapt the right one to your business.",
         sectionCta: "Open full showroom",
         brief: "View brief",
         demo: "Open demo",
@@ -420,7 +418,7 @@ window.MVO_SITE_CONTENT = {
       },
       pricing: {
         kicker: "Pricing",
-        title: "Three clear blocks to frame the project",
+        title: "Our offers",
         cards: [
           {
             title: "Website",
