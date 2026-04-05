@@ -46,8 +46,11 @@
   function buildShowroomUrl(path) {
     var base = getShowroomBase();
     var normalizedBase = base.charAt(base.length - 1) === "/" ? base : base + "/";
-    var normalizedPath = String(path || "index.html").replace(/^\/+/, "");
-    return normalizedBase + normalizedPath + "?lang=" + currentLang;
+    var rawPath = String(path || "index.html").replace(/^\/+/, "");
+    var hashIndex = rawPath.indexOf("#");
+    var pathname = hashIndex === -1 ? rawPath : rawPath.slice(0, hashIndex);
+    var hash = hashIndex === -1 ? "" : rawPath.slice(hashIndex);
+    return normalizedBase + pathname + "?lang=" + currentLang + hash;
   }
 
   function syncHeaderState() {
