@@ -619,6 +619,189 @@
         { selector: "div.row-span-2.sm\\:col-span-4 p.text-gray-400:last-of-type", mode: "text", value: "Adaptation showroom 2026 par Ma Vitrine Online." }
       ]
     },
+    "boutique-moderne": {
+      model: "Model 22",
+      style: "Boutique Moderne",
+      showcaseTitle: "Une base retail claire pour concept store, boutique premium ou marque locale.",
+      showcaseText: "Le rendu montre une boutique lisible, imagee et facile a parcourir sur mobile comme sur desktop.",
+      positioning: "Hero propre, categories nettes, produits inspirationnels et parcours de contact simple.",
+      modulesText: "Hero, univers de marque, collections, preuve sociale, contact et prolongement showroom.",
+      useCase: "Ideal pour retail visuel, commerce premium, concept store, boutique beaute ou marque locale.",
+      replace: {
+        "Zay Shop eCommerce HTML CSS Template": "Boutique Moderne | Ma Vitrine Online",
+        "Zay": BRAND.brand,
+        "Home": "Accueil",
+        "About": "Concept",
+        "Shop": "Styles",
+        "Contact": "Contact",
+        "Search ...": "Rechercher un style...",
+        "Categories of The Month": "Trois blocs de projection",
+        "Featured Product": "Exemples de mise en avant",
+        "Explore Further": "Voir le brief"
+      },
+      hide: ["#templatemo_nav_top", ".modal.fade.bg-white", ".copyright.bg-black"],
+      patches: [
+        { selector: ".navbar-brand.text-success.logo", mode: "text", value: BRAND.brand },
+        { selector: ".carousel-item .h1", mode: "html", values: [
+          "<b>Une boutique</b> plus credible",
+          "Un univers plus net",
+          "Une vitrine plus presentable"
+        ]},
+        { selector: ".carousel-item .h2", mode: "text", values: [
+          "Une direction claire pour commerce local ou concept store",
+          "Une structure simple a adapter a votre image",
+          "Un style qui fonctionne tres bien sur mobile"
+        ]},
+        { selector: ".carousel-item p", mode: "text", values: [
+          "Cette base retail permet de valoriser une selection, une ambiance, des collections et un contact sans perdre en lisibilite.",
+          "Le template est utile quand il faut montrer des visuels produits, des categories ou des arguments de confiance de facon propre.",
+          "Nous reprenons ensuite les textes, les visuels et les CTA pour coller au niveau de gamme de la marque."
+        ]},
+        { selector: "section.container.py-5 .h1", mode: "text", value: "Trois facons de se projeter" },
+        { selector: "section.bg-light.py-5 .h1", mode: "text", value: "Exemples de modules retail" },
+        { selector: ".btn.btn-success", mode: "text", values: ["Voir le brief", "Voir le brief", "Voir le brief", "Voir la demo", "Voir la demo", "Voir la demo"] }
+      ]
+    },
+    "cabinet-dynamique": {
+      model: "Model 23",
+      style: "Cabinet Dynamique",
+      showcaseTitle: "Une base corporate moderne pour cabinet, conseil, agence ou activite B2B.",
+      showcaseText: "Le rendu aide a montrer une offre claire, des services lisibles et une posture plus credible tres rapidement.",
+      positioning: "Hero corporate, argumentaire structure, blocs expertise et CTA visibles.",
+      modulesText: "Hero, avantages, services, offres, modules preuves, blog et contact.",
+      useCase: "Ideal pour conseil, agence, cabinet, expertise B2B ou activite de service structuree.",
+      replace: {
+        "Space Dynamic - SEO HTML5 Template": "Cabinet Dynamique | Ma Vitrine Online",
+        "Spac": "Ma ",
+        "Dyna": "Vitrine",
+        "Home": "Accueil",
+        "About Us": "Cabinet",
+        "Services": "Services",
+        "Portfolio": "Modules",
+        "Blog": "Ressources",
+        "Message Us": "Contact",
+        "Contact Now": "Voir le brief"
+      },
+      hide: ["#search"],
+      patches: [
+        { selector: ".left-content.header-text h6", mode: "text", value: "Cabinet / Advisory" },
+        { selector: ".left-content.header-text h2", mode: "html", value: "Une direction corporate pour<br><em>cabinet</em> &amp; <span>services premium</span>" },
+        { selector: ".left-content.header-text p", mode: "text", value: "Cette base fonctionne bien pour conseil, agence, activite de service ou cabinet qui doit paraitre plus net, plus structure et plus credible." },
+        { selector: ".main-button", mode: "text", values: ["Voir le brief", "Voir le module"] },
+        { selector: ".about-us .right-text h4", mode: "text", values: ["Positionnement", "Offre lisible", "Blocs expertise", "Contact visible"] },
+        { selector: ".about-us .right-text p", mode: "text", values: [
+          "Le rendu donne tout de suite une impression plus statutaire et plus propre.",
+          "Les services et niveaux d'accompagnement restent faciles a comprendre.",
+          "La structure se prete bien aux preuves de confiance, cas d'usage et methodologie.",
+          "Le parcours de contact reste direct sans casser l'image premium."
+        ]},
+        { selector: ".our-services .section-heading h2", mode: "html", value: "Une structure faite pour presenter votre <em>offre</em> &amp; vos <span>preuves</span>" },
+        { selector: ".our-services .section-heading p", mode: "text", value: "Le visiteur comprend vite ce que vous faites, pour qui et comment vous contacter." }
+      ]
+    },
+    "vitrine-listing-premium": {
+      model: "Model 24",
+      style: "Vitrine Listing Premium",
+      showcaseTitle: "Une structure listing pour immobilier, annuaire premium ou activite multi-points.",
+      showcaseText: "Le style aide a presenter plusieurs offres, localisations ou implantations avec une lecture claire et commerciale.",
+      positioning: "Hero liste, filtres, cartes detaillees, categories et CTA bien places.",
+      modulesText: "Hero, listings, categories, cartes detail, contact et footer orientee conversion.",
+      useCase: "Ideal pour immobilier, annuaire local, services multi-sites ou activite a offres structurees.",
+      replace: {
+        "Plot Listing HTML5 Website Template": "Vitrine Listing Premium | Ma Vitrine Online",
+        "Plot Listing": BRAND.brand,
+        "Home": "Accueil",
+        "Category": "Categories",
+        "Listing": "Listings",
+        "Contact Us": "Contact",
+        "Explore Nearby Places": "Voir le brief"
+      },
+      hide: [".call-to-action"],
+      patches: [
+        { selector: ".main-banner .left-content h6", mode: "text", value: "Listing premium" },
+        { selector: ".main-banner .left-content h2", mode: "html", value: "Une base pour structurer<br><em>plusieurs offres</em> ou <span>implantations</span>" },
+        { selector: ".main-banner .left-content p", mode: "text", value: "Ce template sert tres bien a l'immobilier, a un annuaire premium ou a une activite qui doit presenter plusieurs points d'entree de facon claire." },
+        { selector: ".main-banner .main-white-button a", mode: "text", value: "Voir le brief" },
+        { selector: ".popular-categories .section-heading h2", mode: "html", value: "Des categories faciles a lire<br><em>des le premier ecran</em>" },
+        { selector: ".popular-categories .section-heading h6", mode: "text", value: "Modules showroom" },
+        { selector: ".listing-page .item .down-content h4", mode: "text", values: ["Listing premium", "Portfolio d'adresses", "Bloc multi-points", "Selection d'offres", "Immobilier signature", "Annuaire editorial"] }
+      ]
+    },
+    "experience-visuelle": {
+      model: "Model 25",
+      style: "Experience Visuelle",
+      showcaseTitle: "Une direction immersive pour studio creatif, experience premium ou marque image.",
+      showcaseText: "Le rendu mise sur l'impact visuel, une ambiance marquee et une lecture differenciante sans perdre les CTA utiles.",
+      positioning: "Hero immersif, galerie forte, navigation legere et blocs de projection rapides.",
+      modulesText: "Hero, galerie, experience, storytelling, CTA final et contact showroom.",
+      useCase: "Ideal pour studio creatif, marque visuelle, hospitality premium ou concept experience-first.",
+      replace: {
+        "Infinite Loop HTML Bootstrap 4.0 Parallax Theme": "Experience Visuelle | Ma Vitrine Online",
+        "Infinite Loop": BRAND.brand,
+        "What We Do": "Direction visuelle",
+        "Testimonials": "Perception",
+        "Gallery": "Galerie",
+        "Contact Us": "Contact"
+      },
+      patches: [
+        { selector: ".cd-slider-nav a", mode: "text", values: ["Accueil", "Direction", "Perception", "Galerie", "Contact"] },
+        { selector: "#infinite h2", mode: "text", value: "Une base immersive pour activite image-first" },
+        { selector: "#infinite p", mode: "text", value: "Ce style fonctionne bien pour un studio creatif, une marque premium ou une experience qui doit faire forte impression visuelle." },
+        { selector: ".tm-intro-text", mode: "text", values: [
+          "Le hero est parfait pour installer une ambiance, une posture et un univers de marque tres distinctif.",
+          "Les sections intermediaires aident ensuite a raconter l'experience, les formats ou les points forts sans lourdeur.",
+          "La galerie permet de montrer une direction visuelle, un lieu, un portfolio ou une selection d'ambiances.",
+          "Le CTA final reste simple pour ramener vers le brief et la prise de contact."
+        ]},
+        { selector: ".tm-btn-primary", mode: "text", values: ["Voir le brief", "Voir la demo"] }
+      ]
+    },
+    "beaute-signature": {
+      model: "Model 26",
+      style: "Beaute Signature",
+      showcaseTitle: "Un univers premium pour skincare, esthetique, institut ou adresse image-first.",
+      showcaseText: "Le style joue davantage la desirabilite, la douceur et l'image pour des activites qui vendent aussi une sensation.",
+      positioning: "Hero visuel, blocs editoriaux, ton premium et projection immediate.",
+      modulesText: "Hero, storytelling, visuels, modules de service, galerie et contact showroom.",
+      useCase: "Ideal pour skincare, medecine esthetique, institut premium, beauty brand ou adresse feminine haut de gamme.",
+      replace: {
+        "Glossy Touch HTML CSS Template": "Beaute Signature | Ma Vitrine Online",
+        "Glossy Touch": BRAND.brand,
+        "Home": "Accueil",
+        "About": "Concept",
+        "Services": "Prestations",
+        "Portfolio": "Galerie",
+        "Contact": "Contact"
+      },
+      patches: [
+        { selector: ".site-header .navbar-nav .nav-link", mode: "text", values: ["Accueil", "Concept", "Prestations", "Galerie", "Contact"] },
+        { selector: ".heroText h1", mode: "html", value: "Une direction beaute plus<br><span>premium</span> et plus image" },
+        { selector: ".heroText p", mode: "text", value: "Cette base est ideale pour institut, skincare, laser ou activite esthetique qui doit paraitre plus desirable, plus claire et plus haut de gamme." },
+        { selector: ".custom-btn", mode: "text", values: ["Voir le brief", "Voir la demo", "Voir le module"] }
+      ]
+    },
+    "portfolio-premium": {
+      model: "Model 27",
+      style: "Portfolio Premium",
+      showcaseTitle: "Une base portfolio elegante pour architecture, image, patrimoine ou marque premium.",
+      showcaseText: "Le rendu assume une presentation tres visuelle, plus editoriale et ideale pour un metier porte par la qualite de l'image.",
+      positioning: "Typographie forte, galerie propre, rythme editorial et posture premium.",
+      modulesText: "Hero, portfolio, blocs de presentation, cas d'usage, CTA et contact showroom.",
+      useCase: "Ideal pour architecture, interieur, premium real estate, studio visuel ou portfolio de marque.",
+      replace: {
+        "Amber Folio": "Portfolio Premium | Ma Vitrine Online",
+        "Home": "Accueil",
+        "About": "A propos",
+        "Works": "Portfolio",
+        "Contact": "Contact"
+      },
+      patches: [
+        { selector: ".navbar-nav .nav-link", mode: "text", values: ["Accueil", "A propos", "Portfolio", "Contact"] },
+        { selector: ".hero-title", mode: "html", value: "Une base portfolio pour<br>activite premium image-first" },
+        { selector: ".hero-text", mode: "text", value: "Cette direction est utile quand il faut laisser respirer les visuels, installer une ambiance et donner tout de suite une sensation de niveau." },
+        { selector: ".btn", mode: "text", values: ["Voir le brief", "Voir la demo", "Parler du projet"] }
+      ]
+    },
     "studio-media-impact": {
       model: "Model 19",
       style: "Studio Media",

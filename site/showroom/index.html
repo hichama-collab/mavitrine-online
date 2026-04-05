@@ -4,63 +4,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ma Vitrine Online | Showroom de styles de sites vitrines</title>
-    <meta name="description" content="Showroom de styles de sites vitrines adaptables à différentes activités sous la marque Ma Vitrine Online.">
+    <meta name="description" content="Showroom structure par categories pour choisir un style de site vitrine premium adapte a plusieurs activites.">
     <link rel="icon" href="./shared/logo-ma-vitrine-online.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
       :root {
-        --ink: #1e2732;
-        --ink-soft: rgba(30, 39, 50, 0.72);
-        --accent: #45c7d2;
-        --accent-deep: #209aa6;
-        --surface: rgba(255, 255, 255, 0.92);
-        --line: rgba(30, 39, 50, 0.1);
-        --shadow: 0 28px 80px rgba(17, 25, 35, 0.16);
+        --ink: #1d2730;
+        --ink-soft: rgba(29, 39, 48, 0.72);
+        --line: rgba(29, 39, 48, 0.1);
+        --accent: #3dc7c2;
+        --accent-deep: #16939b;
+        --panel: rgba(255, 255, 255, 0.9);
+        --shadow: 0 28px 70px rgba(17, 25, 35, 0.14);
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
         font-family: "Manrope", sans-serif;
         color: var(--ink);
         background:
-          radial-gradient(circle at top left, rgba(69, 199, 210, 0.16), transparent 28%),
-          radial-gradient(circle at bottom right, rgba(38, 120, 128, 0.12), transparent 22%),
-          linear-gradient(180deg, #f6fbfc 0%, #eef3f4 100%);
+          radial-gradient(circle at top left, rgba(61, 199, 194, 0.14), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(214, 181, 141, 0.18), transparent 22%),
+          linear-gradient(180deg, #fcfffe 0%, #f3f6f6 48%, #eef0ef 100%);
       }
 
-      a {
-        color: inherit;
-      }
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+      h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; letter-spacing: -0.02em; }
+      p { margin: 0; color: var(--ink-soft); line-height: 1.75; }
 
       .shell {
-        width: min(1220px, calc(100% - 32px));
+        width: min(1240px, calc(100% - 32px));
         margin: 0 auto;
       }
 
       .hero {
-        padding: 40px 0 24px;
+        padding: 34px 0 18px;
+      }
+
+      .hero-card,
+      .filters,
+      .card,
+      .foot-card {
+        border-radius: 30px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+        box-shadow: var(--shadow);
       }
 
       .hero-card {
-        padding: 26px;
-        border-radius: 36px;
-        background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(240, 251, 252, 0.92));
-        border: 1px solid var(--line);
-        box-shadow: var(--shadow);
+        padding: 28px;
       }
 
       .hero-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 18px;
+        gap: 16px;
         flex-wrap: wrap;
       }
 
@@ -72,43 +76,69 @@
 
       .brand img {
         width: 190px;
-        max-width: 100%;
         height: auto;
       }
 
-      .hero-badge {
+      .hero-actions {
         display: inline-flex;
         align-items: center;
-        padding: 10px 14px;
+        gap: 10px;
+      }
+
+      .lang-switch {
+        display: inline-flex;
+        gap: 4px;
+        padding: 4px;
         border-radius: 999px;
-        background: rgba(69, 199, 210, 0.12);
+        background: rgba(29, 39, 48, 0.06);
+      }
+
+      .lang-switch button {
+        min-width: 42px;
+        min-height: 38px;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        color: var(--ink-soft);
+        font-weight: 800;
+      }
+
+      .lang-switch button.is-active {
+        background: var(--ink);
+        color: #fff;
+      }
+
+      .hero-badge,
+      .card-style {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: rgba(61, 199, 194, 0.12);
         color: var(--accent-deep);
-        font-size: 0.82rem;
+        font-size: 0.76rem;
         font-weight: 800;
         letter-spacing: 0.14em;
         text-transform: uppercase;
       }
 
       h1 {
-        margin: 24px 0 12px;
-        font-family: "Fraunces", serif;
-        font-size: clamp(2.4rem, 5vw, 4.8rem);
+        margin: 24px 0 14px;
+        font-size: clamp(2.5rem, 5vw, 4.9rem);
         line-height: 0.95;
       }
 
       .hero-copy {
-        max-width: 72ch;
-        margin: 0;
-        color: var(--ink-soft);
-        font-size: 1.06rem;
-        line-height: 1.8;
+        max-width: 74ch;
+        font-size: 1.04rem;
       }
 
       .hero-points {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 14px;
-        margin-top: 26px;
+        margin-top: 24px;
       }
 
       .hero-point {
@@ -124,80 +154,72 @@
         font-size: 1rem;
       }
 
-      .hero-point p {
-        margin: 0;
-        color: var(--ink-soft);
-        font-size: 0.95rem;
-        line-height: 1.65;
-      }
-
-      .section-head {
+      .filters {
         display: flex;
-        align-items: end;
+        align-items: center;
         justify-content: space-between;
-        gap: 18px;
-        margin: 34px 0 18px;
+        gap: 14px;
+        padding: 18px 22px;
+        margin: 20px 0 18px;
       }
 
-      .section-head h2 {
-        margin: 0;
-        font-family: "Fraunces", serif;
-        font-size: clamp(1.8rem, 3vw, 2.8rem);
+      .filters h2 {
+        font-size: clamp(1.8rem, 2.8vw, 2.7rem);
       }
 
-      .section-head p {
-        max-width: 48ch;
-        margin: 0;
-        color: var(--ink-soft);
-        line-height: 1.7;
+      .filter-group {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .filter-chip {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .filter-chip.is-active {
+        background: var(--ink);
+        color: #fff;
+        border-color: var(--ink);
       }
 
       .grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        padding-bottom: 40px;
+        gap: 18px;
+        padding-bottom: 42px;
       }
 
       .card {
         display: flex;
         flex-direction: column;
-        gap: 18px;
         min-height: 100%;
-        padding: 22px;
-        border-radius: 28px;
-        background: var(--surface);
-        border: 1px solid var(--line);
-        box-shadow: 0 18px 42px rgba(18, 27, 38, 0.08);
+        overflow: hidden;
       }
 
       .card-preview {
         position: relative;
         display: block;
         overflow: hidden;
-        border-radius: 22px;
         aspect-ratio: 16 / 10;
-        border: 1px solid rgba(255, 255, 255, 0.55);
-        box-shadow: 0 18px 36px rgba(18, 27, 38, 0.14);
         background:
-          radial-gradient(circle at top right, rgba(69, 199, 210, 0.18), transparent 32%),
+          radial-gradient(circle at top right, rgba(61, 199, 194, 0.18), transparent 32%),
           linear-gradient(160deg, rgba(10, 18, 26, 0.04), rgba(10, 18, 26, 0.14));
-      }
-
-      .card-preview::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background:
-          linear-gradient(180deg, rgba(12, 18, 24, 0.02) 0%, rgba(12, 18, 24, 0.22) 100%);
       }
 
       .card-preview img {
         width: 100%;
         height: 100%;
-        display: block;
         object-fit: cover;
-        object-position: var(--preview-position, center);
         transition: transform 220ms ease;
       }
 
@@ -221,47 +243,34 @@
         font-weight: 800;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        backdrop-filter: blur(12px);
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 22px;
+        height: 100%;
       }
 
       .card-top {
         display: flex;
-        justify-content: space-between;
-        gap: 14px;
         align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
       }
 
-      .card-style {
-        display: inline-flex;
-        align-items: center;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(69, 199, 210, 0.12);
-        color: var(--accent-deep);
-        font-size: 0.78rem;
+      .card-category {
+        color: rgba(29, 39, 48, 0.38);
+        font-size: 0.82rem;
         font-weight: 800;
         letter-spacing: 0.14em;
         text-transform: uppercase;
       }
 
-      .card-index {
-        color: rgba(30, 39, 50, 0.34);
-        font-size: 0.84rem;
-        font-weight: 800;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
       .card h3 {
-        margin: 0;
-        font-size: 1.28rem;
-        line-height: 1.2;
-      }
-
-      .card p {
-        margin: 0;
-        color: var(--ink-soft);
-        line-height: 1.72;
+        font-size: 1.3rem;
+        line-height: 1.16;
       }
 
       .card-tags {
@@ -276,8 +285,7 @@
         min-height: 32px;
         padding: 0 12px;
         border-radius: 999px;
-        background: rgba(30, 39, 50, 0.06);
-        color: var(--ink);
+        background: rgba(29, 39, 48, 0.06);
         font-size: 0.82rem;
         font-weight: 700;
       }
@@ -293,14 +301,13 @@
         align-items: center;
         justify-content: center;
         min-height: 46px;
-        padding: 0 16px;
+        padding: 0 18px;
         border-radius: 999px;
-        text-decoration: none;
         font-weight: 800;
       }
 
       .btn-primary {
-        background: linear-gradient(135deg, var(--accent), #80e1e9);
+        background: linear-gradient(135deg, var(--accent), #7ae1db);
       }
 
       .btn-secondary {
@@ -313,52 +320,50 @@
       }
 
       .foot-card {
-        padding: 18px 22px;
-        border-radius: 24px;
-        background: rgba(30, 39, 50, 0.92);
-        color: rgba(255, 255, 255, 0.84);
+        padding: 22px 24px;
+        background: rgba(29, 39, 48, 0.94);
       }
 
-      .foot-card strong {
+      .foot-card strong,
+      .foot-card h2 {
         color: #fff;
       }
 
-      @media (max-width: 1024px) {
+      .foot-card p {
+        color: rgba(255, 255, 255, 0.74);
+      }
+
+      @media (max-width: 1100px) {
         .hero-points,
         .grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
-      }
 
-      @media (max-width: 720px) {
-        .hero,
-        .foot {
-          padding-left: 0;
-          padding-right: 0;
-        }
-
-        .hero-card {
-          padding: 22px;
-          border-radius: 28px;
-        }
-
-        .hero-points,
-        .grid {
-          grid-template-columns: 1fr;
-        }
-
-        .section-head {
+        .filters {
           flex-direction: column;
           align-items: flex-start;
         }
 
+        .filter-group {
+          justify-content: flex-start;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .hero-card,
+        .filters,
+        .foot-card {
+          border-radius: 24px;
+        }
+
+        .hero-points,
+        .grid,
         .card-actions {
+          grid-template-columns: 1fr;
           flex-direction: column;
         }
 
-        .btn {
-          width: 100%;
-        }
+        .btn { width: 100%; }
       }
     </style>
   </head>
@@ -369,419 +374,159 @@
           <div class="hero-top">
             <div class="brand">
               <img src="./shared/logo-ma-vitrine-online.svg" alt="Ma Vitrine Online">
+              <span class="hero-badge" id="hero-badge"></span>
             </div>
-            <span class="hero-badge">Showroom sites vitrines</span>
+            <div class="hero-actions">
+              <div class="lang-switch" role="group" aria-label="Language switch">
+                <button class="is-active" type="button" data-lang="fr">FR</button>
+                <button type="button" data-lang="en">EN</button>
+              </div>
+            </div>
           </div>
-          <h1>Des styles de sites vitrines prêts à adapter à votre activité</h1>
-          <p class="hero-copy">Chaque démo présente une direction visuelle différente, pensée pour inspirer confiance sans rendu générique. Vous choisissez un style. Nous l'adaptons à votre image, vos contenus et votre positionnement.</p>
-          <div class="hero-points">
-            <article class="hero-point">
-              <strong>Pour se projeter tout de suite</strong>
-              <p>Le rendu final se visualise immédiatement. Nous remplaçons ensuite les contenus par les vôtres : services, informations utiles, visuels et contact.</p>
-            </article>
-            <article class="hero-point">
-              <strong>Une direction adaptée à chaque niveau de gamme</strong>
-              <p>Style statutaire, éditorial, commercial, chaleureux ou premium : chaque démo sert un positionnement différent.</p>
-            </article>
-            <article class="hero-point">
-              <strong>Une démo claire et exploitable</strong>
-              <p>Chaque modèle est prêt à être présenté sur téléphone ou ordinateur, avec une structure lisible et crédible.</p>
-            </article>
-          </div>
+          <h1 id="hero-title"></h1>
+          <p class="hero-copy" id="hero-copy"></p>
+          <div class="hero-points" id="hero-points"></div>
         </div>
       </section>
 
       <section>
-        <div class="section-head">
-          <h2>Catalogue des styles</h2>
-          <p>Chaque aperçu montre une direction visuelle. Ouvrez la démo pour voir comment le style peut être rebrandé pour votre activité.</p>
+        <div class="filters">
+          <div>
+            <h2 id="section-title"></h2>
+            <p id="section-copy"></p>
+          </div>
+          <div>
+            <div style="font-weight:800;margin-bottom:10px;" id="filter-label"></div>
+            <div class="filter-group" id="filter-group"></div>
+          </div>
         </div>
-        <div class="grid">
-          <article class="card">
-            <a class="card-preview" href="./Lounge-1.0.0/index.html" style="--preview-position: center 46%;">
-              <img src="./Lounge-1.0.0/images/gallery/large/l-gallery-03.jpg" alt="Aperçu visuel du style Atmosphère Signature">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Atmosphère</span>
-              <span class="card-index">01</span>
-            </div>
-            <h3>Atmosphère Signature</h3>
-            <p>Un style immersif pour marque locale, cabinet ou lieu à identité forte.</p>
-            <div class="card-tags"><span>Cabinet</span><span>Boutique</span><span>Premium</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./Lounge-1.0.0/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./Lounge-1.0.0/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
 
-          <article class="card">
-            <a class="card-preview" href="./burgerking-main/index.html" style="--preview-position: center 42%;">
-              <img src="./burgerking-main/img/carousel-1.jpg" alt="Aperçu visuel du style Impact Commercial">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Commercial</span>
-              <span class="card-index">02</span>
-            </div>
-            <h3>Impact Commercial</h3>
-            <p>Une direction visuelle directe pour activité qui doit aller à l'essentiel et générer des contacts.</p>
-            <div class="card-tags"><span>Local</span><span>Conversion</span><span>Rapide</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./burgerking-main/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./burgerking-main/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./delicious-master/index.html" style="--preview-position: center 46%;">
-              <img src="./delicious-master/img/bg-img/bg1.jpg" alt="Aperçu visuel du style Éditorial Premium">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Éditorial</span>
-              <span class="card-index">03</span>
-            </div>
-            <h3>Éditorial Premium</h3>
-            <p>Une approche visuelle plus magazine pour activité qui vend une expertise, un univers ou une signature.</p>
-            <div class="card-tags"><span>Storytelling</span><span>Image</span><span>Haut de gamme</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./delicious-master/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./delicious-master/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./feane-1.0.0/index.html" style="--preview-position: center 45%;">
-              <img src="./feane-1.0.0/images/hero-bg.jpg" alt="Aperçu visuel du style Direct Moderne">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Moderne</span>
-              <span class="card-index">04</span>
-            </div>
-            <h3>Direct Moderne</h3>
-            <p>Une structure dynamique pour présenter clairement services, prestations et points forts sur mobile.</p>
-            <div class="card-tags"><span>Mobile first</span><span>Services</span><span>Efficace</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./feane-1.0.0/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./feane-1.0.0/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./feliciano-master/index.html" style="--preview-position: center 48%;">
-              <img src="./feliciano-master/images/bg_1.jpg" alt="Aperçu visuel du style Statutaire Élégant">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Statutaire</span>
-              <span class="card-index">05</span>
-            </div>
-            <h3>Statutaire Élégant</h3>
-            <p>Un rendu plus haut de gamme avec forte présence visuelle, idéal pour activité qui doit rassurer dès l'arrivée.</p>
-            <div class="card-tags"><span>Cabinet</span><span>Premium</span><span>Confiance</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./feliciano-master/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./feliciano-master/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./gourmet-master/index.html" style="--preview-position: center 46%;">
-              <img src="./gourmet-master/img/hero_1.jpg" alt="Aperçu visuel du style Classique Rassurant">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Rassurant</span>
-              <span class="card-index">06</span>
-            </div>
-            <h3>Classique Rassurant</h3>
-            <p>Un site très lisible pour activité de proximité, cabinet ou entreprise qui veut une image nette et chaleureuse.</p>
-            <div class="card-tags"><span>Lisible</span><span>Professionnel</span><span>Accessible</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./gourmet-master/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./gourmet-master/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./grandcoffee-master/index.html" style="--preview-position: center 54%;">
-              <img src="./grandcoffee-master/images/banner-bg.png" alt="Aperçu visuel du style Présence Chaleureuse">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Chaleureux</span>
-              <span class="card-index">07</span>
-            </div>
-            <h3>Présence Chaleureuse</h3>
-            <p>Une vitrine accessible et accueillante pour commerce, institut, boutique ou activité de quartier.</p>
-            <div class="card-tags"><span>Local</span><span>Accueil</span><span>Convivial</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./grandcoffee-master/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./grandcoffee-master/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./pato-master/index.html" style="--preview-position: center 43%;">
-              <img src="./pato-master/images/master-slides-01.jpg" alt="Aperçu visuel du style Signature Nocturne">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Signature</span>
-              <span class="card-index">08</span>
-            </div>
-            <h3>Signature Nocturne</h3>
-            <p>Une ambiance marquée pour activité haut de gamme, lieu d'exception ou marque qui veut un rendu sélectif.</p>
-            <div class="card-tags"><span>Événementiel</span><span>Premium</span><span>Privatisation</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./pato-master/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./pato-master/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./restaurant-1.0.0/index.html" style="--preview-position: center 56%;">
-              <img src="./restaurant-1.0.0/assets/img/dishes-hero.png" alt="Aperçu visuel du style Landing Statutaire">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Landing</span>
-              <span class="card-index">09</span>
-            </div>
-            <h3>Landing Statutaire</h3>
-            <p>Une landing page très complète pour cabinet, agence, franchise ou activité qui veut présenter un cadre très professionnel.</p>
-            <div class="card-tags"><span>Corporate</span><span>Expertise</span><span>Structure</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./restaurant-1.0.0/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./restaurant-1.0.0/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./templatemo_507_victory/index.html" style="--preview-position: center 52%;">
-              <img src="./templatemo_507_victory/img/banner-bg.jpg" alt="Aperçu visuel du style Présence Classique">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Classique</span>
-              <span class="card-index">10</span>
-            </div>
-            <h3>Présence Classique</h3>
-            <p>Une structure simple et rassurante, facile à adapter à une activité locale ou une entreprise de confiance.</p>
-            <div class="card-tags"><span>Traditionnel</span><span>Sérieux</span><span>Efficace</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./templatemo_507_victory/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./templatemo_507_victory/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./yummy-red-1.0.0/index.html" style="--preview-position: center 58%;">
-              <img src="./yummy-red-1.0.0/assets/img/hero-img.png" alt="Aperçu visuel du style Moderne Lumineux">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Lumineux</span>
-              <span class="card-index">11</span>
-            </div>
-            <h3>Moderne Lumineux</h3>
-            <p>Une direction contemporaine et lumineuse pour activité qui veut gagner en lisibilité et en crédibilité.</p>
-            <div class="card-tags"><span>Moderne</span><span>Lisible</span><span>Polyvalent</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./yummy-red-1.0.0/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./yummy-red-1.0.0/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./cabinet-sante-premium/index.html" style="--preview-position: center 48%;">
-              <img src="./cabinet-sante-premium/assets/img/health/staff-10.webp" alt="Aperçu visuel du style Santé Premium">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Sante</span>
-              <span class="card-index">12</span>
-            </div>
-            <h3>Sante Premium</h3>
-            <p>Une direction haut de gamme pour clinique privee, cabinet medical ou centre de sante qui doit rassurer tres vite.</p>
-            <div class="card-tags"><span>Clinique</span><span>Confiance</span><span>Statutaire</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./cabinet-sante-premium/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./cabinet-sante-premium/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./centre-medical-confiance/index.html" style="--preview-position: center 52%;">
-              <img src="./centre-medical-confiance/img/hero.jpg" alt="Aperçu visuel du style Centre Médical Confiance">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Medical</span>
-              <span class="card-index">13</span>
-            </div>
-            <h3>Centre Médical Confiance</h3>
-            <p>Une base corporate et rassurante pour maison médicale, centre pluridisciplinaire ou activité santé structurée.</p>
-            <div class="card-tags"><span>Cabinet</span><span>Services</span><span>Mobile</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./centre-medical-confiance/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./centre-medical-confiance/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./esthetique-signature/index.html" style="--preview-position: center 54%;">
-              <img src="./esthetique-signature/img/hero.jpg" alt="Aperçu visuel du style Esthétique Signature">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Esthetique</span>
-              <span class="card-index">14</span>
-            </div>
-            <h3>Esthétique Signature</h3>
-            <p>Un style premium et feminin pour institut, laser, medecine esthetique ou adresse skincare haut de gamme.</p>
-            <div class="card-tags"><span>Skin care</span><span>Premium</span><span>Image</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./esthetique-signature/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./esthetique-signature/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./dentaire-statutaire/index.html" style="--preview-position: center 46%;">
-              <img src="./dentaire-statutaire/img/top-banner.jpg" alt="Aperçu visuel du style Dentaire Statutaire">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Dentaire</span>
-              <span class="card-index">15</span>
-            </div>
-            <h3>Dentaire Statutaire</h3>
-            <p>Une direction plus classique et rassurante pour implantologie, orthodontie adulte ou cabinet dentaire premium.</p>
-            <div class="card-tags"><span>Implants</span><span>Sérieux</span><span>Rendez-vous</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./dentaire-statutaire/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./dentaire-statutaire/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./cabinet-dentaire-lumineux/index.html" style="--preview-position: center 40%;">
-              <img src="./cabinet-dentaire-lumineux/images/bg_1.jpg" alt="Aperçu visuel du style Cabinet Dentaire Lumineux">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Lumineux</span>
-              <span class="card-index">16</span>
-            </div>
-            <h3>Cabinet Dentaire Lumineux</h3>
-            <p>Une vitrine claire, douce et tres lisible pour dentiste moderne, cabinet familial ou specialiste du sourire.</p>
-            <div class="card-tags"><span>Smile</span><span>Accessible</span><span>Confiance</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./cabinet-dentaire-lumineux/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./cabinet-dentaire-lumineux/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./studio-creative/index.html" style="--preview-position: center 50%;">
-              <img src="./studio-creative/assets/img/gallery/product-3.png" alt="Aperçu visuel du style Studio Créatif">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Creatif</span>
-              <span class="card-index">17</span>
-            </div>
-            <h3>Studio Créatif</h3>
-            <p>Une base expressive pour studio photo, architecture, immobilier premium ou marque qui vit beaucoup par l'image.</p>
-            <div class="card-tags"><span>Portfolio</span><span>Impact</span><span>Visuel</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./studio-creative/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./studio-creative/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./cabinet-conseil-impact/index.html" style="--preview-position: center 52%;">
-              <img src="./cabinet-conseil-impact/assets/card-image.png" alt="Aperçu visuel du style Cabinet Conseil Impact">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Conseil</span>
-              <span class="card-index">18</span>
-            </div>
-            <h3>Cabinet Conseil Impact</h3>
-            <p>Une direction statutaire et tres lisible pour conseil, expertise B2B, immobilier premium ou offre de service a forte confiance.</p>
-            <div class="card-tags"><span>B2B</span><span>Statutaire</span><span>Confiance</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./cabinet-conseil-impact/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./cabinet-conseil-impact/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./studio-media-impact/index.html" style="--preview-position: center 48%;">
-              <img src="./studio-media-impact/images/banner-bg.png" alt="Aperçu visuel du style Studio Media Impact">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Media</span>
-              <span class="card-index">19</span>
-            </div>
-            <h3>Studio Media Impact</h3>
-            <p>Une base image-first pour studio video, contenu social, immobilier premium ou activite qui se vend beaucoup par le visuel.</p>
-            <div class="card-tags"><span>Portfolio</span><span>Image</span><span>Formats</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./studio-media-impact/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./studio-media-impact/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./gestion-patrimoine-premium/index.html" style="--preview-position: center 52%;">
-              <img src="./gestion-patrimoine-premium/images/pms-img-1.jpg" alt="Aperçu visuel du style Gestion Patrimoine Premium">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Patrimoine</span>
-              <span class="card-index">20</span>
-            </div>
-            <h3>Gestion Patrimoine Premium</h3>
-            <p>Une direction haut de gamme pour gestion de patrimoine, family office, expert-comptable premium ou activite financiere qui doit rassurer tres vite.</p>
-            <div class="card-tags"><span>Finance</span><span>Premium</span><span>Corporate</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./gestion-patrimoine-premium/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./gestion-patrimoine-premium/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="card-preview" href="./formation-executive-premium/index.html" style="--preview-position: center 46%;">
-              <img src="./formation-executive-premium/images/hero/hero.png" alt="Aperçu visuel du style Formation Executive Premium">
-              <span class="card-preview-badge">Voir le style</span>
-            </a>
-            <div class="card-top">
-              <span class="card-style">Executive</span>
-              <span class="card-index">21</span>
-            </div>
-            <h3>Formation Executive Premium</h3>
-            <p>Un style editorial et premium pour formation executive, coaching expert ou offre d'accompagnement qui doit faire tres credible.</p>
-            <div class="card-tags"><span>Formation</span><span>Expertise</span><span>Premium</span></div>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="./formation-executive-premium/index.html">Ouvrir la démo</a>
-              <a class="btn btn-secondary" href="./formation-executive-premium/index.html#mvo-summary">Voir le brief</a>
-            </div>
-          </article>
-        </div>
+        <div class="grid" id="catalogue-grid"></div>
       </section>
 
       <section class="foot">
         <div class="foot-card">
-          <strong>Mode d'emploi :</strong> on choisit une direction visuelle, puis on adapte le modèle à votre activité avec vos vrais contenus. Les démos restent volontairement neutres et signées <strong>Ma Vitrine Online</strong>.
+          <h2 id="foot-title"></h2>
+          <p id="foot-copy"></p>
         </div>
       </section>
     </main>
+
+    <script src="./shared/showroom-content.js"></script>
+    <script>
+      (function () {
+        var content = window.MVO_SHOWROOM_CONTENT;
+        var currentLang = "fr";
+        var currentCategory = "all";
+        var langButtons = Array.prototype.slice.call(document.querySelectorAll(".lang-switch button"));
+
+        function tCategory(category) {
+          return currentLang === "fr" ? category.fr : category.en;
+        }
+
+        function renderHero() {
+          var page = content.languages[currentLang];
+          document.documentElement.setAttribute("lang", currentLang);
+          document.getElementById("hero-badge").textContent = page.badge;
+          document.getElementById("hero-title").textContent = page.title;
+          document.getElementById("hero-copy").textContent = page.text;
+          document.getElementById("hero-points").innerHTML = page.points
+            .map(function (point) {
+              return "<article class=\"hero-point\"><strong>" + point[0] + "</strong><p>" + point[1] + "</p></article>";
+            })
+            .join("");
+          document.getElementById("section-title").textContent = page.sectionTitle;
+          document.getElementById("section-copy").textContent = page.sectionText;
+          document.getElementById("filter-label").textContent = page.filterLabel;
+          document.getElementById("foot-title").textContent = page.footTitle;
+          document.getElementById("foot-copy").textContent = page.footText;
+          document.title =
+            currentLang === "fr"
+              ? "Ma Vitrine Online | Showroom de styles de sites vitrines"
+              : "Ma Vitrine Online | Website style showroom";
+        }
+
+        function renderFilters() {
+          document.getElementById("filter-group").innerHTML = content.categories
+            .map(function (category) {
+              return (
+                '<button class="filter-chip' +
+                (category.id === currentCategory ? " is-active" : "") +
+                '" type="button" data-category="' +
+                category.id +
+                '">' +
+                tCategory(category) +
+                "</button>"
+              );
+            })
+            .join("");
+
+          Array.prototype.slice.call(document.querySelectorAll(".filter-chip")).forEach(function (button) {
+            button.addEventListener("click", function () {
+              currentCategory = button.getAttribute("data-category") || "all";
+              renderFilters();
+              renderCards();
+            });
+          });
+        }
+
+        function renderCards() {
+          var page = content.languages[currentLang];
+          var models = content.models.filter(function (model) {
+            return currentCategory === "all" || model.category === currentCategory;
+          });
+
+          document.getElementById("catalogue-grid").innerHTML = models
+            .map(function (model, index) {
+              var name = currentLang === "fr" ? model.nameFr : model.nameEn;
+              var style = currentLang === "fr" ? model.styleFr : model.styleEn;
+              var text = currentLang === "fr" ? model.textFr : model.textEn;
+              var tags = currentLang === "fr" ? model.tagsFr : model.tagsEn;
+              var category = tCategory(content.categories.find(function (item) { return item.id === model.category; }));
+
+              return (
+                '<article class="card">' +
+                '<a class="card-preview" href="./' + model.demo + '">' +
+                '<img src="./' + model.preview + '" alt="' + name + '">' +
+                '<span class="card-preview-badge">' + page.demo + "</span>" +
+                "</a>" +
+                '<div class="card-body">' +
+                '<div class="card-top"><span class="card-style">' + style + '</span><span class="card-category">' + String(index + 1).padStart(2, "0") + " · " + category + "</span></div>" +
+                "<h3>" + name + "</h3>" +
+                "<p>" + text + "</p>" +
+                '<div class="card-tags">' +
+                tags.map(function (tag) { return "<span>" + tag + "</span>"; }).join("") +
+                "</div>" +
+                '<div class="card-actions">' +
+                '<a class="btn btn-primary" href="./' + model.demo + '">' + page.demo + "</a>" +
+                '<a class="btn btn-secondary" href="./' + model.brief + '">' + page.brief + "</a>" +
+                "</div>" +
+                "</div>" +
+                "</article>"
+              );
+            })
+            .join("");
+        }
+
+        function bindLangButtons() {
+          langButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+              currentLang = button.getAttribute("data-lang") || "fr";
+              langButtons.forEach(function (node) {
+                node.classList.toggle("is-active", node === button);
+              });
+              renderHero();
+              renderFilters();
+              renderCards();
+            });
+          });
+        }
+
+        renderHero();
+        renderFilters();
+        renderCards();
+        bindLangButtons();
+      })();
+    </script>
   </body>
 </html>

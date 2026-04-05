@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta
       name="description"
-      content="Ma Vitrine Online crée des sites vitrines crédibles pour activités locales, cabinets et commerces : image soignée, lecture mobile, showroom de styles et contact rapide."
+      content="Ma Vitrine Online cree des sites vitrines premium, credibles et mobile-first pour cabinets, sante, beaute, retail, food, immobilier et activites de service."
     >
-    <meta name="theme-color" content="#0f1720">
-    <!-- TODO SHOWROOM: renseigner cette meta si le showroom a une URL/base différente sur le VPS -->
+    <meta name="theme-color" content="#0d1720">
     <meta name="mvo-showroom-base" content="">
+    <title>Ma Vitrine Online | Sites vitrines premium multi-activites</title>
     <link rel="icon" href="assets/images/logo-mavitrine-online.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
-
-    <title>Ma Vitrine Online | Sites vitrines pour activités locales</title>
-
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
   </head>
-
   <body>
-    <!-- Header -->
-    <header class="header-area header-sticky">
+    <header class="header-area">
       <div class="container">
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
           <a href="#top" class="brand">
             <span class="brand-mark">M</span>
             <span class="brand-copy">
@@ -38,26 +33,17 @@
             </span>
           </a>
 
-          <ul class="nav">
-            <li><a href="#top" class="active">Accueil</a></li>
-            <li><a href="#avantages">Avantages</a></li>
-            <li><a href="#offres">Offres</a></li>
-            <li><a href="#exemples">Exemples</a></li>
-            <li>
-              <a
-                href="./showroom/"
-                data-showroom-link="index.html"
-              >
-                Showroom
-              </a>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="nav-cta">
-              <a class="button button-primary" href="#contact">Demander un site</a>
-            </li>
-          </ul>
+          <ul class="nav" id="nav-list"></ul>
 
-          <button class="menu-trigger" type="button" aria-label="Ouvrir le menu">
+          <div class="header-actions">
+            <div class="lang-switch" role="group" aria-label="Language switch">
+              <button class="lang-button is-active" type="button" data-lang="fr">FR</button>
+              <button class="lang-button" type="button" data-lang="en">EN</button>
+            </div>
+            <a class="button button-primary header-cta" id="header-cta" href="#contact">Demander un site</a>
+          </div>
+
+          <button class="menu-trigger" type="button" aria-label="Open menu">
             <span></span>
           </button>
         </nav>
@@ -65,632 +51,89 @@
     </header>
 
     <main>
-      <!-- Hero -->
       <section class="hero-section" id="top">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="hero-copy">
-                <span class="eyebrow">Sites vitrines pour activités locales</span>
-                <div class="hero-title-wrap">
-                  <h1>Un site web qui inspire confiance dès la première visite.</h1>
+          <div class="hero-shell">
+            <div class="hero-copy" id="hero-copy"></div>
+            <div class="hero-visual">
+              <div class="hero-visual-main">
+                <div class="hero-glass-card hero-main-card">
+                  <span class="hero-card-label">Ma Vitrine Online</span>
+                  <h3>Multi-activites. Mobile-first. Credible from the first screen.</h3>
+                  <p>Cabinet, health, beauty, retail, food, real estate and premium services.</p>
                 </div>
-                <p class="hero-intro">
-                  Une vitrine moderne, rassurante et adaptée à votre activité.
-                  Vos visiteurs comprennent tout de suite ce que vous faites,
-                  vos points forts et comment vous contacter.
-                </p>
-
-                <div class="hero-actions">
-                  <a class="button button-primary" href="#exemples">Voir les styles</a>
-                  <a class="button button-secondary" href="#contact">Parler du projet</a>
-                </div>
-
-                <div class="hero-points">
-                  <div class="hero-point">
-                    <i class="fa fa-mobile"></i>
-                    <span>Pensé mobile dès le départ</span>
-                  </div>
-                  <div class="hero-point">
-                    <i class="fa fa-pencil-square-o"></i>
-                    <span>Informations clés visibles immédiatement</span>
-                  </div>
-                  <div class="hero-point">
-                    <i class="fa fa-language"></i>
-                    <span>Version multilingue si besoin</span>
-                  </div>
-                </div>
-
-                <div class="hero-note">
-                  En quelques secondes, vos visiteurs doivent comprendre votre activité,
-                  voir vos services, repérer les informations utiles et savoir comment
-                  vous joindre.
-                </div>
+                <div class="hero-visual-grid" id="hero-visual-grid"></div>
               </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="hero-visual">
-                <div class="hero-screen hero-screen-main">
-                  <div class="screen-bar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <img
-                    src="assets/images/examples/premium.jpg"
-                    alt="Aperçu d'un site vitrine premium pour activité locale"
-                  >
-                  <div class="screen-caption">
-                    <strong>Une présence en ligne crédible dès le premier écran</strong>
-                    <p>Services, informations utiles et contact visibles immédiatement.</p>
-                  </div>
-                </div>
-
-                <div class="hero-phone-card">
-                  <div class="hero-phone-frame">
-                    <img
-                      src="assets/images/examples/moderne.jpg"
-                      alt="Aperçu mobile d'un site vitrine professionnel"
-                    >
-                  </div>
-                  <span>Navigation fluide sur téléphone</span>
-                </div>
-
-                <div class="floating-pill floating-pill-top">Image crédible</div>
-                <div class="floating-pill floating-pill-bottom">Contact rapide</div>
-              </div>
+              <div class="hero-floating-note hero-floating-note-top">Showroom linked to the live demos</div>
+              <div class="hero-floating-note hero-floating-note-bottom">FR + EN ready</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Avantages -->
+      <section class="section-block section-soft" id="secteurs">
+        <div class="container">
+          <div class="section-heading" id="sectors-heading"></div>
+          <div class="sector-grid" id="sector-grid"></div>
+          <div class="section-inline-cta">
+            <a class="button button-secondary" href="#styles" id="sectors-cta"></a>
+          </div>
+        </div>
+      </section>
+
       <section class="section-block" id="avantages">
         <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Avantages</span>
-            <h2>Pensé pour ce que vos visiteurs regardent vraiment</h2>
-            <p>
-              Vos visiteurs veulent comprendre rapidement votre activité, vos points
-              forts et la meilleure façon de vous contacter.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-6 col-xl-3">
-              <article class="info-card">
-                <div class="info-icon"><i class="fa fa-mobile"></i></div>
-                <h3>Une lecture fluide sur téléphone</h3>
-                <p>Le site reste net, rassurant et facile à parcourir sur tous les écrans.</p>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-              <article class="info-card">
-                <div class="info-icon"><i class="fa fa-cutlery"></i></div>
-                <h3>Les informations utiles visibles tout de suite</h3>
-                <p>Services, coordonnées, horaires ou rendez-vous accessibles immédiatement.</p>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-              <article class="info-card">
-                <div class="info-icon"><i class="fa fa-refresh"></i></div>
-                <h3>Un contenu facile à faire évoluer</h3>
-                <p>Mettez à jour une prestation, un horaire ou une page avec rapidité.</p>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-              <article class="info-card">
-                <div class="info-icon"><i class="fa fa-language"></i></div>
-                <h3>Une image alignée avec votre métier</h3>
-                <p>Cabinet, commerce, agence ou activité de service : le site s'adapte à votre positionnement.</p>
-              </article>
-            </div>
-          </div>
+          <div class="section-heading" id="benefits-heading"></div>
+          <div class="benefit-grid" id="benefit-grid"></div>
         </div>
       </section>
 
-      <!-- Carte preview -->
-      <section class="section-block section-menu-preview" id="carte-preview">
+      <section class="section-block section-styles" id="styles">
         <div class="container">
-          <div class="menu-preview-shell">
-            <div class="menu-preview-copy">
-              <span class="section-kicker">Gestion du contenu</span>
-              <h2>Vos contenus restent simples à mettre à jour</h2>
-              <p>
-                Services, prestations, pages, horaires ou informations pratiques :
-                tout reste lisible côté gestion et rassurant côté visiteur.
-              </p>
-
-              <div class="menu-preview-points">
-                <div class="menu-preview-point">
-                  <i class="fa fa-pencil-square-o"></i>
-                  <span>Ajout / modification instantanée</span>
-                </div>
-                <div class="menu-preview-point">
-                  <i class="fa fa-desktop"></i>
-                  <span>Rendu visible immédiatement</span>
-                </div>
-                <div class="menu-preview-point">
-                  <i class="fa fa-language"></i>
-                  <span>Version multilingue prête si besoin</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="menu-preview-stage">
-              <article class="menu-admin-card">
-                <div class="menu-surface-kicker">Gestion du contenu</div>
-                <div class="menu-admin-top">
-                  <strong>Ajoutez, classez et mettez à jour vos informations</strong>
-                  <span>Vue structurée</span>
-                </div>
-
-                <div class="menu-admin-controls">
-                  <div class="menu-admin-control">
-                    <span>Rubriques : Toutes</span>
-                    <i class="fa fa-angle-down"></i>
-                  </div>
-                  <div class="menu-admin-control">
-                    <span>Langues : FR / EN</span>
-                    <i class="fa fa-angle-down"></i>
-                  </div>
-                  <div class="menu-admin-control is-search">
-                    <i class="fa fa-search"></i>
-                    <span>Recherche...</span>
-                  </div>
-                  <div class="menu-admin-button">
-                    <i class="fa fa-plus"></i>
-                    <span>Ajouter un contenu</span>
-                  </div>
-                </div>
-
-                <div class="menu-admin-table">
-                  <div class="menu-admin-table-head">
-                    <span>Titre</span>
-                    <span>Rubrique</span>
-                    <span>Statut</span>
-                    <span>Détail</span>
-                    <span>Action</span>
-                  </div>
-
-                  <div class="menu-admin-table-row">
-                    <div class="menu-admin-main">
-                      <strong>Consultation initiale</strong>
-                      <small>Bloc visible sur la page Prestations</small>
-                    </div>
-                    <div class="menu-admin-cell">Prestations</div>
-                    <div class="menu-admin-cell">
-                      <span class="menu-admin-status">Publié</span>
-                    </div>
-                    <div class="menu-admin-price">À partir de 90€</div>
-                    <button class="menu-admin-edit" type="button" aria-label="Modifier Consultation initiale">
-                      <i class="fa fa-pencil"></i>
-                    </button>
-                  </div>
-
-                  <div class="menu-admin-table-row">
-                    <div class="menu-admin-main">
-                      <strong>Page À propos</strong>
-                      <small>Version FR prête à afficher</small>
-                    </div>
-                    <div class="menu-admin-cell">Pages</div>
-                    <div class="menu-admin-cell">
-                      <span class="menu-admin-status">Publié</span>
-                    </div>
-                    <div class="menu-admin-price">Présentation</div>
-                    <button class="menu-admin-edit" type="button" aria-label="Modifier Page À propos">
-                      <i class="fa fa-pencil"></i>
-                    </button>
-                  </div>
-
-                  <div class="menu-admin-table-row">
-                    <div class="menu-admin-main">
-                      <strong>Version EN</strong>
-                      <small>Traduction en cours de validation</small>
-                    </div>
-                    <div class="menu-admin-cell">Langues</div>
-                    <div class="menu-admin-cell">
-                      <span class="menu-admin-status is-soft">Brouillon</span>
-                    </div>
-                    <div class="menu-admin-price">En cours</div>
-                    <button class="menu-admin-edit" type="button" aria-label="Modifier Version EN">
-                      <i class="fa fa-pencil"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="menu-admin-builder">
-                  <div class="menu-admin-builder-head">
-                    <strong>Rubrique : Prestations</strong>
-                    <span>+ Ajouter</span>
-                  </div>
-
-                  <div class="menu-admin-builder-grid">
-                    <article class="menu-admin-builder-card">
-                      <strong>Accompagnement sur mesure</strong>
-                      <small>Texte court visible dès la première lecture</small>
-                      <div class="menu-admin-builder-actions">
-                        <button class="menu-admin-edit" type="button" aria-label="Modifier Accompagnement sur mesure">
-                          <i class="fa fa-pencil"></i>
-                        </button>
-                        <button class="menu-admin-edit" type="button" aria-label="Supprimer Accompagnement sur mesure">
-                          <i class="fa fa-trash"></i>
-                        </button>
-                      </div>
-                    </article>
-
-                    <article class="menu-admin-builder-card">
-                      <strong>Prise de rendez-vous</strong>
-                      <small>Bloc contact prêt à publier</small>
-                      <div class="menu-admin-builder-actions">
-                        <button class="menu-admin-edit" type="button" aria-label="Modifier Prise de rendez-vous">
-                          <i class="fa fa-pencil"></i>
-                        </button>
-                        <button class="menu-admin-edit" type="button" aria-label="Supprimer Prise de rendez-vous">
-                          <i class="fa fa-trash"></i>
-                        </button>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </article>
-
-              <article class="menu-result-card">
-                <div class="menu-surface-kicker">Résultat côté client</div>
-                <div class="menu-result-head">Une lecture nette dès la première visite</div>
-
-                <div class="menu-result-section">
-                  <h3>Prestations</h3>
-                  <p>Le visiteur identifie rapidement votre offre, vos repères utiles et la meilleure prochaine étape.</p>
-                  <div class="menu-result-row">
-                    <strong>Consultation initiale</strong>
-                    <span>À partir de 90€</span>
-                  </div>
-                  <div class="menu-result-row">
-                    <strong>Accompagnement personnalisé</strong>
-                    <span>Sur devis</span>
-                  </div>
-                </div>
-
-                <div class="menu-result-section">
-                  <h3>Spécialités</h3>
-                  <div class="menu-result-row">
-                    <strong>Particuliers</strong>
-                    <span>Conseil et suivi</span>
-                  </div>
-                  <div class="menu-result-row">
-                    <strong>Professionnels</strong>
-                    <span>Audit et accompagnement</span>
-                  </div>
-                </div>
-
-                <div class="menu-result-section">
-                  <h3>Informations utiles</h3>
-                  <div class="menu-result-row">
-                    <strong>Sur rendez-vous</strong>
-                    <span>Lun. - Ven.</span>
-                  </div>
-                  <div class="menu-result-row">
-                    <strong>Réponse rapide</strong>
-                    <span>Téléphone / Email</span>
-                  </div>
-                </div>
-
-                <div class="menu-result-section">
-                  <h3>Contact</h3>
-                  <div class="menu-result-row">
-                    <strong>06 11 09 76 55</strong>
-                    <span>Appel direct</span>
-                  </div>
-                  <div class="menu-result-row">
-                    <strong>contact@activite-exemple.fr</strong>
-                    <span>Réponse sous 24h</span>
-                  </div>
-                </div>
-              </article>
-            </div>
+          <div class="section-heading" id="styles-heading"></div>
+          <div class="styles-grid" id="styles-grid"></div>
+          <div class="section-inline-cta">
+            <a class="button button-primary" href="./showroom/" data-showroom-link="index.html" id="styles-cta"></a>
           </div>
         </div>
       </section>
 
-      <!-- Reseaux sociaux -->
-      <section class="section-block section-social" id="reseaux-sociaux">
+      <section class="section-block section-dark">
         <div class="container">
-          <div class="section-heading section-heading-center">
-            <span class="section-kicker">Instagram &amp; Facebook</span>
-            <h2>Une présence en ligne cohérente</h2>
-            <p>
-              Votre site peut être prolongé par Instagram et Facebook pour renforcer
-              votre image, montrer votre actualité et faciliter le contact.
-            </p>
-          </div>
-
-          <div class="social-preview-grid">
-            <article class="social-preview-card">
-              <div class="social-preview-copy">
-                <span class="social-preview-platform">
-                  <i class="fa fa-instagram"></i>
-                  Instagram
-                </span>
-                <h3>Un compte visuel cohérent avec votre activité</h3>
-                <p>Réalisations, nouveautés, conseils ou coulisses : votre image reste alignée avec le site.</p>
-                <ul class="social-preview-list">
-                  <li>Actualités, réalisations ou nouveautés visibles</li>
-                  <li>Identité cohérente entre site et réseaux</li>
-                  <li>Prise de contact simplifiée</li>
-                </ul>
-              </div>
-
-              <div class="social-phone-frame social-phone-frame-shot">
-                <div class="social-phone-screen social-phone-screen-instagram">
-                  <img
-                    class="social-phone-shot"
-                    src="assets/images/social/instagram-preview.png"
-                    alt="Aperçu Instagram Ma Vitrine Online"
-                    loading="lazy"
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="social-preview-card">
-              <div class="social-preview-copy">
-                <span class="social-preview-platform is-facebook">
-                  <i class="fa fa-facebook"></i>
-                  Facebook
-                </span>
-                <h3>Une page claire et rassurante</h3>
-                <p>Les visiteurs retrouvent vos informations utiles, vos mises à jour et vos moyens de contact en un coup d'oeil.</p>
-                <ul class="social-preview-list">
-                  <li>Coordonnées et horaires faciles à trouver</li>
-                  <li>Publications régulières et lisibles</li>
-                  <li>Présence professionnelle et crédible</li>
-                </ul>
-              </div>
-
-              <div class="social-phone-frame social-phone-frame-shot">
-                <div class="social-phone-screen social-phone-screen-facebook">
-                  <img
-                    class="social-phone-shot"
-                    src="assets/images/social/facebook-preview.png"
-                    alt="Aperçu Facebook Ma Vitrine Online"
-                    loading="lazy"
-                  >
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="social-preview-cta">
-            <a class="button button-primary" href="#contact">Ajouter les réseaux</a>
-            <a class="button button-secondary" href="#exemples">Voir les styles</a>
-          </div>
+          <div class="showroom-callout" id="showroom-callout"></div>
         </div>
       </section>
 
-      <!-- Exemples -->
-      <section class="section-block" id="exemples">
+      <section class="section-block" id="gestion">
         <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Exemples</span>
-            <h2>Des styles pensés pour plusieurs métiers</h2>
-            <p>
-              Chaque modèle présente une direction visuelle que nous adaptons à votre
-              activité, votre image et votre niveau de gamme.
-            </p>
-            <div class="examples-note">Chaque style peut être rebrandé selon votre activité.</div>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <article class="showcase-card">
-                <div class="showcase-media">
-                  <img
-                    src="showroom/gourmet-master/img/hero_1.jpg"
-                    alt="Signature Statutaire pour site vitrine"
-                  >
-                  <span class="showcase-tag">Signature Statutaire</span>
-                  <div class="showcase-device">
-                    <span class="showcase-device-label">Mobile</span>
-                    <div class="showcase-device-frame">
-                      <img
-                        src="showroom/gourmet-master/img/hero_1.jpg"
-                        alt="Preview mobile de Signature Statutaire"
-                      >
-                    </div>
-                  </div>
+          <div class="content-grid">
+            <div class="section-heading" id="content-heading"></div>
+            <div class="content-stage">
+              <article class="content-panel">
+                <div class="content-panel-head">
+                  <span class="section-chip">CMS-ready</span>
+                  <strong id="content-panel-title"></strong>
                 </div>
-                <div class="showcase-content">
-                  <h3>Signature Statutaire</h3>
-                  <p>Un style premium et rassurant pour cabinet, agence ou activité à forte valeur.</p>
-                  <div class="showcase-actions">
-                    <a
-                      class="button button-primary button-small"
-                      href="./showroom/gourmet-master/index.html"
-                      data-showroom-link="gourmet-master/index.html"
-                    >
-                      Voir le modèle
-                    </a>
-                    <a class="button button-ghost button-small" href="#contact">Choisir ce style</a>
-                  </div>
-                </div>
+                <div class="content-tags" id="content-panel-items"></div>
               </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="showcase-card">
-                <div class="showcase-media">
-                  <img
-                    src="showroom/feliciano-master/images/bg_1.jpg"
-                    alt="Élégance Premium pour site vitrine"
-                  >
-                  <span class="showcase-tag">Élégance Premium</span>
-                  <div class="showcase-device">
-                    <span class="showcase-device-label">Mobile</span>
-                    <div class="showcase-device-frame">
-                      <img
-                        src="showroom/feliciano-master/images/bg_1.jpg"
-                        alt="Preview mobile de Élégance Premium"
-                      >
-                    </div>
+              <article class="content-result">
+                <span class="section-chip section-chip-dark" id="content-result-title"></span>
+                <div class="content-result-stack">
+                  <div class="content-result-row">
+                    <strong>Services</strong>
+                    <span>Clear blocks, trust-building wording</span>
                   </div>
-                </div>
-                  <div class="showcase-content">
-                  <h3>Élégance Premium</h3>
-                  <p>Une présence haut de gamme pour activité qui doit inspirer sérieux et confiance.</p>
-                  <div class="showcase-actions">
-                    <a
-                      class="button button-primary button-small"
-                      href="./showroom/feliciano-master/index.html"
-                      data-showroom-link="feliciano-master/index.html"
-                    >
-                      Voir le modèle
-                    </a>
-                    <a class="button button-ghost button-small" href="#contact">Choisir ce style</a>
+                  <div class="content-result-row">
+                    <strong>Pages</strong>
+                    <span>Useful information visible immediately</span>
                   </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="showcase-card">
-                <div class="showcase-media">
-                  <img
-                    src="showroom/restaurant-1.0.0/assets/img/dishes-hero.png"
-                    alt="Structure Moderne pour site vitrine"
-                  >
-                  <span class="showcase-tag">Structure Moderne</span>
-                  <div class="showcase-device">
-                    <span class="showcase-device-label">Mobile</span>
-                    <div class="showcase-device-frame">
-                      <img
-                        src="showroom/restaurant-1.0.0/assets/img/dishes-hero.png"
-                        alt="Preview mobile de Structure Moderne"
-                      >
-                    </div>
+                  <div class="content-result-row">
+                    <strong>Languages</strong>
+                    <span>FR by default, EN ready when needed</span>
                   </div>
-                </div>
-                <div class="showcase-content">
-                  <h3>Structure Moderne</h3>
-                  <p>Une lecture nette pour présenter vos services, vos points forts et vos informations clés.</p>
-                  <div class="showcase-actions">
-                    <a
-                      class="button button-primary button-small"
-                      href="./showroom/restaurant-1.0.0/index.html"
-                      data-showroom-link="restaurant-1.0.0/index.html"
-                    >
-                      Voir le modèle
-                    </a>
-                    <a class="button button-ghost button-small" href="#contact">Choisir ce style</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="showcase-card">
-                <div class="showcase-media">
-                  <img
-                    src="showroom/templatemo_507_victory/img/banner-bg.jpg"
-                    alt="Vitrine Lumineuse pour site vitrine"
-                  >
-                  <span class="showcase-tag">Vitrine Lumineuse</span>
-                  <div class="showcase-device">
-                    <span class="showcase-device-label">Mobile</span>
-                    <div class="showcase-device-frame">
-                      <img
-                        src="showroom/templatemo_507_victory/img/banner-bg.jpg"
-                        alt="Preview mobile de Vitrine Lumineuse"
-                      >
-                    </div>
-                  </div>
-                </div>
-                  <div class="showcase-content">
-                  <h3>Vitrine Lumineuse</h3>
-                  <p>Un style accessible et crédible, efficace pour activité locale ou commerce de proximité.</p>
-                  <div class="showcase-actions">
-                    <a
-                      class="button button-primary button-small"
-                      href="./showroom/templatemo_507_victory/index.html"
-                      data-showroom-link="templatemo_507_victory/index.html"
-                    >
-                      Voir le modèle
-                    </a>
-                    <a class="button button-ghost button-small" href="#contact">Choisir ce style</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="showcase-card">
-                <div class="showcase-media">
-                  <img
-                    src="showroom/grandcoffee-master/images/banner-bg.png"
-                    alt="Présence Chaleureuse pour site vitrine"
-                  >
-                  <span class="showcase-tag">Présence Chaleureuse</span>
-                  <div class="showcase-device">
-                    <span class="showcase-device-label">Mobile</span>
-                    <div class="showcase-device-frame">
-                      <img
-                        src="showroom/grandcoffee-master/images/banner-bg.png"
-                        alt="Preview mobile de Présence Chaleureuse"
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="showcase-content">
-                  <h3>Présence Chaleureuse</h3>
-                  <p>Une ambiance accueillante pour marque de proximité, institut, commerce ou adresse conviviale.</p>
-                  <div class="showcase-actions">
-                    <a
-                      class="button button-primary button-small"
-                      href="./showroom/grandcoffee-master/index.html"
-                      data-showroom-link="grandcoffee-master/index.html"
-                    >
-                      Voir le modèle
-                    </a>
-                    <a class="button button-ghost button-small" href="#contact">Choisir ce style</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="showcase-card">
-                <div class="showcase-media">
-                  <img
-                    src="showroom/delicious-master/img/bg-img/bg1.jpg"
-                    alt="Impact Visuel pour site vitrine"
-                  >
-                  <span class="showcase-tag">Impact Visuel</span>
-                  <div class="showcase-device">
-                    <span class="showcase-device-label">Mobile</span>
-                    <div class="showcase-device-frame">
-                      <img
-                        src="showroom/delicious-master/img/bg-img/bg1.jpg"
-                        alt="Preview mobile de Impact Visuel"
-                      >
-                    </div>
-                  </div>
-                </div>
-                  <div class="showcase-content">
-                  <h3>Impact Visuel</h3>
-                  <p>Une direction directe et contemporaine pour activité qui veut marquer dès le premier écran.</p>
-                  <div class="showcase-actions">
-                    <a
-                      class="button button-primary button-small"
-                      href="./showroom/delicious-master/index.html"
-                      data-showroom-link="delicious-master/index.html"
-                    >
-                      Voir le modèle
-                    </a>
-                    <a class="button button-ghost button-small" href="#contact">Choisir ce style</a>
+                  <div class="content-result-row">
+                    <strong>Contact</strong>
+                    <span>WhatsApp, phone, email and quick CTA</span>
                   </div>
                 </div>
               </article>
@@ -699,262 +142,81 @@
         </div>
       </section>
 
-      <!-- Showroom -->
-      <!-- SHOWROOM: si l'URL publique du catalogue change, remplacez SHOWROOM_PUBLIC_BASE dans assets/js/custom.js -->
-      <section class="section-block section-dark" id="showroom">
+      <section class="section-block section-soft" id="reseaux">
         <div class="container">
-          <div class="showroom-panel">
-            <div class="showroom-copy">
-              <span class="section-kicker">Showroom</span>
-              <h2>Explorer le showroom</h2>
-              <p>
-                Comparez plusieurs styles de sites, ouvrez les démos et choisissez
-                une direction visuelle à adapter à votre activité, vos contenus
-                et votre positionnement.
-              </p>
-            </div>
-
-            <div class="showroom-cta">
-              <a
-                class="button button-primary"
-                href="./showroom/"
-                data-showroom-link="index.html"
-              >
-                Ouvrir le showroom
-              </a>
-              <p>Un showroom simple à partager sur téléphone comme sur ordinateur.</p>
-            </div>
+          <div class="section-heading section-heading-center" id="social-heading"></div>
+          <div class="social-grid" id="social-grid"></div>
+          <div class="section-inline-cta">
+            <a class="button button-secondary" href="#contact" id="social-cta"></a>
           </div>
         </div>
       </section>
 
-      <!-- Process -->
       <section class="section-block" id="process">
         <div class="container">
-          <div class="section-heading section-heading-center">
-            <span class="section-kicker">Comment ça se passe</span>
-            <h2>Un process net, du choix du style à la mise en ligne</h2>
-            <p>
-              Nous partons d'une direction visuelle, nous l'adaptons à votre activité,
-              puis nous livrons un site prêt à être montré et à générer des contacts.
-            </p>
-          </div>
-
-          <div class="process-grid">
-            <article class="process-card">
-              <span class="process-number">01</span>
-              <h3>Choix du style le plus crédible pour votre activité</h3>
-              <p>Une direction visuelle alignée avec votre image et votre niveau de gamme.</p>
-            </article>
-
-            <article class="process-card">
-              <span class="process-number">02</span>
-              <h3>Adaptation du contenu à votre métier</h3>
-              <p>Services, informations utiles, visuels, coordonnées et pages clés.</p>
-            </article>
-
-            <article class="process-card">
-              <span class="process-number">03</span>
-              <h3>Mise en ligne d'un site prêt à être montré</h3>
-              <p>Un rendu fluide, rassurant et pensé pour déclencher le contact.</p>
-            </article>
-          </div>
+          <div class="section-heading section-heading-center" id="process-heading"></div>
+          <div class="process-grid" id="process-grid"></div>
         </div>
       </section>
 
-      <!-- Offres -->
       <section class="section-block section-soft" id="offres">
         <div class="container">
-          <div class="section-heading section-heading-center">
-            <span class="section-kicker">Offres</span>
-            <h2>Des offres claires</h2>
-            <p>Trois formats selon le niveau d'accompagnement dont vous avez besoin.</p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-lg-4">
-              <article class="offer-card offer-card-featured">
-                <span class="offer-label">Site</span>
-                <div class="offer-price offer-price-highlight">
-                  <span class="offer-price-note">À partir de</span>
-                  <strong class="offer-price-value">900€</strong>
-                </div>
-                <p class="offer-intro">
-                  Un site vitrine crédible, pensé pour convaincre rapidement
-                </p>
-                <ul class="offer-list">
-                  <li>Direction visuelle adaptée à votre activité</li>
-                  <li>Version mobile soignée</li>
-                  <li>Informations essentielles et contact mis en avant</li>
-                </ul>
-                <a class="button button-primary" href="#contact">Créer mon site</a>
-              </article>
-            </div>
-
-            <div class="col-lg-4">
-              <article class="offer-card">
-                <span class="offer-label">Gestion</span>
-                <div class="offer-price">95€/mois</div>
-                <p class="offer-intro">
-                  Un site suivi, mis à jour et toujours cohérent
-                </p>
-                <ul class="offer-list">
-                  <li>Mises à jour de contenu</li>
-                  <li>Suivi technique et corrections</li>
-                  <li>Ajustements réguliers en toute tranquillité</li>
-                </ul>
-                <a class="button button-secondary" href="#contact">Demander la gestion</a>
-              </article>
-            </div>
-
-            <div class="col-lg-4">
-              <article class="offer-card">
-                <span class="offer-label">Réseaux sociaux</span>
-                <div class="offer-price">100€/mois</div>
-                <p class="offer-intro">
-                  Une présence régulière et cohérente
-                </p>
-                <ul class="offer-list">
-                  <li>Publications simples et utiles</li>
-                  <li>Actualités, nouveautés ou réalisations</li>
-                  <li>Image cohérente entre site et réseaux</li>
-                </ul>
-                <a class="button button-secondary" href="#contact">Ajouter les réseaux</a>
-              </article>
-            </div>
-          </div>
+          <div class="section-heading section-heading-center" id="pricing-heading"></div>
+          <div class="pricing-grid" id="pricing-grid"></div>
         </div>
       </section>
 
-      <!-- Contact -->
       <section class="section-block section-contact" id="contact">
         <div class="container">
-          <div class="contact-layout">
-            <div class="contact-main">
-              <span class="section-kicker">Contact</span>
-              <h2>Parlons de votre projet</h2>
-              <p>
-                Envoyez vos éléments essentiels. Nous les transformons en site vitrine
-                crédible, fluide et prêt à être montré.
-              </p>
-
+          <div class="contact-shell">
+            <div class="contact-copy" id="contact-copy"></div>
+            <div class="contact-card">
               <div class="contact-actions">
-                <a
-                  class="button button-primary"
-                  href="https://wa.me/33611097655"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fa fa-whatsapp"></i>
-                  Parler du projet
-                </a>
-                <a class="button button-secondary" href="tel:+33611097655">
-                  <i class="fa fa-phone"></i>
-                  06 11 09 76 55
-                </a>
-                <a class="button button-secondary" href="tel:+33758661650">
-                  <i class="fa fa-phone"></i>
-                  07 58 66 16 50
-                </a>
-                <a class="button button-secondary" href="mailto:hichamaifout@gmail.com">
-                  <i class="fa fa-envelope-o"></i>
-                  hichamaifout@gmail.com
-                </a>
-              </div>
-
-              <div class="contact-note">
-                Échange rapide, cadrage net, lancement fluide.
+                <a class="button button-primary" id="contact-primary-cta" href="https://wa.me/33611097655" target="_blank" rel="noreferrer">WhatsApp</a>
+                <a class="button button-secondary" href="tel:+33611097655">06 11 09 76 55</a>
+                <a class="button button-secondary" href="tel:+33758661650">07 58 66 16 50</a>
+                <a class="button button-secondary" href="mailto:contact@mavitrineonline.fr">contact@mavitrineonline.fr</a>
               </div>
             </div>
-
-            <aside class="contact-side-card">
-              <img
-                src="assets/images/logo-mavitrine-online.png"
-                alt="Logo Ma Vitrine Online"
-              >
-              <h3>Pour démarrer</h3>
-              <p>Vous pouvez envoyer l'existant : ancien site, documents, visuels ou simples notes.</p>
-              <ul>
-                <li>Nom de l'activité</li>
-                <li>Services / prestations</li>
-                <li>Photos / visuels</li>
-                <li>Adresse, horaires, coordonnées</li>
-              </ul>
-            </aside>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-shell">
+        <div class="footer-grid">
           <div class="footer-brand">
-            <a href="#top" class="footer-logo-link" aria-label="Retour en haut">
-              <img
-                class="footer-logo-image"
-                src="assets/branding/logo-light-transparent.png"
-                alt="Logo Ma Vitrine Online"
-              >
-            </a>
-            <a href="#top" class="footer-site-name">Ma Vitrine Online</a>
-            <div class="footer-copy">
-              <span>© <span id="current-year"></span> Ma Vitrine Online</span>
+            <img src="assets/images/logo-mavitrine-online-footer.png" alt="Ma Vitrine Online">
+            <p id="footer-note"></p>
+          </div>
+          <div>
+            <h3 id="footer-nav-title"></h3>
+            <div class="footer-links" id="footer-nav-links"></div>
+          </div>
+          <div>
+            <h3 id="footer-contact-title"></h3>
+            <div class="footer-links">
+              <a href="mailto:contact@mavitrineonline.fr">contact@mavitrineonline.fr</a>
+              <a href="tel:+33611097655">06 11 09 76 55</a>
+              <a href="tel:+33758661650">07 58 66 16 50</a>
+              <a href="https://wa.me/33611097655" target="_blank" rel="noreferrer">WhatsApp</a>
             </div>
           </div>
-
-          <div class="footer-column">
-            <span class="footer-title">Plan du site</span>
-            <div class="footer-links footer-links-column">
-              <a href="#top">Accueil</a>
-              <a href="#avantages">Avantages</a>
-              <a href="#offres">Offres</a>
-              <a href="#exemples">Exemples</a>
-              <a
-                href="./showroom/"
-                data-showroom-link="index.html"
-              >
-                Showroom
-              </a>
-              <a href="#contact">Contact</a>
-            </div>
+          <div>
+            <h3 id="footer-social-title"></h3>
+            <div class="footer-links" id="footer-social-links"></div>
           </div>
-
-          <div class="footer-column">
-            <span class="footer-title">Contact</span>
-            <div class="footer-links footer-links-column">
-              <a href="#contact">Parler du projet</a>
-              <a href="mailto:hichamaifout@gmail.com">hichamaifout@gmail.com</a>
-              <a href="mentions-legales.html">Mentions légales</a>
-            </div>
-            <div class="footer-social-buttons footer-social-icons">
-              <a
-                class="social-button social-icon-button"
-                href="https://www.instagram.com/hichamaifout/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Instagram"
-                title="Instagram"
-              >
-                <i class="fa fa-instagram"></i>
-              </a>
-              <a
-                class="social-button social-icon-button"
-                href="https://www.facebook.com/hicham.aifout"
-                target="_blank"
-                rel="noopener"
-                aria-label="Facebook"
-                title="Facebook"
-              >
-                <i class="fa fa-facebook"></i>
-              </a>
-            </div>
-          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="mentions-legales.html" id="footer-legal-link">Mentions legales</a>
+          <p>&copy; <span id="current-year"></span> Ma Vitrine Online</p>
         </div>
       </div>
     </footer>
 
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/site-content.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
 </html>
