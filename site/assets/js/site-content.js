@@ -22,106 +22,106 @@ window.MVO_SITE_CONTENT = {
   },
   styles: [
     {
-      id: "statutaire-elegant",
-      label: { fr: "Statutaire", en: "Signature" },
-      name: { fr: "Statutaire Elegant", en: "Elegant Signature" },
+      id: "cabinets-conseil",
+      label: { fr: "Cabinet & conseil", en: "Professional services" },
+      name: { fr: "Cabinets & conseil", en: "Legal & consulting" },
       description: {
-        fr: "Une presence haut de gamme pour cabinet, conseil ou activite a forte confiance.",
-        en: "An upscale presence for legal, advisory or trust-based businesses."
+        fr: "Une direction claire et statutaire pour cabinet, conseil, expertise et activite fondee sur la confiance.",
+        en: "A clear, structured direction for legal firms, consulting and trust-based expertise."
       },
       tags: {
-        fr: ["Cabinet", "Premium", "Confiance"],
-        en: ["Legal", "Premium", "Trust"]
+        fr: ["Conseil", "Confiance", "Expertise"],
+        en: ["Consulting", "Trust", "Expertise"]
       },
-      desktop: "showroom/feliciano-master/images/bg_1.jpg",
-      mobile: "assets/images/prompt/legal-reference.png",
-      demo: "feliciano-master/index.html",
-      brief: "feliciano-master/index.html#mvo-summary"
+      desktop: "showroom/strategic-consulting/images/about-image-01.jpg",
+      mobile: "showroom/cabinet-conseil-impact/assets/Illustration2.png",
+      demo: "strategic-consulting/index.html",
+      brief: "strategic-consulting/index.html#mvo-summary"
     },
     {
-      id: "sante-premium",
-      label: { fr: "Sante", en: "Health" },
-      name: { fr: "Sante Premium", en: "Health Premium" },
+      id: "sante-dentaire",
+      label: { fr: "Sante & dentaire", en: "Health & dental" },
+      name: { fr: "Sante & dentaire", en: "Health & dental" },
       description: {
-        fr: "Une direction claire et rassurante pour clinique, centre ou cabinet medical.",
-        en: "A clear, reassuring direction for clinics and medical practices."
+        fr: "Une base rassurante et lisible pour clinique, centre de sante, dentaire ou pratique medicale.",
+        en: "A reassuring, highly readable base for clinics, healthcare and dental practices."
       },
       tags: {
-        fr: ["Clinique", "Confiance", "Statutaire"],
-        en: ["Clinic", "Trust", "Structured"]
+        fr: ["Clinique", "Medical", "Lisible"],
+        en: ["Clinic", "Medical", "Clear"]
       },
-      desktop: "assets/images/prompt/dental-reference.gif",
-      mobile: "assets/images/examples/classique.jpg",
+      desktop: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp",
+      mobile: "showroom/centre-medical-confiance/img/hero.jpg",
       demo: "cabinet-sante-premium/index.html",
       brief: "cabinet-sante-premium/index.html#mvo-summary"
     },
     {
-      id: "esthetique-signature",
-      label: { fr: "Esthetique", en: "Beauty" },
-      name: { fr: "Esthetique Signature", en: "Beauty Signature" },
+      id: "beaute-bien-etre",
+      label: { fr: "Beaute & bien-etre", en: "Beauty & wellness" },
+      name: { fr: "Beaute & bien-etre", en: "Beauty & wellness" },
       description: {
-        fr: "Un rendu premium et image pour institut, laser ou adresse skincare.",
-        en: "A premium visual direction for beauty, laser or skincare businesses."
+        fr: "Un rendu plus image, plus doux et plus premium pour institut, skincare, esthetique ou bien-etre.",
+        en: "A softer, more premium visual direction for beauty studios, skincare and wellness businesses."
       },
       tags: {
         fr: ["Skin care", "Premium", "Image"],
         en: ["Skincare", "Premium", "Image"]
       },
-      desktop: "assets/images/prompt/beauty-premium.avif",
+      desktop: "showroom/beaute-signature/images/templatemo-futuristic-girl.jpg",
       mobile: "showroom/esthetique-signature/img/hero.jpg",
-      demo: "esthetique-signature/index.html",
-      brief: "esthetique-signature/index.html#mvo-summary"
+      demo: "beaute-signature/index.html",
+      brief: "beaute-signature/index.html#mvo-summary"
     },
     {
-      id: "impact-commercial",
-      label: { fr: "Commercial", en: "Retail" },
-      name: { fr: "Impact Commercial", en: "Commercial Impact" },
+      id: "commerce-proximite",
+      label: { fr: "Commerce & proximite", en: "Retail & local" },
+      name: { fr: "Commerce & proximite", en: "Retail & local" },
       description: {
-        fr: "Une structure directe pensee pour presenter l'essentiel et generer du contact.",
-        en: "A direct structure built to show the essentials and generate contact."
+        fr: "Une structure directe pour boutique, commerce local, concept store ou activite de proximite.",
+        en: "A direct structure for boutiques, local shops, concept stores and nearby service businesses."
       },
       tags: {
         fr: ["Local", "Conversion", "Rapide"],
         en: ["Local", "Conversion", "Fast"]
       },
       desktop: "showroom/boutique-moderne/assets/img/banner_img_01.jpg",
-      mobile: "showroom/burgerking-main/img/carousel-1.jpg",
+      mobile: "showroom/pixie-ecommerce/assets/images/about-us.jpg",
       demo: "boutique-moderne/index.html",
       brief: "boutique-moderne/index.html#mvo-summary"
     },
     {
-      id: "studio-creatif",
-      label: { fr: "Creatif", en: "Creative" },
-      name: { fr: "Studio Creatif", en: "Creative Studio" },
+      id: "studio-business",
+      label: { fr: "Studio, business & formation", en: "Studio, business & training" },
+      name: { fr: "Studio, business & formation", en: "Studio, business & training" },
       description: {
-        fr: "Une base expressive pour activite portee par le visuel, le portfolio ou l'univers de marque.",
-        en: "An expressive base for image-led businesses, portfolios and brand worlds."
+        fr: "Une base expressive pour studio, portfolio, formation premium, activite independante ou univers de marque.",
+        en: "An expressive base for studios, portfolios, premium training and independent businesses."
       },
       tags: {
-        fr: ["Portfolio", "Impact", "Visuel"],
-        en: ["Portfolio", "Impact", "Visual"]
+        fr: ["Studio", "Portfolio", "Formation"],
+        en: ["Studio", "Portfolio", "Training"]
       },
       desktop: "showroom/experience-visuelle/img/infinite-loop-01.jpg",
-      mobile: "assets/images/examples/premium.jpg",
+      mobile: "showroom/formation-executive-premium/images/hero/hero.png",
       demo: "experience-visuelle/index.html",
       brief: "experience-visuelle/index.html#mvo-summary"
     },
     {
-      id: "presence-chaleureuse",
-      label: { fr: "Chaleureux", en: "Warm" },
-      name: { fr: "Presence Chaleureuse", en: "Warm Presence" },
+      id: "food-hospitality",
+      label: { fr: "Food & hospitality", en: "Food & hospitality" },
+      name: { fr: "Food & hospitality", en: "Food & hospitality" },
       description: {
-        fr: "Une ambiance accueillante pour commerce, institut, boutique ou activite de proximite.",
-        en: "A welcoming atmosphere for local shops, beauty studios and nearby services."
+        fr: "Des directions vivantes et gourmandes pour restaurant, brunch, cafe, bar ou lieu hospitality.",
+        en: "Lively, image-led directions for restaurants, brunch concepts, cafes, bars and hospitality venues."
       },
       tags: {
-        fr: ["Local", "Accueil", "Convivial"],
-        en: ["Local", "Friendly", "Welcoming"]
+        fr: ["Restaurant", "Cafe", "Mobile"],
+        en: ["Restaurant", "Cafe", "Mobile"]
       },
-      desktop: "showroom/grandcoffee-master/images/banner-bg.png",
-      mobile: "assets/images/examples/moderne.jpg",
-      demo: "grandcoffee-master/index.html",
-      brief: "grandcoffee-master/index.html#mvo-summary"
+      desktop: "showroom/yummy-red-1.0.0/assets/img/hero-img.png",
+      mobile: "showroom/wave-cafe/img/special-01.jpg",
+      demo: "yummy-red-1.0.0/index.html",
+      brief: "yummy-red-1.0.0/index.html#mvo-summary"
     }
   ],
   languages: {
@@ -183,7 +183,7 @@ window.MVO_SITE_CONTENT = {
       stylesSection: {
         kicker: "Styles / modeles",
         title: "Des styles adaptes a plusieurs activites",
-        text: "Chaque style visible ici renvoie vers le showroom complet. Vous comparez les directions puis nous adaptons celle qui vous correspond.",
+        text: "Chaque carte correspond a une grande categorie d'activite. Vous ouvrez ensuite la direction la plus proche, puis nous l'adaptons a votre metier.",
         sectionCta: "Voir le showroom complet",
         brief: "Voir le brief",
         demo: "Ouvrir la demo",
@@ -276,6 +276,18 @@ window.MVO_SITE_CONTENT = {
               "Contact facilite"
             ],
             cta: "Ajouter les reseaux"
+          },
+          {
+            title: "Sur mesure",
+            price: "Sur devis",
+            text: "Si le projet demande une structure, des pages ou un cadrage plus specifique, nous montons un package adapte.",
+            points: [
+              "Cadrage selon le besoin",
+              "Perimetre personnalise",
+              "Fonctionnalites ou pages specifiques",
+              "Accompagnement plus pousse"
+            ],
+            cta: "Parler du besoin"
           }
         ]
       },
@@ -362,7 +374,7 @@ window.MVO_SITE_CONTENT = {
       stylesSection: {
         kicker: "Styles",
         title: "Styles for multiple business types",
-        text: "Each style is connected to the full showroom. You compare the directions, then we adapt the right one to your business.",
+        text: "Each card represents a main business category. You open the closest direction first, then we adapt it to your business.",
         sectionCta: "Open full showroom",
         brief: "View brief",
         demo: "Open demo",
@@ -455,6 +467,18 @@ window.MVO_SITE_CONTENT = {
               "Easier contact"
             ],
             cta: "Add social presence"
+          },
+          {
+            title: "Custom package",
+            price: "Custom quote",
+            text: "If your project needs a more specific structure, scope or setup, we create a tailored package.",
+            points: [
+              "Scope matched to your needs",
+              "Tailored project structure",
+              "Specific pages or features",
+              "More hands-on support"
+            ],
+            cta: "Discuss your needs"
           }
         ]
       },

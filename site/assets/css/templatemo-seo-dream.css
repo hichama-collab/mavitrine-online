@@ -534,6 +534,10 @@ section[id] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.pricing-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .styles-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -991,6 +995,10 @@ section[id] {
   }
 
   .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pricing-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

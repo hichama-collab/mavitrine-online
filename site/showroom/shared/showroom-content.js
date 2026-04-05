@@ -1,8 +1,8 @@
 window.MVO_SHOWROOM_CONTENT = {
   labels: {
     fr: {
-      title: "Showroom Ma Vitrine Online",
-      intro: "Choisissez une direction visuelle. Nous l'adaptons ensuite entierement a l'activite, aux contenus et au positionnement.",
+      title: "Showroom multi-activites Ma Vitrine Online",
+      intro: "Choisissez une famille visuelle claire. Nous l'adaptons ensuite a l'activite, aux contenus et au niveau de gamme.",
       openDemo: "Ouvrir la demo",
       viewBrief: "Voir le brief",
       backHome: "Retour accueil"
@@ -19,26 +19,29 @@ window.MVO_SHOWROOM_CONTENT = {
     {
       id: "food",
       anchor: "food",
-      menu: "Food",
-      titleFr: "Food",
+      menuFr: "Food & hospitality",
+      menuEn: "Food & hospitality",
+      titleFr: "Food & hospitality",
       titleEn: "Food",
-      textFr: "Restaurants, cafes, brunch, bars, clubs et concepts food.",
+      textFr: "Restaurants, cafes, brunch, bars et concepts hospitality.",
       textEn: "Restaurants, cafes, brunch spots, bars, clubs and food concepts."
     },
     {
       id: "professional-services",
       anchor: "professional-services",
-      menu: "Professional Services",
-      titleFr: "Professional Services",
+      menuFr: "Cabinets & sante",
+      menuEn: "Professional services",
+      titleFr: "Cabinets, sante & expertise",
       titleEn: "Professional Services",
-      textFr: "Cabinets, sante, dentaire, conseil et expertises de confiance.",
+      textFr: "Cabinets, sante, dentaire, conseil et activites fondees sur la confiance.",
       textEn: "Practices, healthcare, dental, consulting and trust-based expertise."
     },
     {
       id: "beauty",
       anchor: "beauty",
-      menu: "Beauty & Wellness",
-      titleFr: "Beauty & Wellness",
+      menuFr: "Beaute & bien-etre",
+      menuEn: "Beauty & wellness",
+      titleFr: "Beaute & bien-etre",
       titleEn: "Beauty & Wellness",
       textFr: "Instituts, esthetique, skincare, bien-etre et rendez-vous premium.",
       textEn: "Beauty studios, skincare, wellness and premium appointment-driven businesses."
@@ -46,17 +49,19 @@ window.MVO_SHOWROOM_CONTENT = {
     {
       id: "local-services",
       anchor: "local-services",
-      menu: "Local Services",
-      titleFr: "Local Services",
+      menuFr: "Commerce local",
+      menuEn: "Local services",
+      titleFr: "Commerce local & proximite",
       titleEn: "Local Services",
-      textFr: "Commerce local, reseaux de proximite, artisans et services de terrain.",
+      textFr: "Commerce local, services de proximite, artisans et activites terrain.",
       textEn: "Local shops, local networks, trades and service businesses."
     },
     {
       id: "business",
       anchor: "business",
-      menu: "Business & Freelance",
-      titleFr: "Business & Freelance",
+      menuFr: "Studio & business",
+      menuEn: "Business & freelance",
+      titleFr: "Studio, business & formation",
       titleEn: "Business & Freelance",
       textFr: "Agences, freelances, studios, formation et activites independantes.",
       textEn: "Agencies, freelancers, studios, training and independent businesses."
@@ -64,8 +69,9 @@ window.MVO_SHOWROOM_CONTENT = {
     {
       id: "events",
       anchor: "events",
-      menu: "Events & Venues",
-      titleFr: "Events & Venues",
+      menuFr: "Lieux & evenements",
+      menuEn: "Events & venues",
+      titleFr: "Lieux & evenements",
       titleEn: "Events & Venues",
       textFr: "Clubs, lieux, programmation et evenements recurrents.",
       textEn: "Clubs, venues, programming and recurring events."

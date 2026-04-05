@@ -62,9 +62,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 24px;
-        height: 80px;
-        padding: 0 38px;
+        gap: 18px;
+        min-height: 78px;
+        padding: 10px 24px;
         background: rgba(0, 0, 0, 0.84);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -77,7 +77,8 @@
       }
 
       .brand img {
-        width: 192px;
+        width: 164px;
+        max-height: 56px;
         height: auto;
         object-fit: contain;
       }
@@ -86,7 +87,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 28px;
+        gap: 18px;
         min-width: 0;
         flex: 1 1 auto;
       }
@@ -95,15 +96,19 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 30px;
+        gap: 18px;
         min-width: 0;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
       }
+
+      .main-menu::-webkit-scrollbar { display: none; }
 
       .menu-item {
         position: relative;
         color: rgba(255, 255, 255, 0.82);
-        font-size: 0.98rem;
+        font-size: 0.95rem;
         font-weight: 500;
         white-space: nowrap;
         padding: 8px 0;
@@ -170,7 +175,7 @@
       }
 
       .page-intro {
-        padding: 138px 32px 18px;
+        padding: 124px 32px 18px;
       }
 
       .page-intro-inner {
@@ -305,6 +310,13 @@
         letter-spacing: -0.03em;
       }
 
+      .cover-meta p {
+        margin-top: 8px;
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+
       .cover-actions {
         display: flex;
         flex-wrap: wrap;
@@ -414,7 +426,7 @@
       }
 
       .footer-brand img {
-        width: 196px;
+        width: 180px;
         margin-bottom: 18px;
       }
 
@@ -452,25 +464,20 @@
 
       @media (max-width: 1180px) {
         .header {
-          height: auto;
-          padding: 16px 20px;
-          flex-direction: column;
-          align-items: stretch;
+          padding: 12px 18px;
         }
 
         .header-right {
-          flex-direction: column;
-          align-items: stretch;
           gap: 14px;
         }
 
         .main-menu,
         .header-tools {
-          justify-content: center;
+          justify-content: flex-end;
         }
 
         .page-intro {
-          padding-top: 196px;
+          padding-top: 132px;
         }
 
         .footer-grid {
@@ -480,34 +487,34 @@
 
       @media (max-width: 820px) {
         .brand img {
-          width: 174px;
+          width: 138px;
+          max-height: 48px;
         }
 
         .header {
           gap: 14px;
-        }
-
-        .main-menu {
-          width: 100%;
-          justify-content: flex-start;
-          flex-wrap: nowrap;
-          overflow-x: auto;
-          padding-bottom: 6px;
-          scrollbar-width: none;
-        }
-
-        .main-menu::-webkit-scrollbar {
-          display: none;
+          padding: 10px 14px;
         }
 
         .menu-item {
           flex: 0 0 auto;
-          font-size: 0.92rem;
+          font-size: 0.88rem;
+        }
+
+        .main-menu {
+          width: auto;
+          justify-content: flex-start;
+          padding-bottom: 6px;
+        }
+
+        .header-right {
+          flex-direction: column;
+          align-items: stretch;
         }
 
         .page-intro {
           padding-inline: 20px;
-          padding-top: 190px;
+          padding-top: 178px;
         }
 
         .section-head {
@@ -550,7 +557,7 @@
   <body>
     <header class="header">
       <a class="brand" href="../index.html?lang=fr">
-        <img src="../assets/images/logo-mavitrine-online-signature.png" alt="Ma Vitrine Online">
+        <img src="../assets/branding/logo-light-transparent.png" alt="Ma Vitrine Online">
       </a>
       <div class="header-right">
         <nav class="main-menu" id="main-nav"></nav>
@@ -579,7 +586,7 @@
       <div class="footer-wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <img src="../assets/images/logo-mavitrine-online-signature.png" alt="Ma Vitrine Online">
+            <img src="../assets/branding/logo-light-transparent.png" alt="Ma Vitrine Online">
             <p id="footer-note"></p>
           </div>
           <div>
@@ -642,7 +649,7 @@
           document.getElementById("main-nav").innerHTML = content.categories
             .map(function (category, index) {
               var activeClass = index === 0 ? "menu-item is-active" : "menu-item";
-              return '<a class="' + activeClass + '" href="#' + category.anchor + '" data-anchor="' + category.anchor + '">' + category.menu + "</a>";
+              return '<a class="' + activeClass + '" href="#' + category.anchor + '" data-anchor="' + category.anchor + '">' + text(category.menuFr, category.menuEn) + "</a>";
             })
             .join("");
         }
@@ -686,7 +693,7 @@
             return (
               '<section class="category-section" id="' + category.anchor + '" data-category="' + category.id + '">' +
                 '<div class="section-head">' +
-                  '<span class="section-kicker">' + category.menu + "</span>" +
+                  '<span class="section-kicker">' + text(category.menuFr, category.menuEn) + "</span>" +
                   '<h2>' + text(category.titleFr, category.titleEn) + "</h2>" +
                   '<p>' + text(category.textFr, category.textEn) + "</p>" +
                 "</div>" +
@@ -703,6 +710,7 @@
                               "</div>" +
                               '<div class="cover-meta">' +
                                 "<h3>" + model.name + "</h3>" +
+                                "<p>" + text(model.blurbFr, model.blurbEn) + "</p>" +
                                 '<div class="cover-actions">' +
                                   '<a class="button-primary" href="./' + model.slug + '/index.html">' + labels.openDemo + "</a>" +
                                   '<a class="button-secondary" href="./' + model.slug + '/index.html#mvo-summary">' + labels.viewBrief + "</a>" +
