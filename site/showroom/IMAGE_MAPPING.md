@@ -1,8 +1,5 @@
 # Mapping images showroom
-Fichiers generes pour remplacer les visuels en gardant exactement le meme chemin et le meme nom de fichier.
-## Fichiers
-- `PHOTO_MAPPING.csv`: uniquement les visuels a regenerer avec ton script photo.
-- `IMAGE_MAPPING.csv`: inventaire complet des assets references, avec colonne `action`.
+Archive documentaire du premier passage de remplacement des visuels. Les CSV de travail ont ete supprimes du projet car ils ne sont plus utilises par le site ni par le deploy.
 
 ## Totaux
 - Total assets references: 441
@@ -28,6 +25,5 @@ Fichiers generes pour remplacer les visuels en gardant exactement le meme chemin
 | yummy-red-1.0.0 | 30 | 4 | 0 | 0 |
 
 ## Comment t en servir
-1. Genere les fichiers listes dans `PHOTO_MAPPING.csv`.
-2. Remets chaque image exactement au meme `asset_path`.
-3. Si tu veux aussi changer logos ou favicons, regarde `IMAGE_MAPPING.csv` et prends les lignes `optionnel`.
+1. Utilise ce recap uniquement comme memo des volumes traites par template.
+2. Si on relance un chantier images plus tard, on regenerera un export propre a partir des assets en place.
