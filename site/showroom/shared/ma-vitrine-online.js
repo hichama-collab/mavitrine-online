@@ -1110,6 +1110,203 @@
         { selector: "form.newsletter-form input", mode: "attr", attr: "placeholder", value: "Votre email" },
         { selector: "footer .col-span-5 p", mode: "text", values: ["Adaptation showroom 2026 par Ma Vitrine Online.", "Direction executive adaptee par Ma Vitrine Online."] }
       ]
+    },
+    "bistro-elegance": {
+      model: "Model 28",
+      style: "Bistrot Premium",
+      showcaseTitle: "Une direction elegante pour bistrot signature, table premium ou lieu qui vend l'experience.",
+      showcaseText: "Le hero, la reservation et les visuels donnent tout de suite un rendu plus haut de gamme et plus memorisable.",
+      positioning: "Navigation courte, hero fort, menu premium, reservation visible et footer tres facile a retravailler.",
+      modulesText: "Hero, menu signature, reservation, contact, horaires et reseaux sociaux.",
+      useCase: "Ideal pour bistrot chic, cave a manger, table de chef ou lieu qui veut installer une image plus soignee.",
+      replace: {
+        "Bistro Elegance": BRAND.brand,
+        "Welcome to Bistro Elegance": "Un style raffine pour restaurant, bistrot ou table de chef",
+        "Experience culinary excellence in an atmosphere of refined sophistication": "Une base premium pour vendre une ambiance, une carte et une reservation sans surcharge.",
+        "Reserve Your Table": "Voir le brief",
+        "Our Signature Menu": "Exemples de plats et de mise en scene",
+        "Make a Reservation": "Demander un rappel",
+        "Full Name": "Votre nom",
+        "Phone Number": "Telephone",
+        "Number of Guests": "Nombre de convives",
+        "Special Requests": "Precisions",
+        "Reserve Table": "Envoyer la demande",
+        "Contact Us": "Contact"
+      },
+      patches: [
+        { selector: ".nav-links a", mode: "text", values: ["Accueil", "Carte", "Reservation", "Contact"] },
+        { selector: ".hero-content h1", mode: "text", value: "Restaurant, bistrot ou adresse premium" },
+        { selector: ".hero-content .cta-btn", mode: "text", value: "Voir le brief" }
+      ]
+    },
+    "wave-cafe": {
+      model: "Model 29",
+      style: "Coffee Shop",
+      showcaseTitle: "Une base chaleureuse pour cafe, brunch ou petite adresse visuelle.",
+      showcaseText: "Le format one-page avec video de fond et menu par onglets aide a projeter vite une ambiance et une carte courte.",
+      positioning: "Hero compact, menu tabule, modules de concept, specials et bloc contact.",
+      modulesText: "Boissons, a propos, items signatures, contact et CTA showroom.",
+      useCase: "Ideal pour coffee shop, brunch, glacier, bar a jus ou adresse de quartier.",
+      replace: {
+        "Wave Cafe": BRAND.brand,
+        "Drink Menu": "Carte",
+        "About Us": "Concept",
+        "Special Items": "Selections",
+        "Contact": "Contact",
+        "About Wave Cafe": "A propos du style",
+        "How we began": "Pourquoi ce style fonctionne",
+        "Contact Us": "Parler du projet",
+        "Your Name": "Votre nom",
+        "Your Email": "Votre email",
+        "Message...": "Votre message"
+      },
+      patches: [
+        { selector: ".tm-site-name", mode: "text", value: BRAND.brand },
+        { selector: ".tm-page-link span", mode: "text", values: ["Carte", "Concept", "Selections", "Contact"] },
+        { selector: ".tm-about-header", mode: "text", value: "Une base ideale pour cafe, brunch ou lieu de proximite" },
+        { selector: ".tm-special-item-title", mode: "text", values: ["Signature 1", "Signature 2", "Signature 3", "Signature 4", "Signature 5", "Signature 6"] }
+      ]
+    },
+    "crispy-kitchen": {
+      model: "Model 30",
+      style: "Food Video",
+      showcaseTitle: "Une direction jeune et mobile-first pour restaurant, burger ou concept food visuel.",
+      showcaseText: "Le hero video et le carrousel installent rapidement une ambiance moderne avec une vraie presence sur telephone.",
+      positioning: "Video de fond, hero fort, slides food, menu, contact et formulaire neutralise.",
+      modulesText: "Accueil, story, menu, actualites, contact et reservation simplifiee.",
+      useCase: "Ideal pour dark kitchen, smash burger, food court, brunch ou restaurant urbain.",
+      replace: {
+        "Crispy Kitchen": BRAND.brand,
+        "Reservation": "Voir le brief",
+        "Story": "Concept",
+        "Menu": "Carte",
+        "Our Updates": "Actualites",
+        "Contact": "Contact",
+        "Delicious Steaks": "Un site food qui donne faim et rassure vite",
+        "Fine Dining Restaurant": "Restaurant premium et mobile-first",
+        "Submit Request": "Envoyer la demande"
+      },
+      patches: [
+        { selector: ".navbar-nav .nav-link", mode: "text", values: ["Accueil", "Concept", "Carte", "Actualites", "Contact"] },
+        { selector: ".heroText h1", mode: "text", value: "Restaurant, brunch ou concept food" },
+        { selector: ".custom-btn", mode: "text", values: ["Voir le brief", "Voir le brief"] },
+        { selector: ".hero-text", mode: "text", values: ["Adresse premium", "Plat signature", "Carte courte"] }
+      ]
+    },
+    "strategic-consulting": {
+      model: "Model 31",
+      style: "Consulting Premium",
+      showcaseTitle: "Une base contemporaine pour conseil, expertise ou cabinet qui vend de la clarte.",
+      showcaseText: "La structure one-page est ideale pour faire monter la perception de niveau avec un discours clair et tres premium.",
+      positioning: "Navigation simple, hero net, onglets de services, preuves de confiance et bloc contact.",
+      modulesText: "Hero, offres, a propos, equipe, temoignages et contact.",
+      useCase: "Ideal pour consultant, cabinet de direction, expert-comptable, audit ou transformation.",
+      replace: {
+        "Strategic Consulting - Transform Your Business": BRAND.brand + " | Consulting premium",
+        "StrategicPro": BRAND.brand,
+        "Home": "Accueil",
+        "Services": "Offres",
+        "About": "Cabinet",
+        "Team": "Equipe",
+        "Testimonials": "Avis",
+        "Contact": "Contact",
+        "Begin Your Journey": "Voir le brief",
+        "Get In Touch": "Parler du projet",
+        "Privacy Policy": "Retour showroom",
+        "Terms of Service": "Brief",
+        "Careers": "Contact"
+      },
+      patches: [
+        { selector: "#hero-headline", mode: "html", value: "Une presence de conseil<br>plus claire et plus statutaire" },
+        { selector: "#hero-paragraph", mode: "text", value: "Une direction premium pour cabinet de conseil, strategie, transformation ou expertise qui doit inspirer confiance tres vite." },
+        { selector: ".section-title", mode: "text", values: ["Exemples d'offres", "Le bon niveau de cadrage", "L'equipe", "Ce que le site doit transmettre", "Contact"] }
+      ]
+    },
+    "simply-amazed": {
+      model: "Model 32",
+      style: "Kine / Osteo",
+      showcaseTitle: "Une base simple et visuelle pour cabinet kine, osteo ou activite de bien-etre professionnel.",
+      showcaseText: "Le format plein ecran, les sections modulees et la galerie permettent d'installer une image rassurante sans complexifier le parcours.",
+      positioning: "One-page, gros visuels, blocs preuves, galerie metier et bloc contact immediat.",
+      modulesText: "Presentation, benefices, galerie, contact et repere mobile.",
+      useCase: "Ideal pour kine, osteo, coaching postural ou accompagnement corporel.",
+      replace: {
+        "Simply Amazed HTML Template by Tooplate": BRAND.brand + " | Kine",
+        "Simply Amazed": BRAND.brand,
+        "Our Company": "Cabinet",
+        "Our Work": "Approche",
+        "Gallery": "Galerie",
+        "Contact": "Contact",
+        "Contact Us": "Parler du projet",
+        "Send it": "Envoyer",
+        "Tel:": "Tel:",
+        "Email:": "Email:"
+      },
+      patches: [
+        { selector: ".logo-fa", mode: "html", value: '<span><i class="fas fa-2x fa-heartbeat"></i></span> Ma Vitrine Online' },
+        { selector: ".simple p", mode: "text", value: "Une base ideale pour kine, osteo ou cabinet bien-etre qui veut montrer des visuels metier et rassurer rapidement." },
+        { selector: ".tm-work-item-inner h3", mode: "text", values: [".01 Evaluer", ".02 Soulager", ".03 Accompagner"] },
+        { selector: ".tm-work-item-inner p", mode: "text", values: ["Une premiere lecture claire pour expliquer la prise en charge, les pathologies accompagnees et le cadre du cabinet.", "Le template aide a presenter la methode, les seances et les benefices de facon simple et mobile.", "La base peut accueillir tes photos, tes contenus, les bons CTA et un vrai discours de confiance."] },
+        { selector: ".gallery-slider .item img", mode: "attr", attr: "src", values: ["img/kine01.png", "img/kine02.png", "img/kine03.png", "img/kine04.png", "img/gallery-img-05.jpg", "img/gallery-img-06.jpg", "img/gallery-img-07.jpg", "img/gallery-img-08.jpg", "img/gallery-img-09.jpg"] },
+        { selector: ".gallery-slider .item figcaption p", mode: "text", values: ["Cabinet, mouvement et accompagnement", "Seances, materiel et environnement", "Prise en charge du geste et de la posture", "Confiance, ecoute et progression", "Exemples de visuels metier", "Bloc galerie adaptable", "Parcours patient", "Accompagnement durable", "Cabinet mobile-first"] }
+      ]
+    },
+    "pixie-ecommerce": {
+      model: "Model 33",
+      style: "Commerce Local",
+      showcaseTitle: "Une base commerce pour click and collect, catalogue local ou petite boutique de proximite.",
+      showcaseText: "La structure ecommerce peut etre simplifiee pour servir de vitrine commerce locale avec produits, contact et CTA tres nets.",
+      positioning: "Header direct, hero commercial, produits en carrousel et formulaire simple.",
+      modulesText: "Hero, catalogue, produits phares, inscription, a propos et contact.",
+      useCase: "Ideal pour boutique locale, concept store, click and collect ou commerce de service.",
+      replace: {
+        "Pixie - Ecommerce HTML5 Template": BRAND.brand + " | Commerce local",
+        "Home": "Accueil",
+        "Products": "Catalogue",
+        "About Us": "Concept",
+        "Contact Us": "Contact",
+        "Ecommerce HTML Template": "Une vitrine commerce lisible et rapide",
+        "Order Now!": "Voir le brief",
+        "Featured Items": "Produits mis en avant",
+        "Subscribe on PIXIE now!": "Recevoir le brief"
+      },
+      patches: [
+        { selector: "#pre-header span", mode: "text", value: "Une base adaptable pour commerce local, catalogue ou click and collect." },
+        { selector: ".caption p", mode: "text", value: "Cette direction permet de montrer des produits, un univers de marque et un contact rapide sans alourdir la navigation." },
+        { selector: ".main-button a", mode: "text", value: "Voir le brief" }
+      ]
+    },
+    "club-evenements": {
+      model: "Model 34",
+      style: "Club & Evenements",
+      showcaseTitle: "Une base retravaillee pour club, line-up, soirees recurrentes et programmation mobile.",
+      showcaseText: "Le template evenement devient ici une vitrine pour club qui doit vendre sa programmation, ses dates et son atmosphere.",
+      positioning: "Hero evenementiel, sections programmation, line-up, lieu, infos pratiques et contact rapide.",
+      modulesText: "Accueil, calendrier, soirees a venir, lieu, programmation et CTA final.",
+      useCase: "Ideal pour club, salle, collectif, lieu de nuit ou organisateur d'evenements reguliers.",
+      replace: {
+        "ArtXibition": BRAND.brand,
+        "Hey! The Show is Starting in 15 Days.": "Prochaine date mise en avant cette semaine.",
+        "Contact Us Now!": "Parler du projet",
+        "Home": "Accueil",
+        "About Us": "Le lieu",
+        "Rent Venue": "Privatisation",
+        "Shows & Events": "Programmation",
+        "Tickets": "Infos",
+        "Next Show": "Prochaine soiree",
+        "Opening on Thursday, March 31st": "Vendredi soir • ouverture 23h30",
+        "The Sunny Hill Festival 2022": "Club night, line-up et reservation",
+        "Purchase Tickets": "Voir le brief",
+        "Three Amazing Venues for events": "Un lieu, plusieurs formats d'evenements",
+        "Our Venues & Tickets": "Dates, formats et capacites"
+      },
+      patches: [
+        { selector: ".pre-header span", mode: "text", value: "Le prochain line-up est deja pret a etre mis en avant." },
+        { selector: ".main-content h6", mode: "text", value: "Vendredi et samedi • programmation en cours" },
+        { selector: ".main-content h2", mode: "text", value: "Un template club pour line-up, soirees et reservations" },
+        { selector: ".nav li a", mode: "text", values: ["Accueil", "Le lieu", "Privatisation", "Programmation", "Infos"] },
+        { selector: ".section-heading h2", mode: "text", value: "Programmation et formats de soirees" }
+      ]
     }
   };
 

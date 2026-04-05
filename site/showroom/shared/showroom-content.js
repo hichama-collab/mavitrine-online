@@ -1,235 +1,97 @@
 window.MVO_SHOWROOM_CONTENT = {
+  intro: {
+    title: "Showroom Ma Vitrine Online",
+    lead: "Toutes les demos sont maintenant rangees dans 6 categories fixes. On commence directement par les categories et on affiche tous les modeles disponibles.",
+    frTitle: "FR",
+    frText:
+      "Chaque modele est concu comme une base adaptable, pouvant etre ajustee a tout type d'activite sans contrainte. Vous choisissez un style. Nous l'adaptons entierement a votre activite, vos contenus et votre positionnement.",
+    enTitle: "EN",
+    enText:
+      "Each template is designed as a flexible base that can be fully adapted to any type of business, without limitations. You choose a style. We tailor it entirely to your activity, your content, and your positioning."
+  },
   categories: [
-    { id: "all", fr: "Tous", en: "All" },
-    { id: "legal", fr: "Cabinet / Legal", en: "Legal" },
-    { id: "health", fr: "Sante / Medical", en: "Health" },
-    { id: "dental", fr: "Dentaire", en: "Dental" },
-    { id: "beauty", fr: "Beaute", en: "Beauty" },
-    { id: "retail", fr: "Commerce / Retail", en: "Retail" },
-    { id: "food", fr: "Food / Hospitality", en: "Food" },
-    { id: "consulting", fr: "Conseil / Services premium", en: "Consulting" },
-    { id: "creative", fr: "Creatif / Portfolio", en: "Creative" },
-    { id: "real-estate", fr: "Immobilier / Patrimoine", en: "Real Estate" },
-    { id: "corporate", fr: "Corporate / B2B", en: "Corporate" }
+    {
+      id: "food-bars",
+      title: "1. Restauration & Bars",
+      anchor: "restauration-bars",
+      items: ["Restaurants", "Cafes / Brunch", "Bars / Clubs", "Dark kitchens"],
+      focus: "Priorite visuelle, menus interactifs, reservation rapide"
+    },
+    {
+      id: "liberal",
+      title: "2. Professions liberales",
+      anchor: "professions-liberales",
+      items: ["Cabinets d'avocats", "Cabinets medicaux / dentaires", "Experts-comptables", "Consultants"],
+      focus: "Credibilite, clarte des services, prise de contact rapide"
+    },
+    {
+      id: "beauty",
+      title: "3. Beaute & Bien-etre",
+      anchor: "beaute-bien-etre",
+      items: ["Salons de coiffure", "Instituts esthetiques", "Spas", "Coachs / fitness"],
+      focus: "Mise en avant visuelle, prise de rendez-vous simplifiee"
+    },
+    {
+      id: "local-services",
+      title: "4. Artisans & services locaux",
+      anchor: "artisans-services-locaux",
+      items: ["BTP / renovation", "Plombiers / electriciens", "Nettoyage / services a domicile", "Commerces locaux"],
+      focus: "Conversion directe, devis rapide, visibilite locale"
+    },
+    {
+      id: "business",
+      title: "5. Entreprises & independants",
+      anchor: "entreprises-independants",
+      items: ["Freelances", "Startups", "Agences", "Formateurs"],
+      focus: "Positionnement, branding, generation de leads"
+    },
+    {
+      id: "events",
+      title: "6. Evenementiel & lieux",
+      anchor: "evenementiel-lieux",
+      items: ["Salles de reception", "Clubs", "Organisateurs d'evenements"],
+      focus: "Calendrier, programmation, visibilite mobile"
+    }
   ],
   models: [
-    {
-      category: "legal",
-      styleFr: "Statutaire",
-      styleEn: "Signature",
-      nameFr: "Statutaire Elegant",
-      nameEn: "Elegant Signature",
-      textFr: "Une direction haut de gamme pour cabinet, conseil ou activite a forte confiance.",
-      textEn: "An upscale direction for legal, advisory and trust-based businesses.",
-      tagsFr: ["Cabinet", "Premium", "Confiance"],
-      tagsEn: ["Legal", "Premium", "Trust"],
-      demo: "feliciano-master/index.html",
-      brief: "feliciano-master/index.html#mvo-summary",
-      preview: "feliciano-master/images/bg_1.jpg"
-    },
-    {
-      category: "health",
-      styleFr: "Sante",
-      styleEn: "Health",
-      nameFr: "Sante Premium",
-      nameEn: "Health Premium",
-      textFr: "Une direction claire et rassurante pour clinique, centre ou cabinet medical.",
-      textEn: "A clear and reassuring direction for clinics and medical practices.",
-      tagsFr: ["Clinique", "Confiance", "Statutaire"],
-      tagsEn: ["Clinic", "Trust", "Structured"],
-      demo: "cabinet-sante-premium/index.html",
-      brief: "cabinet-sante-premium/index.html#mvo-summary",
-      preview: "../assets/images/prompt/dental-reference.gif"
-    },
-    {
-      category: "dental",
-      styleFr: "Dentaire",
-      styleEn: "Dental",
-      nameFr: "Dentaire Statutaire",
-      nameEn: "Dental Signature",
-      textFr: "Une presence rassurante et tres statutaire pour cabinet dentaire ou implantologie.",
-      textEn: "A reassuring and highly structured presence for dental practices and implantology.",
-      tagsFr: ["Dentaire", "Confiance", "Sourire"],
-      tagsEn: ["Dental", "Trust", "Smile"],
-      demo: "dentaire-statutaire/index.html",
-      brief: "dentaire-statutaire/index.html#mvo-summary",
-      preview: "dentaire-statutaire/img/banner-bg.jpg"
-    },
-    {
-      category: "beauty",
-      styleFr: "Esthetique",
-      styleEn: "Beauty",
-      nameFr: "Esthetique Signature",
-      nameEn: "Beauty Signature",
-      textFr: "Un rendu premium et image pour institut, laser ou adresse skincare.",
-      textEn: "A premium, image-led render for beauty, laser and skincare businesses.",
-      tagsFr: ["Skin care", "Premium", "Image"],
-      tagsEn: ["Skincare", "Premium", "Image"],
-      demo: "esthetique-signature/index.html",
-      brief: "esthetique-signature/index.html#mvo-summary",
-      preview: "esthetique-signature/img/hero.jpg"
-    },
-    {
-      category: "retail",
-      styleFr: "Commercial",
-      styleEn: "Retail",
-      nameFr: "Boutique Moderne",
-      nameEn: "Modern Retail",
-      textFr: "Un style clair pour boutique, concept store, retail visuel ou marque locale.",
-      textEn: "A clean style for boutiques, concept stores, visual retail and local brands.",
-      tagsFr: ["Retail", "Boutique", "Conversion"],
-      tagsEn: ["Retail", "Shop", "Conversion"],
-      demo: "boutique-moderne/index.html",
-      brief: "boutique-moderne/index.html#mvo-summary",
-      preview: "boutique-moderne/assets/img/banner_img_01.jpg"
-    },
-    {
-      category: "consulting",
-      styleFr: "Conseil",
-      styleEn: "Consulting",
-      nameFr: "Cabinet Dynamique",
-      nameEn: "Dynamic Advisory",
-      textFr: "Une base corporate moderne pour cabinet, agence, conseil ou activite de service.",
-      textEn: "A modern corporate base for agencies, advisory firms and service businesses.",
-      tagsFr: ["Conseil", "B2B", "Corporate"],
-      tagsEn: ["Consulting", "B2B", "Corporate"],
-      demo: "cabinet-dynamique/index.html",
-      brief: "cabinet-dynamique/index.html#mvo-summary",
-      preview: "cabinet-dynamique/assets/images/banner-right-image.png"
-    },
-    {
-      category: "creative",
-      styleFr: "Creatif",
-      styleEn: "Creative",
-      nameFr: "Experience Visuelle",
-      nameEn: "Visual Experience",
-      textFr: "Une direction immersive pour studio creatif, marque visuelle ou experience premium.",
-      textEn: "An immersive direction for creative studios, visual brands and premium experiences.",
-      tagsFr: ["Studio", "Impact", "Visuel"],
-      tagsEn: ["Studio", "Impact", "Visual"],
-      demo: "experience-visuelle/index.html",
-      brief: "experience-visuelle/index.html#mvo-summary",
-      preview: "experience-visuelle/img/infinite-loop-01.jpg"
-    },
-    {
-      category: "beauty",
-      styleFr: "Beaute",
-      styleEn: "Beauty",
-      nameFr: "Beaute Signature",
-      nameEn: "Beauty Signature Plus",
-      textFr: "Un univers premium pour esthetique, skincare, institut ou image haut de gamme.",
-      textEn: "A premium world for aesthetics, skincare, beauty studios and image-led brands.",
-      tagsFr: ["Beauty", "Premium", "Univers"],
-      tagsEn: ["Beauty", "Premium", "Universe"],
-      demo: "beaute-signature/index.html",
-      brief: "beaute-signature/index.html#mvo-summary",
-      preview: "beaute-signature/images/templatemo-futuristic-girl.jpg"
-    },
-    {
-      category: "creative",
-      styleFr: "Portfolio",
-      styleEn: "Portfolio",
-      nameFr: "Portfolio Premium",
-      nameEn: "Premium Portfolio",
-      textFr: "Une base elegante pour architecture, image, patrimoine ou marque a forte direction visuelle.",
-      textEn: "An elegant base for architecture, image-led brands, premium real estate and visual portfolios.",
-      tagsFr: ["Portfolio", "Architecture", "Image"],
-      tagsEn: ["Portfolio", "Architecture", "Image"],
-      demo: "portfolio-premium/index.html",
-      brief: "portfolio-premium/index.html#mvo-summary",
-      preview: "portfolio-premium/images/templatemo-amber-folio-01.jpg"
-    },
-    {
-      category: "real-estate",
-      styleFr: "Listing",
-      styleEn: "Listing",
-      nameFr: "Vitrine Listing Premium",
-      nameEn: "Premium Listing",
-      textFr: "Une structure pensee pour immobilier, reseau local, annuaire premium ou implantation multi-sites.",
-      textEn: "A structure built for real estate, local discovery, premium directories and multi-location businesses.",
-      tagsFr: ["Immobilier", "Listing", "Reseau"],
-      tagsEn: ["Real estate", "Listing", "Network"],
-      demo: "vitrine-listing-premium/index.html",
-      brief: "vitrine-listing-premium/index.html#mvo-summary",
-      preview: "vitrine-listing-premium/assets/images/banner-right-image.png"
-    },
-    {
-      category: "consulting",
-      styleFr: "Conseil",
-      styleEn: "Consulting",
-      nameFr: "Conseil Impact",
-      nameEn: "Impact Advisory",
-      textFr: "Une base statutaire pour cabinet de conseil, expertise B2B ou activite de service a forte valeur.",
-      textEn: "A structured base for consulting, B2B expertise and high-value service businesses.",
-      tagsFr: ["Conseil", "Offres", "Confiance"],
-      tagsEn: ["Consulting", "Offers", "Trust"],
-      demo: "cabinet-conseil-impact/index.html",
-      brief: "cabinet-conseil-impact/index.html#mvo-summary",
-      preview: "cabinet-conseil-impact/assets/Illustration2.png"
-    },
-    {
-      category: "real-estate",
-      styleFr: "Patrimoine",
-      styleEn: "Wealth",
-      nameFr: "Patrimoine Premium",
-      nameEn: "Premium Wealth",
-      textFr: "Une direction tres statutaire pour patrimoine, family office ou expertise financiere.",
-      textEn: "A highly structured direction for wealth management, family offices and financial expertise.",
-      tagsFr: ["Patrimoine", "Premium", "Corporate"],
-      tagsEn: ["Wealth", "Premium", "Corporate"],
-      demo: "gestion-patrimoine-premium/index.html",
-      brief: "gestion-patrimoine-premium/index.html#mvo-summary",
-      preview: "gestion-patrimoine-premium/images/pms-img-1.jpg"
-    },
-    {
-      category: "food",
-      styleFr: "Food",
-      styleEn: "Food",
-      nameFr: "Presence Chaleureuse",
-      nameEn: "Warm Presence",
-      textFr: "Une vitrine accueillante pour commerce food, brunch, cafe ou activite de proximite.",
-      textEn: "A welcoming storefront for food concepts, cafes, brunch and local businesses.",
-      tagsFr: ["Food", "Chaleureux", "Local"],
-      tagsEn: ["Food", "Warm", "Local"],
-      demo: "grandcoffee-master/index.html",
-      brief: "grandcoffee-master/index.html#mvo-summary",
-      preview: "grandcoffee-master/images/banner-bg.png"
-    }
-  ],
-  languages: {
-    fr: {
-      badge: "Showroom sites vitrines",
-      title: "Des styles de sites vitrines classes par categories",
-      text: "Chaque demo presente une direction visuelle differente, pensee pour inspirer confiance sans rendu generique. Vous choisissez un style. Nous l'adaptons a votre image, vos contenus et votre positionnement.",
-      points: [
-        ["Categories plus claires", "Legal, sante, dentaire, beaute, retail, food, consulting, creatif, immobilier et corporate."],
-        ["Demos prêtes a ouvrir", "Chaque fiche renvoie vers une demo et un brief showroom."],
-        ["Base premium multi-activites", "Le showroom ne raconte plus seulement la restauration : il montre la vraie diversite du projet."]
-      ],
-      sectionTitle: "Catalogue des styles",
-      sectionText: "Filtrez par categorie, ouvrez une demo puis regardez le brief pour choisir la bonne direction visuelle.",
-      demo: "Ouvrir la demo",
-      brief: "Voir le brief",
-      filterLabel: "Filtrer par categorie",
-      footTitle: "Besoin d'une adaptation sur mesure ?",
-      footText: "Le showroom sert de point de depart. Nous reprenons ensuite les contenus, visuels, pages et CTA pour en faire une version finale a votre image."
-    },
-    en: {
-      badge: "Website showroom",
-      title: "Website styles organised by category",
-      text: "Each demo presents a different visual direction designed to build trust without looking generic. You choose a style, then we adapt it to your image, your content and your positioning.",
-      points: [
-        ["Clearer categories", "Legal, health, dental, beauty, retail, food, consulting, creative, real estate and corporate."],
-        ["Ready-to-open demos", "Each card links to a live demo and a showroom brief."],
-        ["Premium multi-sector base", "The showroom no longer tells a food-first story: it reflects the real diversity of the project."]
-      ],
-      sectionTitle: "Style catalogue",
-      sectionText: "Filter by category, open a demo, then review the brief to choose the right visual direction.",
-      demo: "Open demo",
-      brief: "View brief",
-      filterLabel: "Filter by category",
-      footTitle: "Need a custom adaptation?",
-      footText: "The showroom is the starting point. We then rework the content, visuals, pages and CTAs to turn it into a final version aligned with your business."
-    }
-  }
+    { slug: "Lounge-1.0.0", category: "food-bars", name: "Lounge Atmosphere", style: "Cafe / brunch premium", blurb: "Ambiance calme et imagee pour coffee shop, brunch ou adresse plus editoriale.", preview: "Lounge-1.0.0/images/intro-pic-primary.jpg" },
+    { slug: "burgerking-main", category: "food-bars", name: "Pop Express", style: "Street food", blurb: "Direction rapide et commerciale pour burger, tacos ou carte courte.", preview: "burgerking-main/img/carousel-3.jpg" },
+    { slug: "delicious-master", category: "food-bars", name: "Editorial Food", style: "Storytelling food", blurb: "Base magazine pour un concept qui veut raconter une histoire et pousser ses visuels.", preview: "delicious-master/img/bg-img/bg1.jpg" },
+    { slug: "feane-1.0.0", category: "food-bars", name: "Street Kitchen", style: "Fast casual", blurb: "Hero direct, CTA visibles et rendu efficace pour livraison ou click and collect.", preview: "feane-1.0.0/images/hero-bg.jpg" },
+    { slug: "feliciano-master", category: "food-bars", name: "Signature Dining", style: "Restaurant haut de gamme", blurb: "Une vitrine verticale et premium pour bistrot chic, rooftop ou lieu evenementiel.", preview: "feliciano-master/images/bg_1.jpg" },
+    { slug: "gourmet-master", category: "food-bars", name: "Maison Gourmande", style: "Brasserie / table de quartier", blurb: "Template lumineux et rassurant pour cuisine maison ou brasserie elegante.", preview: "gourmet-master/img/hero_1.jpg" },
+    { slug: "grandcoffee-master", category: "food-bars", name: "Coffee Presence", style: "Cafe de quartier", blurb: "Base tres accessible pour coffee shop, salon de the ou petit lieu de passage.", preview: "grandcoffee-master/images/banner-bg.png" },
+    { slug: "pato-master", category: "food-bars", name: "Night & Chic", style: "Bar / club lounge", blurb: "Ambiance sombre et selective pour cocktails, bar du soir ou lieu de fete.", preview: "pato-master/images/master-slides-06.jpg" },
+    { slug: "restaurant-1.0.0", category: "food-bars", name: "Premium Landing", style: "Groupe ou concept ambitieux", blurb: "Landing solide pour reseau, franchise ou restauration qui veut etre tres claire.", preview: "restaurant-1.0.0/assets/img/dishes-hero.png" },
+    { slug: "templatemo_507_victory", category: "food-bars", name: "Brasserie Classique", style: "Restaurant traditionnel", blurb: "Structure tres pragmatique pour aller a l'essentiel avec menu, horaires et contact.", preview: "templatemo_507_victory/img/banner-bg.jpg" },
+    { slug: "yummy-red-1.0.0", category: "food-bars", name: "Moderne Lumineux", style: "Restaurant / traiteur", blurb: "Style propre et contemporain pour cuisine saine, brunch ou restauration familiale.", preview: "yummy-red-1.0.0/assets/img/hero-img.png" },
+    { slug: "bistro-elegance", category: "food-bars", name: "Bistro Elegance", style: "Bistrot premium", blurb: "Une base plus signature pour table raffinee, reservation et experience de salle.", preview: "bistro-elegance/images/restaurant-tables.jpg" },
+    { slug: "wave-cafe", category: "food-bars", name: "Wave Cafe", style: "Coffee shop moderne", blurb: "One-page chaleureux avec menu par onglets et ambiance forte pour cafe ou brunch.", preview: "wave-cafe/img/special-01.jpg" },
+    { slug: "crispy-kitchen", category: "food-bars", name: "Crispy Kitchen", style: "Restaurant jeune et mobile", blurb: "Video hero et slides gourmandes pour un concept food rapide et visuel.", preview: "crispy-kitchen/images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg" },
+
+    { slug: "cabinet-sante-premium", category: "liberal", name: "Cabinet Sante Premium", style: "Clinique / centre de sante", blurb: "Direction statutaire et rassurante pour une prise de contact medicale immediate.", preview: "cabinet-sante-premium/assets/img/health/facilities-9.webp" },
+    { slug: "centre-medical-confiance", category: "liberal", name: "Centre Medical Confiance", style: "Maison medicale", blurb: "Structure corporate medicale avec services, equipe et demande de rappel.", preview: "centre-medical-confiance/img/hero.jpg" },
+    { slug: "dentaire-statutaire", category: "liberal", name: "Dentaire Statutaire", style: "Cabinet dentaire premium", blurb: "Image tres serieuse pour implantologie, orthodontie ou sourire expert.", preview: "dentaire-statutaire/img/banner-bg.jpg" },
+    { slug: "cabinet-dentaire-lumineux", category: "liberal", name: "Cabinet Dentaire Lumineux", style: "Dentaire accessible", blurb: "Version plus douce et plus lumineuse pour dentiste moderne ou cabinet familial.", preview: "cabinet-dentaire-lumineux/images/bg_1.jpg" },
+    { slug: "cabinet-dynamique", category: "liberal", name: "Cabinet Dynamique", style: "Conseil / expertise", blurb: "Base claire pour cabinet, expert-comptable, conseil ou services premium.", preview: "cabinet-dynamique/assets/images/banner-right-image.png" },
+    { slug: "cabinet-conseil-impact", category: "liberal", name: "Cabinet Conseil Impact", style: "Conseil B2B", blurb: "Template statutaire pour consultant, expertise B2B ou accompagnement de direction.", preview: "cabinet-conseil-impact/assets/Illustration2.png" },
+    { slug: "strategic-consulting", category: "liberal", name: "Strategic Consulting", style: "Consulting premium", blurb: "One-page moderne pour strategie, transformation et expertise de haut niveau.", preview: "strategic-consulting/images/about-image-01.jpg" },
+    { slug: "simply-amazed", category: "liberal", name: "Kine Simply Amazed", style: "Kine / osteo / bien-etre pro", blurb: "Une base simple et visuelle pour cabinet kine avec photos metier et contact rapide.", preview: "simply-amazed/img/kine01.png" },
+
+    { slug: "beaute-signature", category: "beauty", name: "Beaute Signature", style: "Institut premium", blurb: "Univers image pour skincare, esthetique et rendez-vous a forte valeur.", preview: "beaute-signature/images/templatemo-futuristic-girl.jpg" },
+    { slug: "esthetique-signature", category: "beauty", name: "Esthetique Signature", style: "Skin care / laser", blurb: "Direction douce et premium pour medecine esthetique, laser ou beaute haut de gamme.", preview: "esthetique-signature/img/hero.jpg" },
+
+    { slug: "boutique-moderne", category: "local-services", name: "Boutique Moderne", style: "Commerce local", blurb: "Base clean pour concept store, boutique ou commerce qui doit etre lisible vite.", preview: "boutique-moderne/assets/img/banner_img_01.jpg" },
+    { slug: "vitrine-listing-premium", category: "local-services", name: "Vitrine Listing Premium", style: "Reseau local / annuaire", blurb: "Structure listing pour reseau d'adresses, implantation locale ou activite multi-sites.", preview: "vitrine-listing-premium/assets/images/banner-bg.jpg" },
+    { slug: "pixie-ecommerce", category: "local-services", name: "Pixie Ecommerce", style: "Commerce de proximite", blurb: "Template ecommerce simple a repositionner pour vente locale, click and collect ou catalogue.", preview: "pixie-ecommerce/assets/images/banner-bg.jpg" },
+
+    { slug: "experience-visuelle", category: "business", name: "Experience Visuelle", style: "Studio creatif", blurb: "Direction immersive pour studio, marque visuelle ou experience premium.", preview: "experience-visuelle/img/infinite-loop-01.jpg" },
+    { slug: "portfolio-premium", category: "business", name: "Portfolio Premium", style: "Architecture / image", blurb: "Base elegante pour portfolio, architecture, image de marque ou direction artistique.", preview: "portfolio-premium/images/templatemo-amber-folio-01.jpg" },
+    { slug: "studio-creative", category: "business", name: "Studio Creative", style: "Agence visuelle", blurb: "Template impactant pour agence, studio photo ou brand content.", preview: "studio-creative/assets/img/gallery/freelancer.png" },
+    { slug: "studio-media-impact", category: "business", name: "Studio Media Impact", style: "Media / audio / contenu", blurb: "Base pour contenu media, podcast, studio ou offre de production.", preview: "studio-media-impact/images/banner-img1.png" },
+    { slug: "formation-executive-premium", category: "business", name: "Formation Executive Premium", style: "Formation / coaching", blurb: "Direction statutaire pour academie, formateur premium ou programme expert.", preview: "formation-executive-premium/images/hero/hero.png" },
+    { slug: "gestion-patrimoine-premium", category: "business", name: "Gestion Patrimoine Premium", style: "Patrimoine / finance", blurb: "Univers haut de gamme pour patrimoine, conseil financier ou family office.", preview: "gestion-patrimoine-premium/images/pms-img-1.jpg" },
+
+    { slug: "club-evenements", category: "events", name: "Club Evenements", style: "Club / programmation", blurb: "Template retravaille pour club, line-up, soirees recurrentes et programmation mobile.", preview: "club-evenements/assets/images/show-events-01.jpg" }
+  ]
 };
