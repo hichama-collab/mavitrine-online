@@ -1,14 +1,16 @@
 window.MVO_SITE_CONTENT = {
   meta: {
     fr: {
-      title: "Ma Vitrine Online | Sites vitrines premium multi-activites",
+      title: "Création de sites vitrines professionnels | Ma Vitrine Online",
       description:
-        "Ma Vitrine Online cree des sites vitrines premium, credibles et mobile-first pour cabinets, sante, beaute, retail, food, immobilier et activites de service."
+        "Création de sites vitrines modernes pour entreprises, cabinets, restaurants et indépendants. Design premium, mobile-first et rapide à mettre en ligne.",
+      locale: "fr_FR"
     },
     en: {
-      title: "Ma Vitrine Online | Premium websites for service businesses",
+      title: "Professional brochure website creation | Ma Vitrine Online",
       description:
-        "Ma Vitrine Online creates premium, credible and mobile-first websites for legal, healthcare, beauty, retail, food, real estate and service businesses."
+        "Modern brochure websites for businesses, clinics, restaurants and independents. Premium design, mobile-first structure and fast delivery.",
+      locale: "en_US"
     }
   },
   contacts: {
@@ -26,7 +28,7 @@ window.MVO_SITE_CONTENT = {
       label: { fr: "Cabinet & conseil", en: "Professional services" },
       name: { fr: "Cabinets & conseil", en: "Legal & consulting" },
       description: {
-        fr: "Une direction claire et statutaire pour cabinet, conseil, expertise et activite fondee sur la confiance.",
+        fr: "Une direction claire et statutaire pour cabinet, conseil, expertise et activité fondée sur la confiance.",
         en: "A clear, structured direction for legal firms, consulting and trust-based expertise."
       },
       tags: {
@@ -40,10 +42,10 @@ window.MVO_SITE_CONTENT = {
     },
     {
       id: "sante-dentaire",
-      label: { fr: "Sante & dentaire", en: "Health & dental" },
-      name: { fr: "Sante & dentaire", en: "Health & dental" },
+      label: { fr: "Santé & dentaire", en: "Health & dental" },
+      name: { fr: "Santé & dentaire", en: "Health & dental" },
       description: {
-        fr: "Une base rassurante et lisible pour clinique, centre de sante, dentaire ou pratique medicale.",
+        fr: "Une base rassurante et lisible pour clinique, centre de santé, dentaire ou pratique médicale.",
         en: "A reassuring, highly readable base for clinics, healthcare and dental practices."
       },
       tags: {
@@ -57,10 +59,10 @@ window.MVO_SITE_CONTENT = {
     },
     {
       id: "beaute-bien-etre",
-      label: { fr: "Beaute & bien-etre", en: "Beauty & wellness" },
-      name: { fr: "Beaute & bien-etre", en: "Beauty & wellness" },
+      label: { fr: "Beauté & bien-être", en: "Beauty & wellness" },
+      name: { fr: "Beauté & bien-être", en: "Beauty & wellness" },
       description: {
-        fr: "Un rendu plus image, plus doux et plus premium pour institut, skincare, esthetique ou bien-etre.",
+        fr: "Un rendu plus image, plus doux et plus premium pour institut, skincare, esthétique ou bien-être.",
         en: "A softer, more premium visual direction for beauty studios, skincare and wellness businesses."
       },
       tags: {
@@ -74,10 +76,10 @@ window.MVO_SITE_CONTENT = {
     },
     {
       id: "commerce-proximite",
-      label: { fr: "Commerce & proximite", en: "Retail & local" },
-      name: { fr: "Commerce & proximite", en: "Retail & local" },
+      label: { fr: "Commerce & proximité", en: "Retail & local" },
+      name: { fr: "Commerce & proximité", en: "Retail & local" },
       description: {
-        fr: "Une structure directe pour boutique, commerce local, concept store ou activite de proximite.",
+        fr: "Une structure directe pour boutique, commerce local, concept store ou activité de proximité.",
         en: "A direct structure for boutiques, local shops, concept stores and nearby service businesses."
       },
       tags: {
@@ -94,7 +96,7 @@ window.MVO_SITE_CONTENT = {
       label: { fr: "Studio, business & formation", en: "Studio, business & training" },
       name: { fr: "Studio, business & formation", en: "Studio, business & training" },
       description: {
-        fr: "Une base expressive pour studio, portfolio, formation premium, activite independante ou univers de marque.",
+        fr: "Une base expressive pour studio, portfolio, formation premium, activité indépendante ou univers de marque.",
         en: "An expressive base for studios, portfolios, premium training and independent businesses."
       },
       tags: {
@@ -111,7 +113,7 @@ window.MVO_SITE_CONTENT = {
       label: { fr: "Food & hospitality", en: "Food & hospitality" },
       name: { fr: "Food & hospitality", en: "Food & hospitality" },
       description: {
-        fr: "Des directions vivantes et gourmandes pour restaurant, brunch, cafe, bar ou lieu hospitality.",
+        fr: "Des directions vivantes et gourmandes pour restaurant, brunch, café, bar ou lieu hospitality.",
         en: "Lively, image-led directions for restaurants, brunch concepts, cafes, bars and hospitality venues."
       },
       tags: {
@@ -130,190 +132,270 @@ window.MVO_SITE_CONTENT = {
       otherLangLabel: "EN",
       nav: [
         { href: "#top", label: "Accueil" },
+        { href: "#exemple", label: "Exemple" },
         { href: "#styles", label: "Styles" },
         { href: "./showroom/", label: "Showroom", showroom: true, path: "index.html" },
-        { href: "#gestion", label: "Gestion" },
+        { href: "#positionnement", label: "Méthode" },
         { href: "#offres", label: "Offres" },
         { href: "#contact", label: "Contact" }
       ],
       hero: {
-        eyebrow: "Sites vitrines pour activites exigeantes",
-        title: "Un site credible des la premiere visite.",
-        text: "Cabinet, sante, commerce, beaute, restauration, immobilier ou activite de service : nous adaptons un style clair, credible et rassurant a votre image et a vos objectifs.",
-        ctaPrimary: "Voir les styles",
-        ctaSecondary: "Parler du projet",
+        eyebrow: "Sites vitrines pour activités exigeantes",
+        title: "Un site qui donne confiance et génère des clients dès la première visite",
+        text: "Vous avez une activité. Nous la transformons en un site clair, professionnel et crédible, pensé pour rassurer vite et déclencher le contact.",
+        ctaPrimary: "Obtenir mon site",
+        ctaSecondary: "Voir un exemple pour mon activité",
         points: [
-          "Pense mobile des le depart",
-          "Version francaise / anglaise si besoin",
-          "Contenu simple a faire evoluer",
-          "Image adaptee a votre activite"
+          "Livraison rapide",
+          "Site optimisé mobile",
+          "Adapté à votre activité",
+          "Facile à mettre à jour"
         ],
         heroCards: [
           { title: "Conseil", copy: "Cabinet et expertise", image: "assets/images/prompt/legal-premium.avif" },
-          { title: "Sante", copy: "Medical et dentaire", image: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp" },
-          { title: "Beaute", copy: "Image premium", image: "assets/images/prompt/beauty-premium.avif" },
+          { title: "Santé", copy: "Médical et dentaire", image: "showroom/cabinet-sante-premium/assets/img/health/facilities-9.webp" },
+          { title: "Beauté", copy: "Image premium", image: "assets/images/prompt/beauty-premium.avif" },
           { title: "Local", copy: "Commerce et services", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
+        ]
+      },
+      problem: {
+        cards: [
+          [
+            "Pas de site = perte de clients",
+            "Quand on ne vous trouve pas ou qu’on ne vous comprend pas vite, des prospects partent ailleurs."
+          ],
+          [
+            "Un site mal fait = perte de crédibilité",
+            "Un rendu amateur, lent ou confus fragilise immédiatement la confiance."
+          ],
+          [
+            "Notre approche",
+            "Nous faisons des sites simples, propres et efficaces, adaptés à votre activité et à votre niveau de gamme."
+          ]
         ]
       },
       sectors: {
         kicker: "Pour qui ?",
-        title: "Une vitrine adaptee a plusieurs metiers, sans biais food-first",
-        text: "Le site doit inspirer confiance tres vite, quel que soit votre secteur. Nous partons d'une direction visuelle credible puis nous l'adaptons a votre activite.",
+        title: "Un site vitrine adapté à plusieurs métiers",
+        text: "Vous ne choisissez pas juste un style. Vous choisissez une base que nous transformons en un site vendeur pour votre activité.",
         cards: [
           ["Cabinets & conseil", "Une image claire, statutaire et rassurante."],
-          ["Sante & dentaire", "Des structures lisibles qui inspirent confiance rapidement."],
-          ["Beaute & esthetique", "Une presence plus premium, plus image, plus desirable."],
-          ["Commerce & proximite", "Une vitrine simple, efficace et agreable a consulter."],
+          ["Santé & dentaire", "Des structures lisibles qui inspirent confiance rapidement."],
+          ["Beauté & esthétique", "Une présence plus premium, plus image, plus désirable."],
+          ["Commerce & proximité", "Une vitrine simple, efficace et agréable à consulter."],
           ["Food & hospitality", "Un rendu vivant, lisible et fluide sur mobile."],
-          ["Immobilier & services premium", "Une presence plus visuelle, plus haut de gamme et plus credible."]
+          ["Immobilier & services premium", "Une présence plus visuelle, plus haut de gamme et plus crédible."]
         ],
-        cta: "Voir les styles adaptes"
+        cta: "Voir les styles adaptés"
       },
       benefits: {
-        kicker: "Pourquoi ca fonctionne",
-        title: "Pense pour ce que vos visiteurs regardent vraiment",
-        text: "Vos visiteurs veulent comprendre rapidement votre activite, voir vos points forts et savoir comment vous contacter.",
+        kicker: "Pourquoi ça fonctionne",
+        title: "Pensé pour ce que vos visiteurs regardent vraiment",
+        text: "Vos visiteurs veulent comprendre rapidement votre activité, voir vos points forts et savoir comment vous contacter.",
         items: [
-          ["Une lecture fluide sur telephone", "Le site reste net, rassurant et tres lisible sur mobile."],
-          ["Les informations utiles visibles tout de suite", "Prestations, horaires, contact et preuves de confiance restent accessibles des le premier ecran."],
-          ["Un contenu facile a faire evoluer", "La base reste propre pour faire vivre pages, services, langues ou informations utiles."],
-          ["Une image alignee avec votre metier", "Le ton, les visuels et la structure suivent votre niveau de gamme et votre secteur."]
+          ["Une lecture fluide sur téléphone", "Le site reste net, rassurant et très lisible sur mobile."],
+          ["Les informations utiles visibles tout de suite", "Prestations, horaires, contact et preuves de confiance restent accessibles dès le premier écran."],
+          ["Un contenu facile à faire évoluer", "La base reste propre pour faire vivre pages, services, langues ou informations utiles."],
+          ["Une image alignée avec votre métier", "Le ton, les visuels et la structure suivent votre niveau de gamme et votre secteur."]
         ]
       },
       stylesSection: {
-        kicker: "Styles / modeles",
-        title: "Des styles adaptes a plusieurs activites",
-        text: "Chaque carte correspond a une grande categorie d'activite. Vous ouvrez ensuite la direction la plus proche, puis nous l'adaptons a votre metier.",
+        kicker: "Styles / modèles",
+        title: "Des styles adaptés à plusieurs activités",
+        text: "Chaque carte correspond à une grande catégorie d’activité. Vous ouvrez la direction la plus proche, puis nous l’adaptons à votre métier.",
         sectionCta: "Voir le showroom complet",
         brief: "Voir le brief",
-        demo: "Ouvrir la demo",
+        demo: "Ouvrir la démo",
         choose: "Choisir ce style"
       },
       showroom: {
         kicker: "Showroom",
-        title: "Explorer le showroom",
-        text: "Comparez plusieurs styles, ouvrez les demos et choisissez une direction visuelle a adapter a votre activite, vos contenus et votre positionnement.",
-        note: "Simple a consulter sur telephone comme sur ordinateur.",
+        title: "Explorez nos modèles par secteur",
+        text: "Comparez plusieurs styles, ouvrez les démos et choisissez une direction visuelle à adapter à votre activité, vos contenus et votre positionnement.",
+        note: "Simple à consulter sur téléphone comme sur ordinateur.",
         cta: "Ouvrir le showroom"
+      },
+      example: {
+        kicker: "Exemple concret",
+        title: "Un exemple de site restaurant pensé pour rassurer vite et faire agir",
+        text: "Voici un exemple de direction réalisée pour une adresse food: page d'accueil claire, accès rapide à la carte, à la réservation, à la privatisation et à la prise de contact.",
+        label: "Niagara Café",
+        lead: "Un front plus vendeur et plus lisible, avec une direction visuelle maîtrisée de bout en bout.",
+        points: [
+          "SEO local propre avec title, meta description, canonical, hreflang et balises sociales",
+          "CTA visibles dès le hero: réserver, appeler, privatiser",
+          "Carte, galerie, contact et pages locales pensées pour le référencement"
+        ],
+        stats: [
+          ["Front visible", "Accueil, carte, galerie, contact, version FR / EN"],
+          ["Objectif", "Rassurer vite, faciliter l'action et clarifier l'offre"],
+          ["Format", "Site vitrine premium avec parcours restaurant complet"]
+        ],
+        ctaPrimary: "Voir le showroom",
+        ctaSecondary: "Demander ce niveau de site"
       },
       content: {
         kicker: "Gestion du contenu",
-        title: "Vos contenus restent simples a mettre a jour",
-        text: "Pages, prestations, informations utiles, horaires, coordonnees ou langue supplementaire : la base reste propre, lisible et facile a faire evoluer.",
+        title: "Vos contenus restent simples à mettre à jour",
+        text: "Pages, prestations, informations utiles, horaires, coordonnées ou langue supplémentaire : la base reste propre, lisible et facile à faire évoluer.",
         points: [
           "Ajout ou modification rapide",
-          "Lecture claire cote visiteur",
-          "Version FR / EN prete si besoin",
-          "Structure evolutive"
+          "Lecture claire côté visiteur",
+          "Version FR / EN prête si besoin",
+          "Structure évolutive"
         ],
-        panelTitle: "Une base propre cote gestion",
+        panelTitle: "Une base propre côté gestion",
         panelItems: ["Prestations", "Services", "Pages", "Contact", "Langues", "Horaires", "Rendez-vous", "FAQ"],
-        resultTitle: "Un rendu clair cote visiteur"
+        resultTitle: "Un rendu clair côté visiteur",
+        resultRows: [
+          ["Services", "Blocs clairs et rassurants"],
+          ["Pages", "Informations visibles immédiatement"],
+          ["Langues", "FR par défaut, EN prête si besoin"],
+          ["Contact", "WhatsApp, téléphone, email et CTA rapides"]
+        ]
+      },
+      admin: {
+        kicker: "Gestion / admin",
+        title: "Une partie administration pensée pour faire vivre le site sans friction",
+        text: "Au-delà du design, le vrai niveau pro se voit aussi côté gestion. Nous pouvons prévoir une interface simple pour modifier une carte, des formules, des prix, des contenus FR / EN ou des sections métier sans tout casser.",
+        cardTitle: "Exemple de gestion de carte",
+        badge: "Interface éditoriale",
+        toolbar: ["Enregistrer directement", "Télécharger menu.json", "Auto-enregistrer"],
+        fields: [
+          ["Titre FR", "Entrées"],
+          ["Titre EN", "Starters"],
+          ["Prix", "14.50"],
+          ["Description FR", "Burrata crémeuse, tomates anciennes, pesto maison"],
+          ["Description EN", "Creamy burrata, heirloom tomatoes, homemade pesto"],
+          ["Statut", "Prêt à publier"]
+        ],
+        footer: "Idéal pour restaurants, cartes, catalogues, prestations ou contenus à faire évoluer régulièrement."
       },
       social: {
-        kicker: "Reseaux sociaux",
-        title: "Une presence en ligne coherente",
-        text: "Le site peut etre prolonge par Instagram et Facebook pour renforcer votre image, montrer l'actualite et simplifier la prise de contact.",
-        instagramTitle: "Un compte visuel coherent avec votre activite",
+        kicker: "Réseaux sociaux",
+        title: "Une présence en ligne cohérente",
+        text: "Le site peut être prolongé par Instagram et Facebook pour renforcer votre image, montrer l’actualité et simplifier la prise de contact.",
+        instagramTitle: "Un compte visuel cohérent avec votre activité",
         instagramPoints: [
-          "Actualites, nouveautes ou realisations",
-          "Identite alignee avec le site",
+          "Actualités, nouveautés ou réalisations",
+          "Identité alignée avec le site",
           "Contact plus simple"
         ],
         facebookTitle: "Une page claire et rassurante",
         facebookPoints: [
-          "Coordonnees et horaires faciles a trouver",
+          "Coordonnées et horaires faciles à trouver",
           "Publications utiles",
-          "Presence plus credible"
+          "Présence plus crédible"
         ],
-        cta: "Ajouter les reseaux"
+        cta: "Ajouter les réseaux"
       },
       process: {
         kicker: "Process",
-        title: "Un process simple, net et rassurant",
+        title: "Un process simple, rapide et sans friction",
+        text: "Vous avancez rapidement, sans tunnel compliqué ni allers-retours inutiles.",
         steps: [
-          ["Choix du style", "Nous partons d'une direction visuelle credible pour votre metier."],
-          ["Adaptation a votre activite", "Services, informations utiles, visuels, coordonnees et pages cles."],
-          ["Mise en ligne", "Un site fluide, mobile et pret a etre montre."]
+          ["Choix du style", "Vous choisissez un style adapté à votre activité."],
+          ["Adaptation à votre activité", "Services, informations utiles, visuels, coordonnées et pages clés."],
+          ["Mise en ligne rapide", "Un site fluide, mobile et prêt à être montré."]
         ]
       },
       pricing: {
         kicker: "Offres",
-        title: "Nos offres",
+        title: "Des offres simples et transparentes",
+        text: "Vous savez ce qui est inclus, ce qui est optionnel et comment avancer rapidement selon votre besoin.",
         cards: [
           {
             title: "Site vitrine",
-            price: "A partir de 900EUR",
-            text: "Un site vitrine credible, pense pour convaincre rapidement.",
+            price: "À partir de 900€",
+            text: "Un site qui donne confiance et attire des clients.",
             points: [
-              "Direction visuelle adaptee a votre activite",
-              "Version mobile soignee",
+              "Direction visuelle adaptée à votre activité",
+              "Version mobile soignée",
               "Contenus essentiels mis en avant",
-              "Base propre et evolutive"
+              "Base propre et évolutive"
             ],
-            cta: "Creer mon site"
+            cta: "Obtenir mon site"
           },
           {
             title: "Gestion",
-            price: "95EUR / mois",
-            text: "Un site suivi, coherent et mis a jour dans le temps.",
+            price: "95€ / mois",
+            text: "Un site suivi, cohérent et mis à jour dans le temps.",
             points: [
-              "Mises a jour simples",
+              "Mises à jour simples",
               "Corrections et ajustements",
               "Suivi tranquille",
-              "Coherence generale"
+              "Cohérence générale"
             ],
             cta: "Demander la gestion"
           },
           {
-            title: "Reseaux sociaux",
-            price: "100EUR / mois",
-            text: "Une presence reguliere et coherente pour prolonger l'image du site.",
+            title: "Réseaux sociaux",
+            price: "100€ / mois",
+            text: "Une présence régulière et cohérente pour prolonger l’image du site.",
             points: [
-              "Actualites et nouveautes",
-              "Image coherente",
+              "Actualités et nouveautés",
+              "Image cohérente",
               "Publications simples",
-              "Contact facilite"
+              "Contact facilité"
             ],
-            cta: "Ajouter les reseaux"
+            cta: "Ajouter les réseaux"
           },
           {
             title: "Sur mesure",
             price: "Sur devis",
-            text: "Si le projet demande une structure, des pages ou un cadrage plus specifique, nous montons un package adapte.",
+            text: "Si le projet demande une structure, des pages ou un cadrage plus spécifique, nous montons un package adapté.",
             points: [
               "Cadrage selon le besoin",
-              "Perimetre personnalise",
-              "Fonctionnalites ou pages specifiques",
-              "Accompagnement plus pousse"
+              "Périmètre personnalisé",
+              "Fonctionnalités ou pages spécifiques",
+              "Accompagnement plus poussé"
             ],
             cta: "Parler du besoin"
           }
         ]
       },
+      proof: {
+        kicker: "Crédibilité",
+        title: "Un parcours plus vendeur, du premier écran jusqu’au contact",
+        text: "Le site ne doit pas seulement être beau. Il doit clarifier l’offre, rassurer vite et faciliter l’action sur mobile comme sur desktop.",
+        cards: [
+          [
+            "Avant / après",
+            "Avant: message flou et positionnement ambigu. Après: promesse claire, activité comprise, CTA direct."
+          ],
+          [
+            "Résultat visible",
+            "Le visiteur comprend vite ce que vous faites, pourquoi vous êtes crédible et comment vous contacter."
+          ],
+          [
+            "Bloc crédibilité",
+            "Livraison rapide, mobile-first, adapté à votre activité et facile à mettre à jour."
+          ]
+        ]
+      },
       contact: {
         kicker: "Contact",
         title: "Parlons de votre projet",
-        text: "Envoyez l'essentiel. Nous le transformons en un site clair, credible et pret a etre montre.",
-        actionsTitle: "Pour demarrer rapidement",
+        text: "Envoyez l’essentiel. Nous le transformons en un site clair, crédible et prêt à être montré.",
+        actionsTitle: "Pour démarrer rapidement",
         actions: [
-          "Nom de l'activite",
+          "Nom de l’activité",
           "Services ou prestations",
           "Photos ou visuels",
-          "Adresse, horaires et coordonnees",
+          "Adresse, horaires et coordonnées",
           "Ancien site ou document si existant"
         ],
         primaryCta: "Demander un site",
         whatsapp: "WhatsApp",
         email: "Email",
-        footerNote: "Sites vitrines premium pour activites locales et services"
+        footerNote: "Sites vitrines premium pour activités locales et services"
       },
       footer: {
         navTitle: "Navigation",
         contactTitle: "Contact",
         socialTitle: "Rythme digital",
         socials: ["Instagram", "Facebook", "Showroom"],
-        legal: "Mentions legales"
+        legal: "Mentions légales"
       }
     },
     en: {
@@ -321,23 +403,24 @@ window.MVO_SITE_CONTENT = {
       otherLangLabel: "FR",
       nav: [
         { href: "#top", label: "Home" },
+        { href: "#exemple", label: "Example" },
         { href: "#styles", label: "Styles" },
         { href: "./showroom/", label: "Showroom", showroom: true, path: "index.html" },
-        { href: "#gestion", label: "Content" },
+        { href: "#positionnement", label: "Method" },
         { href: "#offres", label: "Pricing" },
         { href: "#contact", label: "Contact" }
       ],
       hero: {
         eyebrow: "Websites for demanding businesses",
-        title: "A credible website from the very first visit.",
-        text: "Legal, healthcare, retail, beauty, food, real estate or service business: we adapt a clear, credible and trust-building visual direction to your image and goals.",
-        ctaPrimary: "View styles",
-        ctaSecondary: "Discuss your project",
+        title: "A website that builds trust and converts visitors into clients from the first visit",
+        text: "You run a business. We turn it into a clear, professional and credible website designed to reassure quickly and generate contact.",
+        ctaPrimary: "Get my website",
+        ctaSecondary: "See an example for my business",
         points: [
-          "Mobile-first from the start",
-          "French / English ready",
-          "Easy-to-update content",
-          "Aligned with your business image"
+          "Fast delivery",
+          "Mobile-first",
+          "Adapted to your business",
+          "Easy to update"
         ],
         heroCards: [
           { title: "Professional", copy: "Consulting and services", image: "assets/images/prompt/legal-premium.avif" },
@@ -346,10 +429,17 @@ window.MVO_SITE_CONTENT = {
           { title: "Local", copy: "Retail and services", image: "showroom/boutique-moderne/assets/img/banner_img_01.jpg" }
         ]
       },
+      problem: {
+        cards: [
+          ["No website = lost clients", "If people cannot find you or understand your offer quickly, they leave."],
+          ["A bad website = lost credibility", "An amateur, slow or confusing website weakens trust immediately."],
+          ["Our approach", "We build simple, clean and effective websites adapted to your business and positioning."]
+        ]
+      },
       sectors: {
         kicker: "Who is it for?",
-        title: "A premium website for multiple industries, not a food-first template",
-        text: "The structure is meant to reassure quickly whatever your sector. We start from a credible visual direction, then adapt it to your business.",
+        title: "A brochure website adapted to multiple business types",
+        text: "You are not only choosing a style. You are choosing a base that we turn into a sales-ready website for your business.",
         cards: [
           ["Legal & consulting", "Clear, professional and trust-building."],
           ["Health & dental", "Clean structures that inspire instant confidence."],
@@ -382,10 +472,29 @@ window.MVO_SITE_CONTENT = {
       },
       showroom: {
         kicker: "Showroom",
-        title: "Explore the showroom",
+        title: "Explore templates by business category",
         text: "Compare different styles, open demos and choose a visual direction adapted to your business, your content and your positioning.",
         note: "Easy to browse on phone or desktop.",
         cta: "Open showroom"
+      },
+      example: {
+        kicker: "Concrete example",
+        title: "A restaurant website example designed to reassure quickly and drive action",
+        text: "Here is one direction built for a food business: clear homepage, quick access to the menu, booking, private events and contact.",
+        label: "Niagara Café",
+        lead: "A more persuasive front-end, with structure, clarity and stronger action points.",
+        points: [
+          "Clean local SEO with title, meta description, canonical, hreflang and social tags",
+          "Visible CTAs from the hero: book, call, private events",
+          "Menu, gallery, contact and local pages designed for discoverability"
+        ],
+        stats: [
+          ["Visible front-end", "Homepage, menu, gallery, contact, FR / EN version"],
+          ["Goal", "Build trust fast, drive action and clarify the offer"],
+          ["Format", "Premium brochure website with a full restaurant flow"]
+        ],
+        ctaPrimary: "Open showroom",
+        ctaSecondary: "Request this level of website"
       },
       content: {
         kicker: "Content management",
@@ -399,7 +508,30 @@ window.MVO_SITE_CONTENT = {
         ],
         panelTitle: "A clean editing base",
         panelItems: ["Services", "Pages", "Contact", "Languages", "Opening hours", "Bookings", "FAQ", "Testimonials"],
-        resultTitle: "A clear client-facing result"
+        resultTitle: "A clear client-facing result",
+        resultRows: [
+          ["Services", "Clear and trust-building sections"],
+          ["Pages", "Key information visible instantly"],
+          ["Languages", "FR by default, EN ready when needed"],
+          ["Contact", "WhatsApp, phone, email and quick CTA"]
+        ]
+      },
+      admin: {
+        kicker: "Admin / editing",
+        title: "An administration layer designed to keep the site alive without friction",
+        text: "Beyond design, real professionalism also shows on the editing side. We can plan a simple interface to manage a menu, offers, prices, FR / EN content or business sections without breaking the website.",
+        cardTitle: "Menu management example",
+        badge: "Editorial interface",
+        toolbar: ["Save directly", "Download menu.json", "Autosave"],
+        fields: [
+          ["FR title", "Starters"],
+          ["EN title", "Starters"],
+          ["Price", "14.50"],
+          ["FR description", "Creamy burrata, heirloom tomatoes, homemade pesto"],
+          ["EN description", "Creamy burrata, heirloom tomatoes, homemade pesto"],
+          ["Status", "Ready to publish"]
+        ],
+        footer: "Ideal for restaurants, menus, catalogues, services or any content that needs regular updates."
       },
       social: {
         kicker: "Social presence",
@@ -421,32 +553,34 @@ window.MVO_SITE_CONTENT = {
       },
       process: {
         kicker: "Process",
-        title: "A simple, clear and reassuring process",
+        title: "A simple, fast and frictionless process",
+        text: "You move quickly without a complicated funnel or unnecessary back and forth.",
         steps: [
-          ["Choose the style", "We start from a credible visual direction for your industry."],
+          ["Choose the style", "You choose a style adapted to your business."],
           ["Adapt it to your business", "Services, useful information, visuals, contact details and key pages."],
-          ["Go live", "A smooth, mobile-first website ready to be shown."]
+          ["Fast launch", "A smooth, mobile-first website ready to be shown."]
         ]
       },
       pricing: {
         kicker: "Pricing",
-        title: "Our offers",
+        title: "Simple and transparent pricing",
+        text: "You know what is included, what is optional and how to move forward quickly.",
         cards: [
           {
             title: "Website",
-            price: "From EUR900",
-            text: "A credible website designed to build trust quickly.",
+            price: "Starting from €900",
+            text: "A website that builds trust and attracts clients.",
             points: [
               "Visual direction adapted to your business",
               "Polished mobile version",
               "Essential content highlighted",
               "Clean and scalable base"
             ],
-            cta: "Request a website"
+            cta: "Get my website"
           },
           {
             title: "Management",
-            price: "EUR95 / month",
+            price: "€95 / month",
             text: "An updated, consistent website over time.",
             points: [
               "Simple updates",
@@ -458,7 +592,7 @@ window.MVO_SITE_CONTENT = {
           },
           {
             title: "Social presence",
-            price: "EUR100 / month",
+            price: "€100 / month",
             text: "A consistent social presence to extend the image of your website.",
             points: [
               "News and updates",
@@ -480,6 +614,16 @@ window.MVO_SITE_CONTENT = {
             ],
             cta: "Discuss your needs"
           }
+        ]
+      },
+      proof: {
+        kicker: "Credibility",
+        title: "A more persuasive flow from first screen to contact",
+        text: "The structure now speaks more directly to the client: problem, solution, result and direct call to action.",
+        cards: [
+          ["Before / after", "Before: vague message and unclear offer. After: clear promise, clear business fit and direct CTA."],
+          ["Visible result", "Visitors quickly understand what you do, why they can trust you and how to contact you."],
+          ["Credibility block", "Fast delivery, mobile-first structure, adapted to your business and easy to update."]
         ]
       },
       contact: {

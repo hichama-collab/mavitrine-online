@@ -106,6 +106,31 @@
     if (description) {
       description.setAttribute("content", meta.description);
     }
+
+    var ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute("content", meta.title);
+    }
+
+    var ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) {
+      ogDescription.setAttribute("content", meta.description);
+    }
+
+    var twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) {
+      twitterTitle.setAttribute("content", meta.title);
+    }
+
+    var twitterDescription = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescription) {
+      twitterDescription.setAttribute("content", meta.description);
+    }
+
+    var ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale && meta.locale) {
+      ogLocale.setAttribute("content", meta.locale);
+    }
   }
 
   function renderNav(page) {
@@ -127,8 +152,8 @@
       "<h1>" + hero.title + "</h1>" +
       "<p>" + hero.text + "</p>" +
       '<div class="hero-actions">' +
-      '<a class="button button-primary" href="#styles">' + hero.ctaPrimary + "</a>" +
-      '<a class="button button-secondary" href="#contact">' + hero.ctaSecondary + "</a>" +
+      '<a class="button button-primary" href="#contact">' + hero.ctaPrimary + "</a>" +
+      '<a class="button button-secondary" href="' + buildShowroomUrl("index.html") + '">' + hero.ctaSecondary + "</a>" +
       "</div>" +
       '<div class="hero-points">' +
       hero.points
@@ -146,6 +171,14 @@
           '<div class="hero-mini-copy"><strong>' + card.title + "</strong><span>" + card.copy + "</span></div>" +
           "</article>"
         );
+      })
+      .join("");
+  }
+
+  function renderProblem(page) {
+    document.getElementById("problem-grid").innerHTML = page.problem.cards
+      .map(function (card) {
+        return '<article class="problem-card"><h2>' + card[0] + "</h2><p>" + card[1] + "</p></article>";
       })
       .join("");
   }
@@ -217,8 +250,40 @@
       '<div><span class="section-kicker">' + section.kicker + "</span><h2>" + section.title + "</h2><p>" + section.text + "</p><small>" + section.note + "</small></div>" +
       '<div class="showroom-actions">' +
       '<a class="button button-primary" href="' + buildShowroomUrl("index.html") + '">' + section.cta + "</a>" +
-      '<a class="button button-ghost" href="#contact">' + page.hero.ctaSecondary + "</a>" +
+      '<a class="button button-ghost" href="#contact">' + page.contact.primaryCta + "</a>" +
       "</div>";
+  }
+
+  function renderExample(page) {
+    var section = page.example;
+    renderHeading("example-heading", section);
+    document.getElementById("example-showcase").innerHTML =
+      '<article class="example-card">' +
+      '<div class="example-media">' +
+      '<div class="example-screen">' +
+      '<img src="assets/images/examples/niagara/banner.jpg" alt="' + section.label + ' homepage">' +
+      "</div>" +
+      '<div class="example-phone">' +
+      '<img src="assets/images/examples/niagara/privatisation.jpg" alt="' + section.label + ' mobile view">' +
+      "</div>" +
+      "</div>" +
+      '<div class="example-content">' +
+      '<span class="style-label">' + section.label + "</span>" +
+      "<h3>" + section.lead + "</h3>" +
+      '<ul class="example-points">' +
+      section.points.map(function (point) { return "<li>" + point + "</li>"; }).join("") +
+      "</ul>" +
+      '<div class="example-stats">' +
+      section.stats.map(function (item) {
+        return '<div class="example-stat"><strong>' + item[0] + '</strong><span>' + item[1] + "</span></div>";
+      }).join("") +
+      "</div>" +
+      '<div class="style-actions">' +
+      '<a class="button button-primary" href="' + buildShowroomUrl("index.html") + '">' + section.ctaPrimary + "</a>" +
+      '<a class="button button-secondary" href="#contact">' + section.ctaSecondary + "</a>" +
+      "</div>" +
+      "</div>" +
+      "</article>";
   }
 
   function renderContent(page) {
@@ -230,6 +295,11 @@
       })
       .join("");
     document.getElementById("content-result-title").textContent = page.content.resultTitle;
+    document.getElementById("content-result-rows").innerHTML = page.content.resultRows
+      .map(function (row) {
+        return '<div class="content-result-row"><strong>' + row[0] + "</strong><span>" + row[1] + "</span></div>";
+      })
+      .join("");
   }
 
   function renderSocial(page) {
@@ -307,6 +377,40 @@
       .join("");
   }
 
+  function renderProof(page) {
+    renderHeading("proof-heading", page.proof);
+    document.getElementById("proof-grid").innerHTML = page.proof.cards
+      .map(function (card) {
+        return '<article class="proof-card"><h3>' + card[0] + "</h3><p>" + card[1] + "</p></article>";
+      })
+      .join("");
+  }
+
+  function renderAdmin(page) {
+    var section = page.admin;
+    document.getElementById("admin-proof").innerHTML =
+      '<div class="admin-proof-copy">' +
+      '<span class="section-kicker">' + section.kicker + "</span>" +
+      "<h2>" + section.title + "</h2>" +
+      "<p>" + section.text + "</p>" +
+      '<p class="admin-proof-note">' + section.footer + "</p>" +
+      "</div>" +
+      '<div class="admin-proof-card">' +
+      '<div class="admin-proof-head">' +
+      '<span class="section-chip section-chip-dark">' + section.badge + "</span>" +
+      "<strong>" + section.cardTitle + "</strong>" +
+      "</div>" +
+      '<div class="admin-proof-toolbar">' +
+      section.toolbar.map(function (item) { return "<span>" + item + "</span>"; }).join("") +
+      "</div>" +
+      '<div class="admin-proof-grid">' +
+      section.fields.map(function (field) {
+        return '<label><span>' + field[0] + '</span><em>' + field[1] + "</em></label>";
+      }).join("") +
+      "</div>" +
+      "</div>";
+  }
+
   function renderContact(page) {
     var section = page.contact;
     document.getElementById("contact-copy").innerHTML =
@@ -322,7 +426,7 @@
         .join("") +
       "</ul>";
 
-    document.getElementById("contact-primary-cta").textContent = section.whatsapp;
+    document.getElementById("contact-primary-cta").textContent = section.primaryCta;
   }
 
   function renderFooter(page) {
@@ -409,14 +513,18 @@
     setMeta(currentLang);
     renderNav(page);
     renderHero(page);
+    renderProblem(page);
     renderSectors(page);
     renderBenefits(page);
     renderStyles(page);
     renderShowroomCallout(page);
+    renderExample(page);
     renderContent(page);
+    renderAdmin(page);
     renderSocial(page);
     renderProcess(page);
     renderPricing(page);
+    renderProof(page);
     renderContact(page);
     renderFooter(page);
     updateLangButtons();
