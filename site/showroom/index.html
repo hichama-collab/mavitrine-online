@@ -4,20 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ma Vitrine Online | Showroom</title>
-    <meta name="description" content="Showroom Ma Vitrine Online avec 6 categories claires et un grand coverflow pour presenter les modeles.">
-    <link rel="icon" href="./shared/logo-ma-vitrine-online.svg" type="image/svg+xml">
+    <meta name="description" content="Showroom Ma Vitrine Online avec 6 categories de templates dans un coverflow 3D pleine largeur.">
+    <link rel="icon" href="../assets/images/logo-mavitrine-online.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg-1: #0c0d14;
-        --bg-2: #151725;
-        --ink: rgba(255, 255, 255, 0.94);
+        --bg: #050507;
+        --bg-soft: #121323;
+        --bg-panel: rgba(26, 28, 48, 0.72);
+        --ink: rgba(255, 255, 255, 0.96);
         --ink-soft: rgba(255, 255, 255, 0.72);
         --line: rgba(255, 255, 255, 0.12);
-        --accent: #79d7ff;
-        --accent-soft: #41d8cf;
+        --accent: #7c6cf2;
+        --accent-2: #9b62d9;
+        --accent-soft: rgba(124, 108, 242, 0.18);
       }
 
       * { box-sizing: border-box; }
@@ -27,336 +29,363 @@
         margin: 0;
         font-family: "Manrope", sans-serif;
         color: var(--ink);
-        background:
-          radial-gradient(circle at center, #1f2140 0%, var(--bg-2) 35%, var(--bg-1) 100%);
+        background: #000;
+        background-image:
+          radial-gradient(circle at 50% 18%, rgba(58, 46, 120, 0.42), transparent 32%),
+          radial-gradient(circle at 50% 45%, rgba(18, 22, 48, 0.72), transparent 55%),
+          linear-gradient(180deg, #000 0%, #0a0b12 28%, #111325 100%);
         overflow-x: hidden;
       }
 
       a { color: inherit; text-decoration: none; }
-      button { font: inherit; }
       img { display: block; max-width: 100%; }
-      h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; letter-spacing: -0.02em; }
-      p { margin: 0; color: var(--ink-soft); line-height: 1.7; }
+      button { font: inherit; }
+      h1, h2, h3, p { margin: 0; }
 
       .header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        z-index: 20;
+        z-index: 1000;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
-        padding: 16px 24px;
-        background: rgba(10, 12, 20, 0.76);
-        backdrop-filter: blur(14px);
+        gap: 24px;
+        height: 80px;
+        padding: 0 38px;
+        background: rgba(0, 0, 0, 0.84);
+        backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .brand {
         display: inline-flex;
         align-items: center;
-        gap: 14px;
-        min-width: 0;
+        flex: 0 0 auto;
       }
 
       .brand img {
-        width: 166px;
+        width: 192px;
         height: auto;
         object-fit: contain;
       }
 
-      .nav {
+      .header-right {
         display: flex;
         align-items: center;
-        gap: 10px;
+        justify-content: flex-end;
+        gap: 28px;
+        min-width: 0;
+        flex: 1 1 auto;
+      }
+
+      .main-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        min-width: 0;
         flex-wrap: wrap;
-        justify-content: center;
       }
 
-      .nav a {
-        color: rgba(255, 255, 255, 0.84);
-        font-size: 0.92rem;
-        font-weight: 700;
+      .menu-item {
+        position: relative;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.98rem;
+        font-weight: 500;
+        white-space: nowrap;
         padding: 8px 0;
+        transition: color 180ms ease, transform 180ms ease;
       }
 
-      .nav a:hover { color: #fff; }
+      .menu-item::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        transition: width 180ms ease;
+      }
 
-      .header-actions {
+      .menu-item:hover,
+      .menu-item.is-active {
+        color: #fff;
+        transform: translateY(-1px);
+      }
+
+      .menu-item:hover::after,
+      .menu-item.is-active::after {
+        width: 100%;
+      }
+
+      .header-tools {
         display: inline-flex;
         align-items: center;
         gap: 12px;
+        flex: 0 0 auto;
       }
 
       .lang-switch {
         display: inline-flex;
-        gap: 4px;
-        padding: 4px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.08);
+        align-items: center;
+        gap: 6px;
       }
 
-      .lang-switch button {
-        min-width: 42px;
-        min-height: 38px;
-        border: 0;
-        border-radius: 999px;
-        background: transparent;
-        color: rgba(255, 255, 255, 0.72);
-        font-weight: 800;
-        cursor: pointer;
-      }
-
-      .lang-switch button.is-active {
-        background: #fff;
-        color: #11131c;
-      }
-
+      .lang-switch button,
       .home-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 42px;
-        padding: 0 16px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        color: #fff;
-        font-weight: 700;
-      }
-
-      .hero {
-        min-height: 100vh;
-        padding: 132px 0 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .hero-inner {
-        width: min(1600px, calc(100% - 32px));
-        text-align: center;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
         min-height: 38px;
         padding: 0 14px;
         border-radius: 999px;
         border: 1px solid rgba(255, 255, 255, 0.12);
-        color: rgba(255, 255, 255, 0.76);
-        text-transform: uppercase;
-        letter-spacing: 0.14em;
-        font-size: 0.75rem;
+        background: rgba(255, 255, 255, 0.04);
+        color: rgba(255, 255, 255, 0.86);
+        cursor: pointer;
+        transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+      }
+
+      .lang-switch button {
+        min-width: 48px;
         font-weight: 800;
       }
 
-      .hero h1 {
-        margin: 22px auto 16px;
-        max-width: 16ch;
-        font-size: clamp(3rem, 7vw, 5.8rem);
-        line-height: 0.94;
+      .lang-switch button.is-active,
+      .home-link:hover {
+        color: #fff;
+        border-color: rgba(124, 108, 242, 0.5);
+        background: rgba(124, 108, 242, 0.16);
       }
 
-      .hero p {
-        max-width: 66ch;
+      .page-intro {
+        padding: 150px 32px 36px;
+      }
+
+      .page-intro-inner {
+        width: min(1240px, 100%);
         margin: 0 auto;
-        font-size: 1.04rem;
+      }
+
+      .section-kicker {
+        display: inline-block;
+        color: #8f80ff;
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .page-intro h1 {
+        margin-top: 16px;
+        max-width: 18ch;
+        font-size: clamp(2.5rem, 6vw, 4.9rem);
+        line-height: 0.98;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+
+      .page-intro p {
+        margin-top: 18px;
+        max-width: 70ch;
+        color: var(--ink-soft);
+        font-size: 1.08rem;
+        line-height: 1.7;
       }
 
       .category-section {
+        position: relative;
         min-height: 100vh;
-        padding: 112px 0 54px;
+        padding: 32px 0 20px;
+      }
+
+      .section-head {
+        width: min(1240px, calc(100% - 40px));
+        margin: 0 auto 16px;
+        text-align: center;
+      }
+
+      .section-head .section-kicker {
+        font-size: 0.98rem;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      .section-head h2 {
+        margin-top: 12px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.02;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+
+      .section-head p {
+        margin: 12px auto 0;
+        max-width: 62ch;
+        color: var(--ink-soft);
+        line-height: 1.7;
+      }
+
+      .coverflow-wrapper {
+        position: relative;
+        width: 100%;
+        min-height: 760px;
         display: flex;
         align-items: center;
+        justify-content: center;
       }
 
-      .section-inner {
-        width: min(1800px, calc(100% - 28px));
-        margin: 0 auto;
-      }
-
-      .section-copy {
-        text-align: center;
-        margin-bottom: 34px;
-      }
-
-      .section-copy h2 {
-        font-size: clamp(2.3rem, 5vw, 4.4rem);
-        margin-bottom: 10px;
-      }
-
-      .section-copy p {
-        max-width: 60ch;
-        margin: 0 auto;
-      }
-
-      .coverflow-shell {
+      .coverflow-container {
         position: relative;
-        min-height: 690px;
+        width: 100%;
+        min-height: 760px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1400px;
       }
 
       .coverflow-stage {
         position: relative;
         width: 100%;
-        height: 690px;
-        perspective: 1800px;
+        height: 620px;
         transform-style: preserve-3d;
       }
 
       .coverflow-item {
         position: absolute;
-        top: 110px;
+        top: 18px;
         left: 50%;
-        width: min(430px, calc(100vw - 140px));
-        padding: 0;
-        border: 0;
-        background: transparent;
+        width: min(360px, calc(100vw - 120px));
         transform-style: preserve-3d;
         cursor: pointer;
-        transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 240ms ease;
+        transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 260ms ease;
       }
 
       .coverflow-card {
+        position: relative;
         overflow: hidden;
         border-radius: 18px;
-        background: rgba(255, 255, 255, 0.04);
-        box-shadow: 0 24px 56px rgba(0, 0, 0, 0.36);
+        background: linear-gradient(180deg, rgba(31, 34, 58, 0.96), rgba(18, 20, 35, 0.98));
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.65);
       }
 
-      .coverflow-card img {
-        width: 100%;
+      .cover-media {
         aspect-ratio: 5 / 6;
+        overflow: hidden;
+        background: #141621;
+      }
+
+      .cover-media img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
       }
 
-      .coverflow-meta {
-        padding: 14px 14px 16px;
-        text-align: left;
+      .cover-meta {
+        padding: 16px 18px 18px;
       }
 
-      .coverflow-meta strong {
-        display: block;
+      .cover-meta h3 {
+        font-size: 1.1rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .cover-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .cover-actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 14px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      .cover-actions .button-primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
         color: #fff;
-        font-size: 1.05rem;
       }
 
-      .coverflow-meta span {
-        display: block;
-        margin-top: 6px;
-        color: rgba(255, 255, 255, 0.66);
-        font-size: 0.9rem;
+      .cover-actions .button-secondary {
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(255, 255, 255, 0.9);
       }
 
-      .coverflow-reflection {
+      .reflection {
         width: 100%;
-        height: 220px;
-        margin-top: 12px;
+        height: 180px;
+        margin-top: 8px;
         border-radius: 18px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(0,0,0,0));
         transform: scaleY(-1);
-        opacity: 0.2;
+        opacity: 0.18;
         filter: blur(2px);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(0, 0, 0, 0));
       }
 
-      .coverflow-item.is-active .coverflow-card {
-        box-shadow: 0 34px 80px rgba(0, 0, 0, 0.5);
-      }
-
-      .nav-arrow {
+      .nav-button {
         position: absolute;
         top: 50%;
-        z-index: 3;
-        width: 62px;
-        height: 62px;
-        margin-top: -18px;
+        transform: translateY(-50%);
+        z-index: 4;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        border: 2px solid rgba(185, 212, 255, 0.9);
+        border: 2px solid rgba(255, 255, 255, 0.22);
         background: rgba(255, 255, 255, 0.08);
         color: #fff;
-        font-size: 2.1rem;
+        font-size: 2rem;
         cursor: pointer;
+        backdrop-filter: blur(12px);
+        transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
       }
 
-      .nav-arrow.prev { left: 18px; }
-      .nav-arrow.next { right: 18px; }
+      .nav-button:hover {
+        transform: translateY(-50%) scale(1.06);
+        background: rgba(124, 108, 242, 0.16);
+        border-color: rgba(124, 108, 242, 0.42);
+      }
+
+      .nav-button.prev { left: 40px; }
+      .nav-button.next { right: 40px; }
 
       .dots {
         position: absolute;
         left: 50%;
-        bottom: 18px;
+        bottom: 34px;
         transform: translateX(-50%);
         display: flex;
         gap: 10px;
-        z-index: 3;
+        z-index: 4;
       }
 
       .dots button {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border: 0;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.28);
+        background: rgba(255, 255, 255, 0.26);
         cursor: pointer;
+        transition: transform 180ms ease, background 180ms ease;
       }
 
       .dots button.is-active {
         background: rgba(255, 255, 255, 0.92);
-      }
-
-      .active-panel {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: min(760px, calc(100% - 60px));
-        text-align: center;
-        z-index: 3;
-      }
-
-      .active-panel h3 {
-        font-size: clamp(2rem, 3vw, 3.3rem);
-        margin-bottom: 8px;
-      }
-
-      .active-panel p {
-        margin: 0 auto;
-        max-width: 60ch;
-      }
-
-      .active-actions {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 18px;
-      }
-
-      .active-actions a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 48px;
-        padding: 0 18px;
-        border-radius: 999px;
-        font-weight: 800;
-      }
-
-      .active-actions .primary {
-        background: linear-gradient(135deg, var(--accent-soft), var(--accent));
-        color: #041019;
-      }
-
-      .active-actions .secondary {
-        border: 1px solid var(--line);
-        color: #fff;
+        transform: scale(1.28);
       }
 
       .footer {
         padding: 64px 0 28px;
-        background: rgba(5, 8, 15, 0.82);
+        background: rgba(5, 8, 15, 0.9);
         border-top: 1px solid rgba(255, 255, 255, 0.08);
       }
 
@@ -372,7 +401,7 @@
       }
 
       .footer-brand img {
-        width: 190px;
+        width: 196px;
         margin-bottom: 18px;
       }
 
@@ -408,16 +437,27 @@
         border-top: 1px solid rgba(255, 255, 255, 0.08);
       }
 
-      @media (max-width: 1100px) {
+      @media (max-width: 1180px) {
         .header {
+          height: auto;
+          padding: 16px 20px;
           flex-direction: column;
           align-items: stretch;
         }
 
-        .brand,
-        .header-actions,
-        .nav {
+        .header-right {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 14px;
+        }
+
+        .main-menu,
+        .header-tools {
           justify-content: center;
+        }
+
+        .page-intro {
+          padding-top: 188px;
         }
 
         .footer-grid {
@@ -425,46 +465,40 @@
         }
       }
 
-      @media (max-width: 760px) {
-        .header {
-          padding: 12px 14px;
-        }
-
+      @media (max-width: 820px) {
         .brand img {
-          width: 138px;
+          width: 174px;
         }
 
-        .nav {
-          gap: 12px 16px;
+        .page-intro {
+          padding-inline: 20px;
         }
 
-        .nav a {
-          font-size: 0.84rem;
+        .section-head {
+          width: min(100%, calc(100% - 24px));
         }
 
-        .hero {
-          padding-top: 168px;
+        .coverflow-wrapper,
+        .coverflow-container {
+          min-height: 660px;
         }
 
-        .coverflow-shell,
         .coverflow-stage {
-          min-height: 620px;
-          height: 620px;
+          height: 560px;
         }
 
         .coverflow-item {
-          top: 160px;
-          width: min(290px, calc(100vw - 96px));
+          width: min(292px, calc(100vw - 72px));
         }
 
-        .nav-arrow {
-          width: 52px;
-          height: 52px;
-          font-size: 1.8rem;
+        .nav-button {
+          width: 50px;
+          height: 50px;
+          font-size: 1.7rem;
         }
 
-        .nav-arrow.prev { left: 0; }
-        .nav-arrow.next { right: 0; }
+        .nav-button.prev { left: 10px; }
+        .nav-button.next { right: 10px; }
 
         .footer-grid {
           grid-template-columns: 1fr;
@@ -479,23 +513,25 @@
   </head>
   <body>
     <header class="header">
-      <a class="brand" href="../index.html">
-        <img src="../assets/images/logo-mavitrine-online-footer.png" alt="Ma Vitrine Online">
+      <a class="brand" href="../index.html?lang=fr">
+        <img src="../assets/images/logo-mavitrine-online-signature.png" alt="Ma Vitrine Online">
       </a>
-      <nav class="nav" id="main-nav"></nav>
-      <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Language switch">
-          <button type="button" data-lang="fr">FR</button>
-          <button type="button" data-lang="en">EN</button>
+      <div class="header-right">
+        <nav class="main-menu" id="main-nav"></nav>
+        <div class="header-tools">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button type="button" data-lang="fr">FR</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+          <a class="home-link" id="home-link" href="../index.html?lang=fr">Retour accueil</a>
         </div>
-        <a class="home-link" id="home-link" href="../index.html">Retour accueil</a>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-inner">
-          <span class="eyebrow">Ma Vitrine Online</span>
+      <section class="page-intro" id="top">
+        <div class="page-intro-inner">
+          <span class="section-kicker">Ma Vitrine Online</span>
           <h1 id="hero-title"></h1>
           <p id="hero-text"></p>
         </div>
@@ -507,7 +543,7 @@
       <div class="footer-wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <img src="../assets/images/logo-mavitrine-online-footer.png" alt="Ma Vitrine Online">
+            <img src="../assets/images/logo-mavitrine-online-signature.png" alt="Ma Vitrine Online">
             <p id="footer-note"></p>
           </div>
           <div>
@@ -552,7 +588,7 @@
           return stored === "en" ? "en" : "fr";
         }
 
-        function langText(fr, en) {
+        function text(fr, en) {
           return currentLang === "fr" ? fr : en;
         }
 
@@ -568,8 +604,9 @@
 
         function buildNav() {
           document.getElementById("main-nav").innerHTML = content.categories
-            .map(function (category) {
-              return '<a href="#' + category.anchor + '">' + category.menu + "</a>";
+            .map(function (category, index) {
+              var activeClass = index === 0 ? "menu-item is-active" : "menu-item";
+              return '<a class="' + activeClass + '" href="#' + category.anchor + '" data-anchor="' + category.anchor + '">' + category.menu + "</a>";
             })
             .join("");
         }
@@ -599,63 +636,60 @@
             '<a href="' + homeHref() + '#contact">Contact</a>'
           ].join("");
           document.getElementById("footer-social-links").innerHTML = [
-            '<a href="#' + content.categories[0].anchor + '">Instagram</a>',
-            '<a href="#' + content.categories[1].anchor + '">Facebook</a>',
+            '<a href="https://www.instagram.com/hichamaifout/" target="_blank" rel="noopener">Instagram</a>',
+            '<a href="https://www.facebook.com/hicham.aifout" target="_blank" rel="noopener">Facebook</a>',
             '<a href="./?lang=' + currentLang + '">Showroom</a>'
           ].join("");
         }
 
         function buildSections() {
+          var labels = content.labels[currentLang];
           var root = document.getElementById("sections-root");
-          root.innerHTML = content.categories
-            .map(function (category) {
-              var models = byCategory(category.id);
-              return (
-                '<section class="category-section" id="' + category.anchor + '" data-category="' + category.id + '">' +
-                  '<div class="section-inner">' +
-                    '<div class="section-copy">' +
-                      '<h2>' + langText(category.titleFr, category.titleEn) + "</h2>" +
-                      '<p>' + langText(category.textFr, category.textEn) + "</p>" +
-                    "</div>" +
-                    '<div class="coverflow-shell">' +
-                      '<div class="active-panel">' +
-                        '<h3 class="active-title"></h3>' +
-                        '<p class="active-text"></p>' +
-                        '<div class="active-actions">' +
-                          '<a class="primary active-demo" href="#"></a>' +
-                          '<a class="secondary active-brief" href="#"></a>' +
-                        "</div>" +
-                      "</div>" +
-                      '<button class="nav-arrow prev" type="button" aria-label="Previous">&#8249;</button>' +
-                      '<div class="coverflow-stage">' +
-                        models.map(function (model) {
-                          return (
-                            '<button class="coverflow-item" type="button" data-slug="' + model.slug + '">' +
-                              '<div class="coverflow-card">' +
+          root.innerHTML = content.categories.map(function (category) {
+            var models = byCategory(category.id);
+            return (
+              '<section class="category-section" id="' + category.anchor + '" data-category="' + category.id + '">' +
+                '<div class="section-head">' +
+                  '<span class="section-kicker">' + category.menu + "</span>" +
+                  '<h2>' + text(category.titleFr, category.titleEn) + "</h2>" +
+                  '<p>' + text(category.textFr, category.textEn) + "</p>" +
+                "</div>" +
+                '<div class="coverflow-wrapper">' +
+                  '<div class="coverflow-container">' +
+                    '<button class="nav-button prev" type="button" aria-label="Previous">&#8249;</button>' +
+                    '<div class="coverflow-stage">' +
+                      models.map(function (model) {
+                        return (
+                          '<article class="coverflow-item" data-slug="' + model.slug + '">' +
+                            '<div class="coverflow-card">' +
+                              '<div class="cover-media">' +
                                 '<img src="./' + model.preview + '" alt="' + model.name + '">' +
-                                '<div class="coverflow-meta"><strong>' + model.name + "</strong><span>" + model.style + "</span></div>" +
                               "</div>" +
-                              '<div class="coverflow-reflection"></div>' +
-                            "</button>"
-                          );
-                        }).join("") +
-                      "</div>" +
-                      '<button class="nav-arrow next" type="button" aria-label="Next">&#8250;</button>' +
-                      '<div class="dots"></div>' +
+                              '<div class="cover-meta">' +
+                                "<h3>" + model.name + "</h3>" +
+                                '<div class="cover-actions">' +
+                                  '<a class="button-primary" href="./' + model.slug + '/index.html">' + labels.openDemo + "</a>" +
+                                  '<a class="button-secondary" href="./' + model.slug + '/index.html#mvo-summary">' + labels.viewBrief + "</a>" +
+                                "</div>" +
+                              "</div>" +
+                            "</div>" +
+                            '<div class="reflection"></div>' +
+                          "</article>"
+                        );
+                      }).join("") +
                     "</div>" +
+                    '<button class="nav-button next" type="button" aria-label="Next">&#8250;</button>' +
+                    '<div class="dots"></div>' +
                   "</div>" +
-                "</section>"
-              );
-            })
-            .join("");
+                "</div>" +
+              "</section>"
+            );
+          }).join("");
         }
 
         function updateSection(section, index) {
-          var categoryId = section.getAttribute("data-category");
-          var models = byCategory(categoryId);
           var items = Array.prototype.slice.call(section.querySelectorAll(".coverflow-item"));
           var dots = Array.prototype.slice.call(section.querySelectorAll(".dots button"));
-          var labels = content.labels[currentLang];
           var total = items.length;
           var active = ((index % total) + total) % total;
           section.setAttribute("data-active-index", String(active));
@@ -667,9 +701,9 @@
 
             var abs = Math.abs(offset);
             var sign = offset === 0 ? 0 : offset / abs;
-            var translateX = offset * 220;
-            var translateZ = -abs * 220;
-            var rotateY = -sign * Math.min(abs * 48, 58);
+            var translateX = offset * 170;
+            var translateZ = -abs * 210;
+            var rotateY = -sign * Math.min(abs * 45, 56);
             var scale = 1 - abs * 0.12;
             var opacity = abs > 3 ? 0 : 1 - abs * 0.18;
 
@@ -683,14 +717,6 @@
           dots.forEach(function (dot, dotIndex) {
             dot.classList.toggle("is-active", dotIndex === active);
           });
-
-          var model = models[active];
-          section.querySelector(".active-title").textContent = model.name;
-          section.querySelector(".active-text").textContent = currentLang === "fr" ? model.blurbFr : model.blurbEn;
-          section.querySelector(".active-demo").textContent = labels.openDemo;
-          section.querySelector(".active-demo").setAttribute("href", "./" + model.slug + "/index.html");
-          section.querySelector(".active-brief").textContent = labels.viewBrief;
-          section.querySelector(".active-brief").setAttribute("href", "./" + model.slug + "/index.html#mvo-summary");
         }
 
         function initSections() {
@@ -709,7 +735,8 @@
             });
 
             items.forEach(function (item, index) {
-              item.addEventListener("click", function () {
+              item.addEventListener("click", function (event) {
+                if (event.target.closest("a")) return;
                 updateSection(section, index);
               });
             });
@@ -730,14 +757,37 @@
           langButtons.forEach(function (button) {
             var isActive = button.getAttribute("data-lang") === currentLang;
             button.classList.toggle("is-active", isActive);
-            button.addEventListener("click", function () {
+            button.onclick = function () {
               var next = button.getAttribute("data-lang");
               if (!next || next === currentLang) return;
               currentLang = next;
               window.localStorage.setItem("mvo-lang", currentLang);
               history.replaceState(null, "", window.location.pathname + "?lang=" + currentLang);
               render();
+            };
+          });
+        }
+
+        function syncActiveMenu() {
+          var links = Array.prototype.slice.call(document.querySelectorAll(".menu-item"));
+          var sections = Array.prototype.slice.call(document.querySelectorAll(".category-section"));
+
+          function setActive(anchor) {
+            links.forEach(function (link) {
+              link.classList.toggle("is-active", link.getAttribute("data-anchor") === anchor);
             });
+          }
+
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                setActive(entry.target.id);
+              }
+            });
+          }, { rootMargin: "-35% 0px -45% 0px", threshold: 0.1 });
+
+          sections.forEach(function (section) {
+            observer.observe(section);
           });
         }
 
@@ -747,6 +797,7 @@
           buildSections();
           syncLangButtons();
           initSections();
+          syncActiveMenu();
         }
 
         render();
