@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Serve explicit files and directories as-is.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Keep the French home as the default entry point.
+RewriteRule ^$ /fr/index.html [L]
+
+# Friendly URLs for the new static site.
+RewriteRule ^fr/?$ /fr/index.html [L]
+RewriteRule ^en/?$ /en/index.html [L]
+RewriteRule ^restaurant-courbevoie/?$ /restaurant-courbevoie.html [L]
+
+# Preserve the most important legacy URLs from the current live site.
+RedirectMatch 301 ^/index(\.php)?$ /fr/index.html
+RedirectMatch 301 ^/contact(\.php)?$ /fr/contact.html
+RedirectMatch 301 ^/la-carte(\.php)?$ /fr/carte.html
+RedirectMatch 301 ^/privatisation(\.php)?$ /fr/privatisation.html
+RedirectMatch 301 ^/plan-du-site(\.php)?$ /fr/plan-du-site.html
+RedirectMatch 301 ^/restaurant-courbevoie(\.php)?$ /restaurant-courbevoie.html
+RedirectMatch 301 ^/le-bar(\.php)?$ /fr/index.html#bar-afterwork
+RedirectMatch 301 ^/les-after-work(\.php)?$ /fr/index.html#bar-afterwork
+RedirectMatch 301 ^/la-cuisine(\.php)?$ /fr/carte.html
+RedirectMatch 301 ^/soirees(\.php)?$ /fr/privatisation.html

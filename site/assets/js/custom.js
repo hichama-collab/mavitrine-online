@@ -151,13 +151,8 @@
   function renderHero(page) {
     var hero = page.hero;
     document.getElementById("hero-copy").innerHTML =
-      '<span class="hero-eyebrow">' + hero.eyebrow + "</span>" +
       "<h1>" + hero.title + "</h1>" +
       "<p>" + hero.text + "</p>" +
-      '<div class="hero-actions">' +
-      '<a class="button button-primary" href="#contact">' + hero.ctaPrimary + "</a>" +
-      '<a class="button button-secondary" href="' + buildShowroomUrl("index.html") + '">' + hero.ctaSecondary + "</a>" +
-      "</div>" +
       '<div class="hero-points">' +
       hero.points
         .map(function (point) {
@@ -179,20 +174,28 @@
   }
 
   function renderHeading(targetId, section) {
-    document.getElementById(targetId).innerHTML =
+    var target = document.getElementById(targetId);
+    if (!target || !section) {
+      return;
+    }
+
+    target.innerHTML =
       '<span class="section-kicker">' + section.kicker + "</span>" +
       "<h2>" + section.title + "</h2>" +
       "<p>" + section.text + "</p>";
   }
 
   function renderSectors(page) {
+    if (!page.sectors || !document.getElementById("sector-grid")) {
+      return;
+    }
+
     renderHeading("sectors-heading", page.sectors);
     document.getElementById("sector-grid").innerHTML = page.sectors.cards
       .map(function (card) {
         return '<article class="sector-card"><h3>' + card[0] + "</h3><p>" + card[1] + "</p></article>";
       })
       .join("");
-    document.getElementById("sectors-cta").textContent = page.sectors.cta;
   }
 
   function renderBenefits(page) {
@@ -235,7 +238,6 @@
         );
       })
       .join("");
-    document.getElementById("styles-cta").textContent = section.sectionCta;
   }
 
   function renderShowroomCallout(page) {
@@ -255,10 +257,10 @@
       '<article class="example-card">' +
       '<div class="example-media">' +
       '<div class="example-screen">' +
-      '<img src="assets/images/examples/niagara/banner.jpg" alt="' + section.label + ' homepage">' +
+      '<img src="' + (section.desktopImage || "assets/images/examples/niagara/banner.jpg") + '" alt="' + section.label + ' homepage">' +
       "</div>" +
       '<div class="example-phone">' +
-      '<img src="assets/images/examples/niagara/privatisation.jpg" alt="' + section.label + ' mobile view">' +
+      '<img src="' + (section.mobileImage || "assets/images/examples/niagara/privatisation.jpg") + '" alt="' + section.label + ' mobile view">' +
       "</div>" +
       "</div>" +
       '<div class="example-content">' +
@@ -394,13 +396,8 @@
       '<span class="section-chip section-chip-dark">' + section.badge + "</span>" +
       "<strong>" + section.cardTitle + "</strong>" +
       "</div>" +
-      '<div class="admin-proof-toolbar">' +
-      section.toolbar.map(function (item) { return "<span>" + item + "</span>"; }).join("") +
-      "</div>" +
-      '<div class="admin-proof-grid">' +
-      section.fields.map(function (field) {
-        return '<label><span>' + field[0] + '</span><em>' + field[1] + "</em></label>";
-      }).join("") +
+      '<div class="admin-proof-shot">' +
+      '<img src="' + section.image + '" alt="' + section.cardTitle + '">' +
       "</div>" +
       "</div>";
   }

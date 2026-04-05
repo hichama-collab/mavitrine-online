@@ -374,11 +374,11 @@ section[id] {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
   gap: 28px;
-  align-items: center;
+  align-items: start;
 }
 
 .hero-copy {
-  padding: 20px 0;
+  padding: 8px 0 20px;
 }
 
 .hero-copy h1 {
@@ -967,6 +967,20 @@ section[id] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 20px;
+}
+
+.admin-proof-shot {
+  margin-top: 18px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.22);
+}
+
+.admin-proof-shot img {
+  width: 100%;
+  height: auto;
 }
 
 .admin-proof-card label {

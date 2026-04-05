@@ -1,0 +1,1484 @@
+{
+  "restaurant": {
+    "name": "Niagara Café",
+    "currency": "EUR",
+    "address": "2 Bis Boulevard Saint-Denis, 92400 Courbevoie",
+    "phone": "01 47 88 97 89",
+    "phone2": "06 71 16 40 59",
+    "lastUpdated": "2026-03-27"
+  },
+  "formules": {
+    "title": "Nos formules",
+    "subtitle": "Tous les jours, midi et soir",
+    "menuDuJour": {
+      "title": "Menu du jour",
+      "prices": [
+        {
+          "label": "Entrée + Plat ou Plat + Dessert",
+          "amount": 20,
+          "labelEn": "Starter + Main Course or Main Course + Dessert"
+        },
+        {
+          "label": "Entrée + Plat + Dessert",
+          "amount": 24,
+          "labelEn": "Starter + Main Course + Dessert"
+        },
+        {
+          "label": "Entrée seule",
+          "amount": 6.5,
+          "labelEn": "Starter only"
+        },
+        {
+          "label": "Plat seul",
+          "amount": 16,
+          "labelEn": "Main Course only"
+        },
+        {
+          "label": "Dessert seul",
+          "amount": 6.5,
+          "labelEn": "Dessert only"
+        }
+      ],
+      "choices": {
+        "entrees": [
+          {
+            "name": "Le classique œuf dur mayonnaise maison bien moutardée",
+            "description": "Classic hard-boiled egg with homemade mustard mayonnaise",
+            "nameEn": "Classic hard-boiled egg with punchy house mustard mayo",
+            "descriptionEn": "Classic hard-boiled egg with homemade mustard mayonnaise"
+          },
+          {
+            "name": "Millefeuille d'aubergine au chèvre",
+            "nameEn": "Eggplant millefeuille with goat cheese"
+          }
+        ],
+        "plats": [
+          {
+            "name": "Pièce de bœuf à l'échalote",
+            "description": "Frites maison",
+            "nameEn": "Beef cut with shallot sauce",
+            "descriptionEn": "Homemade fries"
+          },
+          {
+            "name": "Galette de saumon mariné parmentière",
+            "description": "Crème de ciboulette",
+            "nameEn": "Marinated salmon hash cake",
+            "descriptionEn": "With chive cream"
+          },
+          {
+            "name": "Lasagnes de légumes",
+            "nameEn": "Vegetable lasagna"
+          }
+        ],
+        "desserts": [
+          {
+            "name": "Riz au lait aux framboises du Mexique",
+            "description": "Spécialité de la Maison",
+            "nameEn": "Rice pudding with Mexican raspberries",
+            "descriptionEn": "House specialty"
+          },
+          {
+            "name": "Panna Cotta",
+            "nameEn": "Panna Cotta"
+          },
+          {
+            "name": "Fondant au chocolat",
+            "description": "Glace vanille",
+            "nameEn": "Chocolate lava cake",
+            "descriptionEn": "Vanilla ice cream"
+          }
+        ]
+      },
+      "titleEn": "Daily Menu"
+    },
+    "menuEnfant": {
+      "price": 12,
+      "description": "Steak haché ou Burger ou Jambon ou Blanc de poulet pané ou Poisson accompagné de pâtes ou de frites maison + Coupe glace vanille ou chocolat (1 boule) + Une boisson 25cl",
+      "titleEn": "Kids Menu",
+      "descriptionEn": "Minced steak, burger, ham, breaded chicken breast or fish, served with pasta or homemade fries, plus a vanilla or chocolate ice cream cup (1 scoop) and a 25cl drink"
+    },
+    "titleEn": "Set Menus",
+    "subtitleEn": "Available every day for lunch and dinner"
+  },
+  "categories": [
+    {
+      "slug": "petit-dejeuner",
+      "title": "Petit-déjeuner",
+      "titleEn": "Breakfast",
+      "subtitle": "6,50€ · boisson chaude + viennoiserie ou tartine + jus d'orange",
+      "subtitleEn": "EUR 6.50 · hot drink + pastry or toast + orange juice",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Formule petit-déjeuner",
+          "nameEn": "Breakfast Deal",
+          "description": "Boisson chaude + viennoiserie ou tartine + jus d'orange",
+          "descriptionEn": "Hot drink + pastry or toast + orange juice",
+          "price": 6.5
+        }
+      ]
+    },
+    {
+      "slug": "entrees",
+      "title": "Entrées",
+      "subtitle": "Starters",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Carpaccio de bœuf copeaux de parmesan au pistou, salade roquette",
+          "description": "Beef carpaccio with parmesan shavings with pesto, and arugula salad",
+          "price": 9,
+          "nameEn": "Beef carpaccio with parmesan shavings, pesto and arugula",
+          "descriptionEn": "Beef carpaccio with parmesan shavings, pesto and arugula"
+        },
+        {
+          "name": "Foie gras de canard maison au miel et Armagnac",
+          "description": "Marmelade de pomme golden aux épices · Entrée Signature de la Maison",
+          "price": 50,
+          "nameEn": "House duck foie gras with honey and Armagnac",
+          "descriptionEn": "Spiced Golden apple marmalade · House signature starter"
+        },
+        {
+          "name": "Salade fraîcheur de melon et tomates cerises au jambon de pays et mozzarella",
+          "price": 16.5,
+          "nameEn": "Melon, cherry tomato, cured ham and mozzarella salad"
+        },
+        {
+          "name": "Salade d'avocat aux crevettes piment d'Espelette",
+          "description": "Avocado and shrimps salad, Espelette pepper",
+          "price": 16.5,
+          "nameEn": "Avocado and shrimp salad with Espelette pepper",
+          "descriptionEn": "Avocado and shrimps salad with Espelette pepper"
+        },
+        {
+          "name": "Œuf mollet crème de truffe, croûtons et parmesan",
+          "description": "Meurette-style soft-boiled egg with truffle cream, croutons and parmesan",
+          "price": 12,
+          "nameEn": "Soft-boiled egg with truffle cream, croutons and parmesan",
+          "descriptionEn": "Soft-boiled egg with truffle cream, croutons and parmesan"
+        },
+        {
+          "name": "Saumon gravlax pain Poilâne, crème de ciboulette",
+          "price": 14,
+          "nameEn": "Gravlax salmon, Poilâne bread and chive cream",
+          "descriptionEn": "Poilâne bread and chive cream"
+        }
+      ],
+      "titleEn": "Starters",
+      "subtitleEn": "Openers and house signatures"
+    },
+    {
+      "slug": "salades",
+      "title": "Salades façon plats",
+      "subtitle": "Large salads",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Niagara",
+          "description": "Mélange de salade, tomates cerises, gambas, saumon mariné, crevettes, avocat, légumes verts, endives",
+          "price": 19,
+          "descriptionEn": "Mixed salad, cherry tomatoes, king prawns, marinated salmon, shrimps, avocado, green vegetables and endive"
+        },
+        {
+          "name": "Gourmande",
+          "description": "Mélange de salades, oignons confits, pomme de terre Charlotte, œuf poché, champignons, magret de canard, toast de foie gras de canard",
+          "price": 19,
+          "nameEn": "Gourmet salad",
+          "descriptionEn": "Mixed greens, candied onions, Charlotte potatoes, poached egg, mushrooms, duck breast and duck foie gras toast"
+        },
+        {
+          "name": "César",
+          "description": "Salade romaine, poulet pané, œuf dur, croûtons à l'ail, copeaux de parmesan, vinaigrette César",
+          "price": 16,
+          "nameEn": "Caesar salad",
+          "descriptionEn": "Romaine lettuce, breaded chicken, hard-boiled egg, garlic croutons, parmesan shavings and Caesar dressing"
+        },
+        {
+          "name": "Salade de saison",
+          "description": "Salade, tomates cerises, mozzarella, melon, jambon de pays, filet de poulet, légumes grillés",
+          "price": 17,
+          "nameEn": "Seasonal salad",
+          "descriptionEn": "Salad greens, cherry tomatoes, mozzarella, melon, cured ham, chicken fillet and grilled vegetables"
+        }
+      ],
+      "titleEn": "Main Salads",
+      "subtitleEn": "Generous salad bowls"
+    },
+    {
+      "slug": "croques",
+      "title": "Croques",
+      "subtitle": "Servis avec salade et frites maison",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Croque-Monsieur",
+          "description": "Toasted ham and cheese sandwich",
+          "price": 11,
+          "nameEn": "Croque Monsieur",
+          "descriptionEn": "Toasted ham and cheese sandwich"
+        },
+        {
+          "name": "Croque-Madame",
+          "description": "Toasted ham and cheese, fried egg sandwich",
+          "price": 12,
+          "nameEn": "Croque Madame",
+          "descriptionEn": "Toasted ham and cheese sandwich with a fried egg"
+        },
+        {
+          "name": "Croque Poulet",
+          "description": "Toasted chicken sandwich",
+          "price": 12.5,
+          "nameEn": "Chicken toastie",
+          "descriptionEn": "Toasted chicken sandwich"
+        },
+        {
+          "name": "Croque Saumon mariné",
+          "description": "Toasted marinated salmon sandwich",
+          "price": 13,
+          "nameEn": "Marinated salmon toastie",
+          "descriptionEn": "Toasted marinated salmon sandwich"
+        },
+        {
+          "name": "Croque Végétarien",
+          "description": "Tomate concassée, chèvre",
+          "price": 12,
+          "nameEn": "Vegetarian toastie",
+          "descriptionEn": "Crushed tomato and goat cheese"
+        }
+      ],
+      "titleEn": "Toasties",
+      "subtitleEn": "Served with salad and homemade fries"
+    },
+    {
+      "slug": "omelettes",
+      "title": "Omelettes",
+      "subtitle": "Servies avec salade et frites maison",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Nature",
+          "description": "Plain omelette",
+          "price": 10,
+          "nameEn": "Plain omelette",
+          "descriptionEn": "Plain omelette"
+        },
+        {
+          "name": "Fromage",
+          "description": "Cheese omelette",
+          "price": 11.5,
+          "nameEn": "Cheese omelette",
+          "descriptionEn": "Cheese omelette"
+        },
+        {
+          "name": "Jambon ou Champignons ou Lardons",
+          "description": "Ham or Mushrooms or Bacon omelette",
+          "price": 12,
+          "nameEn": "Ham, mushroom or bacon omelette",
+          "descriptionEn": "Choose ham, mushrooms or bacon"
+        },
+        {
+          "name": "Mixte fromage et jambon",
+          "description": "Mixed omelette with ham and cheese",
+          "price": 13,
+          "nameEn": "Ham and cheese omelette",
+          "descriptionEn": "Mixed omelette with ham and cheese"
+        }
+      ],
+      "titleEn": "Omelettes",
+      "subtitleEn": "Served with salad and homemade fries"
+    },
+    {
+      "slug": "planches",
+      "title": "Planches à partager",
+      "subtitle": "Boards",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Fermière",
+          "description": "Jambon de Paris, jambon de pays, rosette, chorizo, rillettes, pâté, Brie de Meaux, Camembert, chèvre, bleu, cornichons, beurre",
+          "price": 18.5,
+          "nameEn": "Farmhouse board",
+          "descriptionEn": "Paris ham, cured ham, rosette sausage, chorizo, rillettes, pâté, Brie de Meaux, Camembert, goat cheese, blue cheese, gherkins and butter"
+        },
+        {
+          "name": "Campagnarde",
+          "description": "Jambon de Paris, jambon de pays, rosette, chorizo, rillettes, pâté, cornichons, beurre",
+          "price": 16,
+          "nameEn": "Country board",
+          "descriptionEn": "Paris ham, cured ham, rosette sausage, chorizo, rillettes, pâté, gherkins and butter"
+        }
+      ],
+      "titleEn": "Sharing Boards",
+      "subtitleEn": "Ideal for sharing"
+    },
+    {
+      "slug": "plats",
+      "title": "Plats",
+      "subtitle": "Main courses",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Burger façon Niagara",
+          "description": "Steak de bœuf, oignons confits, cornichons, tomate, cheddar coulant, sauce maison, frites maison et salade",
+          "price": 17,
+          "nameEn": "Niagara burger",
+          "descriptionEn": "Beef patty, candied onions, gherkins, tomato, melted cheddar, house sauce, homemade fries and salad"
+        },
+        {
+          "name": "Chicken Burger",
+          "description": "Filet de poulet pané, sauce moutarde, salade, oignons confits, frites maison et salade",
+          "price": 16,
+          "nameEn": "Chicken burger",
+          "descriptionEn": "Breaded chicken fillet, mustard sauce, salad, candied onions, homemade fries and salad"
+        },
+        {
+          "name": "Burger Végétarien",
+          "description": "Galette de légumes, avocat, cheddar, salade, tomate, oignons confits, frites maison et salade",
+          "price": 16,
+          "nameEn": "Vegetarian burger",
+          "descriptionEn": "Vegetable patty, avocado, cheddar, salad, tomato, candied onions, homemade fries and salad"
+        },
+        {
+          "name": "Suprême de poulet",
+          "description": "Crème de champignons, risotto",
+          "price": 17,
+          "nameEn": "Chicken supreme",
+          "descriptionEn": "Mushroom cream and risotto"
+        },
+        {
+          "name": "Faux-filet Charolais 250gr à la fleur de sel",
+          "price": 22,
+          "nameEn": "250g Charolais sirloin steak with sea salt flakes"
+        },
+        {
+          "name": "Magret de canard",
+          "description": "Jus aux fruits rouges, pommes sautées façon sarladaise",
+          "price": 20,
+          "nameEn": "Duck breast",
+          "descriptionEn": "Red fruit jus and Sarlat-style sautéed potatoes"
+        },
+        {
+          "name": "Tartare de bœuf préparé par le Chef",
+          "description": "Frites maison et salade · Plat Signature de la Maison",
+          "price": 20,
+          "nameEn": "Chef-prepared beef tartare",
+          "descriptionEn": "Homemade fries and salad · House signature main course"
+        },
+        {
+          "name": "Andouillette 5A",
+          "description": "Sauce moutarde à l'ancienne, frites maison",
+          "price": 28,
+          "nameEn": "5A andouillette sausage",
+          "descriptionEn": "Wholegrain mustard sauce and homemade fries"
+        },
+        {
+          "name": "Ribs de bœuf Angus aux épices",
+          "description": "Pommes grenailles et légumes verts · Plat Signature de la Maison",
+          "price": 20,
+          "nameEn": "Spiced Angus beef ribs",
+          "descriptionEn": "Baby potatoes and green vegetables · House signature main course"
+        },
+        {
+          "name": "Dos de cabillaud rôti",
+          "description": "Écrasé de pommes de terre",
+          "price": 18,
+          "nameEn": "Roasted cod fillet",
+          "descriptionEn": "Crushed potatoes"
+        },
+        {
+          "name": "Brochette de gambas en persillade",
+          "description": "Tagliatelles",
+          "price": 23,
+          "nameEn": "Garlic parsley king prawn skewer",
+          "descriptionEn": "Tagliatelle"
+        }
+      ],
+      "titleEn": "Main Courses",
+      "subtitleEn": "Brasserie classics"
+    },
+    {
+      "slug": "pates",
+      "title": "Nos pâtes",
+      "subtitle": "Pastas",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Raviole à la ricotta-épinard",
+          "description": "Crème de parmesan",
+          "price": 15,
+          "nameEn": "Ricotta and spinach ravioli",
+          "descriptionEn": "Parmesan cream"
+        },
+        {
+          "name": "Tagliatelles aux lardons façon Carbonara",
+          "price": 16,
+          "nameEn": "Carbonara-style tagliatelle with bacon"
+        },
+        {
+          "name": "Penne au filet de poulet et champignons crème de truffe",
+          "price": 17,
+          "nameEn": "Penne with chicken fillet, mushrooms and truffle cream"
+        },
+        {
+          "name": "Tagliatelles au saumon mariné",
+          "price": 16,
+          "nameEn": "Tagliatelle with marinated salmon"
+        },
+        {
+          "name": "Penne all arrabbiata",
+          "price": 15,
+          "nameEn": "Penne all'arrabbiata",
+          "descriptionEn": "Spicy tomato sauce"
+        }
+      ],
+      "titleEn": "Pastas",
+      "subtitleEn": "Our pasta dishes"
+    },
+    {
+      "slug": "fromages",
+      "title": "Fromages",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Assortiment de fromages",
+          "description": "Brie, Camembert, bleu, chèvre, beurre et salade au basilic",
+          "price": 7,
+          "nameEn": "Cheese selection",
+          "descriptionEn": "Brie, Camembert, blue cheese, goat cheese, butter and basil salad"
+        },
+        {
+          "name": "Brie de Meaux et sa fine salade",
+          "price": 5,
+          "nameEn": "Brie de Meaux with side salad"
+        }
+      ],
+      "titleEn": "Cheeses",
+      "subtitleEn": "Cheese selection"
+    },
+    {
+      "slug": "desserts",
+      "title": "Desserts",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Trilogie de crème brûlée pistache, vanille, caramel beurre salé",
+          "price": 8,
+          "nameEn": "Creme brulee trio: pistachio, vanilla and salted butter caramel"
+        },
+        {
+          "name": "Tiramisu façon Niagara",
+          "price": 7.5,
+          "nameEn": "Niagara-style tiramisu"
+        },
+        {
+          "name": "Poire confite caramel beurre salé et spéculoos",
+          "price": 7,
+          "nameEn": "Candied pear with salted butter caramel and speculoos"
+        },
+        {
+          "name": "Cheesecake coulis aux fruits rouges",
+          "price": 7.5,
+          "nameEn": "Cheesecake with red fruit coulis"
+        },
+        {
+          "name": "Salade de fruits maison et son sorbet citron vert",
+          "price": 8,
+          "nameEn": "Homemade fruit salad with lime sorbet"
+        },
+        {
+          "name": "Café gourmand",
+          "description": "Café et 4 variétés de mignardises",
+          "price": 9,
+          "nameEn": "Gourmet coffee",
+          "descriptionEn": "Coffee and four mini desserts"
+        },
+        {
+          "name": "Thé gourmand",
+          "description": "Thé et 4 variétés de mignardises",
+          "price": 10.5,
+          "nameEn": "Gourmet tea",
+          "descriptionEn": "Tea and four mini desserts"
+        },
+        {
+          "name": "Chocolat gourmand",
+          "description": "Chocolat et 4 variétés de mignardises",
+          "price": 10.5,
+          "nameEn": "Gourmet hot chocolate",
+          "descriptionEn": "Hot chocolate and four mini desserts"
+        },
+        {
+          "name": "Café crème gourmand",
+          "description": "Café crème et 4 variétés de mignardises",
+          "price": 10.5,
+          "nameEn": "Gourmet cafe creme",
+          "descriptionEn": "Cafe creme and four mini desserts"
+        },
+        {
+          "name": "Champagne gourmand",
+          "description": "Coupe de Champagne AOC 12cl et 4 variétés de mignardises",
+          "price": 15,
+          "nameEn": "Gourmet champagne",
+          "descriptionEn": "12cl glass of AOC Champagne and four mini desserts"
+        }
+      ],
+      "titleEn": "Desserts",
+      "subtitleEn": "Sweet finishes"
+    },
+    {
+      "slug": "glaces",
+      "title": "Glaces",
+      "subtitle": "Ice creams",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Dame Blanche",
+          "description": "3 boules vanille, sauce chocolat, Chantilly",
+          "price": 8.5,
+          "nameEn": "Dame Blanche",
+          "descriptionEn": "3 scoops of vanilla ice cream, chocolate sauce and whipped cream"
+        },
+        {
+          "name": "Café Liégeois",
+          "description": "2 boules café, 1 boule vanille, sauce café, Chantilly",
+          "price": 8.5,
+          "nameEn": "Coffee Liégeois",
+          "descriptionEn": "2 coffee scoops, 1 vanilla scoop, coffee sauce and whipped cream"
+        },
+        {
+          "name": "Chocolat Liégeois",
+          "description": "2 boules chocolat, 1 boule vanille, sauce chocolat, Chantilly",
+          "price": 8.5,
+          "nameEn": "Chocolate Liégeois",
+          "descriptionEn": "2 chocolate scoops, 1 vanilla scoop, chocolate sauce and whipped cream"
+        },
+        {
+          "name": "Coupe Colonel",
+          "description": "3 boules sorbet citron vert, vodka 2cl",
+          "price": 9.5,
+          "nameEn": "Colonel sundae",
+          "descriptionEn": "3 scoops of lime sorbet and 2cl vodka"
+        },
+        {
+          "name": "Coupe Poire",
+          "description": "3 boules sorbet poire, eau de vie de poire 2cl",
+          "price": 8,
+          "nameEn": "Pear sundae",
+          "descriptionEn": "3 scoops of pear sorbet and 2cl pear eau-de-vie"
+        },
+        {
+          "name": "Coupe Normande",
+          "description": "3 boules sorbet pomme, calvados 2cl",
+          "price": 8,
+          "nameEn": "Normandy sundae",
+          "descriptionEn": "3 scoops of apple sorbet and 2cl Calvados"
+        },
+        {
+          "name": "Coupe Niagara",
+          "description": "1 boule de sorbet mangue, 1 boule de coco, 1 boule de fruits rouges, framboises fruits, Chantilly",
+          "price": 8,
+          "nameEn": "Niagara sundae",
+          "descriptionEn": "1 mango sorbet scoop, 1 coconut scoop, 1 red fruit scoop, raspberries and whipped cream"
+        },
+        {
+          "name": "Coupe de glace au choix · 1 boule",
+          "description": "Avec sauce au choix, Chantilly",
+          "price": 4,
+          "nameEn": "Ice cream cup of your choice · 1 scoop",
+          "descriptionEn": "With sauce of your choice and whipped cream"
+        },
+        {
+          "name": "Coupe de glace au choix · 2 boules",
+          "description": "Avec sauce au choix, Chantilly",
+          "price": 6,
+          "nameEn": "Ice cream cup of your choice · 2 scoops",
+          "descriptionEn": "With sauce of your choice and whipped cream"
+        },
+        {
+          "name": "Coupe de glace au choix · 3 boules",
+          "description": "Avec sauce au choix, Chantilly",
+          "price": 8,
+          "nameEn": "Ice cream cup of your choice · 3 scoops",
+          "descriptionEn": "With sauce of your choice and whipped cream"
+        }
+      ],
+      "titleEn": "Ice Creams",
+      "subtitleEn": "Frozen desserts"
+    },
+    {
+      "slug": "cocktails",
+      "title": "Cocktails",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Dark'n'Stormy",
+          "description": "Rhum blanc, rhum brun, ginger beer, cointreau",
+          "price": 9,
+          "nameEn": "Dark 'n' Stormy",
+          "descriptionEn": "White rum, dark rum, ginger beer and Cointreau"
+        },
+        {
+          "name": "Maï Taï",
+          "description": "Rhum, jus de citron, orgeat",
+          "price": 9,
+          "nameEn": "Mai Tai",
+          "descriptionEn": "Rum, lemon juice and orgeat"
+        },
+        {
+          "name": "Tequila Sunrise",
+          "description": "Tequila, jus d’orange, grenadine",
+          "price": 9,
+          "descriptionEn": "Tequila, orange juice and grenadine"
+        },
+        {
+          "name": "Ti Punch",
+          "description": "Rhum, citron vert, sucre de canne",
+          "price": 9,
+          "nameEn": "Ti' Punch",
+          "descriptionEn": "Rum, lime and cane sugar"
+        },
+        {
+          "name": "Caïpirinha",
+          "description": "Cachaça, citron vert, sucre de canne",
+          "price": 9,
+          "nameEn": "Caipirinha",
+          "descriptionEn": "Cachaça, lime and cane sugar"
+        },
+        {
+          "name": "Cuba Libre",
+          "description": "Rhum, citron vert, coca-cola, glaçons",
+          "price": 9,
+          "descriptionEn": "Rum, lime, Coca-Cola and ice"
+        },
+        {
+          "name": "Sex on the Beach",
+          "description": "Vodka, liqueur de pêche, jus d’orange, jus de cranberry",
+          "price": 9,
+          "descriptionEn": "Vodka, peach liqueur, orange juice and cranberry juice"
+        },
+        {
+          "name": "Apérol Spritz",
+          "description": "Apérol, prosecco, eau gazeuse, glaçons",
+          "price": 9,
+          "nameEn": "Aperol Spritz",
+          "descriptionEn": "Aperol, prosecco, sparkling water and ice"
+        },
+        {
+          "name": "Saint-Germain Spritz",
+          "description": "Liqueur saint-germain, prosecco, concombre, eau gazeuse",
+          "price": 9,
+          "descriptionEn": "St-Germain liqueur, prosecco, cucumber and sparkling water"
+        },
+        {
+          "name": "Mojito",
+          "description": "Rhum, citron vert, menthe fraîche, sucre de canne, eau gazeuse",
+          "price": 9,
+          "descriptionEn": "Rum, lime, fresh mint, cane sugar and sparkling water"
+        },
+        {
+          "name": "Miami",
+          "description": "Malibu, passoa, jus d’ananas, jus de passion, sirop de grenadine",
+          "price": 9,
+          "descriptionEn": "Malibu, Passoã, pineapple juice, passion fruit juice and grenadine syrup"
+        },
+        {
+          "name": "Moscow Mule",
+          "description": "Vodka, ginger beer, citron vert",
+          "price": 9,
+          "descriptionEn": "Vodka, ginger beer and lime"
+        },
+        {
+          "name": "Piña Colada",
+          "description": "Rhum blanc, jus d’ananas, lait de coco",
+          "price": 9,
+          "nameEn": "Pina Colada",
+          "descriptionEn": "White rum, pineapple juice and coconut milk"
+        },
+        {
+          "name": "Cosmopolitain",
+          "description": "Vodka, liqueur d’orange, jus de cranberry, jus de citron vert",
+          "price": 9,
+          "nameEn": "Cosmopolitan",
+          "descriptionEn": "Vodka, orange liqueur, cranberry juice and lime juice"
+        },
+        {
+          "name": "Madeleine",
+          "description": "Amaretto, cointreau, jus d'ananas",
+          "price": 9,
+          "descriptionEn": "Amaretto, Cointreau and pineapple juice"
+        },
+        {
+          "name": "Blue Lagoon",
+          "description": "Vodka, curaçao bleu, jus de citron",
+          "price": 9,
+          "descriptionEn": "Vodka, blue curaçao and lemon juice"
+        }
+      ],
+      "titleEn": "Cocktails",
+      "subtitleEn": "Classic and signature mixes"
+    },
+    {
+      "slug": "cocktails-sans-alcool",
+      "title": "Cocktails sans alcool",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Cocktail de jus de fruits / Virgin Miami / Virgin Mojito / Virgin Piña Colada",
+          "description": "25cl",
+          "price": 4,
+          "nameEn": "Fruit juice cocktail / Virgin Miami / Virgin Mojito / Virgin Pina Colada",
+          "descriptionEn": "25cl"
+        },
+        {
+          "name": "Facile",
+          "description": "Jus d'orange, jus d'ananas, jus de cranberry, sirop de grenadine · 25cl",
+          "price": 5.5,
+          "nameEn": "Easy",
+          "descriptionEn": "Orange juice, pineapple juice, cranberry juice and grenadine syrup · 25cl"
+        },
+        {
+          "name": "Détox",
+          "description": "Sirop de gingembre, jus de citron, eau gazeuse · 25cl",
+          "price": 5.5,
+          "nameEn": "Detox",
+          "descriptionEn": "Ginger syrup, lemon juice and sparkling water · 25cl"
+        }
+      ],
+      "titleEn": "Mocktails",
+      "subtitleEn": "Alcohol-free creations"
+    },
+    {
+      "slug": "aperitifs",
+      "title": "Apéritifs",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Ricard, Pastis 51",
+          "description": "2cl",
+          "price": 5
+        },
+        {
+          "name": "Campari, Suze",
+          "description": "5cl",
+          "price": 8
+        },
+        {
+          "name": "Martini rosso, bianco, rosato",
+          "description": "5cl",
+          "price": 8
+        },
+        {
+          "name": "Porto rouge ou blanc",
+          "description": "5cl",
+          "price": 10,
+          "nameEn": "Red or white port",
+          "descriptionEn": "5cl"
+        },
+        {
+          "name": "Americano maison",
+          "description": "10cl",
+          "price": 11,
+          "nameEn": "House Americano",
+          "descriptionEn": "10cl"
+        },
+        {
+          "name": "Vodka orange",
+          "description": "4cl d’alcool",
+          "price": 4,
+          "nameEn": "Vodka orange",
+          "descriptionEn": "4cl of spirit"
+        },
+        {
+          "name": "Gin Tonic",
+          "description": "4cl d’alcool",
+          "price": 9,
+          "nameEn": "Gin and tonic",
+          "descriptionEn": "4cl of spirit"
+        },
+        {
+          "name": "Vodka Red Bull",
+          "description": "4cl d’alcool",
+          "price": 9,
+          "nameEn": "Vodka Red Bull",
+          "descriptionEn": "4cl of spirit"
+        },
+        {
+          "name": "Kir au Sauvignon IGP Pays d’Oc",
+          "description": "10cl",
+          "price": 5,
+          "nameEn": "Kir with Sauvignon IGP Pays d'Oc",
+          "descriptionEn": "10cl"
+        },
+        {
+          "name": "Kir Royal au Champagne AOC",
+          "description": "10cl",
+          "price": 8,
+          "nameEn": "Kir Royal with AOC Champagne",
+          "descriptionEn": "10cl"
+        },
+        {
+          "name": "Coupe de Champagne AOC",
+          "description": "12cl",
+          "price": 8,
+          "nameEn": "Glass of AOC Champagne",
+          "descriptionEn": "12cl"
+        },
+        {
+          "name": "Coupe de mousseux Marié-Rasselet, Cuvée Réserve, Brut",
+          "description": "12cl",
+          "price": 10,
+          "nameEn": "Glass of Marié-Rasselet sparkling wine, Cuvée Réserve, Brut",
+          "descriptionEn": "12cl"
+        },
+        {
+          "name": "Café de Paris - Héritage - Blanc de blancs Brut",
+          "price": 11,
+          "nameEn": "Café de Paris - Héritage - Blanc de Blancs Brut"
+        }
+      ],
+      "titleEn": "Aperitifs",
+      "subtitleEn": "Before-dinner drinks"
+    },
+    {
+      "slug": "whiskies",
+      "title": "Whiskies",
+      "subtitle": "4cl",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Whisky Coca",
+          "description": "4cl d'alcool",
+          "price": 9.5,
+          "nameEn": "Whisky & Coke",
+          "descriptionEn": "4cl of spirit"
+        },
+        {
+          "name": "Ballantine’s / J&B Blended",
+          "price": 9
+        },
+        {
+          "name": "William Lawson’s / Clan Campbell Blended",
+          "price": 7.5
+        },
+        {
+          "name": "Johnnie Walker Red Label Blended",
+          "price": 7
+        },
+        {
+          "name": "Chivas Regal Blended",
+          "price": 7
+        },
+        {
+          "name": "Aberlour Single Malt",
+          "price": 7
+        },
+        {
+          "name": "Jameson Irish",
+          "price": 8.5
+        },
+        {
+          "name": "Four Roses Bourbon",
+          "price": 8.5
+        },
+        {
+          "name": "Jack Daniel’s Tennessee Whiskey",
+          "price": 7.5
+        },
+        {
+          "name": "Glenfiddich Single Malt",
+          "price": 8.5
+        },
+        {
+          "name": "Talisker Single Malt",
+          "price": 11
+        },
+        {
+          "name": "Nikka From The Barrel, Japon",
+          "price": 13,
+          "nameEn": "Nikka From The Barrel, Japan"
+        }
+      ],
+      "titleEn": "Whiskies",
+      "subtitleEn": "4cl"
+    },
+    {
+      "slug": "bieres-pression",
+      "title": "Bières pression",
+      "layout": "beer",
+      "columns": [
+        "name",
+        "25cl",
+        "50cl"
+      ],
+      "items": [
+        {
+          "name": "Vega",
+          "price25": 4,
+          "price50": 7
+        },
+        {
+          "name": "Victoria",
+          "price25": 5,
+          "price50": 9
+        },
+        {
+          "name": "Leffe, Hoegaarden",
+          "price25": 5,
+          "price50": 9
+        },
+        {
+          "name": "Goose Midway IPA",
+          "price25": 5,
+          "price50": 9
+        },
+        {
+          "name": "Monaco, Tango, Twist",
+          "price25": 4,
+          "price50": 7.5
+        }
+      ],
+      "titleEn": "Draft Beers",
+      "subtitleEn": "On tap"
+    },
+    {
+      "slug": "bieres-bouteille",
+      "title": "Bières bouteille",
+      "layout": "list",
+      "items": [
+        {
+          "name": "1664",
+          "description": "25cl",
+          "price": 5
+        },
+        {
+          "name": "Heineken",
+          "description": "25cl",
+          "price": 6
+        },
+        {
+          "name": "Corona",
+          "description": "35,5cl",
+          "price": 7
+        },
+        {
+          "name": "Desperados / Desperados Red",
+          "description": "33cl",
+          "price": 7
+        },
+        {
+          "name": "Carlsberg",
+          "description": "33cl",
+          "price": 7
+        },
+        {
+          "name": "Bière sans alcool",
+          "description": "25cl",
+          "price": 5,
+          "nameEn": "Alcohol-free beer",
+          "descriptionEn": "25cl"
+        }
+      ],
+      "titleEn": "Bottled Beers",
+      "subtitleEn": "By the bottle"
+    },
+    {
+      "slug": "boissons-fraiches",
+      "title": "Boissons fraîches",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Coca-Cola, Coca Zero",
+          "description": "33cl",
+          "price": 4.8
+        },
+        {
+          "name": "Orangina, Schweppes",
+          "description": "25cl",
+          "price": 4.8
+        },
+        {
+          "name": "Oasis, Fanta orange ou citron",
+          "description": "25cl",
+          "price": 4.8,
+          "nameEn": "Oasis, orange or lemon Fanta",
+          "descriptionEn": "25cl"
+        },
+        {
+          "name": "Perrier",
+          "description": "33cl",
+          "price": 5
+        },
+        {
+          "name": "Lipton Ice Tea pêche",
+          "description": "25cl",
+          "price": 4.8,
+          "nameEn": "Lipton Ice Tea peach",
+          "descriptionEn": "25cl"
+        },
+        {
+          "name": "Limonade, Vichy",
+          "description": "25cl",
+          "price": 4.8
+        },
+        {
+          "name": "Red Bull",
+          "description": "25cl",
+          "price": 5
+        },
+        {
+          "name": "Fruit pressé",
+          "description": "25cl · orange ou citron ou pamplemousse",
+          "price": 6,
+          "nameEn": "Freshly squeezed juice",
+          "descriptionEn": "25cl · orange, lemon or grapefruit"
+        },
+        {
+          "name": "Jus de fruits Pago",
+          "description": "20cl · orange, pomme, tomate, raisin rouge",
+          "price": 4.8,
+          "nameEn": "Pago fruit juices",
+          "descriptionEn": "20cl · orange, apple, tomato, red grape"
+        },
+        {
+          "name": "Nectars de fruits Pago",
+          "description": "20cl · abricot, banane, mangue, orange, pêche, poire",
+          "price": 4.8,
+          "nameEn": "Pago fruit nectars",
+          "descriptionEn": "20cl · apricot, banana, mango, orange, peach, pear"
+        }
+      ],
+      "titleEn": "Cold Drinks",
+      "subtitleEn": "Soft drinks, juices and mixers"
+    },
+    {
+      "slug": "eaux-minerales",
+      "title": "Eaux minérales",
+      "layout": "water",
+      "columns": [
+        "name",
+        "50cl",
+        "100cl"
+      ],
+      "items": [
+        {
+          "name": "Vittel, San Pellegrino, Perrier fines bulles",
+          "nameEn": "Vittel, San Pellegrino, Perrier gently sparkling",
+          "price50": 5,
+          "price100": 8
+        }
+      ],
+      "titleEn": "Mineral Waters",
+      "subtitleEn": "Still and sparkling"
+    },
+    {
+      "slug": "boissons-chaudes",
+      "title": "Boissons chaudes",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Espresso FLORIO",
+          "price": 2.8,
+          "nameEn": "Espresso FLORIO"
+        },
+        {
+          "name": "Décaféiné",
+          "price": 2.8,
+          "nameEn": "Decaffeinated coffee"
+        },
+        {
+          "name": "Double espresso FLORIO",
+          "price": 5.2,
+          "nameEn": "Double espresso FLORIO"
+        },
+        {
+          "name": "Double décaféiné",
+          "price": 5.2,
+          "nameEn": "Double decaffeinated coffee"
+        },
+        {
+          "name": "Café crème, Chocolat chaud",
+          "price": 4.8,
+          "nameEn": "Cafe creme, hot chocolate"
+        },
+        {
+          "name": "Café allongé",
+          "price": 2.8,
+          "nameEn": "Long coffee"
+        },
+        {
+          "name": "Noisette",
+          "price": 2.8,
+          "nameEn": "Espresso with a dash of milk"
+        },
+        {
+          "name": "Cappuccino",
+          "price": 4.8
+        },
+        {
+          "name": "Chocolat Viennois, Café Viennois",
+          "price": 4.8,
+          "nameEn": "Viennese hot chocolate, Viennese coffee"
+        },
+        {
+          "name": "Thé ou Tisanes",
+          "price": 4.8,
+          "nameEn": "Tea or herbal infusions"
+        },
+        {
+          "name": "Lait chaud nature",
+          "description": "25cl",
+          "price": 3,
+          "nameEn": "Hot milk",
+          "descriptionEn": "25cl"
+        },
+        {
+          "name": "Grog au rhum",
+          "description": "4cl d'alcool",
+          "price": 6,
+          "nameEn": "Rum grog",
+          "descriptionEn": "4cl of spirit"
+        }
+      ],
+      "titleEn": "Hot Drinks",
+      "subtitleEn": "Coffee, tea and hot chocolate"
+    },
+    {
+      "slug": "digestifs",
+      "title": "Digestifs",
+      "subtitle": "4cl",
+      "layout": "list",
+      "items": [
+        {
+          "name": "Vodka, Gin, Rhum, Tequila",
+          "price": 7,
+          "nameEn": "Vodka, gin, rum, tequila"
+        },
+        {
+          "name": "Baileys, Malibu, Get 27, Get 31, Amaretto",
+          "price": 7,
+          "nameEn": "Baileys, Malibu, Get 27, Get 31, Amaretto"
+        },
+        {
+          "name": "Limoncello, Cointreau, Grand-Marnier",
+          "price": 7,
+          "nameEn": "Limoncello, Cointreau, Grand Marnier"
+        },
+        {
+          "name": "Irish Coffee",
+          "description": "4cl d’alcool",
+          "price": 10,
+          "nameEn": "Irish Coffee",
+          "descriptionEn": "4cl of spirit"
+        },
+        {
+          "name": "Vodka Red Bull",
+          "description": "4cl d’alcool",
+          "price": 11,
+          "nameEn": "Vodka Red Bull",
+          "descriptionEn": "4cl of spirit"
+        },
+        {
+          "name": "Bas-Armagnac Laubade",
+          "price": 7,
+          "nameEn": "Bas-Armagnac Laubade"
+        },
+        {
+          "name": "Calvados Coquerel",
+          "price": 7,
+          "nameEn": "Calvados Coquerel"
+        },
+        {
+          "name": "Cognac Rémy Martin “Cœur de Cognac”",
+          "price": 10,
+          "nameEn": "Rémy Martin Cognac \"Cœur de Cognac\""
+        },
+        {
+          "name": "Cognac Bisquit",
+          "price": 7,
+          "nameEn": "Cognac Bisquit"
+        },
+        {
+          "name": "Eaux-de-Vie Miclo · Poire, Mirabelle",
+          "price": 7,
+          "nameEn": "Miclo fruit brandies · pear, mirabelle plum"
+        }
+      ],
+      "titleEn": "Digestifs",
+      "subtitleEn": "After-dinner spirits"
+    },
+    {
+      "slug": "vins-rouges",
+      "title": "Vins rouges",
+      "subtitle": "Red wines",
+      "layout": "wine",
+      "columns": [
+        "15cl",
+        "25cl",
+        "50cl",
+        "75cl"
+      ],
+      "items": [
+        {
+          "region": "Bordelais",
+          "name": "Bordeaux AOP Château La Gabarre",
+          "description": "Joli fruit, avec une trame de petits tanins frais.",
+          "p15": 4.5,
+          "p25": 8,
+          "p50": 14,
+          "p75": 21,
+          "descriptionEn": "Bright fruit with a fresh frame of fine tannins."
+        },
+        {
+          "region": "Bordelais",
+          "name": "Côtes de Bourg AOP Château le Piat",
+          "description": "Nez gourmand, fruité, vanillé et brioché, soutenu par des tanins élégants.",
+          "p15": 5,
+          "p25": 9,
+          "p50": 17,
+          "p75": 23,
+          "descriptionEn": "Gourmet nose, fruity, vanilla and brioche notes, supported by elegant tannins."
+        },
+        {
+          "region": "Bordelais",
+          "name": "Lussac-Saint-Emilion AOP Château La Claymore",
+          "description": "Vin bien équilibré entre la puissance, l'onctuosité et la fraîcheur.",
+          "p15": 8,
+          "p25": 14,
+          "p50": 21,
+          "p75": 29,
+          "descriptionEn": "Well balanced between power, richness and freshness."
+        },
+        {
+          "region": "Bordelais",
+          "name": "Graves AOP Château Maderot",
+          "description": "Nez charmeur aux arômes de fruits noirs, baies écrasées et notes poivrées.",
+          "p75": 38,
+          "descriptionEn": "Charming nose with black fruit, crushed berries and peppery notes."
+        },
+        {
+          "region": "Bordelais",
+          "name": "Saint-Estèphe AOP Château Rocher Coutelin",
+          "description": "Vin charpenté et chaleureux, une belle fraîcheur, persistance et élégance.",
+          "p75": 40,
+          "descriptionEn": "Structured and generous, with lovely freshness, persistence and elegance."
+        },
+        {
+          "region": "Grande Bourgogne",
+          "name": "Brouilly AOP Château des Tours",
+          "description": "Souple, frais et juteux, chair de cerise noire et de myrtille.",
+          "p15": 7,
+          "p25": 12,
+          "p50": 20,
+          "p75": 28,
+          "descriptionEn": "Supple, fresh and juicy, with black cherry and blueberry notes."
+        },
+        {
+          "region": "Grande Bourgogne",
+          "name": "Bourgogne Côte Chalonnaise AOP Millebuis, Pinot Noir",
+          "description": "Tanins soyeux, nez de griotte et de groseille.",
+          "p15": 8,
+          "p25": 14,
+          "p50": 21,
+          "p75": 29,
+          "descriptionEn": "Silky tannins with a nose of morello cherry and redcurrant."
+        },
+        {
+          "region": "Grande Bourgogne",
+          "name": "Bourgogne Hautes Côtes de Nuits AOP Domaine Pierre Laurent",
+          "description": "Nez intense de fruits rouges frais, griotte, groseille, framboise.",
+          "p75": 42,
+          "descriptionEn": "Intense nose of fresh red fruits, morello cherry, redcurrant and raspberry."
+        },
+        {
+          "region": "Grande Bourgogne",
+          "name": "Chassagne-Montrachet AOP Maison Louis Latour",
+          "description": "Au nez, les arômes de café et de mûre se marient avec élégance.",
+          "p75": 78,
+          "descriptionEn": "Elegant nose where coffee and blackberry aromas meet."
+        },
+        {
+          "region": "Vallée du Rhône",
+          "name": "Côtes du Rhône AOP Les 3 Garçons",
+          "description": "Gourmand, fruité et souple.",
+          "p15": 5,
+          "p25": 9,
+          "p50": 15,
+          "p75": 23,
+          "descriptionEn": "Gourmet, fruity and supple."
+        },
+        {
+          "region": "Vallée du Rhône",
+          "name": "Crozes-Hermitage AOP E. Guigal",
+          "description": "Plein et enveloppé, nez de poivre et de fruits noirs.",
+          "p75": 38,
+          "descriptionEn": "Full and enveloping, with pepper and black fruit on the nose."
+        },
+        {
+          "region": "Val de Loire",
+          "name": "Bourgueil AOP Prestige & Tradition",
+          "description": "Frais et croquant, nez de bois de ronce et de framboise.",
+          "p15": 5,
+          "p25": 9,
+          "p50": 18,
+          "p75": 25,
+          "descriptionEn": "Fresh and crunchy, with bramble wood and raspberry aromas."
+        }
+      ],
+      "titleEn": "Red Wines",
+      "subtitleEn": "By the glass and bottle"
+    },
+    {
+      "slug": "vins-blancs",
+      "title": "Vins blancs",
+      "subtitle": "White wines",
+      "layout": "wine",
+      "columns": [
+        "15cl",
+        "25cl",
+        "50cl",
+        "75cl"
+      ],
+      "items": [
+        {
+          "name": "IGP Pays d’Oc Sauvignon, Saint-Clair",
+          "description": "Sec et frais, notes citronnées.",
+          "p15": 4.5,
+          "p25": 8,
+          "p50": 14,
+          "p75": 20,
+          "descriptionEn": "Dry and fresh, with citrus notes."
+        },
+        {
+          "name": "IGP Pays d’Oc Chardonnay, Le Sudiste",
+          "description": "Intense, tonique, au nez d’agrumes et de fruits exotiques.",
+          "p15": 5,
+          "p25": 9,
+          "p50": 15,
+          "p75": 21.5,
+          "descriptionEn": "Intense and lively, with citrus and exotic fruit aromas."
+        },
+        {
+          "name": "IGP Côtes de Gascogne Elixir de Joÿ (moelleux)",
+          "description": "Nez floral, souple et frais en bouche.",
+          "p15": 5.5,
+          "p25": 10,
+          "p50": 18,
+          "p75": 25,
+          "nameEn": "IGP Côtes de Gascogne Elixir de Joÿ (off-dry)",
+          "descriptionEn": "Floral nose, supple and fresh on the palate."
+        },
+        {
+          "name": "Alsace AOP Riesling, Hans Schaeffer",
+          "description": "Frais et minéral, notes de pomme, de silex et d'agrumes.",
+          "p15": 5,
+          "p25": 9,
+          "p50": 16,
+          "p75": 23,
+          "descriptionEn": "Fresh and mineral, with notes of apple, flint and citrus."
+        },
+        {
+          "name": "Chablis AOP Famille Savary",
+          "p15": 8,
+          "p25": 16,
+          "p50": 24,
+          "p75": 38
+        },
+        {
+          "name": "Sancerre AOP Les Broux",
+          "description": "Droit, frais et désaltérant, au nez de buis et de zestes d’agrume.",
+          "p15": 7.5,
+          "p25": 15,
+          "p50": 22,
+          "p75": 34,
+          "descriptionEn": "Straight, fresh and thirst-quenching, with boxwood and citrus zest on the nose."
+        },
+        {
+          "name": "Pouilly Fumé AOP Les Clairières",
+          "description": "Belle fraîcheur minérale et racée.",
+          "p15": 7.8,
+          "p25": 16,
+          "p50": 23,
+          "p75": 36,
+          "descriptionEn": "Beautiful mineral freshness with a racy finish."
+        }
+      ],
+      "titleEn": "White Wines",
+      "subtitleEn": "By the glass and bottle"
+    },
+    {
+      "slug": "vins-roses",
+      "title": "Vins rosés",
+      "subtitle": "Rosé wines",
+      "layout": "wine",
+      "columns": [
+        "15cl",
+        "25cl",
+        "50cl",
+        "75cl"
+      ],
+      "items": [
+        {
+          "name": "IGP Alpilles Aimée des Alpilles",
+          "description": "Rosé pâle, joliment fruité, aux notes de groseille et de bonbon anglais.",
+          "p15": 4.5,
+          "p25": 8,
+          "p50": 14,
+          "p75": 20,
+          "descriptionEn": "Pale rosé, delicately fruity, with redcurrant and English candy notes."
+        },
+        {
+          "name": "IGP Méditerranée La Demoiselle sans Gêne",
+          "description": "Espiègle et gourmand, bien sec et fruité.",
+          "p15": 5.5,
+          "p25": 10,
+          "p50": 17,
+          "p75": 25,
+          "descriptionEn": "Playful and indulgent, dry and fruity."
+        },
+        {
+          "name": "Côtes de Provence AOP Minuty Prestige",
+          "description": "Très pâle, nez intense d’agrumes, de fleurs et de melon.",
+          "p15": 8,
+          "p25": 16,
+          "p50": 24,
+          "p75": 38,
+          "descriptionEn": "Very pale, with an intense nose of citrus, flowers and melon."
+        }
+      ],
+      "titleEn": "Rosé Wines",
+      "subtitleEn": "By the glass and bottle"
+    },
+    {
+      "slug": "bulles",
+      "title": "Les bulles",
+      "subtitle": "Bubbles",
+      "layout": "wine",
+      "columns": [
+        "12cl",
+        "75cl"
+      ],
+      "items": [
+        {
+          "name": "Champagne AOP Marié-Rasselet, Cuvée Réserve, Brut",
+          "description": "Justesse, équilibre, aromatique. 33% Pinot Meunier, 33% Pinot Noir, 33% Chardonnay",
+          "p12": 9,
+          "p75": 50,
+          "descriptionEn": "Precise, balanced and aromatic. 33% Pinot Meunier, 33% Pinot Noir, 33% Chardonnay."
+        },
+        {
+          "name": "Champagne AOP Marié-Rasselet, Cuvée Louis, Blanc de Blancs",
+          "description": "Délicate, minérale, cristalline. Vinifié en fût de chêne et d'acacia pendant 6 mois.",
+          "p75": 70,
+          "descriptionEn": "Delicate, mineral and crystalline. Aged in oak and acacia barrels for 6 months."
+        },
+        {
+          "name": "Mousseux Café de Paris - Héritage - Blanc de blancs Brut",
+          "p12": 5,
+          "p75": 30,
+          "nameEn": "Café de Paris sparkling wine - Héritage - Blanc de Blancs Brut"
+        }
+      ],
+      "titleEn": "Sparkling Wines",
+      "subtitleEn": "Champagne and sparkling wines"
+    }
+  ]
+}

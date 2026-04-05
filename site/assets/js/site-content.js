@@ -16,9 +16,9 @@ window.MVO_SITE_CONTENT = {
   contacts: {
     whatsapp: "https://wa.me/33611097655",
     phonePrimaryHref: "tel:+33611097655",
-    phonePrimaryLabel: "06 11 09 76 55",
+    phonePrimaryLabel: "+33 6 11 09 76 55",
     phoneSecondaryHref: "tel:+33758661650",
-    phoneSecondaryLabel: "07 58 66 16 50",
+    phoneSecondaryLabel: "+33 7 58 66 16 50",
     emailHref: "mailto:contact@mavitrineonline.fr",
     emailLabel: "contact@mavitrineonline.fr"
   },
@@ -126,7 +126,7 @@ window.MVO_SITE_CONTENT = {
       otherLangLabel: "EN",
       nav: [
         { href: "#top", label: "Accueil" },
-        { href: "#exemple", label: "Exemple" },
+        { href: "#exemple", label: "Témoignage" },
         { href: "#styles", label: "Styles" },
         { href: "./showroom/", label: "Showroom", showroom: true, path: "index.html" },
         { href: "#positionnement", label: "Méthode" },
@@ -134,11 +134,8 @@ window.MVO_SITE_CONTENT = {
         { href: "#contact", label: "Contact" }
       ],
       hero: {
-        eyebrow: "Sites vitrines pour activités exigeantes",
         title: "Une vitrine claire pour mieux présenter votre activité et déclencher le contact",
         text: "Nous vous accompagnons pour choisir la bonne direction visuelle, structurer votre contenu intelligemment et mettre en ligne un site qui inspire confiance dès les premiers instants.",
-        ctaPrimary: "Obtenir mon site",
-        ctaSecondary: "Voir un exemple pour mon activité",
         points: [
           "Direction visuelle adaptée",
           "Architecture pensée pour évoluer",
@@ -149,7 +146,7 @@ window.MVO_SITE_CONTENT = {
           { title: "Food", copy: "Restaurants et concepts food", image: "showroom/restaurant-1.0.0/assets/img/dishes-hero.png" },
           { title: "Santé", copy: "Cabinets et activités de confiance", image: "showroom/cabinet-dentaire-lumineux/images/bg_1.jpg" },
           { title: "Beauté", copy: "Image premium et désirable", image: "showroom/esthetique-signature/img/hero.jpg" },
-          { title: "Business", copy: "Conseil, patrimoine, expertise", image: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg" }
+          { title: "Et plus encore", copy: "Autres activités et univers", image: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg" }
         ]
       },
       problem: {
@@ -168,20 +165,6 @@ window.MVO_SITE_CONTENT = {
           ]
         ]
       },
-      sectors: {
-        kicker: "Accompagnement",
-        title: "Des directions pensées pour des activités très différentes",
-        text: "Chaque univers peut être retravaillé pour votre métier, votre niveau de gamme, vos objectifs et la façon dont vous voulez être perçu.",
-        cards: [
-          ["Food", "Présenter une carte, une ambiance et des CTA qui donnent envie d’agir."],
-          ["Santé & dentaire", "Rassurer vite avec une image claire, propre et professionnelle."],
-          ["Beauté & bien-être", "Montrer un univers plus premium, plus désirable et mieux cadré."],
-          ["Retail", "Mettre en avant produits, collections et informations utiles sans friction."],
-          ["Business", "Structurer une offre sérieuse, crédible et orientée prise de contact."],
-          ["Événements", "Valoriser programmation, ambiance, billetterie ou privatisation."]
-        ],
-        cta: "Découvrir les directions"
-      },
       benefits: {
         kicker: "Pourquoi ça fonctionne",
         title: "Pensé pour ce que vos visiteurs veulent comprendre en quelques secondes",
@@ -190,14 +173,13 @@ window.MVO_SITE_CONTENT = {
           ["Message plus clair", "Vos visiteurs comprennent plus vite votre activité, votre positionnement et la valeur de votre offre."],
           ["Contact plus simple", "Téléphone, WhatsApp, réservation ou demande de devis restent visibles au bon moment."],
           ["Structure plus crédible", "Le site donne une impression plus sérieuse, plus soignée et mieux maîtrisée."],
-          ["Base plus évolutive", "Pages, contenus, langues ou sections métier peuvent grandir avec votre activité."]
+          ["Prêt pour la publicité", "Le site est pensé pour accueillir facilement Google Ads, Meta Ads et les balises de suivi sur les pages et actions importantes."]
         ]
       },
       stylesSection: {
         kicker: "Styles / modèles",
         title: "Des directions visuelles prêtes à être retravaillées pour votre activité",
         text: "Voici plusieurs bases concrètes pour démarrer vite avec une vraie direction. Nous reprenons ensuite le modèle le plus pertinent pour le transformer en vitrine cohérente avec votre business.",
-        sectionCta: "Voir le showroom complet",
         demo: "Voir le modèle",
         choose: "Choisir ce style"
       },
@@ -209,9 +191,9 @@ window.MVO_SITE_CONTENT = {
         cta: "Ouvrir le showroom"
       },
       example: {
-        kicker: "Dernière vitrine restaurant",
-        title: "Niagara Café: une vitrine plus complète, plus lisible et plus vendeuse",
-        text: "Sur ce projet restaurant, l’idée était de réunir dans un même parcours l’ambiance du lieu, l’accès à la carte, les informations utiles, les CTA d’action et une logique d’administration simple à faire vivre.",
+        kicker: "Témoignage",
+        title: "Conception & réalisation du site web vitrine restaurant",
+        text: "Exemple concret avec Niagara Café: une vitrine pensée pour mieux présenter le lieu, mieux guider le visiteur et garder une gestion simple des contenus au quotidien.",
         label: "Niagara Café",
         lead: "Une présentation pensée pour mieux montrer le lieu, mieux guider le visiteur et mieux faire ressortir les actions importantes.",
         points: [
@@ -222,21 +204,23 @@ window.MVO_SITE_CONTENT = {
         stats: [
           ["Contenu visible", "Accueil, carte, ambiance, privatisation, contact et version mobile"],
           ["Objectif", "Donner envie de découvrir le lieu et faciliter le passage à l’action"],
-          ["Gestion", "Administration prévue pour mettre à jour contenus et éléments clés"]
+          ["Administration", "Administration de la carte en temps réel"]
         ],
-        sitePath: "restaurant-1.0.0/index.html",
+        desktopImage: "assets/images/examples/niagara/niagara-pc.png",
+        mobileImage: "assets/images/examples/niagara/niagara-mobile.png",
+        sitePath: "niagara-cafe/fr/index.html",
         adminHref: "#admin",
-        ctaPrimary: "Visualiser le site",
+        ctaPrimary: "Visualiser le site Niagara",
         ctaSecondary: "Visualiser son espace d'administration"
       },
       content: {
         kicker: "Gestion du contenu",
         title: "Une architecture prévue pour rester propre quand votre activité évolue",
-        text: "Nous ne pensons pas seulement la page d’accueil. Nous cadrons aussi une base capable d’accueillir vos contenus, vos mises à jour et vos évolutions sans repartir de zéro.",
+        text: "Nous ne pensons pas seulement la page d’accueil. Nous cadrons aussi une base capable d’accueillir vos contenus, vos mises à jour, vos campagnes publicitaires et vos évolutions sans repartir de zéro.",
         points: [
           "Ajout de sections ou pages sans déséquilibrer le site",
           "Contenus structurés pour rester lisibles",
-          "Version FR / EN si besoin",
+          "Version en français, anglais ou autres langues selon votre besoin",
           "Évolution plus simple dans le temps"
         ],
         panelTitle: "Une base de gestion pensée pour durer",
@@ -245,25 +229,17 @@ window.MVO_SITE_CONTENT = {
         resultRows: [
           ["Structure", "Sections claires et plus faciles à parcourir"],
           ["Informations", "Les éléments utiles ressortent sans surcharge"],
-          ["Langues", "FR par défaut, EN prête quand nécessaire"],
-          ["Contact", "Téléphone, WhatsApp, email et CTA accessibles"]
+          ["Langues", "Une ou plusieurs langues selon votre clientèle"],
+          ["Mesure & pub", "Base prête pour les balises de suivi et les campagnes publicitaires"]
         ]
       },
       admin: {
         kicker: "Gestion / admin",
         title: "Un espace d’administration peut être prévu pour garder la main sur l’essentiel",
         text: "Quand le projet le demande, nous pouvons intégrer une interface claire pour mettre à jour une carte, des prix, des offres, des blocs métier ou des contenus FR / EN sans dépendre d’un chantier technique à chaque changement.",
-        cardTitle: "Exemple de gestion de carte",
+        cardTitle: "Administration de la carte en temps réel",
         badge: "Interface éditoriale",
-        toolbar: ["Enregistrer", "Exporter les données", "Auto-sauvegarde"],
-        fields: [
-          ["Titre FR", "Entrées"],
-          ["Titre EN", "Starters"],
-          ["Prix", "14.50"],
-          ["Description FR", "Burrata crémeuse, tomates anciennes, pesto maison"],
-          ["Description EN", "Creamy burrata, heirloom tomatoes, homemade pesto"],
-          ["Statut", "Prêt à publier"]
-        ],
+        image: "assets/images/examples/niagara/niagara-admin.png",
         footer: "Utile pour restaurants, catalogues, offres, prestations ou toute activité qui doit ajuster ses contenus régulièrement."
       },
       social: {
@@ -312,6 +288,18 @@ window.MVO_SITE_CONTENT = {
             cta: "Obtenir mon site"
           },
           {
+            title: "Site + administration",
+            price: "Sur devis",
+            text: "Pour gérer ensuite votre carte, vos contenus ou vos informations clés plus facilement.",
+            points: [
+              "Espace d’administration selon le besoin",
+              "Mise à jour plus simple des contenus",
+              "Base pensée pour votre organisation",
+              "Accompagnement à la prise en main"
+            ],
+            cta: "Parler administration"
+          },
+          {
             title: "Suivi mensuel",
             price: "95€ / mois",
             text: "Pour garder un site vivant, cohérent et régulièrement ajusté.",
@@ -324,13 +312,13 @@ window.MVO_SITE_CONTENT = {
             cta: "Ajouter le suivi"
           },
           {
-            title: "Pack visibilité",
+            title: "Demande personnalisée",
             price: "Sur devis",
-            text: "Pour aller plus loin avec administration, réseaux ou besoins métier spécifiques.",
+            text: "Pour un besoin plus spécifique, un cadrage sur mesure ou un projet avec plusieurs attentes.",
             points: [
-              "Espace d’administration si besoin",
-              "Réseaux sociaux et cohérence d’image",
-              "Pages ou modules complémentaires",
+              "Besoin métier particulier",
+              "Arborescence ou contenus spécifiques",
+              "Langues supplémentaires si nécessaire",
               "Cadrage selon vos priorités"
             ],
             cta: "Parler du besoin"
@@ -386,7 +374,7 @@ window.MVO_SITE_CONTENT = {
       otherLangLabel: "FR",
       nav: [
         { href: "#top", label: "Home" },
-        { href: "#exemple", label: "Example" },
+        { href: "#exemple", label: "Testimonial" },
         { href: "#styles", label: "Styles" },
         { href: "./showroom/", label: "Showroom", showroom: true, path: "index.html" },
         { href: "#positionnement", label: "Method" },
@@ -394,11 +382,8 @@ window.MVO_SITE_CONTENT = {
         { href: "#contact", label: "Contact" }
       ],
       hero: {
-        eyebrow: "Websites for demanding businesses",
         title: "A clear storefront to present your business better and generate contact",
         text: "We help you choose the right visual direction, structure your content intelligently and launch a website that feels trustworthy from the first seconds.",
-        ctaPrimary: "Get my website",
-        ctaSecondary: "See an example for my business",
         points: [
           "Adapted visual direction",
           "Scalable structure",
@@ -409,7 +394,7 @@ window.MVO_SITE_CONTENT = {
           { title: "Food", copy: "Restaurants and food concepts", image: "showroom/restaurant-1.0.0/assets/img/dishes-hero.png" },
           { title: "Health", copy: "Practices and trust-based services", image: "showroom/cabinet-dentaire-lumineux/images/bg_1.jpg" },
           { title: "Beauty", copy: "Premium and desirable image", image: "showroom/esthetique-signature/img/hero.jpg" },
-          { title: "Business", copy: "Advisory, finance, expertise", image: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg" }
+          { title: "And more...", copy: "Other businesses and sectors", image: "showroom/gestion-patrimoine-premium/images/pms-img-1.jpg" }
         ]
       },
       problem: {
@@ -419,20 +404,6 @@ window.MVO_SITE_CONTENT = {
           ["Our approach", "We build simple, clean and effective websites adapted to your business and positioning."]
         ]
       },
-      sectors: {
-        kicker: "Support",
-        title: "Visual directions built for very different business types",
-        text: "Each direction can be reworked to match your trade, your level of positioning, your goals and the way you want to be perceived.",
-        cards: [
-          ["Food", "Present menus, atmosphere and action points in a more persuasive way."],
-          ["Health & dental", "Build trust quickly with a clear and professional image."],
-          ["Beauty & wellness", "Create a more premium, desirable and polished presence."],
-          ["Retail", "Highlight products, collections and useful information without friction."],
-          ["Business", "Structure a serious offer designed to generate contact."],
-          ["Events", "Promote programming, venue mood, ticketing or private bookings."]
-        ],
-        cta: "Discover the directions"
-      },
       benefits: {
         kicker: "Why it works",
         title: "Built around what visitors need to understand within seconds",
@@ -441,14 +412,13 @@ window.MVO_SITE_CONTENT = {
           ["Clearer message", "Visitors understand your business, positioning and offer faster."],
           ["Simpler contact path", "Phone, WhatsApp, booking or quote requests stay visible when they matter."],
           ["Stronger credibility", "The whole structure feels more serious, more polished and more intentional."],
-          ["Scalable base", "Pages, content, languages and business sections can grow over time."]
+          ["Ready for ads", "The site is built to integrate Google Ads, Meta Ads and tracking tags on key pages and actions."]
         ]
       },
       stylesSection: {
         kicker: "Styles",
         title: "Visual directions ready to be reworked for your business",
         text: "These are concrete starting points to move faster with a real design direction. We then adapt the most relevant one to your business.",
-        sectionCta: "Open full showroom",
         demo: "View model",
         choose: "Choose this style"
       },
@@ -460,9 +430,9 @@ window.MVO_SITE_CONTENT = {
         cta: "Open showroom"
       },
       example: {
-        kicker: "Latest restaurant storefront",
-        title: "Niagara Cafe: a more complete, readable and persuasive restaurant website",
-        text: "For this restaurant project, the goal was to bring atmosphere, menu access, useful information, action points and simple admin logic into one coherent journey.",
+        kicker: "Testimonial",
+        title: "Design & build of a restaurant brochure website",
+        text: "Concrete example with Niagara Cafe: a storefront designed to present the venue better, guide visitors more clearly and keep day-to-day content management simple.",
         label: "Niagara Café",
         lead: "A presentation designed to show the venue better, guide visitors more clearly and highlight the right actions.",
         points: [
@@ -473,21 +443,23 @@ window.MVO_SITE_CONTENT = {
         stats: [
           ["Visible content", "Homepage, menu, atmosphere, private events, contact and mobile version"],
           ["Goal", "Create desire and make action easier"],
-          ["Management", "Admin layer planned for key content updates"]
+          ["Administration", "Real-time menu administration"]
         ],
-        sitePath: "restaurant-1.0.0/index.html",
+        desktopImage: "assets/images/examples/niagara/niagara-pc.png",
+        mobileImage: "assets/images/examples/niagara/niagara-mobile.png",
+        sitePath: "niagara-cafe/en/index.html",
         adminHref: "#admin",
-        ctaPrimary: "View the website",
+        ctaPrimary: "View Niagara website",
         ctaSecondary: "View its admin area"
       },
       content: {
         kicker: "Content management",
         title: "A structure designed to stay clean as your business grows",
-        text: "We do not only design the homepage. We also define a base that can support your content, your updates and future changes without starting over.",
+        text: "We do not only design the homepage. We also define a base that can support your content, your updates, your advertising campaigns and future changes without starting over.",
         points: [
           "New pages or sections without breaking the balance",
           "Content structured to stay readable",
-          "FR / EN ready if needed",
+          "Available in French, English or other languages if needed",
           "Simpler evolution over time"
         ],
         panelTitle: "A management base built to last",
@@ -496,25 +468,17 @@ window.MVO_SITE_CONTENT = {
         resultRows: [
           ["Structure", "Clear sections that are easier to browse"],
           ["Information", "Useful details stand out without overload"],
-          ["Languages", "FR by default, EN ready when needed"],
-          ["Contact", "Phone, WhatsApp, email and visible CTAs"]
+          ["Languages", "One or several languages depending on your audience"],
+          ["Tracking & ads", "A base ready for tracking tags and advertising campaigns"]
         ]
       },
       admin: {
         kicker: "Admin / editing",
         title: "An admin layer can be planned so you keep control over what matters",
         text: "When the project needs it, we can integrate a clear editing interface to update a menu, prices, offers, FR / EN content or business sections without turning every change into a technical task.",
-        cardTitle: "Menu management example",
+        cardTitle: "Real-time menu administration",
         badge: "Editorial interface",
-        toolbar: ["Save", "Export data", "Autosave"],
-        fields: [
-          ["FR title", "Starters"],
-          ["EN title", "Starters"],
-          ["Price", "14.50"],
-          ["FR description", "Creamy burrata, heirloom tomatoes, homemade pesto"],
-          ["EN description", "Creamy burrata, heirloom tomatoes, homemade pesto"],
-          ["Status", "Ready to publish"]
-        ],
+        image: "assets/images/examples/niagara/niagara-admin.png",
         footer: "Useful for restaurants, catalogues, offers, services or any business that needs regular content updates."
       },
       social: {
@@ -563,6 +527,18 @@ window.MVO_SITE_CONTENT = {
             cta: "Get my website"
           },
           {
+            title: "Website + admin",
+            price: "Custom quote",
+            text: "For teams who want to manage menus, content or key information more easily afterwards.",
+            points: [
+              "Admin area when relevant",
+              "Simpler content updates",
+              "Structure aligned with your workflow",
+              "Guidance for handoff"
+            ],
+            cta: "Discuss admin"
+          },
+          {
             title: "Monthly follow-up",
             price: "€95 / month",
             text: "To keep the website alive, coherent and updated over time.",
@@ -575,13 +551,13 @@ window.MVO_SITE_CONTENT = {
             cta: "Add follow-up"
           },
           {
-            title: "Visibility package",
+            title: "Custom request",
             price: "Custom quote",
-            text: "To go further with admin, social presence or business-specific needs.",
+            text: "For more specific needs, tailored scoping or a project with several distinct requirements.",
             points: [
-              "Admin layer when needed",
-              "Social presence and brand consistency",
-              "Extra pages or business modules",
+              "Specific business constraints",
+              "Custom structure or content needs",
+              "Additional languages if needed",
               "Scope aligned with your priorities"
             ],
             cta: "Discuss your needs"
