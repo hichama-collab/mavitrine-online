@@ -37,6 +37,17 @@
         overflow-x: hidden;
       }
 
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at 50% 48%, rgba(255, 255, 255, 0.08), transparent 26%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 32%);
+        opacity: 0.65;
+      }
+
       a { color: inherit; text-decoration: none; }
       img { display: block; max-width: 100%; }
       button { font: inherit; }
@@ -159,7 +170,7 @@
       }
 
       .page-intro {
-        padding: 150px 32px 36px;
+        padding: 138px 32px 18px;
       }
 
       .page-intro-inner {
@@ -176,31 +187,32 @@
       }
 
       .page-intro h1 {
-        margin-top: 16px;
-        max-width: 18ch;
-        font-size: clamp(2.5rem, 6vw, 4.9rem);
+        margin-top: 14px;
+        max-width: 16ch;
+        font-size: clamp(2.35rem, 5.4vw, 4.3rem);
         line-height: 0.98;
         font-weight: 800;
         letter-spacing: -0.05em;
       }
 
       .page-intro p {
-        margin-top: 18px;
-        max-width: 70ch;
+        margin-top: 16px;
+        max-width: 64ch;
         color: var(--ink-soft);
-        font-size: 1.08rem;
+        font-size: 1rem;
         line-height: 1.7;
       }
 
       .category-section {
         position: relative;
         min-height: 100vh;
-        padding: 32px 0 20px;
+        padding: 18px 0 12px;
+        scroll-margin-top: 88px;
       }
 
       .section-head {
         width: min(1240px, calc(100% - 40px));
-        margin: 0 auto 16px;
+        margin: 0 auto 4px;
         text-align: center;
       }
 
@@ -211,24 +223,25 @@
       }
 
       .section-head h2 {
-        margin-top: 12px;
-        font-size: clamp(2rem, 4vw, 3rem);
+        margin-top: 10px;
+        font-size: clamp(1.9rem, 3.8vw, 2.8rem);
         line-height: 1.02;
         font-weight: 800;
         letter-spacing: -0.05em;
       }
 
       .section-head p {
-        margin: 12px auto 0;
-        max-width: 62ch;
+        margin: 10px auto 0;
+        max-width: 54ch;
         color: var(--ink-soft);
+        font-size: 0.98rem;
         line-height: 1.7;
       }
 
       .coverflow-wrapper {
         position: relative;
         width: 100%;
-        min-height: 760px;
+        min-height: 700px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -237,7 +250,7 @@
       .coverflow-container {
         position: relative;
         width: 100%;
-        min-height: 760px;
+        min-height: 700px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -247,15 +260,15 @@
       .coverflow-stage {
         position: relative;
         width: 100%;
-        height: 620px;
+        height: 560px;
         transform-style: preserve-3d;
       }
 
       .coverflow-item {
         position: absolute;
-        top: 18px;
+        top: 10px;
         left: 50%;
-        width: min(360px, calc(100vw - 120px));
+        width: min(350px, calc(100vw - 120px));
         transform-style: preserve-3d;
         cursor: pointer;
         transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 260ms ease;
@@ -283,11 +296,11 @@
       }
 
       .cover-meta {
-        padding: 16px 18px 18px;
+        padding: 15px 18px 18px;
       }
 
       .cover-meta h3 {
-        font-size: 1.1rem;
+        font-size: 1.02rem;
         font-weight: 800;
         letter-spacing: -0.03em;
       }
@@ -323,11 +336,11 @@
 
       .reflection {
         width: 100%;
-        height: 180px;
+        height: 150px;
         margin-top: 8px;
         border-radius: 18px;
         transform: scaleY(-1);
-        opacity: 0.18;
+        opacity: 0.16;
         filter: blur(2px);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(0, 0, 0, 0));
       }
@@ -361,7 +374,7 @@
       .dots {
         position: absolute;
         left: 50%;
-        bottom: 34px;
+        bottom: 22px;
         transform: translateX(-50%);
         display: flex;
         gap: 10px;
@@ -457,7 +470,7 @@
         }
 
         .page-intro {
-          padding-top: 188px;
+          padding-top: 196px;
         }
 
         .footer-grid {
@@ -470,8 +483,31 @@
           width: 174px;
         }
 
+        .header {
+          gap: 14px;
+        }
+
+        .main-menu {
+          width: 100%;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          padding-bottom: 6px;
+          scrollbar-width: none;
+        }
+
+        .main-menu::-webkit-scrollbar {
+          display: none;
+        }
+
+        .menu-item {
+          flex: 0 0 auto;
+          font-size: 0.92rem;
+        }
+
         .page-intro {
           padding-inline: 20px;
+          padding-top: 190px;
         }
 
         .section-head {
@@ -480,15 +516,15 @@
 
         .coverflow-wrapper,
         .coverflow-container {
-          min-height: 660px;
+          min-height: 610px;
         }
 
         .coverflow-stage {
-          height: 560px;
+          height: 510px;
         }
 
         .coverflow-item {
-          width: min(292px, calc(100vw - 72px));
+          width: min(288px, calc(100vw - 72px));
         }
 
         .nav-button {
